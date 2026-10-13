@@ -62,6 +62,7 @@ def main():
     nii_col = column("nii", "hni")
     retail_col = column("retail", "rii")
     total_col = column("total", "totalsubscription")
+    status_col = column("status", "ipostatus", "stage", "ipoStage".toLowerCase())
 
     required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
     missing = [label for label, col in required.items() if col is None]
@@ -75,6 +76,9 @@ def main():
     for _, row in table.iterrows():
         name = clean(row[name_col])
         if not name or name.lower() in {"company name", "nan"}:
+            continue
+        status_text = clean(row[status_col]).lower() if status_col else ""
+        if "pre-apply" in status_text or "pre apply" in status_text or "preapply" in status_text:
             continue
         close_text = clean(row[date_col])
         try:
@@ -105,6 +109,7 @@ def main():
             "stockType": "SME" if "sme" in kind else "Mainboard",
             "source": "Groww",
             "status": "Open / Upcoming",
+            "stage": status_text or "Open / Upcoming",
         })
 
     if not records:
