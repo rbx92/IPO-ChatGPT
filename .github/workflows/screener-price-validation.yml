@@ -1,0 +1,29 @@
+name: Screener CMP validation (manual only)
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Zero-based IPO row offset"
+        required: true
+        default: "0"
+        type: string
+      limit:
+        description: "Small number of rows to test (recommended 3)"
+        required: true
+        default: "3"
+        type: string
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run offline tests
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Validate small Screener batch without writing data
+        run: python scripts/update_prices.py --start "${{ inputs.start }}" --limit "${{ inputs.limit }}" --dry-run
