@@ -1,6 +1,6 @@
 {
   "source": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-13T22:24:40Z",
+  "updatedAt": "2026-10-13T22:28:37Z",
   "ipos": [
     {
       "companyName": "HD Fire Protect",
@@ -16,7 +16,7 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Fusion CX",
@@ -32,7 +32,7 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Zetwerk",
@@ -48,7 +48,7 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -64,7 +64,7 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Tonbo Imaging",
@@ -80,7 +80,7 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Vaibhav Vyapar",
@@ -96,7 +96,7 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     },
     {
       "companyName": "Ravita Engineering Services",
@@ -112,7 +112,7 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open / Upcoming",
-      "stage": "Open / Upcoming"
+      "stage": "Apply"
     }
   ]
 }
