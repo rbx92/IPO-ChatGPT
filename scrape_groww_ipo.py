@@ -12,11 +12,11 @@ OUT = Path("live-ipo-data.json")
 
 def clean(value):
     value = unescape(str(value or ""))
-    return re.sub(r"\\s+", " ", value).strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def parse_number(value):
-    match = re.search(r"[-+]?\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
+    match = re.search(r"[-+]?\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
     return float(match.group(0)) if match else None
 
 
@@ -111,7 +111,7 @@ def main():
         price = parse_number(issue_price) if issue_price is not None else None
         # Use upper end of a price band where Groww provides a range.
         if issue_price is not None:
-            price_numbers = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(issue_price).replace(",", ""))
+            price_numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", clean(issue_price).replace(",", ""))
             if price_numbers:
                 price = float(price_numbers[-1])
 
