@@ -27,6 +27,11 @@ def issue_price(value):
     return float(numbers[-1]) if numbers else None
 
 
+def is_pre_apply(value):
+    normalized = re.sub(r"[^a-z]", "", clean(value).lower())
+    return "preapply" in normalized
+
+
 def main():
     response = requests.get(
         URL,
@@ -38,7 +43,6 @@ def main():
     )
     response.raise_for_status()
 
-    # Parse the returned HTML tables and fail clearly if Groww changes its markup.
     tables = pd.read_html(StringIO(response.text))
     if not tables:
         raise RuntimeError(f"No HTML tables found on Groww page ({len(response.text)} bytes)")
@@ -62,6 +66,7 @@ def main():
     retail_col = column("retail", "rii")
     total_col = column("total", "totalsubscription")
     status_col = column("status", "ipostatus", "stage", "ipostage")
+    action_col = column("action", "apply", "button")
 
     required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
     missing = [label for label, col in required.items() if col is None]
@@ -71,21 +76,32 @@ def main():
     today = datetime.now().date()
     records = []
     seen = set()
+    pre_apply_skipped = 0
 
     for _, row in table.iterrows():
         name = clean(row[name_col])
         if not name or name.lower() in {"company name", "nan"}:
             continue
+
+        # Groww labels pre-application rows with a "Pre-apply" action.
+        # Some page versions expose a status column; others expose it as the action column.
         status_text = clean(row[status_col]).lower() if status_col else ""
-        if "pre-apply" in status_text or "pre apply" in status_text or "preapply" in status_text:
+        action_text = clean(row[action_col]).lower() if action_col else ""
+        stage_text = " ".join(part for part in (status_text, action_text) if part)
+        if is_pre_apply(stage_text):
+            pre_apply_skipped += 1
             continue
+
+        # Do not classify rows as open if Groww's table no longer exposes an Apply action.
+        if action_col and action_text and "apply" not in action_text:
+            continue
+
         close_text = clean(row[date_col])
         try:
             close_date = datetime.strptime(close_text, "%d %b %Y").date()
             if close_date < today:
                 continue
         except ValueError:
-            # Preserve the row on unexpected date formats; the source date is retained verbatim.
             pass
 
         key = name.casefold()
@@ -108,13 +124,14 @@ def main():
             "stockType": "SME" if "sme" in kind else "Mainboard",
             "source": "Groww",
             "status": "Open / Upcoming",
-            "stage": status_text or "Open / Upcoming",
+            "stage": "Apply",
         })
 
     if not records:
         raise RuntimeError(
-            f"Groww HTML table was found ({len(table)} rows) but no open/upcoming IPOs remained after date filtering. "
-            f"Headers: {list(table.columns)}. Existing feed left untouched."
+            f"Groww table had {len(table)} rows but no eligible IPOs remained after filtering. "
+            f"Skipped {pre_apply_skipped} pre-apply rows. Headers: {list(table.columns)}. "
+            "Existing feed left untouched."
         )
 
     OUT.write_text(json.dumps({
@@ -122,7 +139,10 @@ def main():
         "updatedAt": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
         "ipos": records,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Parsed {len(table)} table rows; wrote {len(records)} open/upcoming IPOs to {OUT}")
+    print(
+        f"Parsed {len(table)} table rows; skipped {pre_apply_skipped} pre-apply rows; "
+        f"wrote {len(records)} eligible open IPOs to {OUT}"
+    )
 
 
 if __name__ == "__main__":
