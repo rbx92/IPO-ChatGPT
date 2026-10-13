@@ -18,10 +18,10 @@ An IPO is included only when all conditions pass:
 
 ## Sector exclusions — hard-coded
 
-Exclude all IPOs that are bank-related, NBFCs, brokers/broking businesses, or asset managers, even if they pass the QIB and listing-gain thresholds.
+Exclude bank-related businesses, NBFCs, brokers/broking businesses, asset managers, and pharmaceutical/biopharmaceutical/biotechnology businesses, even if they pass the QIB and listing-gain thresholds.
 
-- Exclude company names matching sector terms: bank, banking, finance, financial, NBFC, broker, broking, securities, asset, capital, trusteeship, insurance, wealth, lending, credit, microfinance, investment/investments, and fund.
-- Maintain an explicit exclusion list for financial-sector businesses whose names do not clearly identify the sector:
+- Financial-sector company-name terms: bank, banking, finance, financial, NBFC, broker, broking, securities, asset, capital, trusteeship, insurance, wealth, lending, credit, microfinance, investment/investments, and fund.
+- Also exclude these explicit financial-sector businesses:
   - ICICI Prudential Asset
   - Moneyview
   - Rikhav Securities Ltd.
@@ -33,17 +33,18 @@ Exclude all IPOs that are bank-related, NBFCs, brokers/broking businesses, or as
   - Bajaj Housing Finance Ltd.
   - RNFI Services
   - One MobiKwik Systems Ltd.
+- Pharmaceutical/biotech company-name terms: pharma, pharmaceutical, pharmaceuticals, biopharma, biotechnology, and biotech.
 
-The dashboard's index.html applies this exclusion list and sector-name rule to the data before calculating metrics or rendering IPO cards. When adding live IPOs, keep this rule in the same filtering path so excluded sectors do not reappear.
+Apply these sector exclusions in the dashboard's data-filtering path before calculating metrics or rendering IPO cards. Apply the same rules to all newly added/live IPOs so excluded sectors do not reappear.
 
 ## Other dashboard behavior
 
 - Current gain is displayed as a percentage but is not an inclusion filter.
 - Display Listing Gain and Current Gain as percentages.
-- Keep an IPO only if it passes QIB >= 50x, listing gain >= 15%, and the sector exclusion.
+- Keep an IPO only if it passes QIB >= 50x, listing gain >= 15%, and none of the excluded-sector rules.
 
 ## Logic
 
 ```text
-include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT excluded_financial_sector
+include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT excluded_financial_sector AND NOT excluded_pharma_or_biotech_sector
 ```
