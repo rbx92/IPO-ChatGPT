@@ -1,109 +1,124 @@
 import json
 import re
 from datetime import datetime
-from html import unescape
+from io import StringIO
 from pathlib import Path
 
+import pandas as pd
 import requests
-from bs4 import BeautifulSoup
 
 URL = "https://groww.in/ipo/subscription"
 OUT = Path("live-ipo-data.json")
 
 
 def clean(value):
-    value = unescape(str(value or ""))
-    return re.sub(r"\s+", " ", value).strip()
+    if pd.isna(value):
+        return ""
+    return re.sub(r"\\s+", " ", str(value)).strip()
 
 
-def parse_number(value):
-    match = re.search(r"[-+]?\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
-    return float(match.group(0)) if match else None
-
-
-def mult(value):
+def valid(value):
     value = clean(value)
-    return value if value and value not in {"--", "-", "nan", "None"} else "—"
+    return value if value and value.lower() not in {"--", "-", "nan", "none"} else "—"
 
 
-def first(obj, *keys):
-    for key in keys:
-        value = obj.get(key)
-        if value is not None and value != "":
-            return value
-    return None
-
-
-def flatten(obj):
-    if isinstance(obj, dict):
-        yield obj
-        for value in obj.values():
-            yield from flatten(value)
-    elif isinstance(obj, list):
-        for value in obj:
-            yield from flatten(value)
+def issue_price(value):
+    numbers = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
+    return float(numbers[-1]) if numbers else None
 
 
 def main():
-    response = requests.get(URL, headers={
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130 Safari/537.36",
-        "Accept-Language": "en-IN,en;q=0.9",
-    }, timeout=40)
+    response = requests.get(
+        URL,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36",
+            "Accept-Language": "en-IN,en;q=0.9",
+        },
+        timeout=40,
+    )
     response.raise_for_status()
-    page = response.text
 
-    # Groww renders the subscription list as server-side HTML cards, not HTML tables.
-    soup = BeautifulSoup(page, "html.parser")
+    # Groww exposes this data in a normal HTML table. Parse the response directly;
+    # do not depend on React card aria-labels or a browser-rendered DOM.
+    tables = pd.read_html(StringIO(response.text))
+    if not tables:
+        raise RuntimeError(f"No HTML tables found on Groww page ({len(response.text)} bytes)")
+
+    table = max(tables, key=len).copy()
+    table.columns = [clean(c).lower() for c in table.columns]
+
+    def column(*candidates):
+        for col in table.columns:
+            normalized = re.sub(r"[^a-z]", "", col)
+            if normalized in candidates:
+                return col
+        return None
+
+    name_col = column("companyname", "name")
+    type_col = column("type", "ipotype")
+    date_col = column("closedate", "closingdate")
+    price_col = column("issueprice", "priceband")
+    qib_col = column("qib")
+    nii_col = column("nii", "hni")
+    retail_col = column("retail", "rii")
+    total_col = column("total", "totalsubscription")
+
+    required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
+    missing = [label for label, col in required.items() if col is None]
+    if missing:
+        raise RuntimeError(f"Groww table headers changed; missing {missing}. Found headers: {list(table.columns)}")
+
     today = datetime.now().date()
     records = []
     seen = set()
 
-    def labelled(card, label):
-        node = card.find(attrs={"aria-label": re.compile(r"^" + re.escape(label) + r" value$", re.I)})
-        return clean(node.get_text(" ", strip=True)) if node else ""
-
-    for card in soup.find_all("article"):
-        name = labelled(card, "company name")
-        if not name:
+    for _, row in table.iterrows():
+        name = clean(row[name_col])
+        if not name or name.lower() in {"company name", "nan"}:
             continue
-        kind = labelled(card, "Type")
-        close_text = labelled(card, "Close Date")
+        close_text = clean(row[date_col])
         try:
             close_date = datetime.strptime(close_text, "%d %b %Y").date()
             if close_date < today:
                 continue
         except ValueError:
+            # If date format changes, retain the row rather than silently misparse it.
             pass
-        qib, nii = labelled(card, "QIB"), labelled(card, "NII")
-        retail, total = labelled(card, "Retail"), labelled(card, "Total")
-        issue_text = labelled(card, "Issue Price")
-        price_numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", issue_text.replace(",", ""))
-        issue_price = float(price_numbers[-1]) if price_numbers else None
-        key = name.lower()
+
+        key = name.casefold()
         if key in seen:
             continue
         seen.add(key)
+
+        kind = clean(row[type_col]).lower() if type_col else ""
         records.append({
-            "companyName": name, "currentPrice": None,
-            "listingDate": close_text or "Date unavailable", "issuePrice": issue_price,
-            "qib": mult(qib), "hni": mult(nii), "retail": mult(retail), "total": mult(total),
-            "listingGain": None, "currentGain": None,
-            "stockType": "SME" if "sme" in kind.lower() else "Mainboard",
-            "source": "Groww", "status": "Open / Upcoming",
+            "companyName": name,
+            "currentPrice": None,
+            "listingDate": close_text or "Date unavailable",
+            "issuePrice": issue_price(row[price_col]) if price_col else None,
+            "qib": valid(row[qib_col]),
+            "hni": valid(row[nii_col]),
+            "retail": valid(row[retail_col]),
+            "total": valid(row[total_col]),
+            "listingGain": None,
+            "currentGain": None,
+            "stockType": "SME" if "sme" in kind else "Mainboard",
+            "source": "Groww",
+            "status": "Open / Upcoming",
         })
 
     if not records:
-        # Preserve the deployed feed when Groww changes markup or returns no parsable open issues.
         raise RuntimeError(
-            f"No open/upcoming IPO records were parsed from Groww page (HTTP {response.status_code}, {len(page)} bytes); existing feed left untouched."
+            f"Groww HTML table was found ({len(table)} rows) but no open/upcoming IPOs remained after date filtering. "
+            f"Headers: {list(table.columns)}. Existing feed left untouched."
         )
 
     OUT.write_text(json.dumps({
         "source": URL,
         "updatedAt": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
-        "ipos": records
+        "ipos": records,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {len(records)} open/upcoming IPOs to {OUT}")
+    print(f"Parsed {len(table)} table rows; wrote {len(records)} open/upcoming IPOs to {OUT}")
 
 
 if __name__ == "__main__":
