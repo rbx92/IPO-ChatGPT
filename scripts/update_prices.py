@@ -66,7 +66,7 @@ class CurrentPriceParser(HTMLParser):
                 if "current price" in all_text:
                     values = [v for cls, v in self.spans if set(cls.split()) & {"number", "value"}]
                     for candidate in values or [" ".join(self.li_text)]:
-                        m = re.search(r"(?:₹\\s*)?([0-9][0-9,]*(?:\\.[0-9]+)?)", candidate)
+                        m = re.search(r"(?:₹\s*)?([0-9][0-9,]*(?:\.[0-9]+)?)", candidate)
                         if m:
                             price = float(m.group(1).replace(",", ""))
                             if price > 0: self.prices.append(price)
@@ -149,9 +149,9 @@ def main():
         else:
             row["currentPrice"], row["currentGain"] = result
             row["priceUpdatedAt"], row["priceSource"] = stamp, "Screener.in"
-    DATA_PATH.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
-    DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\\n", encoding="utf-8")
-    MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    DATA_PATH.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+    MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"UPDATED {len(staged)} rows; {unmatched} unmatched. CMP rounded to whole rupees.")
     return 0
 
