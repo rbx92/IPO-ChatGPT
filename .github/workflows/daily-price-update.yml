@@ -24,7 +24,7 @@ jobs:
       - name: Update all IPO prices in batches of nine
         id: updater
         continue-on-error: true
-        run: python scripts/update_prices.py --batch-size 9 --delay 10
+        run: python scripts/update_prices.py --batch-size 9 --delay 60
       - name: Commit completed batch updates
         if: always()
         run: |
