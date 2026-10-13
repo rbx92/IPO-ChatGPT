@@ -1,0 +1,35 @@
+name: Refresh Groww IPO feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install scraper dependencies
+        run: pip install pandas lxml requests
+      - name: Scrape open and upcoming IPOs from Groww
+        run: python scrape_groww_ipo.py
+      - name: Commit refreshed feed
+        run: |
+          if git diff --quiet -- live-ipo-data.json; then
+            echo "Groww feed unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add live-ipo-data.json
+            git commit -m "Refresh Groww IPO feed"
+            git push
+          fi
