@@ -11,9 +11,10 @@ An IPO is included only when **both** conditions pass:
    - Exclude missing, blank, dash, or otherwise invalid QIB values.
    - This supersedes the earlier 30x threshold.
 
-2. **Listing gain >= 10%**
-   - Exclude listing gain below 10%.
+2. **Listing gain >= 15%**
+   - Exclude listing gain below 15%.
    - Exclude missing or invalid listing-gain values.
+   - This supersedes the earlier 10% threshold.
 
 ## Dashboard behavior
 
@@ -26,7 +27,7 @@ An IPO is included only when **both** conditions pass:
 ## Logic
 
 ```text
-include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.10)
+include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.15)
 ```
 
 This file documents the required behavior. The live-IPO ingestion/filtering code must read or implement these same rules for automatic enforcement.
