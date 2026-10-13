@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install scraper dependencies
-        run: pip install pandas lxml requests
+        run: pip install requests
       - name: Scrape open and upcoming IPOs from Groww
         run: python scrape_groww_ipo.py
       - name: Commit refreshed feed
