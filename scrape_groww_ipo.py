@@ -53,7 +53,7 @@ def main():
 
     # Groww is a Next.js page; its server-rendered IPO objects are embedded in __NEXT_DATA__.
     match = re.search(
-        r'<script[^>]+id=["\\']__NEXT_DATA__["\\'][^>]*>(.*?)</script>',
+        r"""<script[^>]+id=["']__NEXT_DATA__["'][^>]*>(.*?)</script>""",
         page,
         flags=re.DOTALL | re.IGNORECASE,
     )
@@ -66,7 +66,7 @@ def main():
 
     # Fallback: inspect JSON-like script blocks, but never treat the whole HTML document as a table.
     if not candidates:
-        for block in re.findall(r'<script[^>]*type=["\\']application/json["\\'][^>]*>(.*?)</script>', page, flags=re.DOTALL | re.IGNORECASE):
+        for block in re.findall(r"""<script[^>]*type=["']application/json["'][^>]*>(.*?)</script>""", page, flags=re.DOTALL | re.IGNORECASE):
             try:
                 candidates.extend(flatten(json.loads(block)))
             except json.JSONDecodeError:
