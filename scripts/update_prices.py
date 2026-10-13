@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Conservative Screener.in CMP validation for IPO Lens.
 
-Reads root ipos.json, rounds displayed CMP to whole rupees, and updates currentGain
-only when run without --dry-run. Does not fuzzy-match company names, retry 403/429,
-or write partial results after a failed request. Start with small manual batches.
+Reads root ipos.json, processes rows in batches (default 9), rounds CMP to whole rupees,
+and updates currentGain. Each completed batch is saved, so a later error does not discard
+previous batches. Does not fuzzy-match names or bypass 403/429 restrictions.
 """
 from __future__ import annotations
 import argparse, json, re, sys, time
@@ -103,57 +103,67 @@ def price_at(path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int, default=0, help="zero-based row offset")
-    ap.add_argument("--limit", type=int, default=3, help="rows to check (default 3; 0 means all remaining)")
+    ap.add_argument("--limit", type=int, default=0, help="rows to check (0 means all remaining)")
+    ap.add_argument("--batch-size", type=int, default=9, help="rows per save batch (default 9)")
     ap.add_argument("--delay", type=float, default=10, help="seconds between requests, minimum 1")
     ap.add_argument("--dry-run", action="store_true", help="do not write files")
     args = ap.parse_args()
-    if args.start < 0 or args.limit < 0 or args.delay < 1: ap.error("start/limit must be >=0 and delay >=1 second")
+    if args.start < 0 or args.limit < 0 or args.delay < 1 or args.batch_size < 1: ap.error("start/limit must be >=0, batch-size >=1 and delay >=1 second")
     rows = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     if not isinstance(rows, list): raise SystemExit("ipos.json must contain a JSON list")
     if rows and args.start >= len(rows): ap.error(f"start must be less than {len(rows)}")
     selected = rows[args.start:args.start + args.limit] if args.limit else rows[args.start:]
     paths = json.loads(MAP_PATH.read_text(encoding="utf-8")) if MAP_PATH.exists() else {}
-    staged = []
     unmatched = 0
-    try:
-        for i, row in enumerate(selected, start=args.start + 1):
-            name = str(row.get("companyName", "")).strip()
-            path = paths.get(name)
-            if not path:
-                path = resolve(name)
-                time.sleep(args.delay)
-                if path: paths[name] = path
-            if not path:
-                unmatched += 1
-                staged.append((row, None))
-                print(f"[{i}/{len(rows)}] UNMATCHED — {name}")
-                continue
-            cmp = price_at(path)
-            time.sleep(args.delay)
-            issue = float(row.get("issuePrice") or 0)
-            gain = f"{((cmp - issue) / issue * 100):.1f}%" if issue > 0 else "-"
-            staged.append((row, (cmp, gain)))
-            print(f"[{i}/{len(rows)}] {name}: CMP ₹{cmp} | current gain {gain}")
-    except Exception as exc:
-        print(f"UPDATE ABORTED: {exc}", file=sys.stderr)
-        print("No dataset files were changed.", file=sys.stderr)
-        return 2
-    if args.dry_run:
-        print(f"DRY RUN: {len(selected)} rows checked; {unmatched} unmatched. No files written.")
-        return 0
+    updated = 0
     stamp = datetime.now().astimezone().isoformat(timespec="minutes")
-    for row, result in staged:
-        if result is None:
-            row["currentPrice"], row["currentGain"] = None, "-"
-            row["priceUpdatedAt"], row["priceSource"] = None, None
-        else:
-            row["currentPrice"], row["currentGain"] = result
-            row["priceUpdatedAt"], row["priceSource"] = stamp, "Screener.in"
-    DATA_PATH.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
-    MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"UPDATED {len(staged)} rows; {unmatched} unmatched. CMP rounded to whole rupees.")
-    return 0
 
+    def save_batch():
+        DATA_PATH.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+        MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    for offset in range(0, len(selected), args.batch_size):
+        batch = selected[offset:offset + args.batch_size]
+        print(f"\nBatch {offset // args.batch_size + 1}: rows {args.start + offset + 1}-{args.start + offset + len(batch)} of {len(rows)}", flush=True)
+        try:
+            for row_index, row in enumerate(batch, start=args.start + offset + 1):
+                name = str(row.get("companyName", "")).strip()
+                path = paths.get(name)
+                if not path:
+                    path = resolve(name)
+                    time.sleep(args.delay)
+                    if path:
+                        paths[name] = path
+                if not path:
+                    unmatched += 1
+                    print(f"[{row_index}/{len(rows)}] UNMATCHED — {name}; preserving existing price", flush=True)
+                    continue
+                cmp = price_at(path)
+                time.sleep(args.delay)
+                issue = float(row.get("issuePrice") or 0)
+                gain = f"{((cmp - issue) / issue * 100):.1f}%" if issue > 0 else "-"
+                if not args.dry_run:
+                    row["currentPrice"] = cmp
+                    row["currentGain"] = gain
+                    row["priceUpdatedAt"] = stamp
+                    row["priceSource"] = "Screener.in"
+                updated += 1
+                print(f"[{row_index}/{len(rows)}] {name}: CMP ₹{cmp} | current gain {gain}", flush=True)
+        except Exception as exc:
+            if not args.dry_run:
+                save_batch()
+            print(f"UPDATE STOPPED: {exc}", file=sys.stderr, flush=True)
+            print(f"Saved completed work so far: {updated} prices updated; {unmatched} unmatched.", file=sys.stderr, flush=True)
+            return 2
+        if not args.dry_run:
+            save_batch()
+            print(f"Saved batch. Cumulative prices updated: {updated}; unmatched: {unmatched}.", flush=True)
+
+    if args.dry_run:
+        print(f"DRY RUN: {len(selected)} rows checked; {updated} prices parsed; {unmatched} unmatched. No files written.")
+    else:
+        print(f"UPDATE COMPLETE: {updated} prices updated; {unmatched} unmatched. CMP rounded to whole rupees.")
+    return 0
 if __name__ == "__main__":
     raise SystemExit(main())
