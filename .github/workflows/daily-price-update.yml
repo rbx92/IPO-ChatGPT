@@ -1,0 +1,48 @@
+name: Daily IPO CMP update
+on:
+  schedule:
+    - cron: "45 10 * * 1-5" # 16:15 IST, weekdays
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-ipo-cmp-update
+  cancel-in-progress: false
+jobs:
+  update-cmp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout dashboard data
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run offline parser tests
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Update all IPO prices in batches of nine
+        id: updater
+        continue-on-error: true
+        run: python scripts/update_prices.py --batch-size 9 --delay 10
+      - name: Commit completed batch updates
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ipos.json data.js screener_map.json
+          if git diff --cached --quiet; then
+            echo "No changed files to commit."
+          else
+            git commit -m "chore: refresh IPO CMP data"
+            git push
+          fi
+      - name: Report updater status
+        if: always()
+        run: |
+          if [ "${{ steps.updater.outcome }}" = "success" ]; then
+            echo "CMP updater completed. Check the preceding log for updated and unmatched rows."
+          else
+            echo "CMP updater stopped early. Any completed batch updates were committed; inspect the logs for the cause."
+            exit 1
+          fi
