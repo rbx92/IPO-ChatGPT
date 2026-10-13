@@ -105,7 +105,7 @@ def main():
     ap.add_argument("--start", type=int, default=0, help="zero-based row offset")
     ap.add_argument("--limit", type=int, default=0, help="rows to check (0 means all remaining)")
     ap.add_argument("--batch-size", type=int, default=9, help="rows per save batch (default 9)")
-    ap.add_argument("--delay", type=float, default=10, help="seconds between requests, minimum 1")
+    ap.add_argument("--delay", type=float, default=60, help="seconds between requests, minimum 1 (default 60)")
     ap.add_argument("--dry-run", action="store_true", help="do not write files")
     args = ap.parse_args()
     if args.start < 0 or args.limit < 0 or args.delay < 1 or args.batch_size < 1: ap.error("start/limit must be >=0, batch-size >=1 and delay >=1 second")
