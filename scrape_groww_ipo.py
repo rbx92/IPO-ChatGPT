@@ -14,7 +14,7 @@ OUT = Path("live-ipo-data.json")
 def clean(value):
     if pd.isna(value):
         return ""
-    return re.sub(r"\\s+", " ", str(value)).strip()
+    return re.sub(r"\s+", " ", str(value)).strip()
 
 
 def valid(value):
@@ -23,7 +23,7 @@ def valid(value):
 
 
 def issue_price(value):
-    numbers = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
+    numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
     return float(numbers[-1]) if numbers else None
 
 
@@ -38,8 +38,7 @@ def main():
     )
     response.raise_for_status()
 
-    # Groww exposes this data in a normal HTML table. Parse the response directly;
-    # do not depend on React card aria-labels or a browser-rendered DOM.
+    # Parse the returned HTML tables and fail clearly if Groww changes its markup.
     tables = pd.read_html(StringIO(response.text))
     if not tables:
         raise RuntimeError(f"No HTML tables found on Groww page ({len(response.text)} bytes)")
@@ -62,7 +61,7 @@ def main():
     nii_col = column("nii", "hni")
     retail_col = column("retail", "rii")
     total_col = column("total", "totalsubscription")
-    status_col = column("status", "ipostatus", "stage", "ipoStage".toLowerCase())
+    status_col = column("status", "ipostatus", "stage", "ipostage")
 
     required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
     missing = [label for label, col in required.items() if col is None]
@@ -86,7 +85,7 @@ def main():
             if close_date < today:
                 continue
         except ValueError:
-            # If date format changes, retain the row rather than silently misparse it.
+            # Preserve the row on unexpected date formats; the source date is retained verbatim.
             pass
 
         key = name.casefold()
