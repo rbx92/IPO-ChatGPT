@@ -1,6 +1,6 @@
 {
   "source": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-14T01:14:19Z",
+  "updatedAt": "2026-10-14T05:32:05Z",
   "ipos": [
     {
       "companyName": "HD Fire Protect",
@@ -83,6 +83,22 @@
       "stage": "Apply"
     },
     {
+      "companyName": "Bonfiglioli Transmissions",
+      "currentPrice": null,
+      "listingDate": "19 Oct 2026",
+      "issuePrice": 586.0,
+      "qib": "—",
+      "hni": "—",
+      "retail": "—",
+      "total": "—",
+      "listingGain": null,
+      "currentGain": null,
+      "stockType": "Mainboard",
+      "source": "Groww",
+      "status": "Open / Upcoming",
+      "stage": "Apply"
+    },
+    {
       "companyName": "Vaibhav Vyapar",
       "currentPrice": null,
       "listingDate": "15 Oct 2026",
@@ -103,6 +119,22 @@
       "currentPrice": null,
       "listingDate": "16 Oct 2026",
       "issuePrice": 112.0,
+      "qib": "—",
+      "hni": "—",
+      "retail": "—",
+      "total": "—",
+      "listingGain": null,
+      "currentGain": null,
+      "stockType": "SME",
+      "source": "Groww",
+      "status": "Open / Upcoming",
+      "stage": "Apply"
+    },
+    {
+      "companyName": "Shellz India",
+      "currentPrice": null,
+      "listingDate": "19 Oct 2026",
+      "issuePrice": 179.0,
       "qib": "—",
       "hni": "—",
       "retail": "—",
