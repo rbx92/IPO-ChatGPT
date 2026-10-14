@@ -1,11 +1,12 @@
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
 
 import pandas as pd
 import requests
+from lxml import html as lxml_html
 
 URL = "https://groww.in/ipo/subscription"
 OUT = Path("live-ipo-data.json")
@@ -27,9 +28,8 @@ def issue_price(value):
     return float(numbers[-1]) if numbers else None
 
 
-def is_pre_apply(value):
-    normalized = re.sub(r"[^a-z]", "", clean(value).lower())
-    return "preapply" in normalized
+def normalize(value):
+    return re.sub(r"[^a-z0-9]", "", clean(value).lower())
 
 
 def main():
@@ -43,6 +43,8 @@ def main():
     )
     response.raise_for_status()
 
+    # pandas extracts the subscription data; lxml preserves action labels that
+    # pandas may drop from cells (for example, "Apply" and "Pre-apply").
     tables = pd.read_html(StringIO(response.text))
     if not tables:
         raise RuntimeError(f"No HTML tables found on Groww page ({len(response.text)} bytes)")
@@ -52,8 +54,7 @@ def main():
 
     def column(*candidates):
         for col in table.columns:
-            normalized = re.sub(r"[^a-z]", "", col)
-            if normalized in candidates:
+            if re.sub(r"[^a-z]", "", col) in candidates:
                 return col
         return None
 
@@ -65,35 +66,45 @@ def main():
     nii_col = column("nii", "hni")
     retail_col = column("retail", "rii")
     total_col = column("total", "totalsubscription")
-    status_col = column("status", "ipostatus", "stage", "ipostage")
-    action_col = column("action", "apply", "button")
 
     required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
     missing = [label for label, col in required.items() if col is None]
     if missing:
         raise RuntimeError(f"Groww table headers changed; missing {missing}. Found headers: {list(table.columns)}")
 
+    # Build a per-company action map from the original HTML table rows.
+    # Never default an undetected stage to "Apply".
+    root = lxml_html.fromstring(response.content)
+    row_texts = []
+    for tr in root.xpath("//tr"):
+        row_text = clean(" ".join(tr.itertext()))
+        if row_text:
+            row_texts.append((normalize(row_text), row_text.lower()))
+
     today = datetime.now().date()
     records = []
     seen = set()
     pre_apply_skipped = 0
+    unknown_stage_skipped = 0
 
     for _, row in table.iterrows():
         name = clean(row[name_col])
         if not name or name.lower() in {"company name", "nan"}:
             continue
 
-        # Groww labels pre-application rows with a "Pre-apply" action.
-        # Some page versions expose a status column; others expose it as the action column.
-        status_text = clean(row[status_col]).lower() if status_col else ""
-        action_text = clean(row[action_col]).lower() if action_col else ""
-        stage_text = " ".join(part for part in (status_text, action_text) if part)
-        if is_pre_apply(stage_text):
+        normalized_name = normalize(name)
+        matched_text = next((text for row_norm, text in row_texts if normalized_name and normalized_name in row_norm), "")
+        if not matched_text:
+            unknown_stage_skipped += 1
+            continue
+
+        if "pre-apply" in matched_text or "pre apply" in matched_text or "preapply" in normalize(matched_text):
             pre_apply_skipped += 1
             continue
 
-        # Do not classify rows as open if Groww's table no longer exposes an Apply action.
-        if action_col and action_text and "apply" not in action_text:
+        # Include only rows with a real Apply action, not rows where stage cannot be verified.
+        if not re.search(r"\bapply\b", matched_text):
+            unknown_stage_skipped += 1
             continue
 
         close_text = clean(row[date_col])
@@ -129,19 +140,19 @@ def main():
 
     if not records:
         raise RuntimeError(
-            f"Groww table had {len(table)} rows but no eligible IPOs remained after filtering. "
-            f"Skipped {pre_apply_skipped} pre-apply rows. Headers: {list(table.columns)}. "
-            "Existing feed left untouched."
+            f"No IPOs with a verified Apply action found in Groww HTML. Table rows: {len(table)}; "
+            f"pre-apply skipped: {pre_apply_skipped}; unknown stage skipped: {unknown_stage_skipped}. "
+            f"Headers: {list(table.columns)}. Existing feed left untouched."
         )
 
     OUT.write_text(json.dumps({
         "source": URL,
-        "updatedAt": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+        "updatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "ipos": records,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
-        f"Parsed {len(table)} table rows; skipped {pre_apply_skipped} pre-apply rows; "
-        f"wrote {len(records)} eligible open IPOs to {OUT}"
+        f"Parsed {len(table)} table rows; skipped {pre_apply_skipped} pre-apply and "
+        f"{unknown_stage_skipped} unverified-stage rows; wrote {len(records)} verified Apply IPOs."
     )
 
 
