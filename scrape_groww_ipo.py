@@ -156,6 +156,7 @@ def main():
             "companyName": ipo["name"],
             "currentPrice": None,
             "listingDate": ipo["close_date"],
+            "applicationEnd": ipo["close_date"],
             "issuePrice": issue_price,
             "qib": qib,
             "hni": hni,
