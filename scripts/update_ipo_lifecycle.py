@@ -125,7 +125,7 @@ def main():
                         changed += 1
         except (RuntimeError, URLError, ValueError, KeyError) as exc:
             print(f"Deferred {row.get('companyName')}: {exc}", file=sys.stderr)
-        time.sleep(60)
+        time.sleep(5)
     feed["updatedAt"] = datetime.now().astimezone().isoformat(timespec="seconds")
     FEED.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     rows = list(by_name.values())
