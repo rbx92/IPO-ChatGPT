@@ -172,6 +172,34 @@ def main():
     if len(records) != len(apply_ipos):
         raise RuntimeError("Record count validation failed; refusing to write.")
 
+    # Groww's Apply table omits IPOs after applications close. Preserve those
+    # records locally so the lifecycle updater can keep checking for listing data.
+    existing_records = []
+    if OUT.exists():
+        try:
+            existing_records = json.loads(OUT.read_text(encoding="utf-8")).get("ipos", [])
+        except (ValueError, AttributeError):
+            raise RuntimeError("Existing live IPO feed is unreadable; refusing to overwrite it.")
+    current_keys = {record["companyName"].casefold() for record in records}
+    today = datetime.now().date()
+    for old in existing_records:
+        key = clean(old.get("companyName")).casefold()
+        if not key or key in current_keys:
+            continue
+        close_date = None
+        for fmt in ("%d %b %Y", "%d %B %Y", "%Y-%m-%d", "%d-%m-%Y"):
+            try:
+                close_date = datetime.strptime(clean(old.get("applicationEnd") or old.get("closeDate") or old.get("listingDate")), fmt).date()
+                break
+            except ValueError:
+                pass
+        if close_date and close_date < today:
+            old["applicationEnd"] = close_date.strftime("%d %b %Y")
+            old["stage"] = old.get("stage") if old.get("stage") == "Listed" else "Waiting for Listing"
+            old["status"] = old.get("status") if old.get("status") == "Listed" else "Waiting for Listing"
+        records.append(old)
+        current_keys.add(key)
+
     required_fields = {
         "companyName", "currentPrice", "listingDate", "issuePrice", "qib",
         "hni", "retail", "total", "listingGain", "currentGain", "stockType",

@@ -1,0 +1,39 @@
+name: IPO lifecycle transition
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 11 * * 1-5" # 17:07 IST, weekdays
+  push:
+    paths:
+      - "scripts/update_ipo_lifecycle.py"
+      - "scripts/test_update_ipo_lifecycle.py"
+      - ".github/workflows/ipo-lifecycle.yml"
+permissions:
+  contents: write
+concurrency:
+  group: ipo-lifecycle
+  cancel-in-progress: false
+jobs:
+  transition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run lifecycle and price updater tests
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Transition closed IPOs using Screener history
+        run: python scripts/update_ipo_lifecycle.py
+      - name: Commit lifecycle data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add live-ipo-data.json ipos.json data.js
+          if git diff --cached --quiet; then
+            echo "No lifecycle changes."
+          else
+            git commit -m "chore: advance IPO lifecycle from Screener data"
+            git push
+          fi
