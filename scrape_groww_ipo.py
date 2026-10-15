@@ -19,7 +19,7 @@ HEADERS = {
 def clean(value):
     if pd.isna(value):
         return ""
-    return re.sub(r"\\s+", " ", str(value)).strip()
+    return re.sub(r"\s+", " ", str(value)).strip()
 
 
 def valid(value):
@@ -28,7 +28,7 @@ def valid(value):
 
 
 def issue_price(value):
-    numbers = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
+    numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
     return float(numbers[-1]) if numbers else None
 
 
@@ -122,22 +122,34 @@ def main():
             continue
 
         action = clean(row[action_col]).lower()
-        if re.search(r"\\bpre[ -]?apply\\b", action):
-            pre_apply_skipped += 1
-            continue
-        if not re.search(r"\\bapply\\b", action):
+        open_text = clean(row[ipo_cols["open"]])
+        close_text = clean(row[ipo_cols["close"]])
+
+        # The table is specifically Groww's "Open IPOs" section. Sometimes
+        # pandas omits the action button column, so use the published open/close
+        # dates as a fallback only within this section.
+        try:
+            open_date = datetime.strptime(open_text, "%d %b %Y").date()
+            close_date = datetime.strptime(close_text, "%d %b %Y").date()
+        except ValueError:
             unknown_stage_skipped += 1
             continue
 
-        open_text = clean(row[ipo_cols["open"]])
-        close_text = clean(row[ipo_cols["close"]])
-        try:
-            close_date = datetime.strptime(close_text, "%d %b %Y").date()
-            if close_date < today:
-                expired_skipped += 1
-                continue
-        except ValueError:
-            # A row without a parseable close date is not safe to publish.
+        if close_date < today:
+            expired_skipped += 1
+            continue
+
+        if re.search(r"\bpre[ -]?apply\b", action):
+            pre_apply_skipped += 1
+            continue
+        if re.search(r"\bapply\b", action):
+            stage = "Apply"
+        elif open_date > today and close_date >= today:
+            pre_apply_skipped += 1
+            continue
+        elif open_date <= today <= close_date:
+            stage = "Apply"
+        else:
             unknown_stage_skipped += 1
             continue
 
@@ -163,7 +175,7 @@ def main():
             "stockType": "SME" if "sme" in kind else "Mainboard",
             "source": "Groww",
             "status": "Open",
-            "stage": "Apply",
+            "stage": stage,
         })
 
     if not records:
