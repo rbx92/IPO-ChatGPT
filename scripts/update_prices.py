@@ -22,6 +22,33 @@ BASE = "https://www.screener.in"
 USER_AGENT = "IPO-Lens-price-refresh/1.0"
 TIMEOUT = 20
 
+# Current gain is deliberately not part of eligibility because it changes daily.
+FINANCIAL_NAME = re.compile(
+    r"\b(?:bank|banks|banking|nbfc|finance|financial|finserv|fintech|microfinance|"
+    r"insurance|insurer|securities|stockbrok\w*|brokerage|broking|asset management|"
+    r"mutual funds?|capital markets|wealth management|investment services|"
+    r"housing finance|credit|lending)\b", re.I)
+PHARMA_NAME = re.compile(
+    r"\b(?:pharma|pharmaceuticals?|biotech|biotechnology|biopharma|drug|"
+    r"lifesciences|life sciences)\b", re.I)
+
+def multiple_value(value):
+    match = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*x?\s*", str(value or ""), re.I)
+    return float(match.group(1)) if match else None
+
+def percent_value(value):
+    match = re.fullmatch(r"\s*(-?\d+(?:\.\d+)?)\s*%?\s*", str(value or ""))
+    return float(match.group(1)) if match else None
+
+def qualifies(row):
+    qib = multiple_value(row.get("qib"))
+    listing_gain = percent_value(row.get("listingGain"))
+    name = str(row.get("companyName") or "")
+    return (qib is not None and qib >= 50
+            and listing_gain is not None and listing_gain >= 15
+            and not FINANCIAL_NAME.search(name)
+            and not PHARMA_NAME.search(name))
+
 def normalized_name(value: str) -> str:
     value = value.casefold().replace("&", " and ")
     words = re.sub(r"[^a-z0-9]+", " ", value).split()
@@ -111,8 +138,12 @@ def main():
     if args.start < 0 or args.limit < 0 or args.delay < 1 or args.batch_size < 1: ap.error("start/limit must be >=0, batch-size >=1 and delay >=1 second")
     rows = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     if not isinstance(rows, list): raise SystemExit("ipos.json must contain a JSON list")
-    if rows and args.start >= len(rows): ap.error(f"start must be less than {len(rows)}")
-    selected = rows[args.start:args.start + args.limit] if args.limit else rows[args.start:]
+    eligible = [(index, row) for index, row in enumerate(rows) if qualifies(row)]
+    if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
+    if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
+    selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]
+    print("Hard filters: QIB >= 50x; listing gain >= 15%; valid values; excludes financial-sector and pharma names.", flush=True)
+    print(f"Eligible IPOs: {len(eligible)} of {len(rows)} raw records. Current gain is not used as a filter.", flush=True)
     paths = json.loads(MAP_PATH.read_text(encoding="utf-8")) if MAP_PATH.exists() else {}
     unmatched = 0
     updated = 0
@@ -125,9 +156,10 @@ def main():
 
     for offset in range(0, len(selected), args.batch_size):
         batch = selected[offset:offset + args.batch_size]
-        print(f"\nBatch {offset // args.batch_size + 1}: rows {args.start + offset + 1}-{args.start + offset + len(batch)} of {len(rows)}", flush=True)
+        print(f"\nBatch {offset // args.batch_size + 1}: eligible IPOs {args.start + offset + 1}-{args.start + offset + len(batch)} of {len(selected)} selected ({len(eligible)} eligible total)", flush=True)
         try:
-            for row_index, row in enumerate(batch, start=args.start + offset + 1):
+            for original_index, row in batch:
+                row_index = original_index + 1
                 name = str(row.get("companyName", "")).strip()
                 path = paths.get(name)
                 if not path:
@@ -161,9 +193,9 @@ def main():
             print(f"Saved batch. Cumulative prices updated: {updated}; unmatched: {unmatched}.", flush=True)
 
     if args.dry_run:
-        print(f"DRY RUN: {len(selected)} rows checked; {updated} prices parsed; {unmatched} unmatched. No files written.")
+        print(f"DRY RUN: {len(selected)} qualifying IPOs checked; {updated} prices parsed; {unmatched} unmatched. No files written.")
     else:
-        print(f"UPDATE COMPLETE: {updated} prices updated; {unmatched} unmatched. CMP rounded to whole rupees.")
+        print(f"UPDATE COMPLETE: {updated} qualifying IPO prices updated; {unmatched} unmatched. Non-qualifying records were preserved. CMP rounded to whole rupees.")
     return 0
 if __name__ == "__main__":
     raise SystemExit(main())
