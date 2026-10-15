@@ -97,10 +97,11 @@ def main():
         })
 
     if not records:
-        raise RuntimeError(
-            "Groww subscription page did not expose any verified Apply rows. "
-            "Existing live-ipo-data.json was left unchanged."
+        print(
+            "WARNING: Groww did not expose verified Apply rows. "
+            "Keeping the existing live-ipo-data.json unchanged."
         )
+        return
 
     OUT.write_text(json.dumps({
         "source": URL,
