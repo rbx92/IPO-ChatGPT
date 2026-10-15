@@ -35,6 +35,18 @@ jobs:
             echo "No lifecycle changes."
           else
             git commit -m "chore: advance IPO lifecycle from Screener data"
-            git pull --rebase origin main
+            if ! git pull --rebase origin main; then
+              echo "Concurrent feed update detected; recomputing lifecycle against latest main."
+              git rebase --abort || true
+              git fetch origin main
+              git reset --hard origin/main
+              python scripts/update_ipo_lifecycle.py
+              git add live-ipo-data.json ipos.json data.js
+              if git diff --cached --quiet; then
+                echo "No lifecycle changes after refresh."
+                exit 0
+              fi
+              git commit -m "chore: advance IPO lifecycle from latest feed"
+            fi
             git push
           fi
