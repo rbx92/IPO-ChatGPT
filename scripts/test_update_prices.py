@@ -16,6 +16,14 @@ class PriceUpdaterTests(unittest.TestCase):
         parser = module.CurrentPriceParser()
         parser.feed(html)
         self.assertEqual(parser.prices, [1167.0])
+    def test_qualifying_filters(self):
+        self.assertTrue(module.qualifies({"companyName": "Example Manufacturing", "qib": "50.0x", "listingGain": "15.0%", "currentGain": "-20%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Manufacturing", "qib": "-", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Manufacturing", "qib": "49.9x", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Manufacturing", "qib": "80x", "listingGain": "14.9%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Bank", "qib": "80x", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Biotech", "qib": "80x", "listingGain": "90%"}))
+
     def test_whole_rupee_gain(self):
         self.assertEqual(f"{((79 - 67) / 67 * 100):.1f}%", "17.9%")
 
