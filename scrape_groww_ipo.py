@@ -92,9 +92,9 @@ def main():
         for node in candidates:
             text = clean(" ".join(node.itertext())).lower()
             normalized_text = normalize(text)
-            if re.search(r"\\bpre[ -]?apply\\b", text) or "preapply" in normalized_text:
+            if re.search(r"\bpre[ -]?apply\b", text) or "preapply" in normalized_text:
                 return "pre-apply"
-            if re.search(r"\\bapply\\b", text):
+            if re.search(r"\bapply\b", text):
                 return "apply"
         return "unknown"
 
