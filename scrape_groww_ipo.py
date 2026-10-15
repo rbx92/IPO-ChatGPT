@@ -6,16 +6,20 @@ from pathlib import Path
 
 import pandas as pd
 import requests
-from lxml import html as lxml_html
 
-URL = "https://groww.in/ipo/subscription"
+IPO_URL = "https://groww.in/ipo"
+SUBSCRIPTION_URL = "https://groww.in/ipo/subscription"
 OUT = Path("live-ipo-data.json")
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36",
+    "Accept-Language": "en-IN,en;q=0.9",
+}
 
 
 def clean(value):
     if pd.isna(value):
         return ""
-    return re.sub(r"\s+", " ", str(value)).strip()
+    return re.sub(r"\\s+", " ", str(value)).strip()
 
 
 def valid(value):
@@ -24,7 +28,7 @@ def valid(value):
 
 
 def issue_price(value):
-    numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
+    numbers = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
     return float(numbers[-1]) if numbers else None
 
 
@@ -32,140 +36,154 @@ def normalize(value):
     return re.sub(r"[^a-z0-9]", "", clean(value).lower())
 
 
-def main():
-    response = requests.get(
-        URL,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36",
-            "Accept-Language": "en-IN,en;q=0.9",
-        },
-        timeout=40,
-    )
+def get_tables(url):
+    response = requests.get(url, headers=HEADERS, timeout=40)
     response.raise_for_status()
-
-    # pandas extracts the subscription data; lxml preserves action labels that
-    # pandas may drop from cells (for example, "Apply" and "Pre-apply").
     tables = pd.read_html(StringIO(response.text))
     if not tables:
-        raise RuntimeError(f"No HTML tables found on Groww page ({len(response.text)} bytes)")
+        raise RuntimeError(f"No HTML tables found at {url} ({len(response.text)} bytes)")
+    return tables
 
-    table = max(tables, key=len).copy()
-    table.columns = [clean(c).lower() for c in table.columns]
 
-    def column(*candidates):
-        for col in table.columns:
-            if re.sub(r"[^a-z]", "", col) in candidates:
-                return col
-        return None
+def column_for(table, *candidates):
+    for col in table.columns:
+        if re.sub(r"[^a-z]", "", clean(col).lower()) in candidates:
+            return col
+    return None
 
-    name_col = column("companyname", "name")
-    type_col = column("type", "ipotype")
-    date_col = column("closedate", "closingdate")
-    price_col = column("issueprice", "priceband")
-    qib_col = column("qib")
-    nii_col = column("nii", "hni")
-    retail_col = column("retail", "rii")
-    total_col = column("total", "totalsubscription")
 
-    required = {"Company Name": name_col, "Close Date": date_col, "QIB": qib_col, "NII": nii_col, "Retail": retail_col, "Total": total_col}
-    missing = [label for label, col in required.items() if col is None]
-    if missing:
-        raise RuntimeError(f"Groww table headers changed; missing {missing}. Found headers: {list(table.columns)}")
-
-    # Groww may render Apply / Pre-apply outside the table row. Inspect the
-    # smallest company-specific DOM containers; never infer stage from dates alone.
-    root = lxml_html.fromstring(response.content)
-
-    def company_stage(name):
-        needle = normalize(name)
-        candidates = root.xpath(
-            "//*[self::tr or self::li or self::article or self::div or self::section]"
-            "[contains(translate(normalize-space(string(.)), "
-            "'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), $name)]",
-            name=name.lower(),
+def main():
+    # The /ipo dashboard carries the authoritative Apply / Pre-apply action.
+    # The subscription page carries QIB/NII/Retail/Total figures. Do not try to
+    # infer application stage from subscription rows or dates.
+    ipo_tables = get_tables(IPO_URL)
+    ipo_table = None
+    ipo_cols = None
+    for candidate in ipo_tables:
+        cols = {
+            "name": column_for(candidate, "companyname", "name"),
+            "type": column_for(candidate, "type", "ipotype"),
+            "open": column_for(candidate, "opendate", "openingdate"),
+            "close": column_for(candidate, "closedate", "closingdate"),
+            "price": column_for(candidate, "issueprice", "priceband"),
+        }
+        if all(cols.values()) and len(candidate.columns) >= 6:
+            # The Open IPOs table has an extra final action column.
+            ipo_table, ipo_cols = candidate.copy(), cols
+            break
+    if ipo_table is None:
+        raise RuntimeError(
+            "Could not identify Groww's Open IPOs table with company, type, open date, "
+            f"close date and issue price columns. Found table headers: "
+            f"{[list(t.columns) for t in ipo_tables]}"
         )
-        candidates = [
-            node for node in candidates
-            if needle and needle in normalize(" ".join(node.itertext()))
-        ]
-        candidates.sort(key=lambda node: len(clean(" ".join(node.itertext()))))
-        for node in candidates:
-            text = clean(" ".join(node.itertext())).lower()
-            normalized_text = normalize(text)
-            if re.search(r"\bpre[ -]?apply\b", text) or "preapply" in normalized_text:
-                return "pre-apply"
-            if re.search(r"\bapply\b", text):
-                return "apply"
-        return "unknown"
+
+    # The action is the table cell after issue price (usually the final column).
+    action_col = ipo_table.columns[-1]
+    subscription_tables = get_tables(SUBSCRIPTION_URL)
+    sub_table = None
+    sub_cols = None
+    for candidate in subscription_tables:
+        cols = {
+            "name": column_for(candidate, "companyname", "name"),
+            "type": column_for(candidate, "type", "ipotype"),
+            "close": column_for(candidate, "closedate", "closingdate"),
+            "price": column_for(candidate, "issueprice", "priceband"),
+            "qib": column_for(candidate, "qib"),
+            "nii": column_for(candidate, "nii", "hni"),
+            "retail": column_for(candidate, "retail", "rii"),
+            "total": column_for(candidate, "total", "totalsubscription"),
+        }
+        if all(cols[k] for k in ("name", "qib", "nii", "retail", "total")):
+            sub_table, sub_cols = candidate.copy(), cols
+            break
+    if sub_table is None:
+        raise RuntimeError(
+            "Could not identify Groww's subscription table with QIB/NII/Retail/Total. "
+            f"Found table headers: {[list(t.columns) for t in subscription_tables]}"
+        )
+
+    subscriptions = {}
+    for _, row in sub_table.iterrows():
+        name = clean(row[sub_cols["name"]])
+        if name:
+            subscriptions[normalize(name)] = row
 
     today = datetime.now().date()
     records = []
     seen = set()
     pre_apply_skipped = 0
     unknown_stage_skipped = 0
+    expired_skipped = 0
 
-    for _, row in table.iterrows():
-        name = clean(row[name_col])
+    for _, row in ipo_table.iterrows():
+        name = clean(row[ipo_cols["name"]])
         if not name or name.lower() in {"company name", "nan"}:
             continue
 
-        stage = company_stage(name)
-        if stage == "pre-apply":
+        action = clean(row[action_col]).lower()
+        if re.search(r"\\bpre[ -]?apply\\b", action):
             pre_apply_skipped += 1
             continue
-
-        # Include only a company-specific Apply action; unknown stages remain
-        # excluded so upcoming/closed IPOs are never mislabeled as open.
-        if stage != "apply":
+        if not re.search(r"\\bapply\\b", action):
             unknown_stage_skipped += 1
             continue
 
-        close_text = clean(row[date_col])
+        open_text = clean(row[ipo_cols["open"]])
+        close_text = clean(row[ipo_cols["close"]])
         try:
             close_date = datetime.strptime(close_text, "%d %b %Y").date()
             if close_date < today:
+                expired_skipped += 1
                 continue
         except ValueError:
-            pass
+            # A row without a parseable close date is not safe to publish.
+            unknown_stage_skipped += 1
+            continue
 
-        key = name.casefold()
+        key = normalize(name)
         if key in seen:
             continue
         seen.add(key)
 
-        kind = clean(row[type_col]).lower() if type_col else ""
+        sub_row = subscriptions.get(key)
+        kind = clean(row[ipo_cols["type"]]).lower()
+        price = row[ipo_cols["price"]]
         records.append({
             "companyName": name,
             "currentPrice": None,
             "listingDate": close_text or "Date unavailable",
-            "issuePrice": issue_price(row[price_col]) if price_col else None,
-            "qib": valid(row[qib_col]),
-            "hni": valid(row[nii_col]),
-            "retail": valid(row[retail_col]),
-            "total": valid(row[total_col]),
+            "issuePrice": issue_price(price),
+            "qib": valid(sub_row[sub_cols["qib"]]) if sub_row is not None else "—",
+            "hni": valid(sub_row[sub_cols["nii"]]) if sub_row is not None else "—",
+            "retail": valid(sub_row[sub_cols["retail"]]) if sub_row is not None else "—",
+            "total": valid(sub_row[sub_cols["total"]]) if sub_row is not None else "—",
             "listingGain": None,
             "currentGain": None,
             "stockType": "SME" if "sme" in kind else "Mainboard",
             "source": "Groww",
-            "status": "Open / Upcoming",
+            "status": "Open",
             "stage": "Apply",
         })
 
     if not records:
         raise RuntimeError(
-            f"No IPOs with a company-specific Apply action found in Groww HTML. Table rows: {len(table)}; "
-            f"pre-apply skipped: {pre_apply_skipped}; unknown stage skipped: {unknown_stage_skipped}. "
-            f"Headers: {list(table.columns)}. Existing feed left untouched."
+            "No eligible IPOs with a verified Apply action found on Groww's IPO dashboard. "
+            f"Open-table rows: {len(ipo_table)}; pre-apply skipped: {pre_apply_skipped}; "
+            f"unknown stage skipped: {unknown_stage_skipped}; expired skipped: {expired_skipped}. "
+            "Existing feed left untouched."
         )
 
     OUT.write_text(json.dumps({
-        "source": URL,
+        "source": IPO_URL,
+        "subscriptionSource": SUBSCRIPTION_URL,
         "updatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "ipos": records,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
-        f"Parsed {len(table)} table rows; skipped {pre_apply_skipped} pre-apply and "
-        f"{unknown_stage_skipped} unverified-stage rows; wrote {len(records)} verified Apply IPOs."
+        f"Groww IPO dashboard rows: {len(ipo_table)}; skipped {pre_apply_skipped} pre-apply, "
+        f"{unknown_stage_skipped} unknown-stage and {expired_skipped} expired rows; "
+        f"wrote {len(records)} verified Apply IPOs."
     )
 
 
