@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: ipo-lifecycle
+  group: ipo-data-writers
   cancel-in-progress: false
 jobs:
   transition:
@@ -35,5 +35,6 @@ jobs:
             echo "No lifecycle changes."
           else
             git commit -m "chore: advance IPO lifecycle from Screener data"
+            git pull --rebase origin main
             git push
           fi
