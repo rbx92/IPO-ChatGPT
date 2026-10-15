@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-15T11:56:05+00:00",
+  "updatedAt": "2026-10-15T11:56:30+00:00",
   "ipos": [
     {
       "companyName": "Fusion CX",
       "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": null,
       "issuePrice": 289.0,
       "qib": "0.05x",
       "hni": "1.45x",
@@ -17,12 +17,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "16 Oct 2026"
     },
     {
       "companyName": "Zetwerk",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "issuePrice": 151.0,
       "qib": "0.30x",
       "hni": "0.09x",
@@ -33,12 +34,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "19 Oct 2026"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "issuePrice": 344.0,
       "qib": "0.37x",
       "hni": "0.20x",
@@ -49,12 +51,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "19 Oct 2026"
     },
     {
       "companyName": "Tonbo Imaging",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "issuePrice": 700.0,
       "qib": "3.92x",
       "hni": "5.93x",
@@ -65,12 +68,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "19 Oct 2026"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "issuePrice": 586.0,
       "qib": "0.08x",
       "hni": "0.76x",
@@ -81,12 +85,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "19 Oct 2026"
     },
     {
       "companyName": "Ravita Engineering Services",
       "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": null,
       "issuePrice": 112.0,
       "qib": "1.33x",
       "hni": "2.12x",
@@ -97,12 +102,13 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "16 Oct 2026"
     },
     {
       "companyName": "Shellz India",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "issuePrice": 179.0,
       "qib": "0.00x",
       "hni": "1.18x",
@@ -113,12 +119,13 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "19 Oct 2026"
     },
     {
       "companyName": "HD Fire Protect",
       "currentPrice": null,
-      "listingDate": "15 Oct 2026",
+      "listingDate": null,
       "issuePrice": 271.0,
       "qib": "13.03x",
       "hni": "126.93x",
@@ -129,12 +136,13 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "15 Oct 2026"
     },
     {
       "companyName": "Vaibhav Vyapar",
       "currentPrice": null,
-      "listingDate": "15 Oct 2026",
+      "listingDate": null,
       "issuePrice": 54.0,
       "qib": "1.09x",
       "hni": "2.16x",
@@ -145,7 +153,8 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "applicationEnd": "15 Oct 2026"
     }
   ]
 }
