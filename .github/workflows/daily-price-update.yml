@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: daily-ipo-cmp-update
+  group: ipo-data-writers
   cancel-in-progress: false
 jobs:
   update-cmp:
@@ -35,6 +35,7 @@ jobs:
             echo "No changed files to commit."
           else
             git commit -m "chore: refresh IPO CMP data"
+            git pull --rebase origin main
             git push
           fi
       - name: Report updater status
