@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-15T12:01:14+00:00",
+  "updatedAt": "2026-10-15T12:01:35+00:00",
   "ipos": [
     {
       "companyName": "Fusion CX",
       "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "16 Oct 2026",
       "issuePrice": 289.0,
       "qib": "0.05x",
@@ -23,7 +23,7 @@
     {
       "companyName": "Zetwerk",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 151.0,
       "qib": "0.30x",
@@ -40,7 +40,7 @@
     {
       "companyName": "Sahajanand Medical Technologies",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 344.0,
       "qib": "0.00x",
@@ -57,7 +57,7 @@
     {
       "companyName": "Tonbo Imaging",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 700.0,
       "qib": "3.89x",
@@ -74,7 +74,7 @@
     {
       "companyName": "Bonfiglioli Transmissions",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 586.0,
       "qib": "0.08x",
@@ -91,7 +91,7 @@
     {
       "companyName": "Ravita Engineering Services",
       "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "16 Oct 2026",
       "issuePrice": 112.0,
       "qib": "1.33x",
@@ -108,7 +108,7 @@
     {
       "companyName": "Shellz India",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 179.0,
       "qib": "0.00x",
