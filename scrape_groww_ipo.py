@@ -72,14 +72,31 @@ def main():
     if missing:
         raise RuntimeError(f"Groww table headers changed; missing {missing}. Found headers: {list(table.columns)}")
 
-    # Build a per-company action map from the original HTML table rows.
-    # Never default an undetected stage to "Apply".
+    # Groww may render Apply / Pre-apply outside the table row. Inspect the
+    # smallest company-specific DOM containers; never infer stage from dates alone.
     root = lxml_html.fromstring(response.content)
-    row_texts = []
-    for tr in root.xpath("//tr"):
-        row_text = clean(" ".join(tr.itertext()))
-        if row_text:
-            row_texts.append((normalize(row_text), row_text.lower()))
+
+    def company_stage(name):
+        needle = normalize(name)
+        candidates = root.xpath(
+            "//*[self::tr or self::li or self::article or self::div or self::section]"
+            "[contains(translate(normalize-space(string(.)), "
+            "'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), $name)]",
+            name=name.lower(),
+        )
+        candidates = [
+            node for node in candidates
+            if needle and needle in normalize(" ".join(node.itertext()))
+        ]
+        candidates.sort(key=lambda node: len(clean(" ".join(node.itertext()))))
+        for node in candidates:
+            text = clean(" ".join(node.itertext())).lower()
+            normalized_text = normalize(text)
+            if re.search(r"\\bpre[ -]?apply\\b", text) or "preapply" in normalized_text:
+                return "pre-apply"
+            if re.search(r"\\bapply\\b", text):
+                return "apply"
+        return "unknown"
 
     today = datetime.now().date()
     records = []
@@ -92,18 +109,14 @@ def main():
         if not name or name.lower() in {"company name", "nan"}:
             continue
 
-        normalized_name = normalize(name)
-        matched_text = next((text for row_norm, text in row_texts if normalized_name and normalized_name in row_norm), "")
-        if not matched_text:
-            unknown_stage_skipped += 1
-            continue
-
-        if "pre-apply" in matched_text or "pre apply" in matched_text or "preapply" in normalize(matched_text):
+        stage = company_stage(name)
+        if stage == "pre-apply":
             pre_apply_skipped += 1
             continue
 
-        # Include only rows with a real Apply action, not rows where stage cannot be verified.
-        if not re.search(r"\bapply\b", matched_text):
+        # Include only a company-specific Apply action; unknown stages remain
+        # excluded so upcoming/closed IPOs are never mislabeled as open.
+        if stage != "apply":
             unknown_stage_skipped += 1
             continue
 
@@ -140,7 +153,7 @@ def main():
 
     if not records:
         raise RuntimeError(
-            f"No IPOs with a verified Apply action found in Groww HTML. Table rows: {len(table)}; "
+            f"No IPOs with a company-specific Apply action found in Groww HTML. Table rows: {len(table)}; "
             f"pre-apply skipped: {pre_apply_skipped}; unknown stage skipped: {unknown_stage_skipped}. "
             f"Headers: {list(table.columns)}. Existing feed left untouched."
         )
