@@ -17,7 +17,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 def clean(value):
     if pd.isna(value):
         return ""
-    return re.sub(r"\\s+", " ", str(value)).strip()
+    return re.sub(r"\s+", " ", str(value)).strip()
 
 
 def normalized_name(value):
@@ -25,7 +25,7 @@ def normalized_name(value):
 
 
 def number(value):
-    found = re.findall(r"\\d[\\d,]*(?:\\.\\d+)?", clean(value).replace(",", ""))
+    found = re.findall(r"\d[\d,]*(?:\.\d+)?", clean(value).replace(",", ""))
     return float(found[-1]) if found else None
 
 
