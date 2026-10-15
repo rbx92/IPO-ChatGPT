@@ -138,12 +138,15 @@ def main():
     if args.start < 0 or args.limit < 0 or args.delay < 1 or args.batch_size < 1: ap.error("start/limit must be >=0, batch-size >=1 and delay >=1 second")
     rows = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     if not isinstance(rows, list): raise SystemExit("ipos.json must contain a JSON list")
-    eligible = [(index, row) for index, row in enumerate(rows) if qualifies(row)]
+    raw_count = len(rows)
+    eligible_rows = [row for row in rows if qualifies(row)]
+    rows = eligible_rows
+    eligible = list(enumerate(rows))
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
     selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]
     print("Hard filters: QIB >= 50x; listing gain >= 15%; valid values; excludes financial-sector and pharma names.", flush=True)
-    print(f"Eligible IPOs: {len(eligible)} of {len(rows)} raw records. Current gain is not used as a filter.", flush=True)
+    print(f"Eligible IPOs retained: {len(eligible)} of {raw_count} raw records. Non-qualifying records will be removed. Current gain is not used as a filter.", flush=True)
     paths = json.loads(MAP_PATH.read_text(encoding="utf-8")) if MAP_PATH.exists() else {}
     unmatched = 0
     updated = 0
@@ -153,6 +156,11 @@ def main():
         DATA_PATH.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
         MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Persist the filtered universe before network work, so rejected IPOs are dropped
+    # even if a later request fails. Dry runs never modify files.
+    if not args.dry_run:
+        save_batch()
 
     for offset in range(0, len(selected), args.batch_size):
         batch = selected[offset:offset + args.batch_size]
