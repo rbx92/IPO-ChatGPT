@@ -47,7 +47,8 @@ def qualifies(row):
     return (qib is not None and qib >= 50
             and listing_gain is not None and listing_gain >= 15
             and not FINANCIAL_NAME.search(name)
-            and not PHARMA_NAME.search(name))
+            and not PHARMA_NAME.search(name)
+            and normalized_name(name) not in EXCLUDED_COMPANIES)
 
 def normalized_name(value: str) -> str:
     value = value.casefold().replace("&", " and ")
@@ -56,6 +57,8 @@ def normalized_name(value: str) -> str:
     while words and words[-1] in suffixes:
         words.pop()
     return " ".join(words)
+
+EXCLUDED_COMPANIES = {"nacdac infrastructure"}
 
 class CurrentPriceParser(HTMLParser):
     def __init__(self):
