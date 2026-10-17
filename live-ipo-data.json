@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-16T23:37:32+00:00",
+  "updatedAt": "2026-10-17T04:29:49+00:00",
   "ipos": [
     {
       "companyName": "Zetwerk",
@@ -102,8 +102,8 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Ravita Engineering Services",
@@ -119,8 +119,8 @@
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "HD Fire Protect",
