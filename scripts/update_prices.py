@@ -58,6 +58,10 @@ def normalized_name(value: str) -> str:
         words.pop()
     return " ".join(words)
 
+def select_eligible_rows(rows):
+    """Return eligible rows with their original indexes without filtering/mutating rows."""
+    return [(index, row) for index, row in enumerate(rows) if qualifies(row)]
+
 EXCLUDED_COMPANIES = {"nacdac infrastructure"}
 
 class CurrentPriceParser(HTMLParser):
@@ -142,14 +146,18 @@ def main():
     rows = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     if not isinstance(rows, list): raise SystemExit("ipos.json must contain a JSON list")
     raw_count = len(rows)
-    eligible_rows = [row for row in rows if qualifies(row)]
-    rows = eligible_rows
-    eligible = list(enumerate(rows))
+    # Keep the full source dataset intact; eligibility controls which rows are updated,
+    # not which rows survive in ipos.json or data.js.
+    eligible = select_eligible_rows(rows)
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
     selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]
     print("Hard filters: QIB >= 50x; listing gain >= 15%; valid values; excludes financial-sector and pharma names.", flush=True)
-    print(f"Eligible IPOs retained: {len(eligible)} of {raw_count} raw records. Non-qualifying records will be removed. Current gain is not used as a filter.", flush=True)
+    print(
+        f"Eligible IPOs selected for price updates: {len(eligible)} of {raw_count} records. "
+        f"All IPO records will be preserved. Current gain is not used as a filter.",
+        flush=True,
+    )
     paths = json.loads(MAP_PATH.read_text(encoding="utf-8")) if MAP_PATH.exists() else {}
     unmatched = 0
     updated = 0
@@ -160,8 +168,7 @@ def main():
         DATA_JS_PATH.write_text("window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
         MAP_PATH.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    # Persist the filtered universe before network work, so rejected IPOs are dropped
-    # even if a later request fails. Dry runs never modify files.
+    # Persist the unchanged full dataset before network work. Dry runs never modify files.
     if not args.dry_run:
         save_batch()
 
