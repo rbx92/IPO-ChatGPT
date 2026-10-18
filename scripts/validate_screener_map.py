@@ -90,15 +90,10 @@ class HeadingParser(HTMLParser):
 def identity_status(company, heading):
     if not heading:
         return "UNKNOWN"
-    target = normalized(company)
-    candidates = [normalized(heading)] + [normalized(alias) for alias in ALIASES.get(company, [])]
-    # Some Screener h1 blocks repeat the company name; the parser deduplicates headings.
-    if target in candidates or normalized(heading) in [normalized(alias) for alias in ALIASES.get(company, [])]:
-        return "PASS"
-    # Handle known IPO display-name vs registered-name differences without fuzzy matching.
-    if normalized(heading) in [normalized(alias) for alias in ALIASES.get(company, [])]:
-        return "PASS"
-    return "REVIEW"
+    heading_name = normalized(heading)
+    known_aliases = {normalized(alias) for alias in ALIASES.get(company, [])}
+    # Exact normalized names and explicitly reviewed registered-name aliases only.
+    return "PASS" if heading_name == normalized(company) or heading_name in known_aliases else "REVIEW"
 
 def main():
     ap = argparse.ArgumentParser()
