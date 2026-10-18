@@ -1,6 +1,6 @@
 # IPO Lens Dashboard Inclusion Rules
 
-These are the standing, hard-coded inclusion and exclusion rules for IPO Lens. Apply them to the existing IPO dataset and every newly discovered/live IPO before displaying it on the dashboard.
+These are the standing, hard-coded inclusion and exclusion rules for IPO Lens. Apply them to the existing IPO dataset and every newly discovered/live IPO before displaying it on the dashboard. Keep the full historical source records in `ipos.json` and `data.js`; filter at display/update time rather than deleting historical records.
 
 ## Inclusion criteria
 
@@ -37,11 +37,18 @@ Exclude bank-related businesses, NBFCs, brokers/broking businesses, asset manage
 
 Apply these sector exclusions in the dashboard's data-filtering path before calculating metrics or rendering IPO cards. Apply the same rules to all newly added/live IPOs so excluded sectors do not reappear.
 
+## Lifecycle-stage handling
+
+- **Listed IPOs:** require valid QIB subscription >= 50x, valid listing gain >= 15%, and no excluded-sector match.
+- **Open IPOs:** require valid QIB subscription >= 50x and no excluded-sector match; do not require listing gain before listing. Exclude Pre-Apply records.
+- **Waiting for Listing:** require valid QIB subscription >= 50x and no excluded-sector match; listing gain is not available yet. Once a valid listing gain exists, the listed-IPO criteria apply.
+- Apply the same rules in the browser dashboard and Python CMP updater. Do not use the current gain as an eligibility criterion.
+
 ## Other dashboard behavior
 
 - Current gain is displayed as a percentage but is not an inclusion filter.
 - Display Listing Gain and Current Gain as percentages.
-- Keep an IPO only if it passes QIB >= 50x, listing gain >= 15%, and none of the excluded-sector rules.
+- Keep a listed IPO only if it passes QIB >= 50x, listing gain >= 15%, and none of the excluded-sector rules. Apply the lifecycle-stage exceptions above to open and waiting IPOs.
 
 ## Logic
 
