@@ -50,6 +50,7 @@ jobs:
           }
           if (desktop.cards < 1) throw new Error('No IPO cards rendered');
           if (desktop.sliders < 1) throw new Error('No filter sliders rendered');
+          await page.locator('#toggleFilters').click();
           const qibSlider = page.locator('#fQibMin');
           const qibMax = await qibSlider.getAttribute('max');
           await qibSlider.evaluate((el, max) => {
@@ -63,6 +64,7 @@ jobs:
           if (filteredCards < 1 || filteredCards >= desktop.cards) {
             throw new Error('QIB slider did not meaningfully filter cards: ' + JSON.stringify({ before: desktop.cards, after: filteredCards, max: qibMax }));
           }
+          await page.locator('#toggleFilters').click();
           await page.locator('#clearFilters').click();
           await page.waitForFunction(expected => document.querySelectorAll('.ipo').length === expected, desktop.cards, { timeout: 10000 });
           await page.setViewportSize({ width: 390, height: 844 });
