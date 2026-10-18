@@ -20,7 +20,7 @@ class ScreenerMapTests(unittest.TestCase):
         for name, path in self.mapping.items():
             with self.subTest(company=name):
                 self.assertIsInstance(path, str)
-                self.assertRegex(path, r"^/company/[A-Za-z0-9_-]+/(?:consolidated/)?$")
+                self.assertRegex(path, r"^/company/(?:id/)?[A-Za-z0-9_-]+/(?:consolidated/)?$")
 
     def test_mapping_paths_are_unique(self):
         paths = list(self.mapping.values())
