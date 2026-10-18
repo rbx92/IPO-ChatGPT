@@ -624,20 +624,6 @@
     "priceSource": "Screener.in"
   },
   {
-    "companyName": "HyTech Engineers",
-    "sourceUrl": "https://trendlyne.com/ipo/detail/2140/hy-tech-engineers-ltd/",
-    "currentPrice": 89,
-    "listingDate": "01 Sep \\26",
-    "issuePrice": 53,
-    "qib": "255.8x",
-    "hni": "402.3x",
-    "retail": "170.6x",
-    "total": "244.4x",
-    "listingGain": "41.50%",
-    "currentGain": "67.80%",
-    "stockType": "Mainboard"
-  },
-  {
     "companyName": "Augmont Enterprises",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2239/augmont-enterprises-ltd/",
     "currentPrice": 1343,
@@ -1190,20 +1176,6 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-16T14:59+00:00",
     "priceSource": "Screener.in"
-  },
-  {
-    "companyName": "Monarch Surveyors",
-    "sourceUrl": "https://trendlyne.com/ipo/detail/2050/monarch-surveyors-and-engineering-consultants-ltd/",
-    "currentPrice": 239,
-    "listingDate": "29 Jul \\25",
-    "issuePrice": 250,
-    "qib": "94.3x",
-    "hni": "419.4x",
-    "retail": "346.8x",
-    "total": "231.4x",
-    "listingGain": "68.50%",
-    "currentGain": "-4.40%",
-    "stockType": "SME"
   },
   {
     "companyName": "Spunweb Nonwoven",
@@ -2110,20 +2082,6 @@
     "stockType": "SME"
   },
   {
-    "companyName": "Mach Conferences and Events Ltd.",
-    "sourceUrl": "https://trendlyne.com/ipo/detail/1686/mach-conferences-and-events-ltd/",
-    "currentPrice": 212,
-    "listingDate": "11 Sep \\24",
-    "issuePrice": 225,
-    "qib": "146.7x",
-    "hni": "293.0x",
-    "retail": "136.5x",
-    "total": "182.0x",
-    "listingGain": "33.30%",
-    "currentGain": "-5.80%",
-    "stockType": "SME"
-  },
-  {
     "companyName": "Indian Phosphate Ltd.",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1661/indian-phosphate-ltd/",
     "currentPrice": 72.8,
@@ -2382,20 +2340,6 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-16T14:59+00:00",
     "priceSource": "Screener.in"
-  },
-  {
-    "companyName": "V L Infraprojects",
-    "sourceUrl": "https://trendlyne.com/ipo/detail/1620/v-l-infraprojects-ltd/",
-    "currentPrice": 24.1,
-    "listingDate": "30 Jul \\24",
-    "issuePrice": 42,
-    "qib": "107.5x",
-    "hni": "961.0x",
-    "retail": "1114.5x",
-    "total": "588.0x",
-    "listingGain": "90.00%",
-    "currentGain": "-42.70%",
-    "stockType": "SME"
   },
   {
     "companyName": "RNFI Services",
