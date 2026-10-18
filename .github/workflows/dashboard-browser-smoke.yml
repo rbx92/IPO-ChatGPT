@@ -1,0 +1,64 @@
+name: Dashboard browser smoke test
+on:
+  push:
+    paths:
+      - ".github/workflows/dashboard-browser-smoke.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: dashboard-browser-smoke
+  cancel-in-progress: false
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Wait for Pages deployment to settle
+        run: sleep 60
+      - name: Test live dashboard on desktop and mobile
+        run: |
+          node --input-type=module <<'NODE'
+          import { chromium } from 'playwright';
+          const browser = await chromium.launch({ headless: true });
+          const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+          const pageErrors = [];
+          page.on('pageerror', error => pageErrors.push(error.message));
+          const response = await page.goto('https://rbx92.github.io/IPO-ChatGPT/', { waitUntil: 'networkidle', timeout: 60000 });
+          if (!response || !response.ok()) throw new Error('Dashboard HTTP response was not successful: ' + (response?.status() ?? 'no response'));
+          await page.waitForFunction(() => document.querySelectorAll('.ipo').length > 0, { timeout: 30000 });
+          const desktop = await page.evaluate(() => ({
+            title: document.title,
+            headings: [...document.querySelectorAll('h1,h2')].map(el => el.innerText.trim()),
+            cards: document.querySelectorAll('.ipo').length,
+            sliders: document.querySelectorAll('input[type="range"]').length,
+            bodyWidth: document.documentElement.scrollWidth,
+            viewportWidth: window.innerWidth
+          }));
+          for (const label of ['Open IPOs', 'Waiting for Listing', 'Listed IPOs']) {
+            if (!desktop.headings.some(h => h.includes(label))) throw new Error('Missing dashboard section: ' + label);
+          }
+          if (desktop.cards < 1) throw new Error('No IPO cards rendered');
+          if (desktop.sliders < 1) throw new Error('No filter sliders rendered');
+          await page.setViewportSize({ width: 390, height: 844 });
+          await page.waitForTimeout(1000);
+          const mobile = await page.evaluate(() => ({ bodyWidth: document.documentElement.scrollWidth, viewportWidth: window.innerWidth }));
+          if (mobile.bodyWidth > mobile.viewportWidth + 2) throw new Error('Mobile horizontal overflow: ' + JSON.stringify(mobile));
+          if (pageErrors.length) throw new Error('Browser JavaScript errors: ' + pageErrors.join(' | '));
+          await page.screenshot({ path: 'dashboard-smoke.png', fullPage: true });
+          console.log(JSON.stringify({ desktop, mobile, pageErrors }, null, 2));
+          await browser.close();
+          NODE
+      - name: Upload browser screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard-browser-smoke
+          path: dashboard-smoke.png
+          if-no-files-found: warn
