@@ -53,7 +53,7 @@ def is_listed_record(row):
 
 def is_screener_rate_limit(exc):
     """Recognize access denial/throttling so the run stops instead of retrying more names."""
-    return bool(re.search(r"HTTP (?:401|403|429)\\b", str(exc)))
+    return bool(re.search(r"HTTP (?:401|403|429)\b", str(exc)))
 
 def resolve(name):
     found = json.loads(get(f"{BASE}/api/company/search/?q={quote_plus(name)}"))
