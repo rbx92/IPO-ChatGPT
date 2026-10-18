@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      START: ${{ inputs.start || '0' }}
+      START: ${{ github.event_name == 'push' && '3' || inputs.start || '0' }}
       LIMIT: ${{ inputs.limit || '3' }}
     steps:
       - uses: actions/checkout@v4
