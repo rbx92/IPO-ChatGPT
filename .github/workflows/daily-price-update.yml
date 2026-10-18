@@ -3,6 +3,20 @@ on:
   schedule:
     - cron: "45 10 * * 1-5" # 16:15 IST, weekdays
   workflow_dispatch:
+    inputs:
+      start:
+        description: "Zero-based offset among eligible IPOs (use the last completed batch boundary to resume)"
+        required: true
+        default: "0"
+        type: string
+      limit:
+        description: "Number of eligible IPOs to update; 0 means all remaining"
+        required: true
+        default: "0"
+        type: string
+  push:
+    paths:
+      - ".github/workflows/daily-price-update.yml"
 permissions:
   contents: write
 concurrency:
@@ -12,6 +26,9 @@ jobs:
   update-cmp:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    env:
+      START: ${{ github.event_name == 'push' && '0' || inputs.start || '0' }}
+      LIMIT: ${{ github.event_name == 'push' && '0' || inputs.limit || '0' }}
     steps:
       - name: Checkout dashboard data
         uses: actions/checkout@v4
@@ -21,10 +38,10 @@ jobs:
           python-version: "3.12"
       - name: Run offline parser tests
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
-      - name: Update all IPO prices in batches of nine
+      - name: Update eligible IPO prices in resumable batches
         id: updater
         continue-on-error: true
-        run: python scripts/update_prices.py --batch-size 9 --delay 60
+        run: python scripts/update_prices.py --start "$START" --limit "$LIMIT" --batch-size 9 --delay 60
       - name: Commit completed batch updates
         if: always()
         run: |
