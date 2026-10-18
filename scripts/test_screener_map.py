@@ -26,5 +26,13 @@ class ScreenerMapTests(unittest.TestCase):
         paths = list(self.mapping.values())
         self.assertEqual(len(paths), len(set(paths)), "Two IPO names must not silently share one Screener path")
 
+    def test_browser_data_mirror_matches_source_json(self):
+        source = (ROOT / "data.js").read_text(encoding="utf-8").strip()
+        prefix = "window.IPO_DATA = "
+        self.assertTrue(source.startswith(prefix), "data.js must export window.IPO_DATA")
+        self.assertTrue(source.endswith(";"), "data.js export must end with a semicolon")
+        mirrored = json.loads(source[len(prefix):-1])
+        self.assertEqual(mirrored, self.rows, "data.js and ipos.json must remain synchronized")
+
 if __name__ == "__main__":
     unittest.main()
