@@ -1,9 +1,5 @@
 name: Screener mapping validation (read-only)
 on:
-  push:
-    paths:
-      - "scripts/validate_screener_map.py"
-      - ".github/workflows/screener-mapping-validation.yml"
   workflow_dispatch:
 permissions:
   contents: read
