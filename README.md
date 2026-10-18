@@ -19,11 +19,14 @@ The authoritative rules are in `IPO_FILTER_RULES.md`.
 - **Live IPO feed:** Groww subscription data is saved in `live-ipo-data.json`.
 - **Current market price (CMP):** Screener.in mappings are stored in `screener_map.json`.
 - `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly.
-- `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed.
+- `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed on weekdays or when manually dispatched. Code pushes do not trigger live Screener requests.
 - `.github/workflows/daily-price-update.yml` updates prices only for IPOs that pass the hard eligibility rules, while preserving all historical records.
+- `.github/workflows/screener-price-validation.yml` runs a small, read-only CMP dry-run; use a small offset/limit and review logs before any write-enabled refresh.
+- `.github/workflows/screener-mapping-validation.yml` validates the 40 recently added Screener mappings without changing IPO data and uploads a CSV/JSON report. It stops on access denial or throttling.
+- `.github/workflows/dashboard-browser-smoke.yml` checks the live GitHub Pages dashboard on desktop and mobile with a headless browser.
 - `.github/workflows/python-tests.yml` runs the Python test suite.
 
-The price updater uses exact company-name matching and stops safely when Screener denies or throttles requests. It does not bypass access restrictions.
+The price updater uses exact company-name matching, saves completed batches, preserves the full historical dataset, and stops safely when Screener denies or throttles requests. It does not bypass access restrictions. The lifecycle updater also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
 
 ## Local preview
 
