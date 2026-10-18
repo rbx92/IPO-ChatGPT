@@ -50,7 +50,6 @@ jobs:
           }
           if (desktop.cards < 1) throw new Error('No IPO cards rendered');
           if (desktop.sliders < 1) throw new Error('No filter sliders rendered');
-          await page.locator('#toggleFilters').click();
           const qibSlider = page.locator('#fQibMin');
           const qibMax = await qibSlider.getAttribute('max');
           await qibSlider.evaluate((el, max) => {
