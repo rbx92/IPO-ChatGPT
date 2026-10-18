@@ -3,11 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "37 11 * * 1-5" # 17:07 IST, weekdays
-  push:
-    paths:
-      - "scripts/update_ipo_lifecycle.py"
-      - "scripts/test_update_ipo_lifecycle.py"
-      - ".github/workflows/ipo-lifecycle.yml"
 permissions:
   contents: write
 concurrency:
