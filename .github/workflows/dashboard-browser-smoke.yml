@@ -3,6 +3,10 @@ on:
   push:
     paths:
       - ".github/workflows/dashboard-browser-smoke.yml"
+      - "index.html"
+      - "data.js"
+      - "ipos.json"
+      - "live-ipo-data.json"
   workflow_dispatch:
 permissions:
   contents: read
