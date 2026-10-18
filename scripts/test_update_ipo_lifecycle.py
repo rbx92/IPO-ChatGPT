@@ -14,5 +14,16 @@ class LifecycleTests(unittest.TestCase):
     def test_missing_date_is_not_guessed(self):
         self.assertIsNone(module.parse_date("unknown"))
 
+    def test_listed_state_is_preserved_when_price_is_missing(self):
+        self.assertTrue(module.is_listed_record({"stage": "Listed", "listingPrice": None}))
+        self.assertTrue(module.is_listed_record({"status": "Listed", "listingPrice": None}))
+        self.assertTrue(module.is_listed_record({"listingPrice": 123.45}))
+        self.assertFalse(module.is_listed_record({"stage": "Waiting for Listing", "listingPrice": None}))
+
+    def test_screener_rate_limit_stops_following_lookups(self):
+        self.assertTrue(module.is_screener_rate_limit(RuntimeError("Screener denied/throttled request (HTTP 429); stopping safely")))
+        self.assertTrue(module.is_screener_rate_limit(RuntimeError("Screener denied/throttled request (HTTP 403); stopping safely")))
+        self.assertFalse(module.is_screener_rate_limit(RuntimeError("Could not identify Screener chart ID")))
+
 if __name__ == "__main__":
     unittest.main()
