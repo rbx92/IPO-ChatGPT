@@ -45,6 +45,16 @@ def normalized(value):
     while words and words[-1] in {"limited", "ltd", "plc", "pvt", "private", "company", "co"}: words.pop()
     return " ".join(words)
 
+def is_listed_record(row):
+    """A known listed state is monotonic: missing data must never demote it."""
+    return (str(row.get("stage", "")).casefold() == "listed"
+            or str(row.get("status", "")).casefold() == "listed"
+            or row.get("listingPrice") not in (None, "", "-"))
+
+def is_screener_rate_limit(exc):
+    """Recognize access denial/throttling so the run stops instead of retrying more names."""
+    return bool(re.search(r"HTTP (?:401|403|429)\\b", str(exc)))
+
 def resolve(name):
     found = json.loads(get(f"{BASE}/api/company/search/?q={quote_plus(name)}"))
     target = normalized(name)
@@ -84,15 +94,22 @@ def main():
     by_name = {normalized(x.get("companyName")): x for x in history}
     changed = 0
     for row in records:
+        was_listed = is_listed_record(row)
         close_date = parse_date(row.get("applicationEnd") or row.get("closeDate") or row.get("listingDate"))
         if not close_date:
-            row["stage"] = "Apply"
-            row["status"] = "Open"
+            if not was_listed:
+                row["stage"] = "Apply"
+                row["status"] = "Open"
             continue
         row["applicationEnd"] = close_date.strftime("%d %b %Y")
         if today <= close_date:
-            row["stage"], row["status"] = "Apply", "Open"
-            row["listingDate"] = None
+            if not was_listed:
+                row["stage"], row["status"] = "Apply", "Open"
+                row["listingDate"] = None
+            continue
+        # Preserve already-listed records; this transition job only discovers first listing.
+        if was_listed:
+            row["stage"], row["status"] = "Listed", "Listed"
             continue
         row["stage"], row["status"] = "Waiting for Listing", "Waiting for Listing"
         row["listingPrice"] = None
@@ -125,6 +142,9 @@ def main():
                         changed += 1
         except (RuntimeError, URLError, ValueError, KeyError) as exc:
             print(f"Deferred {row.get('companyName')}: {exc}", file=sys.stderr)
+            if is_screener_rate_limit(exc):
+                print("Stopping lifecycle network lookups after Screener denial/throttling; no retries or bypasses.", file=sys.stderr)
+                break
         time.sleep(5)
     feed["updatedAt"] = datetime.now().astimezone().isoformat(timespec="seconds")
     FEED.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
