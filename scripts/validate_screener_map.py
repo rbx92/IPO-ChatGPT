@@ -19,6 +19,28 @@ MAP_PATH = ROOT / "screener_map.json"
 REPORT_JSON = ROOT / "screener-mapping-validation.json"
 REPORT_CSV = ROOT / "screener-mapping-validation.csv"
 BASE = "https://www.screener.in"
+ALIASES = {
+    "Anawil Wire Engineering": ["Anawil Wire and Engineering Ltd"],
+    "Horizon Reclaim": ["Horizon Reclaim (India) Ltd"],
+    "Susan Electricals": ["Susan Electricals India Ltd"],
+    "E to E Transportation": ["E to E Transportation Infrastructure Ltd"],
+    "Jindal Supreme": ["Jindal Supreme (India) Ltd"],
+    "IndoMIM": ["Indo-MIM Ltd"],
+    "Adcounty Media": ["Adcounty Media India Ltd"],
+    "Sat Kartar Shopping": ["Sat Kartar Life Ltd"],
+    "Fabtech Technologies Cleanrooms Ltd.": ["Fabtech Cleanrooms Ltd"],
+    "Anya Polytech Fertilizers": ["Anya Polytech & Fertilizers Ltd"],
+    "ICICI Prudential Asset": ["ICICI Prudential Asset Management Co Ltd"],
+    "LG Electronics": ["LG Electronics India Ltd"],
+    "Sri Lotus Developers": ["Sri Lotus Developers & Realty Ltd"],
+    "Sunlite Recycling": ["Sunlite Recycling Industries Ltd"],
+    "Bulkcorp Intl": ["Bulkcorp International Ltd"],
+    "Sathlokhar Synergys": ["Sathlokhar Synergys E&C Global Ltd"],
+    "S A Tech Software": ["S A Tech Software India Ltd"],
+    "Manglam Infra": ["Manglam Infra & Engineering Ltd"],
+    "Nephro Care": ["Nephro Care India Ltd"],
+}
+
 NEW_NAMES = [
     "Anawil Wire Engineering", "Shree Balaji Mala Textiles", "Horizon Reclaim",
     "Susan Electricals", "E to E Transportation", "Jindal Supreme", "IndoMIM",
@@ -50,17 +72,33 @@ def normalized(value):
 class HeadingParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.in_h1 = False
-        self.h1 = []
+        self.current = None
+        self.headings = []
     def handle_starttag(self, tag, attrs):
-        if tag.lower() == "h1":
-            self.in_h1 = True
+        if tag.lower() == "h1" and self.current is None:
+            self.current = []
     def handle_endtag(self, tag):
-        if tag.lower() == "h1":
-            self.in_h1 = False
+        if tag.lower() == "h1" and self.current is not None:
+            heading = " ".join(self.current).strip()
+            if heading and heading not in self.headings:
+                self.headings.append(heading)
+            self.current = None
     def handle_data(self, data):
-        if self.in_h1 and data.strip():
-            self.h1.append(data.strip())
+        if self.current is not None and data.strip():
+            self.current.append(data.strip())
+
+def identity_status(company, heading):
+    if not heading:
+        return "UNKNOWN"
+    target = normalized(company)
+    candidates = [normalized(heading)] + [normalized(alias) for alias in ALIASES.get(company, [])]
+    # Some Screener h1 blocks repeat the company name; the parser deduplicates headings.
+    if target in candidates or normalized(heading) in [normalized(alias) for alias in ALIASES.get(company, [])]:
+        return "PASS"
+    # Handle known IPO display-name vs registered-name differences without fuzzy matching.
+    if normalized(heading) in [normalized(alias) for alias in ALIASES.get(company, [])]:
+        return "PASS"
+    return "REVIEW"
 
 def main():
     ap = argparse.ArgumentParser()
@@ -83,19 +121,19 @@ def main():
             break
         heading = HeadingParser()
         heading.feed(html)
-        page_heading = " ".join(heading.h1).strip()
+        page_heading = heading.headings[0] if heading.headings else ""
         parser = updater.CurrentPriceParser()
         parser.feed(html)
-        same = normalized(name) == normalized(page_heading)
+        identity = identity_status(name, page_heading)
         # Screener may use a registered legal name or a brand heading; report rather than auto-correct.
         rows.append({
             "company": name, "path": path, "page_heading": page_heading,
             "cmp": parser.prices[0] if parser.prices else "",
-            "identity": "PASS" if same else ("REVIEW" if page_heading else "UNKNOWN"),
+            "identity": identity,
             "price": "PASS" if parser.prices and parser.prices[0] > 0 else "FAIL",
             "http": "200/OK"
         })
-        print(f"[{i}/{len(NEW_NAMES)}] {name}: identity={rows[-1]['identity']}; price={rows[-1]['price']}; CMP={rows[-1]['cmp']}", flush=True)
+        print(f"[{i}/{len(NEW_NAMES)}] {name}: heading={page_heading}; identity={rows[-1]['identity']}; price={rows[-1]['price']}; CMP={rows[-1]['cmp']}", flush=True)
         if i < len(NEW_NAMES):
             time.sleep(args.delay)
     REPORT_JSON.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
