@@ -28,5 +28,17 @@ class PriceUpdaterTests(unittest.TestCase):
     def test_whole_rupee_gain(self):
         self.assertEqual(f"{((79 - 67) / 67 * 100):.1f}%", "17.9%")
 
+    def test_eligible_selection_preserves_all_rows_and_original_indexes(self):
+        rows = [
+            {"companyName": "Eligible Manufacturing A", "qib": "50x", "listingGain": "15%"},
+            {"companyName": "Not Eligible Manufacturing", "qib": "49x", "listingGain": "15%"},
+            {"companyName": "Eligible Manufacturing B", "qib": "60x", "listingGain": "20%"},
+        ]
+        selected = module.select_eligible_rows(rows)
+        self.assertEqual(len(rows), 3)
+        self.assertEqual([index for index, _ in selected], [0, 2])
+        self.assertIs(selected[0][1], rows[0])
+        self.assertIs(selected[1][1], rows[2])
+
 if __name__ == "__main__":
     unittest.main()
