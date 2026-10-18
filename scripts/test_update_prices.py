@@ -23,6 +23,11 @@ class PriceUpdaterTests(unittest.TestCase):
         self.assertFalse(module.qualifies({"companyName": "Example Manufacturing", "qib": "80x", "listingGain": "14.9%"}))
         self.assertFalse(module.qualifies({"companyName": "Example Bank", "qib": "80x", "listingGain": "90%"}))
         self.assertFalse(module.qualifies({"companyName": "Example Biotech", "qib": "80x", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Capital", "qib": "80x", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Example Trusteeship", "qib": "80x", "listingGain": "90%"}))
+        self.assertFalse(module.qualifies({"companyName": "Moneyview", "qib": "227.4x", "listingGain": "61.8%"}))
+        self.assertFalse(module.qualifies({"companyName": "ICICI Prudential Asset", "qib": "123.9x", "listingGain": "20.1%"}))
+        self.assertFalse(module.qualifies({"companyName": "RNFI Services", "qib": "74.0x", "listingGain": "90.0%"}))
         self.assertFalse(module.qualifies({"companyName": "NACDAC Infrastructure Ltd.", "qib": "118.2x", "listingGain": "90.0%"}))
 
     def test_whole_rupee_gain(self):
