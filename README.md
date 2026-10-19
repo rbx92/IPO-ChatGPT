@@ -12,16 +12,17 @@ Static dashboard for GitHub Pages. The browser loads historical records from `da
 - Eligibility filters affect display and price-update selection; they do not delete non-qualifying historical records from the source dataset. Financial-sector, pharma and biotech companies are allowed; NACDAC Infrastructure Ltd. remains explicitly excluded.
 - The dashboard includes the subscription breakdown, listing/current gain, shortlist, and slider-based filters.
 
-The authoritative rules are in `IPO_FILTER_RULES.md`.
+The authoritative numeric thresholds and normalized company exclusions are in `eligibility-rules.json`; `scripts/rules.py` reads that configuration. `IPO_FILTER_RULES.md` documents the lifecycle behavior and intent.
 
 ## Data sources and automated jobs
 
 - **Historical IPO data:** `ipos.json`, mirrored into `data.js` for the static browser dashboard.
 - **Live IPO feed:** Groww subscription data is saved in `live-ipo-data.json`.
 - **Current market price (CMP):** Screener.in is used for both SME and Mainboard IPOs, with exact company-name matching and saved paths in `screener_map.json`. Requests run in batches of 9 with a 60-second delay; completed batches are saved.
-- `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly.
-- `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed on weekdays or when manually dispatched. Code pushes do not trigger live Screener requests.
-- `.github/workflows/daily-price-update.yml` updates eligible IPO CMP from Screener.in in batches of 9 with a 60-second delay and preserves all historical records.
+- `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly. It also runs on pushes that change `scrape_groww_ipo.py` or that workflow file.
+- `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed on weekdays or when manually dispatched. It also runs when its own workflow file changes; this can make live Screener requests.
+- `.github/workflows/daily-price-update.yml` updates eligible IPO CMP from Screener.in in batches of 9 with a 60-second delay and preserves all historical records. It runs on weekdays, manually, and on pushes changing the updater script or its workflow file.
+- Therefore, not all code pushes are passive: changes matching the listed workflow path filters can trigger live network requests. Dashboard-only and documentation-only changes do not trigger these three jobs.
 
 The Screener CMP updater uses exact company-name matching and saved Screener paths, writes current-price fields only, preserves the full historical dataset, and stops on throttling or parse errors while retaining completed batches. The lifecycle updater may use Screener's first available daily close as a clearly labelled listing-price proxy. It also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
 
