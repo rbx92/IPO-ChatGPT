@@ -87,6 +87,71 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
         self.assertEqual((self.root / "ipos.json").read_text(encoding="utf-8"), before)
 
 
+
+    def test_groww_zero_apply_rows_preserves_and_advances_feed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            shutil.copy2(REPO / "scrape_groww_ipo.py", root / "scrape_groww_ipo.py")
+            (root / "mocknet").mkdir()
+            (root / "mocknet" / "sitecustomize.py").write_text(MOCK_GROWW_NETWORK, encoding="utf-8")
+            yesterday = (date.today() - timedelta(days=1)).strftime("%d %b %Y")
+            tomorrow = (date.today() + timedelta(days=1)).strftime("%d %b %Y")
+            original = {"source": "test", "updatedAt": "old", "ipos": [
+                {"companyName": "Closed Test IPO", "applicationEnd": yesterday, "listingDate": yesterday,
+                 "issuePrice": 100, "qib": "60x", "hni": "1x", "retail": "1x", "total": "10x",
+                 "stockType": "SME", "status": "Open", "stage": "Apply", "source": "Groww"},
+                {"companyName": "Future Test IPO", "applicationEnd": tomorrow, "listingDate": tomorrow,
+                 "issuePrice": 100, "qib": "1x", "hni": "1x", "retail": "1x", "total": "1x",
+                 "stockType": "Mainboard", "status": "Open", "stage": "Apply", "source": "Groww"}
+            ]}
+            (root / "live-ipo-data.json").write_text(json.dumps(original), encoding="utf-8")
+            env = os.environ.copy()
+            env["PYTHONPATH"] = str(root / "mocknet")
+            result = subprocess.run([sys.executable, str(root / "scrape_groww_ipo.py")],
+                                    cwd=root, env=env, text=True, capture_output=True, timeout=30)
+            self.assertEqual(result.returncode, 0, result.stdout + "\\n" + result.stderr)
+            updated = json.loads((root / "live-ipo-data.json").read_text(encoding="utf-8"))
+            by_name = {row["companyName"]: row for row in updated["ipos"]}
+            self.assertEqual(set(by_name), {"Closed Test IPO", "Future Test IPO"})
+            self.assertEqual(by_name["Closed Test IPO"]["stage"], "Waiting for Listing")
+            self.assertEqual(by_name["Closed Test IPO"]["status"], "Waiting for Listing")
+            self.assertEqual(by_name["Future Test IPO"]["stage"], "Apply")
+            self.assertIn("No IPOs currently marked Apply", result.stdout)
+
+
+MOCK_GROWW_NETWORK = r\'''
+import pandas as pd
+import requests
+
+class FakeResponse:
+    def __init__(self, text):
+        self.text = text
+    def raise_for_status(self):
+        return None
+
+def fake_get(url, **kwargs):
+    return FakeResponse("MAIN" if url.endswith("/ipo") else "SUBSCRIPTION")
+
+requests.get = fake_get
+
+def fake_read_html(source):
+    html = source.getvalue()
+    if html == "MAIN":
+        return [pd.DataFrame({
+            "Company Name": ["Upcoming Test IPO"],
+            "Type": ["Mainboard"],
+            "Close Date": ["30 Oct 2026"],
+            "Issue Price": ["₹100"],
+            "Unnamed: 4": ["Pre-Apply"]
+        })]
+    return [pd.DataFrame({
+        "Company Name": ["Upcoming Test IPO"],
+        "QIB": ["1x"], "NII": ["1x"], "Retail": ["1x"], "Total": ["1x"]
+    })]
+
+pd.read_html = fake_read_html
+\'''
+
 MOCK_NETWORK = r'''
 import json
 import time
