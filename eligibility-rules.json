@@ -1,0 +1,16 @@
+{
+  "qib_min_multiple": 10,
+  "listing_gain_min_percent": 15,
+  "excluded_company_names_normalized": [
+    "nacdac infrastructure"
+  ],
+  "company_name_suffixes": [
+    "limited",
+    "ltd",
+    "plc",
+    "pvt",
+    "private",
+    "company",
+    "co"
+  ]
+}

@@ -1,3 +1,4 @@
+import importlib.util
 import json
 import os
 import shutil
@@ -30,6 +31,12 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
             }]
         }), encoding="utf-8")
         (self.root / "ipos.json").write_text("[]\n", encoding="utf-8")
+        (self.root / "eligibility-rules.json").write_text(json.dumps({
+            "qib_min_multiple": 10,
+            "listing_gain_min_percent": 15,
+            "excluded_company_names_normalized": ["nacdac infrastructure"],
+            "company_name_suffixes": ["limited", "ltd", "plc", "pvt", "private", "company", "co"]
+        }), encoding="utf-8")
         (self.root / "mocknet").mkdir()
         (self.root / "mocknet" / "sitecustomize.py").write_text(MOCK_NETWORK, encoding="utf-8")
 
@@ -67,6 +74,33 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
         self.assertEqual(history[0]["companyName"], "Regression Test IPO")
         self.assertEqual(history[0]["listingPrice"], 125)
         self.assertIn("Regression Test IPO", data_js)
+
+
+    def test_shared_rules_normalize_nacdac_variants_without_prefix_false_positives(self):
+        spec = importlib.util.spec_from_file_location(
+            "isolated_shared_rules", self.root / "scripts" / "rules.py"
+        )
+        rules = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(rules)
+
+        def row(name, qib="10x", gain="15%"):
+            return {"companyName": name, "qib": qib, "listingGain": gain}
+
+        self.assertFalse(rules.qualifies(row("NACDAC Infrastructure Ltd.")))
+        self.assertFalse(rules.qualifies(row("NACDAC Infrastructure Limited")))
+        self.assertFalse(rules.qualifies(row("Nacdac Infrastructure")))
+        self.assertTrue(rules.qualifies(row("NACDAC Infrastructure Services Ltd.")))
+        self.assertFalse(rules.qualifies(row("Other Company Ltd.", qib="9.9x")))
+        self.assertFalse(rules.qualifies(row("Other Company Ltd.", gain="14.9%")))
+
+    def test_dashboard_uses_shared_eligibility_config(self):
+        page = (REPO / "index.html").read_text(encoding="utf-8")
+        self.assertIn("fetch('eligibility-rules.json?ts='+Date.now())", page)
+        self.assertIn("eligibilityRules.qib_min_multiple", page)
+        self.assertIn("eligibilityRules.listing_gain_min_percent", page)
+        self.assertIn("eligibilityRules.excluded_company_names_normalized", page)
+        self.assertNotIn("name==='nacdac infrastructure ltd.'", page)
+        self.assertNotIn("name.startsWith('nacdac infrastructure ')", page)
 
     def test_price_updater_prioritizes_missing_and_oldest_timestamps(self):
         sys.path.insert(0, str(SCRIPTS))
