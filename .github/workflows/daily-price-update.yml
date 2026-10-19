@@ -1,11 +1,11 @@
-name: Daily IPO CMP update
+name: Daily IPO CMP update (Groww only)
 on:
   schedule:
     - cron: "45 10 * * 1-5" # 16:15 IST, weekdays
   workflow_dispatch:
     inputs:
       start:
-        description: "Zero-based offset among eligible IPOs (use the last completed batch boundary to resume)"
+        description: "Zero-based offset among eligible IPOs"
         required: true
         default: "0"
         type: string
@@ -14,9 +14,6 @@ on:
         required: true
         default: "0"
         type: string
-  push:
-    paths:
-      - ".github/workflows/daily-price-update.yml"
 permissions:
   contents: write
 concurrency:
@@ -25,10 +22,12 @@ concurrency:
 jobs:
   update-cmp:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 120
     env:
-      START: ${{ github.event_name == 'push' && '0' || inputs.start || '0' }}
-      LIMIT: ${{ github.event_name == 'push' && '0' || inputs.limit || '0' }}
+      START: \${{ inputs.start || '0' }}
+      LIMIT: \${{ inputs.limit || '0' }}
+      GROWW_TOTP_TOKEN: \${{ secrets.GROWW_TOTP_TOKEN }}
+      GROWW_TOTP_SECRET: \${{ secrets.GROWW_TOTP_SECRET }}
     steps:
       - name: Checkout dashboard data
         uses: actions/checkout@v4
@@ -36,31 +35,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run offline parser tests
+      - name: Install Groww Trading API dependencies
+        run: python -m pip install --upgrade growwapi pyotp
+      - name: Run offline tests
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
-      - name: Update eligible IPO prices in resumable batches
+      - name: Check Groww credentials are configured
+        run: |
+          if [ -z "$GROWW_TOTP_TOKEN" ] || [ -z "$GROWW_TOTP_SECRET" ]; then
+            echo "::error::Configure repository Actions secrets GROWW_TOTP_TOKEN and GROWW_TOTP_SECRET from an active Groww Trading API TOTP setup."
+            exit 1
+          fi
+      - name: Update eligible IPO prices using Groww only
         id: updater
-        continue-on-error: true
-        run: python scripts/update_prices.py --start "$START" --limit "$LIMIT" --batch-size 9 --delay 60
-      - name: Commit completed batch updates
+        run: python scripts/update_groww_prices.py --start "$START" --limit "$LIMIT" --batch-size 50 --delay 1
+      - name: Commit completed Groww CMP updates
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ipos.json data.js screener_map.json
+          git add ipos.json data.js groww_map.json
           if git diff --cached --quiet; then
             echo "No changed files to commit."
           else
-            git commit -m "chore: refresh IPO CMP data"
+            git commit -m "chore: refresh IPO CMP data from Groww"
             git pull --rebase origin main
             git push
-          fi
-      - name: Report updater status
-        if: always()
-        run: |
-          if [ "${{ steps.updater.outcome }}" = "success" ]; then
-            echo "CMP updater completed. Check the preceding log for updated and unmatched rows."
-          else
-            echo "CMP updater stopped early. Any completed batch updates were committed; inspect the logs for the cause."
-            exit 1
           fi
