@@ -56,3 +56,12 @@ Apply these sector exclusions in the dashboard's data-filtering path before calc
 ```text
 include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT excluded_financial_sector AND NOT excluded_pharma_or_biotech_sector
 ```
+
+## Current archive count reconciliation (2026-10-19)
+
+- Historical archive: **323** unique IPO records.
+- Records meeting only the numeric thresholds (QIB >= 50x and listing gain >= 15%): **170**.
+- Records removed from dashboard eligibility by the sector exclusions and the explicit NACDAC removal: **8**.
+- Expected listed-IPO eligible set after all rules: **162**.
+
+These are a dated validation snapshot, not fixed thresholds. Future records or corrected source data can change the counts; never weaken the hard filters just to preserve a previous total.
