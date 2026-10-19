@@ -24,10 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      START: \${{ inputs.start || '0' }}
-      LIMIT: \${{ inputs.limit || '0' }}
-      GROWW_TOTP_TOKEN: \${{ secrets.GROWW_TOTP_TOKEN }}
-      GROWW_TOTP_SECRET: \${{ secrets.GROWW_TOTP_SECRET }}
+      START: ${{ inputs.start || '0' }}
+      LIMIT: ${{ inputs.limit || '0' }}
+      GROWW_TOTP_TOKEN: ${{ secrets.GROWW_TOTP_TOKEN }}
+      GROWW_TOTP_SECRET: ${{ secrets.GROWW_TOTP_SECRET }}
     steps:
       - name: Checkout dashboard data
         uses: actions/checkout@v4
