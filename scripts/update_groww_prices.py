@@ -189,6 +189,19 @@ def save_dataset(rows, mapping):
     MAP_PATH.write_text(json.dumps(mapping, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def apply_cmp_update(row, price, stamp, instrument):
+    """Update only CMP-owned fields; preserve IPO price, listing gain, subscriptions and classification."""
+    issue = number_value(row.get("issuePrice"))
+    gain = f"{(price - issue) / issue * 100:.1f}%" if issue is not None and issue > 0 else "-"
+    row["currentPrice"] = round(price, 2)
+    row["currentGain"] = gain
+    row["priceUpdatedAt"] = stamp
+    row["priceSource"] = "Groww"
+    row["growwExchange"] = instrument["exchange"]
+    row["growwTradingSymbol"] = instrument["trading_symbol"]
+    return gain
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start", type=int, default=0, help="zero-based offset among eligible IPOs")
@@ -268,15 +281,10 @@ def main():
                 print(f"NO_LTP — {name} ({key}); existing price preserved", flush=True)
                 continue
             issue = number_value(row.get("issuePrice"))
-            gain = f"{((price - issue) / issue * 100):.1f}%" if issue and issue > 0 else "-"
+            gain = f"{((price - issue) / issue * 100):.1f}%" if issue is not None and issue > 0 else "-"
             print(f"{name}: Groww CMP ₹{price:g} | current gain {gain}", flush=True)
             if not args.dry_run:
-                row["currentPrice"] = round(price, 2)
-                row["currentGain"] = gain
-                row["priceUpdatedAt"] = stamp
-                row["priceSource"] = "Groww"
-                row["growwExchange"] = instrument["exchange"]
-                row["growwTradingSymbol"] = instrument["trading_symbol"]
+                apply_cmp_update(row, price, stamp, instrument)
             updated += 1
 
         if not args.dry_run:
