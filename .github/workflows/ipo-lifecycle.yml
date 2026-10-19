@@ -1,6 +1,9 @@
 name: IPO lifecycle transition
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/ipo-lifecycle.yml"
   schedule:
     - cron: "37 11 * * 1-5" # 17:07 IST, weekdays
 permissions:
