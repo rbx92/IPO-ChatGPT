@@ -6,10 +6,10 @@ Static dashboard for GitHub Pages. The browser loads historical records from `da
 
 - Separate sections for Open IPOs, Waiting for Listing, and Listed IPOs.
 - Open IPOs: show every IPO currently accepting applications, without a QIB or sector filter. Pre-Apply records are hidden.
-- Waiting for Listing: require QIB subscription of at least 50x and pass the financial-sector/pharma/biotech exclusions.
-- Listed IPOs: require QIB subscription of at least 10x, listing gain of at least 15%, and no financial-sector/pharma/biotech exclusion.
+- Waiting for Listing: require QIB subscription of at least 10x, regardless of sector.
+- Listed IPOs: require QIB subscription of at least 10x and listing gain of at least 15%, regardless of sector. NACDAC Infrastructure Ltd. remains explicitly excluded.
 - Current gain is displayed and can be filtered/sorted, but it is not an eligibility rule.
-- Eligibility filters affect display and price-update selection; they do not delete non-qualifying historical records from the source dataset.
+- Eligibility filters affect display and price-update selection; they do not delete non-qualifying historical records from the source dataset. Financial-sector, pharma and biotech companies are allowed; NACDAC Infrastructure Ltd. remains explicitly excluded.
 - The dashboard includes the subscription breakdown, listing/current gain, shortlist, and slider-based filters.
 
 The authoritative rules are in `IPO_FILTER_RULES.md`.
