@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-19T05:52:11+00:00",
+  "updatedAt": "2026-10-19T05:58:19+00:00",
   "ipos": [
     {
       "companyName": "Zetwerk",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 151.0,
       "qib": "0.46x",
@@ -23,7 +23,7 @@
     {
       "companyName": "Sahajanand Medical Technologies",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 344.0,
       "qib": "1.12x",
@@ -40,7 +40,7 @@
     {
       "companyName": "Tonbo Imaging",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 700.0,
       "qib": "3.98x",
@@ -57,7 +57,7 @@
     {
       "companyName": "Bonfiglioli Transmissions",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 586.0,
       "qib": "0.19x",
@@ -74,7 +74,7 @@
     {
       "companyName": "Shellz India",
       "currentPrice": null,
-      "listingDate": "19 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 179.0,
       "qib": "0.00x",
@@ -103,7 +103,8 @@
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "listingPrice": null
     },
     {
       "companyName": "Ravita Engineering Services",
@@ -120,7 +121,8 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "listingPrice": null
     },
     {
       "companyName": "HD Fire Protect",
@@ -137,7 +139,8 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "applicationEnd": "15 Oct 2026"
+      "applicationEnd": "15 Oct 2026",
+      "listingPrice": null
     },
     {
       "companyName": "Vaibhav Vyapar",
@@ -154,7 +157,8 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "applicationEnd": "15 Oct 2026"
+      "applicationEnd": "15 Oct 2026",
+      "listingPrice": null
     }
   ]
 }
