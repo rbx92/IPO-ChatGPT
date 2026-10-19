@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install scraper test dependencies
+        run: python -m pip install requests pandas lxml
       - name: Compile changed Python scripts
         run: python -m py_compile scripts/rules.py scripts/update_prices.py scripts/update_ipo_lifecycle.py scrape_groww_ipo.py tests/test_shared_rules_regression.py
       - name: Run disposable import and listing-transition regression tests
