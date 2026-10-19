@@ -163,7 +163,12 @@ def extract_ltp_response(response):
     if not isinstance(response, dict):
         raise RuntimeError("Groww LTP response was not a JSON object")
     prices = {}
+    # SDK versions may return a direct {symbol: price} map or a single-instrument
+    # {"ltp": price} response. The caller handles the latter when only one symbol
+    # was requested, so this helper intentionally keeps only named-symbol values.
     for symbol, value in response.items():
+        if str(symbol).casefold() in {"ltp", "last_price", "price"}:
+            continue
         if isinstance(value, dict):
             value = value.get("ltp", value.get("last_price", value.get("price")))
         try:
@@ -237,9 +242,16 @@ def main():
         batch = resolved[offset:offset + args.batch_size]
         symbols = tuple(item[2]["exchange_trading_symbol"] for item in batch)
         try:
-            prices = extract_ltp_response(
-                client.get_ltp(segment=client.SEGMENT_CASH, exchange_trading_symbols=symbols)
-            )
+            response = client.get_ltp(segment=client.SEGMENT_CASH, exchange_trading_symbols=symbols)
+            prices = extract_ltp_response(response)
+            if len(batch) == 1 and not prices and isinstance(response, dict):
+                raw = response.get("ltp", response.get("last_price", response.get("price")))
+                try:
+                    single_price = float(raw)
+                except (TypeError, ValueError):
+                    single_price = 0
+                if single_price > 0:
+                    prices[symbols[0]] = single_price
         except Exception as exc:
             if not args.dry_run and updated:
                 save_dataset(rows, mapping)
