@@ -8,6 +8,7 @@ import json
 import re
 import sys
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from io import StringIO
 from pathlib import Path
 
@@ -188,7 +189,7 @@ def main():
         except (ValueError, AttributeError):
             raise RuntimeError("Existing live IPO feed is unreadable; refusing to overwrite it.")
     current_keys = {record["companyName"].casefold() for record in records}
-    today = datetime.now().date()
+    today = datetime.now(ZoneInfo('Asia/Kolkata')).date()
     for old in existing_records:
         key = clean(old.get("companyName")).casefold()
         if not key or key in current_keys:
