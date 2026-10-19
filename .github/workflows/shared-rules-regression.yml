@@ -10,6 +10,7 @@ on:
       - "scripts/update_ipo_lifecycle.py"
       - "tests/test_shared_rules_regression.py"
       - ".github/workflows/shared-rules-regression.yml"
+      - ".github/workflows/daily-price-update.yml"
   workflow_dispatch:
 
 permissions:
