@@ -17,17 +17,16 @@ The authoritative rules are in `IPO_FILTER_RULES.md`.
 
 - **Historical IPO data:** `ipos.json`, mirrored into `data.js` for the static browser dashboard.
 - **Live IPO feed:** Groww subscription data is saved in `live-ipo-data.json`.
-- **Current market price (CMP):** Groww Trading API is the sole source for future CMP updates. Exact instrument overrides are stored in `groww_map.json`; the read-only validation workflow audits Mainboard and SME mappings against Groww's instrument master.
+- **Current market price (CMP):** Screener.in is used for both SME and Mainboard IPOs, with exact company-name matching and saved paths in `screener_map.json`. Requests run in batches of 9 with a 60-second delay; completed batches are saved.
 - `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly.
 - `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed on weekdays or when manually dispatched. Code pushes do not trigger live Screener requests.
-- `.github/workflows/daily-price-update.yml` updates prices only for IPOs that pass the hard eligibility rules, using Groww Trading API only and preserving all historical records. It requires the repository Actions secrets `GROWW_TOTP_TOKEN` and `GROWW_TOTP_SECRET` from an active Groww Trading API TOTP setup.
-- Legacy Screener CMP validation workflow has been removed; future CMP updates use Groww only.
-- Legacy Screener mapping files are retained only as historical reference; their old CMP validation workflows have been removed.
+- `.github/workflows/daily-price-update.yml` updates eligible IPO CMP from Screener.in in batches of 9 with a 60-second delay and preserves all historical records.
+- Screener CMP updates are the active path for both Mainboard and SME; Groww mapping validation is diagnostic only and does not update CMP.
 - `.github/workflows/groww-mapping-validation.yml` audits exact Groww instrument matches for all historical Mainboard and SME IPOs and uploads a CSV/JSON report without changing IPO prices.
 - `.github/workflows/dashboard-browser-smoke.yml` checks the live GitHub Pages dashboard on desktop and mobile with a headless browser.
 - `.github/workflows/python-tests.yml` runs the Python test suite.
 
-The Groww CMP updater uses exact instrument-name matching plus explicitly reviewed Groww symbol overrides, saves completed batches, and preserves the full historical dataset. It does not use Screener as a CMP fallback. Unmatched or ambiguous instruments retain their existing price and appear in the mapping report. The lifecycle updater may use Screener's first available daily close as a clearly labelled listing-price proxy, but it never writes that value into CMP fields; CMP remains Groww-owned. It also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
+The Screener CMP updater uses exact company-name matching and saved Screener paths, writes current-price fields only, preserves the full historical dataset, and stops on throttling or parse errors while retaining completed batches. The lifecycle updater may use Screener's first available daily close as a clearly labelled listing-price proxy. It also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
 
 ## Local preview
 
