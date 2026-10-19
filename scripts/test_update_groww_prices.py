@@ -48,6 +48,31 @@ class GrowwPriceTests(unittest.TestCase):
         self.assertIsNone(item)
         self.assertEqual(status, "AMBIGUOUS_EXCHANGE_SYMBOL")
 
+    def test_cmp_update_preserves_listing_subscription_and_classification_fields(self):
+        row = {
+            "companyName": "Example Manufacturing",
+            "issuePrice": 100,
+            "listingPrice": 120,
+            "listingGain": "20.0%",
+            "qib": "80x",
+            "hni": "10x",
+            "retail": "4x",
+            "total": "20x",
+            "stockType": "SME",
+            "classification": "industrial",
+        }
+        untouched = {key: row[key] for key in (
+            "issuePrice", "listingPrice", "listingGain", "qib", "hni",
+            "retail", "total", "stockType", "classification"
+        )}
+        instrument = {"exchange": "BSE", "trading_symbol": "EXAMPLE"}
+        gain = module.apply_cmp_update(row, 125.5, "2026-10-19T12:00+05:30", instrument)
+        self.assertEqual(gain, "25.5%")
+        self.assertEqual(row["currentPrice"], 125.5)
+        self.assertEqual(row["currentGain"], "25.5%")
+        self.assertEqual(row["priceSource"], "Groww")
+        self.assertEqual({key: row[key] for key in untouched}, untouched)
+
     def test_groww_ltp_response(self):
         self.assertEqual(
             module.extract_ltp_response({"NSE_EXAMPLE": 123.45, "BSE_TEST": {"ltp": 50}}),
