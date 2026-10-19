@@ -86,6 +86,20 @@ def first_close_on_or_after(path, start_date):
         if day and price and price > 0 and day >= start_date: candidates.append((day, price))
     return min(candidates, key=lambda x: x[0]) if candidates else None
 
+def apply_listing_result(row, listed_on, listing_price, issue_price):
+    """Record listing data without ever using Screener as the CMP source."""
+    row["stage"], row["status"] = "Listed", "Listed"
+    row["listingDate"] = listed_on.strftime("%d %b %Y")
+    row["listingPrice"] = round(listing_price, 2)
+    row["listingPriceBasis"] = "Screener first available daily close on/after application close; not official listing/opening price"
+    row["listingGain"] = f"{(listing_price - issue_price) / issue_price * 100:.1f}%"
+    # CMP is owned exclusively by the Groww updater. Remove any placeholder fields
+    # from the live record so merging cannot replace a known historical Groww CMP
+    # with the first listing close from Screener.
+    for key in ("currentPrice", "currentGain", "priceSource", "priceUpdatedAt"):
+        row.pop(key, None)
+
+
 def main():
     feed = json.loads(FEED.read_text(encoding="utf-8"))
     records = feed.get("ipos", [])
@@ -125,15 +139,7 @@ def main():
                     listed_on, listing_price = result
                     issue = number(row.get("issuePrice"))
                     if issue:
-                        row["stage"], row["status"] = "Listed", "Listed"
-                        row["listingDate"] = listed_on.strftime("%d %b %Y")
-                        row["listingPrice"] = round(listing_price, 2)
-                        row["listingPriceBasis"] = "Screener first available daily close on/after application close; not official listing/opening price"
-                        row["listingGain"] = f"{(listing_price - issue) / issue * 100:.1f}%"
-                        row["currentPrice"] = round(listing_price, 2)
-                        row["currentGain"] = row["listingGain"]
-                        row["priceSource"] = "Screener.in"
-                        row["priceUpdatedAt"] = datetime.now().astimezone().isoformat(timespec="minutes")
+                        apply_listing_result(row, listed_on, listing_price, issue)
                         # Only listed records with complete eligibility data enter the persistent dataset.
                         from scripts.update_prices import qualifies
                         if qualifies({**row, "companyName": row.get("companyName")}):
