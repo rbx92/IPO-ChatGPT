@@ -1,5 +1,9 @@
 name: Daily IPO CMP update (Screener batches)
 on:
+  push:
+    paths:
+      - ".github/workflows/daily-price-update.yml"
+      - "scripts/update_prices.py"
   schedule:
     - cron: "45 10 * * 1-5" # 16:15 IST, weekdays
   workflow_dispatch:
