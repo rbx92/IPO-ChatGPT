@@ -42,6 +42,9 @@ jobs:
             title: document.title,
             headings: [...document.querySelectorAll('h1,h2')].map(el => el.innerText.trim()),
             cards: document.querySelectorAll('.ipo').length,
+            visibleNacdac: [...document.querySelectorAll('.ipo')].some(el => /NACDAC Infrastructure/i.test(el.innerText)),
+            sourceRecords: window.IPO_DATA?.length ?? 0,
+            uniqueSourceNames: new Set((window.IPO_DATA || []).map(x => String(x.companyName || '').trim().toLowerCase())).size,
             sliders: document.querySelectorAll('input[type="range"]').length,
             bodyWidth: document.documentElement.scrollWidth,
             viewportWidth: window.innerWidth
@@ -50,6 +53,10 @@ jobs:
             if (!desktop.headings.some(h => h.includes(label))) throw new Error('Missing dashboard section: ' + label);
           }
           if (desktop.cards < 1) throw new Error('No IPO cards rendered');
+          if (desktop.visibleNacdac) throw new Error('NACDAC Infrastructure should be excluded from dashboard cards');
+          if (desktop.sourceRecords < 1 || desktop.sourceRecords !== desktop.uniqueSourceNames) {
+            throw new Error('Historical source data is empty or has duplicate company names: ' + JSON.stringify({ sourceRecords: desktop.sourceRecords, uniqueSourceNames: desktop.uniqueSourceNames }));
+          }
           if (desktop.sliders < 1) throw new Error('No filter sliders rendered');
           await page.locator('#toggleFilters').click();
           const qibSlider = page.locator('#fQibMin');
