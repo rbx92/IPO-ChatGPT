@@ -65,10 +65,19 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
     def test_price_updater_direct_invocation_and_dry_run(self):
         # Exercise the price updater as a directly launched script. Dry-run means
         # the disposable fixture files must remain unchanged.
+        eligible_row = {
+            "companyName": "Regression Test IPO",
+            "qib": "60x",
+            "listingGain": "20%",
+            "issuePrice": 100,
+            "listingPrice": 125
+        }
+        (self.root / "ipos.json").write_text(json.dumps([eligible_row]) + "\n", encoding="utf-8")
         before = (self.root / "ipos.json").read_text(encoding="utf-8")
         result = self.run_script("update_prices.py", "--dry-run", "--limit", "1", "--delay", "1")
         self.assertEqual(result.returncode, 0, result.stdout + "\n" + result.stderr)
         self.assertIn("DRY RUN", result.stdout)
+        self.assertIn("CMP ₹125", result.stdout)
         self.assertEqual((self.root / "ipos.json").read_text(encoding="utf-8"), before)
 
 
