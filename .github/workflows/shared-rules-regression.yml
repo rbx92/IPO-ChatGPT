@@ -3,6 +3,7 @@ name: Shared IPO rules regression tests
 on:
   push:
     branches:
+      - main
       - fix/shared-ipo-rules-import
     paths:
       - "scripts/rules.py"
