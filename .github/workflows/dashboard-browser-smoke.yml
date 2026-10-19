@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - ".github/workflows/dashboard-browser-smoke.yml"
+      - "scripts/test_screener_map.py"
       - "index.html"
       - "data.js"
       - "ipos.json"
