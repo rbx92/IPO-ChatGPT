@@ -27,7 +27,6 @@ USER_AGENT = "IPO-Lens-price-refresh/1.0"
 TIMEOUT = 20
 
 # Current gain is deliberately not part of eligibility because it changes daily.
-EXCLUDED_COMPANIES = {"nacdac infrastructure"}
 
 def select_eligible_rows(rows):
     """Return eligible rows with their original indexes without filtering/mutating rows."""
