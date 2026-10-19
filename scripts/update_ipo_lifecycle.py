@@ -86,6 +86,15 @@ def first_close_on_or_after(path, start_date):
         if day and price and price > 0 and day >= start_date: candidates.append((day, price))
     return min(candidates, key=lambda x: x[0]) if candidates else None
 
+def lifecycle_stage(close_date, today, was_listed):
+    """Resolve the lifecycle stage without demoting a known Listed record."""
+    if was_listed:
+        return "Listed"
+    if close_date is None or today <= close_date:
+        return "Apply"
+    return "Waiting for Listing"
+
+
 def apply_listing_result(row, listed_on, listing_price, issue_price):
     """Record listing data without ever using Screener as the CMP source."""
     row["stage"], row["status"] = "Listed", "Listed"
@@ -110,19 +119,17 @@ def main():
     for row in records:
         was_listed = is_listed_record(row)
         close_date = parse_date(row.get("applicationEnd") or row.get("closeDate") or row.get("listingDate"))
-        if not close_date:
-            if not was_listed:
-                row["stage"] = "Apply"
-                row["status"] = "Open"
-            continue
-        row["applicationEnd"] = close_date.strftime("%d %b %Y")
-        if today <= close_date:
+        stage = lifecycle_stage(close_date, today, was_listed)
+        if close_date:
+            row["applicationEnd"] = close_date.strftime("%d %b %Y")
+        if stage == "Apply":
             if not was_listed:
                 row["stage"], row["status"] = "Apply", "Open"
-                row["listingDate"] = None
+                if close_date:
+                    row["listingDate"] = None
             continue
         # Preserve already-listed records; this transition job only discovers first listing.
-        if was_listed:
+        if stage == "Listed":
             row["stage"], row["status"] = "Listed", "Listed"
             continue
         row["stage"], row["status"] = "Waiting for Listing", "Waiting for Listing"
