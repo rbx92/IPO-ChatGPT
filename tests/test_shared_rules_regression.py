@@ -119,7 +119,7 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
             self.assertIn("No IPOs currently marked Apply", result.stdout)
 
 
-MOCK_GROWW_NETWORK = r\'''
+MOCK_GROWW_NETWORK = r'''
 import pandas as pd
 import requests
 
@@ -150,7 +150,7 @@ def fake_read_html(source):
     })]
 
 pd.read_html = fake_read_html
-\'''
+'''
 
 MOCK_NETWORK = r'''
 import json
