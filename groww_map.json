@@ -230,5 +230,13 @@
   "Mach Conferences and Events Ltd.": {
     "exchange": "BSE",
     "trading_symbol": "MACHLTD"
+  },
+  "V L Infraprojects": {
+    "exchange": "NSE",
+    "trading_symbol": "VLINFRA"
+  },
+  "L T Elevator": {
+    "exchange": "BSE",
+    "trading_symbol": "LTELEVATOR"
   }
 }
