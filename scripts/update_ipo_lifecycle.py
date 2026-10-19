@@ -6,6 +6,11 @@ close on/after the application close date. This is explicitly a closing-price
 proxy, not an exchange's official opening/listing price.
 """
 import json, re, sys, time
+
+try:
+    from .rules import qualifies
+except ImportError:  # Supports: python scripts/update_ipo_lifecycle.py
+    from rules import qualifies
 from datetime import datetime, date
 from html.parser import HTMLParser
 from pathlib import Path
@@ -148,7 +153,6 @@ def main():
                     if issue:
                         apply_listing_result(row, listed_on, listing_price, issue)
                         # Only listed records with complete eligibility data enter the persistent dataset.
-                        from scripts.update_prices import qualifies
                         if qualifies({**row, "companyName": row.get("companyName")}):
                             prior = by_name.get(name, {})
                             by_name[name] = {**prior, **row, "companyName": row["companyName"]}
