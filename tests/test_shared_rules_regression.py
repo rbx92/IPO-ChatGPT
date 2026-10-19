@@ -90,7 +90,7 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
         self.assertFalse(rules.qualifies(row("NACDAC Infrastructure Limited")))
         self.assertFalse(rules.qualifies(row("Nacdac Infrastructure")))
         self.assertTrue(rules.qualifies(row("NACDAC Infrastructure Services Ltd.")))
-        self.assertTrue(rules.qualifies(row("Other Company Ltd.", qib="9.9x")))
+        self.assertFalse(rules.qualifies(row("Other Company Ltd.", qib="9.9x")))
         self.assertFalse(rules.qualifies(row("Other Company Ltd.", gain="14.9%")))
 
     def test_dashboard_uses_shared_eligibility_config(self):
