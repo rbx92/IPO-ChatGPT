@@ -99,10 +99,12 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
             original = {"source": "test", "updatedAt": "old", "ipos": [
                 {"companyName": "Closed Test IPO", "applicationEnd": yesterday, "listingDate": yesterday,
                  "issuePrice": 100, "qib": "60x", "hni": "1x", "retail": "1x", "total": "10x",
-                 "stockType": "SME", "status": "Open", "stage": "Apply", "source": "Groww"},
+                 "stockType": "SME", "status": "Open", "stage": "Apply", "source": "Groww",
+                 "currentPrice": None, "listingGain": None, "currentGain": None},
                 {"companyName": "Future Test IPO", "applicationEnd": tomorrow, "listingDate": tomorrow,
                  "issuePrice": 100, "qib": "1x", "hni": "1x", "retail": "1x", "total": "1x",
-                 "stockType": "Mainboard", "status": "Open", "stage": "Apply", "source": "Groww"}
+                 "stockType": "Mainboard", "status": "Open", "stage": "Apply", "source": "Groww",
+                 "currentPrice": None, "listingGain": None, "currentGain": None}
             ]}
             (root / "live-ipo-data.json").write_text(json.dumps(original), encoding="utf-8")
             env = os.environ.copy()
