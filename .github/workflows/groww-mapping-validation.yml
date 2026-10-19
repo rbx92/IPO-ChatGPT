@@ -5,6 +5,7 @@ on:
       - "scripts/update_groww_prices.py"
       - "scripts/validate_groww_map.py"
       - "scripts/test_update_groww_prices.py"
+      - "scripts/test_screener_map.py"
       - ".github/workflows/groww-mapping-validation.yml"
       - "ipos.json"
       - "groww_map.json"
