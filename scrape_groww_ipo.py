@@ -1,7 +1,7 @@
 """Refresh the live Apply/Waiting IPO feed from Groww subscription tables.
 
-This script updates live subscription/lifecycle feed data only; CMP updates are
-handled separately by the Groww Trading API updater.
+This script updates subscription and lifecycle feed data only. CMP updates are
+handled separately by scripts/update_prices.py using Screener.in.
 """
 
 import json
