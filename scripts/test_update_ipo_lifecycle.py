@@ -21,6 +21,14 @@ class LifecycleTests(unittest.TestCase):
         self.assertFalse(module.is_listed_record({"stage": "Waiting for Listing", "listingPrice": None}))
 
 
+    def test_lifecycle_stage_transitions(self):
+        from datetime import date
+        today = date(2026, 10, 19)
+        self.assertEqual(module.lifecycle_stage(date(2026, 10, 20), today, False), "Apply")
+        self.assertEqual(module.lifecycle_stage(date(2026, 10, 18), today, False), "Waiting for Listing")
+        self.assertEqual(module.lifecycle_stage(None, today, False), "Apply")
+        self.assertEqual(module.lifecycle_stage(date(2026, 10, 20), today, True), "Listed")
+
     def test_listing_transition_never_sets_screener_as_cmp_source(self):
         from datetime import date
         prior = {
