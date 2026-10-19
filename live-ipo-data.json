@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-19T08:56:05+00:00",
+  "updatedAt": "2026-10-19T19:09:53+00:00",
   "ipos": [
     {
       "companyName": "Zetwerk",
@@ -17,8 +17,8 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -34,8 +34,8 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Tonbo Imaging",
@@ -51,8 +51,8 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
@@ -68,8 +68,8 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Shellz India",
@@ -85,8 +85,8 @@
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing"
     },
     {
       "companyName": "Fusion CX",
