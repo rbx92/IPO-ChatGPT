@@ -120,7 +120,7 @@ def main():
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
     selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]
-    print("Hard filters: QIB >= 50x; listing gain >= 15%; valid values; excludes financial-sector and pharma names.", flush=True)
+    print("Hard filters: QIB >= 10x; listing gain >= 15%; valid values; excludes NACDAC Infrastructure Ltd. Financial-sector and pharma companies are allowed.", flush=True)
     print(
         f"Eligible IPOs selected for price updates: {len(eligible)} of {raw_count} records. "
         f"All IPO records will be preserved. Current gain is not used as a filter.",
