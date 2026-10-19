@@ -69,10 +69,15 @@ def main():
     unmatched = len(report) - matched
     eligible = [r for r in report if r["eligible_for_cmp"]]
     eligible_matched = sum(1 for r in eligible if r["status"] in {"EXACT_NAME_MATCH", "OVERRIDE"})
+    invalid_overrides = sum(1 for r in report if r["status"].startswith("INVALID_OVERRIDE"))
     print(f"Groww mapping validation: {len(rows)} historical records; {matched} matched; {unmatched} unresolved.")
     print(f"CMP-eligible: {len(eligible)}; mapped: {eligible_matched}; unresolved: {len(eligible) - eligible_matched}.")
     print(f"Mainboard: {sum(1 for r in report if r['ipo_type'].casefold() == 'mainboard')}; SME: {sum(1 for r in report if r['ipo_type'].casefold() == 'sme')}.")
+    print(f"Invalid explicit Groww overrides: {invalid_overrides}.")
     print("Read-only validation: no IPO prices, source records, or mappings were changed.")
+    if len(eligible) != eligible_matched or invalid_overrides:
+        print("VALIDATION FAILED: every CMP-eligible IPO must resolve to a valid Groww instrument.", file=sys.stderr)
+        return 1
     return 0
 
 
