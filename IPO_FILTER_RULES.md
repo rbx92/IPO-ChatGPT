@@ -4,17 +4,11 @@ These are the standing, hard-coded inclusion and exclusion rules for IPO Lens. A
 
 ## Inclusion criteria
 
-An IPO is included only when all conditions pass:
+Eligibility depends on the IPO lifecycle stage:
 
-1. **QIB subscription >= 50x**
-   - Exclude values below 50x.
-   - Exclude missing, blank, dash, or invalid QIB values.
-   - This supersedes the earlier 30x threshold.
-
-2. **Listing gain >= 15%**
-   - Exclude listing gain below 15%.
-   - Exclude missing or invalid listing-gain values.
-   - This supersedes the earlier 10% threshold.
+1. **Open IPOs:** display all IPOs currently accepting applications, regardless of QIB subscription or sector. Pre-Apply records are hidden.
+2. **Waiting for Listing:** require QIB subscription >= 50x and no excluded-sector match. Listing gain is not required before listing.
+3. **Listed IPOs:** require QIB subscription >= 10x, listing gain >= 15%, and no excluded-sector match. Exclude missing or invalid QIB/listing-gain values.
 
 ## Sector exclusions — hard-coded
 
@@ -40,28 +34,28 @@ Apply these sector exclusions in the dashboard's data-filtering path before calc
 
 ## Lifecycle-stage handling
 
-- **Listed IPOs:** require valid QIB subscription >= 50x, valid listing gain >= 15%, and no excluded-sector match.
-- **Open IPOs:** require valid QIB subscription >= 50x and no excluded-sector match; do not require listing gain before listing. Exclude Pre-Apply records.
-- **Waiting for Listing:** require valid QIB subscription >= 50x and no excluded-sector match; listing gain is not available yet. Once a valid listing gain exists, the listed-IPO criteria apply.
-- Apply the same rules in the browser dashboard and Python CMP updater. Do not use the current gain as an eligibility criterion.
+- **Open IPOs:** display every application-open record; no QIB or sector filter. Exclude Pre-Apply records.
+- **Waiting for Listing:** require QIB >= 50x and no excluded-sector match.
+- **Listed IPOs:** require QIB >= 10x, listing gain >= 15%, and no excluded-sector match.
+- Do not use current gain as an eligibility criterion.
 
 ## Other dashboard behavior
 
 - Current gain is displayed as a percentage but is not an inclusion filter.
 - Display Listing Gain and Current Gain as percentages.
-- Keep a listed IPO only if it passes QIB >= 50x, listing gain >= 15%, and none of the excluded-sector rules. Apply the lifecycle-stage exceptions above to open and waiting IPOs.
+- Keep a listed IPO only if it passes QIB >= 10x, listing gain >= 15%, and none of the excluded-sector rules. Apply the lifecycle-stage rules above to open and waiting IPOs.
 
 ## Logic
 
 ```text
-include_ipo = valid_qib AND (qib >= 50) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT excluded_financial_sector AND NOT excluded_pharma_or_biotech_sector
+open_ipo = application_open AND NOT pre_apply
+waiting_ipo = valid_qib AND (qib >= 50) AND NOT excluded_financial_sector AND NOT excluded_pharma_or_biotech_sector
+listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT excluded_financial_sector AND NOT excluded_pharma_or_biotech_sector
 ```
 
 ## Current archive count reconciliation (2026-10-19)
 
 - Historical archive: **323** unique IPO records.
-- Records meeting only the numeric thresholds (QIB >= 50x and listing gain >= 15%): **170**.
-- Records removed from dashboard eligibility by the sector exclusions and the explicit NACDAC removal: **8**.
-- Expected listed-IPO eligible set after all rules: **162**.
+- This snapshot predates the current Listed IPO QIB threshold of 10x; current displayed totals are calculated from the live data.
 
 These are a dated validation snapshot, not fixed thresholds. Future records or corrected source data can change the counts; never weaken the hard filters just to preserve a previous total.
