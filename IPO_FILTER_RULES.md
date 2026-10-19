@@ -1,6 +1,6 @@
 # IPO Lens Dashboard Inclusion Rules
 
-These are the standing, hard-coded inclusion and exclusion rules for IPO Lens. Apply them to the existing IPO dataset and every newly discovered/live IPO before displaying it on the dashboard. Keep the full historical source records in `ipos.json` and `data.js`; filter at display/update time rather than deleting historical records.
+This document explains the dashboard's lifecycle-stage behavior. The authoritative numeric thresholds, company-name exclusions, and suffix normalization list are maintained in `eligibility-rules.json` and loaded by `scripts/rules.py`; do not duplicate those values here or in application code. Apply the rules to existing and newly discovered IPOs at display/update time. Keep the full historical source records in `ipos.json` and `data.js`; filtering must not delete historical records.
 
 ## Inclusion criteria
 
