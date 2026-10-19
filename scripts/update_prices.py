@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Legacy Screener helpers retained for lifecycle compatibility and regression tests.
+"""Screener.in CMP updater for eligible Mainboard and SME IPOs.
 
-Direct execution is disabled: all future CMP updates must use update_groww_prices.py.
-The exact-name eligibility and parsing helpers remain imported by tests and lifecycle
-logic, but this module is no longer an approved CMP updater.
+Uses exact company-name resolution, saves the Screener path map, processes small
+batches with delays, and preserves the complete historical IPO dataset.
 """
 from __future__ import annotations
 import argparse, json, re, sys, time
