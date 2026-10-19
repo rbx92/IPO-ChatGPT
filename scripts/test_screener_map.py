@@ -14,11 +14,14 @@ class ScreenerMapTests(unittest.TestCase):
         cls.rows = json.loads((ROOT / "ipos.json").read_text(encoding="utf-8"))
         cls.mapping = json.loads((ROOT / "screener_map.json").read_text(encoding="utf-8"))
 
-    def test_every_historical_ipo_has_exactly_one_mapping(self):
+    def test_legacy_screener_mappings_reference_known_historical_ipos(self):
         names = [row.get("companyName") for row in self.rows]
         self.assertTrue(all(names), "Historical IPO records must have company names")
         self.assertEqual(len(names), len(set(names)), "Historical IPO company names must be unique")
-        self.assertEqual(set(names), set(self.mapping), "Screener mappings must exactly cover the historical dataset")
+        self.assertTrue(set(self.mapping).issubset(set(names)),
+                        "Legacy Screener mappings must not refer to unknown IPOs")
+        # The historical archive intentionally contains rows without legacy Screener
+        # mappings. Future CMP updates use the separate Groww-only instrument map.
 
     def test_mapping_paths_are_screener_company_paths(self):
         for name, path in self.mapping.items():
