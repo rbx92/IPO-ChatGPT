@@ -33,6 +33,7 @@ Exclude bank-related businesses, NBFCs, brokers/broking businesses, asset manage
   - Bajaj Housing Finance Ltd.
   - RNFI Services
   - One MobiKwik Systems Ltd.
+- Explicit user-requested removal from the dashboard: **NACDAC Infrastructure Ltd.** (keep its historical record in the archive, but do not display or update it).
 - Pharmaceutical/biotech company-name terms: pharma, pharmaceutical, pharmaceuticals, biopharma, biotechnology, and biotech.
 
 Apply these sector exclusions in the dashboard's data-filtering path before calculating metrics or rendering IPO cards. Apply the same rules to all newly added/live IPOs so excluded sectors do not reappear.
