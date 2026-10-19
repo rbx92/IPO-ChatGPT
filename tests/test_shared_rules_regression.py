@@ -44,6 +44,12 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
             cwd=self.root, env=env, text=True, capture_output=True, timeout=30
         )
 
+
+    def test_live_cmp_writer_is_restricted_to_main(self):
+        workflow = (REPO / ".github" / "workflows" / "daily-price-update.yml").read_text(encoding="utf-8")
+        self.assertIn("branches:\\n      - main", workflow)
+        self.assertIn("if: github.ref == 'refs/heads/main'", workflow)
+
     def test_actual_lifecycle_command_saves_feed_and_history(self):
         # This executes the actual direct-script command against disposable data,
         # with only Screener HTTP responses replaced by deterministic fixtures.
