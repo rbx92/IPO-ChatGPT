@@ -68,6 +68,21 @@ class LifecycleImportAndSaveRegression(unittest.TestCase):
         self.assertEqual(history[0]["listingPrice"], 125)
         self.assertIn("Regression Test IPO", data_js)
 
+    def test_price_updater_prioritizes_missing_and_oldest_timestamps(self):
+        sys.path.insert(0, str(SCRIPTS))
+        try:
+            from update_prices import select_eligible_rows
+        finally:
+            sys.path.pop(0)
+        rows = [
+            {"companyName": "Recently Updated", "qib": "60x", "listingGain": "20%", "priceUpdatedAt": "2026-10-19T10:00:00+00:00"},
+            {"companyName": "Oldest Updated", "qib": "60x", "listingGain": "20%", "priceUpdatedAt": "2026-10-01T10:00:00+00:00"},
+            {"companyName": "Never Updated", "qib": "60x", "listingGain": "20%"},
+            {"companyName": "Invalid Timestamp", "qib": "60x", "listingGain": "20%", "priceUpdatedAt": "bad timestamp"},
+        ]
+        ordered = [row["companyName"] for _, row in select_eligible_rows(rows)]
+        self.assertEqual(ordered, ["Never Updated", "Invalid Timestamp", "Oldest Updated", "Recently Updated"])
+
     def test_price_updater_direct_invocation_and_dry_run(self):
         # Exercise the price updater as a directly launched script. Dry-run means
         # the disposable fixture files must remain unchanged.
