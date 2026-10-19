@@ -98,10 +98,10 @@ def main():
         })
 
     if not apply_ipos:
-        raise RuntimeError(
-            "Groww did not expose verified Apply rows. "
-            "Keeping the existing live-ipo-data.json unchanged."
-        )
+        # A valid page can contain only Pre-Apply/closed IPOs after the last
+        # application window ends. Preserve existing records and advance
+        # expired applications below instead of treating this as a parser failure.
+        print("No IPOs currently marked Apply; preserving existing feed records.")
 
     keys = [ipo["key"] for ipo in apply_ipos]
     if len(keys) != len(set(keys)):
@@ -200,7 +200,7 @@ def main():
                 break
             except ValueError:
                 pass
-        if close_date and close_date < today:
+        if close_date and close_date <= today:
             old["applicationEnd"] = close_date.strftime("%d %b %Y")
             old["stage"] = old.get("stage") if old.get("stage") == "Listed" else "Waiting for Listing"
             old["status"] = old.get("status") if old.get("status") == "Listed" else "Waiting for Listing"
