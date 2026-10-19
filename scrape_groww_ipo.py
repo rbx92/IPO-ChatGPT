@@ -200,7 +200,7 @@ def main():
                 break
             except ValueError:
                 pass
-        if close_date and close_date <= today:
+        if close_date and close_date < today:
             old["applicationEnd"] = close_date.strftime("%d %b %Y")
             old["stage"] = old.get("stage") if old.get("stage") == "Listed" else "Waiting for Listing"
             old["status"] = old.get("status") if old.get("status") == "Listed" else "Waiting for Listing"
