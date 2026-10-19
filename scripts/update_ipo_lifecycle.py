@@ -12,6 +12,7 @@ try:
 except ImportError:  # Supports: python scripts/update_ipo_lifecycle.py
     from rules import qualifies
 from datetime import datetime, date
+from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -117,7 +118,7 @@ def apply_listing_result(row, listed_on, listing_price, issue_price):
 def main():
     feed = json.loads(FEED.read_text(encoding="utf-8"))
     records = feed.get("ipos", [])
-    today = datetime.now().date()
+    today = datetime.now(ZoneInfo('Asia/Kolkata')).date()
     history = json.loads(DATA.read_text(encoding="utf-8"))
     by_name = {normalized(x.get("companyName")): x for x in history}
     changed = 0
