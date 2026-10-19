@@ -8,9 +8,9 @@ from __future__ import annotations
 import argparse, json, re, sys, time
 
 try:
-    from .rules import (EXCLUDED_COMPANIES, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
+    from .rules import (ELIGIBILITY_CONFIG, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
 except ImportError:  # Supports: python scripts/update_prices.py
-    from rules import (EXCLUDED_COMPANIES, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
+    from rules import (ELIGIBILITY_CONFIG, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -138,7 +138,7 @@ def main():
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
     selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]
-    print(f"Hard filters: QIB >= {QIB_MIN_MULTIPLE:g}x; listing gain >= {LISTING_GAIN_MIN_PERCENT:g}%; valid values; excludes {', '.join(sorted(EXCLUDED_COMPANIES))}. Financial-sector and pharma companies are allowed.", flush=True)
+    print(f"Hard filters: QIB >= {QIB_MIN_MULTIPLE:g}x; listing gain >= {LISTING_GAIN_MIN_PERCENT:g}%; valid values; excludes normalized company name(s): {', '.join(ELIGIBILITY_CONFIG['excluded_company_names_normalized'])}. No sector exclusions.", flush=True)
     print(
         f"Eligible IPOs selected for price updates: {len(eligible)} of {raw_count} records. "
         f"All IPO records will be preserved. Current gain is not used as a filter.",
