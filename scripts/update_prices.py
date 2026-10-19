@@ -221,7 +221,4 @@ def main():
         print(f"UPDATE COMPLETE: {updated} qualifying IPO prices updated; {unmatched} unmatched. Non-qualifying records were preserved. CMP rounded to whole rupees.")
     return 0
 if __name__ == "__main__":
-    raise SystemExit(
-        "This legacy Screener CMP updater is retired. Use scripts/update_groww_prices.py; "
-        "Groww is the sole approved CMP source."
-    )
+    raise SystemExit(main())
