@@ -4,7 +4,7 @@ import csv
 import json
 import sys
 from pathlib import Path
-from update_groww_prices import DATA_PATH, MAP_PATH, fetch_instruments, resolve_instrument
+from update_groww_prices import DATA_PATH, MAP_PATH, fetch_instruments, resolve_instrument, qualifies
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT_JSON = ROOT / "groww-mapping-validation.json"
@@ -26,6 +26,7 @@ def main():
             "matched_exchange": instrument["exchange"] if instrument else "",
             "trading_symbol": instrument["trading_symbol"] if instrument else "",
             "groww_symbol": instrument["exchange_trading_symbol"] if instrument else "",
+            "eligible_for_cmp": qualifies(row),
             "status": status,
         })
     with REPORT_JSON.open("w", encoding="utf-8") as f:
@@ -35,17 +36,23 @@ def main():
             "unique_company_names": len({r.get("companyName") for r in rows}),
             "mainboard_records": sum(1 for r in report if r["ipo_type"].casefold() == "mainboard"),
             "sme_records": sum(1 for r in report if r["ipo_type"].casefold() == "sme"),
+            "eligible_for_cmp": sum(1 for r in report if r["eligible_for_cmp"]),
+            "eligible_matched": sum(1 for r in report if r["eligible_for_cmp"] and r["status"] in {"EXACT_NAME_MATCH", "OVERRIDE"}),
+            "eligible_unmatched": sum(1 for r in report if r["eligible_for_cmp"] and r["status"] not in {"EXACT_NAME_MATCH", "OVERRIDE"}),
             "matched": sum(1 for r in report if r["status"] in {"EXACT_NAME_MATCH", "OVERRIDE"}),
             "unmatched": sum(1 for r in report if r["status"] not in {"EXACT_NAME_MATCH", "OVERRIDE"}),
             "results": report,
         }, f, ensure_ascii=False, indent=2)
     with REPORT_CSV.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["company", "ipo_type", "matched_exchange", "trading_symbol", "groww_symbol", "status"])
+        writer = csv.DictWriter(f, fieldnames=["company", "ipo_type", "eligible_for_cmp", "matched_exchange", "trading_symbol", "groww_symbol", "status"])
         writer.writeheader()
         writer.writerows(report)
     matched = sum(1 for r in report if r["status"] in {"EXACT_NAME_MATCH", "OVERRIDE"})
     unmatched = len(report) - matched
+    eligible = [r for r in report if r["eligible_for_cmp"]]
+    eligible_matched = sum(1 for r in eligible if r["status"] in {"EXACT_NAME_MATCH", "OVERRIDE"})
     print(f"Groww mapping validation: {len(rows)} historical records; {matched} matched; {unmatched} unresolved.")
+    print(f"CMP-eligible: {len(eligible)}; mapped: {eligible_matched}; unresolved: {len(eligible) - eligible_matched}.")
     print(f"Mainboard: {sum(1 for r in report if r['ipo_type'].casefold() == 'mainboard')}; SME: {sum(1 for r in report if r['ipo_type'].casefold() == 'sme')}.")
     print("Read-only validation: no IPO prices, source records, or mappings were changed.")
     return 0
