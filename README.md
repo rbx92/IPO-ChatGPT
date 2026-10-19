@@ -22,7 +22,7 @@ The authoritative rules are in `IPO_FILTER_RULES.md`.
 - `.github/workflows/ipo-lifecycle.yml` advances live records through Apply, Waiting for Listing, and Listed on weekdays or when manually dispatched. Code pushes do not trigger live Screener requests.
 - `.github/workflows/daily-price-update.yml` updates prices only for IPOs that pass the hard eligibility rules, using Groww Trading API only and preserving all historical records. It requires the repository Actions secrets `GROWW_TOTP_TOKEN` and `GROWW_TOTP_SECRET` from an active Groww Trading API TOTP setup.
 - `.github/workflows/screener-price-validation.yml` runs a small, read-only CMP dry-run; use a small offset/limit and review logs before any write-enabled refresh.
-- `.github/workflows/screener-mapping-validation.yml` remains a legacy read-only audit of historical Screener mappings; it is not used for future CMP updates.
+- Legacy Screener mapping files are retained only as historical reference; their old CMP validation workflows have been removed.
 - `.github/workflows/groww-mapping-validation.yml` audits exact Groww instrument matches for all historical Mainboard and SME IPOs and uploads a CSV/JSON report without changing IPO prices.
 - `.github/workflows/dashboard-browser-smoke.yml` checks the live GitHub Pages dashboard on desktop and mobile with a headless browser.
 - `.github/workflows/python-tests.yml` runs the Python test suite.
