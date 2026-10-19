@@ -22,17 +22,7 @@ USER_AGENT = "IPO-Lens-price-refresh/1.0"
 TIMEOUT = 20
 
 # Current gain is deliberately not part of eligibility because it changes daily.
-FINANCIAL_NAME = re.compile(
-    r"\b(?:bank|banking|finance|financial|nbfc|broker|broking|securities|asset|capital|"
-    r"trusteeship|insurance|wealth|lending|credit|microfinance|investments?|fund)\b", re.I)
-PHARMA_NAME = re.compile(
-    r"\b(?:pharma|pharmaceuticals?|biopharma|biotechnology|biotech)\b", re.I)
-EXPLICIT_FINANCIAL_COMPANIES = {
-    "icici prudential asset", "moneyview", "rikhav securities",
-    "beacon trusteeship", "pune e stock broking", "dam capital advisors",
-    "manba finance", "northern arc capital", "bajaj housing finance",
-    "rnfi services", "one mobikwik systems",
-}
+EXCLUDED_COMPANIES = {"nacdac infrastructure"}
 
 def multiple_value(value):
     match = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*x?\s*", str(value or ""), re.I)
@@ -46,12 +36,8 @@ def qualifies(row):
     qib = multiple_value(row.get("qib"))
     listing_gain = percent_value(row.get("listingGain"))
     name = str(row.get("companyName") or "")
-    return (qib is not None and qib >= 50
+    return (qib is not None and qib >= 10
             and listing_gain is not None and listing_gain >= 15
-            and not FINANCIAL_NAME.search(name)
-            and not PHARMA_NAME.search(name)
-            and not any(normalized_name(name) == excluded or normalized_name(name).startswith(excluded + " ")
-                        for excluded in EXPLICIT_FINANCIAL_COMPANIES)
             and normalized_name(name) not in EXCLUDED_COMPANIES)
 
 def normalized_name(value: str) -> str:
