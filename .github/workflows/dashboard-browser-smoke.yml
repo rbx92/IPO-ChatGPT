@@ -46,6 +46,7 @@ jobs:
             sourceRecords: window.IPO_DATA?.length ?? 0,
             uniqueSourceNames: new Set((window.IPO_DATA || []).map(x => String(x.companyName || '').trim().toLowerCase())).size,
             sliders: document.querySelectorAll('input[type="range"]').length,
+            sortDefault: document.querySelector('#sortBy')?.value || '',
             bodyWidth: document.documentElement.scrollWidth,
             viewportWidth: window.innerWidth
           }));
