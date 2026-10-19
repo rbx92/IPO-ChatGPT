@@ -20,6 +20,27 @@ class LifecycleTests(unittest.TestCase):
         self.assertTrue(module.is_listed_record({"listingPrice": 123.45}))
         self.assertFalse(module.is_listed_record({"stage": "Waiting for Listing", "listingPrice": None}))
 
+
+    def test_listing_transition_never_sets_screener_as_cmp_source(self):
+        from datetime import date
+        prior = {
+            "companyName": "Example IPO",
+            "currentPrice": 99.0,
+            "currentGain": " -1.0%",
+            "priceSource": "Groww",
+            "priceUpdatedAt": "2026-10-18T16:00+05:30",
+        }
+        live = {"companyName": "Example IPO", "currentPrice": None, "currentGain": None}
+        module.apply_listing_result(live, date(2026, 10, 1), 120.0, 100.0)
+        merged = {**prior, **live}
+        self.assertEqual(live["listingPrice"], 120.0)
+        self.assertEqual(live["listingGain"], "20.0%")
+        self.assertNotIn("currentPrice", live)
+        self.assertNotIn("currentGain", live)
+        self.assertNotIn("priceSource", live)
+        self.assertEqual(merged["currentPrice"], 99.0)
+        self.assertEqual(merged["priceSource"], "Groww")
+
     def test_screener_rate_limit_stops_following_lookups(self):
         self.assertTrue(module.is_screener_rate_limit(RuntimeError("Screener denied/throttled request (HTTP 429); stopping safely")))
         self.assertTrue(module.is_screener_rate_limit(RuntimeError("Screener denied/throttled request (HTTP 403); stopping safely")))
