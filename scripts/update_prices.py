@@ -28,9 +28,27 @@ TIMEOUT = 20
 
 # Current gain is deliberately not part of eligibility because it changes daily.
 
+def update_priority(item):
+    """Prioritize never-updated IPOs, then the oldest successful price update."""
+    _, row = item
+    value = row.get("priceUpdatedAt")
+    if not value:
+        return (0, 0.0)
+    try:
+        stamp = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        # Normalize timezone-naive legacy timestamps as UTC for stable ordering.
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=__import__("datetime").timezone.utc)
+        return (1, stamp.timestamp())
+    except (TypeError, ValueError, OverflowError):
+        # Missing/invalid timestamps need a refresh just like never-updated rows.
+        return (0, 0.0)
+
 def select_eligible_rows(rows):
-    """Return eligible rows with their original indexes without filtering/mutating rows."""
-    return [(index, row) for index, row in enumerate(rows) if qualifies(row)]
+    """Return eligible rows in refresh-priority order, preserving original indexes."""
+    selected = [(index, row) for index, row in enumerate(rows) if qualifies(row)]
+    # Do not let the historical file order starve later IPOs when a run is cut short.
+    return sorted(selected, key=update_priority)
 
 class CurrentPriceParser(HTMLParser):
     def __init__(self):
