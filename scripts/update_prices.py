@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Conservative Screener.in CMP validation for IPO Lens.
+"""Legacy Screener helpers retained for lifecycle compatibility and regression tests.
 
-Reads root ipos.json, processes rows in batches (default 9), rounds CMP to whole rupees,
-and updates currentGain. Each completed batch is saved, so a later error does not discard
-previous batches. Does not fuzzy-match names or bypass 403/429 restrictions.
+Direct execution is disabled: all future CMP updates must use update_groww_prices.py.
+The exact-name eligibility and parsing helpers remain imported by tests and lifecycle
+logic, but this module is no longer an approved CMP updater.
 """
 from __future__ import annotations
 import argparse, json, re, sys, time
@@ -221,4 +221,7 @@ def main():
         print(f"UPDATE COMPLETE: {updated} qualifying IPO prices updated; {unmatched} unmatched. Non-qualifying records were preserved. CMP rounded to whole rupees.")
     return 0
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(
+        "This legacy Screener CMP updater is retired. Use scripts/update_groww_prices.py; "
+        "Groww is the sole approved CMP source."
+    )
