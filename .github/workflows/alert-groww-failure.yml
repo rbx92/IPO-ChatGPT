@@ -31,9 +31,13 @@ jobs:
 
           phone_id = os.environ.get("WA_PHONE_NUMBER_ID", "").strip()
           token = os.environ.get("WA_ACCESS_TOKEN", "").strip()
-          target = os.environ.get("WA_TARGET_NUMBER", "").strip()
+          targets = [
+              item.strip()
+              for item in os.environ.get("WA_TARGET_NUMBER", "").split(",")
+              if item.strip()
+          ]
 
-          if not all((phone_id, token, target)):
+          if not all((phone_id, token, targets)):
               print("ERROR: WhatsApp alert secrets are missing. Configure WA_PHONE_NUMBER_ID, WA_ACCESS_TOKEN, and WA_TARGET_NUMBER.")
               sys.exit(1)
 
@@ -46,30 +50,32 @@ jobs:
               "The last successful feed is preserved; check the workflow logs and repair the scraper. "
               f"Workflow: {run_name}. Commit: {sha}. Logs: {run_url}"
           )
-          payload = {
-              "messaging_product": "whatsapp",
-              "to": target,
-              "type": "text",
-              "text": {"preview_url": False, "body": message},
-          }
-          request = urllib.request.Request(
-              f"https://graph.facebook.com/v21.0/{phone_id}/messages",
-              data=json.dumps(payload).encode("utf-8"),
-              headers={
-                  "Authorization": f"Bearer {token}",
-                  "Content-Type": "application/json",
-              },
-              method="POST",
-          )
-          try:
-              with urllib.request.urlopen(request, timeout=25) as response:
-                  result = response.read().decode("utf-8")
-                  print(f"WhatsApp API accepted failure alert: HTTP {response.status}")
-                  print(result)
-          except urllib.error.HTTPError as exc:
-              print(f"WhatsApp API returned HTTP {exc.code}: {exc.read().decode('utf-8', 'replace')}")
-              sys.exit(1)
-          except Exception as exc:
-              print(f"Could not send WhatsApp failure alert: {exc}")
+          failures = 0
+          for target in targets:
+              payload = {
+                  "messaging_product": "whatsapp",
+                  "to": target,
+                  "type": "text",
+                  "text": {"preview_url": False, "body": message},
+              }
+              request = urllib.request.Request(
+                  f"https://graph.facebook.com/v21.0/{phone_id}/messages",
+                  data=json.dumps(payload).encode("utf-8"),
+                  headers={
+                      "Authorization": f"Bearer {token}",
+                      "Content-Type": "application/json",
+                  },
+                  method="POST",
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=25) as response:
+                      print(f"WhatsApp API accepted alert for recipient ending {target[-4:]}: HTTP {response.status}")
+              except urllib.error.HTTPError as exc:
+                  failures += 1
+                  print(f"WhatsApp API returned HTTP {exc.code} for recipient ending {target[-4:]}: {exc.read().decode('utf-8', 'replace')}")
+              except Exception as exc:
+                  failures += 1
+                  print(f"Could not send alert to recipient ending {target[-4:]}: {exc}")
+          if failures:
               sys.exit(1)
           PY
