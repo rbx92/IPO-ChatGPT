@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-20T07:45:17+00:00",
+  "updatedAt": "2026-10-20T07:51:33+00:00",
   "ipos": [
     {
       "companyName": "Zetwerk",
@@ -9,16 +9,17 @@
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 151.0,
-      "qib": "1.32x",
-      "hni": "0.65x",
-      "retail": "0.50x",
-      "total": "0.98x",
+      "qib": "4.73x",
+      "hni": "1.40x",
+      "retail": "0.72x",
+      "total": "3.06x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "subscriptionUpdatedAt": "2026-10-20T07:51:33+00:00"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -26,16 +27,17 @@
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 344.0,
-      "qib": "1.59x",
-      "hni": "4.07x",
-      "retail": "1.69x",
-      "total": "2.12x",
+      "qib": "34.70x",
+      "hni": "14.59x",
+      "retail": "2.90x",
+      "total": "14.13x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "subscriptionUpdatedAt": "2026-10-20T07:51:33+00:00"
     },
     {
       "companyName": "Tonbo Imaging",
@@ -43,16 +45,17 @@
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 700.0,
-      "qib": "31.18x",
-      "hni": "102.94x",
-      "retail": "20.86x",
-      "total": "41.39x",
+      "qib": "293.56x",
+      "hni": "170.81x",
+      "retail": "30.63x",
+      "total": "135.65x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "subscriptionUpdatedAt": "2026-10-20T07:51:33+00:00"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
@@ -60,16 +63,17 @@
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 586.0,
-      "qib": "8.04x",
-      "hni": "20.44x",
-      "retail": "3.61x",
-      "total": "8.47x",
+      "qib": "120.78x",
+      "hni": "40.36x",
+      "retail": "5.78x",
+      "total": "45.98x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "subscriptionUpdatedAt": "2026-10-20T07:51:33+00:00"
     },
     {
       "companyName": "Shellz India",
@@ -77,16 +81,17 @@
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
       "issuePrice": 179.0,
-      "qib": "4.25x",
-      "hni": "9.87x",
-      "retail": "14.13x",
-      "total": "10.32x",
+      "qib": "41.92x",
+      "hni": "50.44x",
+      "retail": "55.43x",
+      "total": "50.49x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
       "status": "Waiting for Listing",
-      "stage": "Waiting for Listing"
+      "stage": "Waiting for Listing",
+      "subscriptionUpdatedAt": "2026-10-20T07:51:33+00:00"
     },
     {
       "companyName": "Fusion CX",
