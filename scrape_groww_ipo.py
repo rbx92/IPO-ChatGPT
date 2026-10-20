@@ -5,6 +5,7 @@ handled separately by scripts/update_prices.py using Screener.in.
 """
 
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -64,6 +65,20 @@ def find_stage_column(frame):
     return None
 
 
+def parse_close_date(value):
+    value = clean(value)
+    for fmt in (
+        "%d %b %Y", "%d %B %Y", "%Y-%m-%d", "%d-%m-%Y",
+        "%d/%m/%Y", "%d-%b-%Y", "%d %b, %Y", "%b %d, %Y",
+    ):
+        try:
+            return datetime.strptime(value, fmt).date()
+        except ValueError:
+            continue
+    parsed = pd.to_datetime(value, dayfirst=True, errors="coerce")
+    return None if pd.isna(parsed) else parsed.date()
+
+
 def main():
     print("Fetching Groww main IPO page...")
     ipo_tables = fetch_tables(IPO_URL)
@@ -109,6 +124,22 @@ def main():
         raise RuntimeError("Duplicate company names among Apply rows; refusing to write.")
 
     print(f"Found {len(apply_ipos)} IPOs marked Apply.")
+
+    # The standard schedule runs hourly at minute 17. Additional scheduled
+    # runs are added on IPO closing days: every 15 minutes, then every 5
+    # minutes during the final hour. On non-closing days, skip those extra
+    # scheduled runs so the normal hourly refresh remains unchanged.
+    now_ist = datetime.now(ZoneInfo("Asia/Kolkata"))
+    is_scheduled_run = os.environ.get("GITHUB_EVENT_NAME") == "schedule"
+    closes_today = any(
+        parse_close_date(ipo["close_date"]) == now_ist.date()
+        for ipo in apply_ipos
+    )
+    if is_scheduled_run and now_ist.minute != 17 and not closes_today:
+        print("No IPO closes today; skipping this extra high-frequency run.")
+        return
+    if closes_today and is_scheduled_run:
+        print("IPO closing day detected; refreshing subscription figures on the enhanced schedule.")
 
     print("Fetching Groww subscription page...")
     subscription_tables = fetch_tables(SUBSCRIPTION_URL)
