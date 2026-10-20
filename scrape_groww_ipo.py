@@ -236,6 +236,23 @@ def main():
             old["applicationEnd"] = close_date.strftime("%d %b %Y")
             old["stage"] = old.get("stage") if old.get("stage") == "Listed" else "Waiting for Listing"
             old["status"] = old.get("status") if old.get("status") == "Listed" else "Waiting for Listing"
+
+        # Keep closed-but-not-yet-listed IPO subscription figures fresh too.
+        # Groww's subscription table can retain the final/current category totals
+        # after an IPO disappears from the Apply table. Do not freeze the values
+        # captured on the last application day.
+        if str(old.get("stage") or old.get("status") or "").strip().lower() == "waiting for listing":
+            matched = subscriptions.get(normalized_name(old.get("companyName", "")))
+            if matched is not None:
+                old["qib"] = clean(matched[qib_col]) or old.get("qib", "—")
+                old["hni"] = clean(matched[nii_col]) or old.get("hni", "—")
+                old["retail"] = clean(matched[retail_col]) or old.get("retail", "—")
+                old["total"] = clean(matched[total_col]) or old.get("total", "—")
+                if sub_price_col and clean(matched[sub_price_col]):
+                    parsed_price = number(matched[sub_price_col])
+                    if parsed_price is not None:
+                        old["issuePrice"] = parsed_price
+                old["subscriptionUpdatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         records.append(old)
         current_keys.add(key)
 
