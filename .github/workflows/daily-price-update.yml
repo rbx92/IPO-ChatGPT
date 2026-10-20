@@ -27,8 +27,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update-cmp:
-    # Never run the live data writer from a test/feature branch, including manual dispatch.
-    if: github.ref == 'refs/heads/main'
+    # Paused pending written permission from Screener.in for automated access and public data use.
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 360
     env:
