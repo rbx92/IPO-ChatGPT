@@ -3,7 +3,15 @@ name: Refresh Groww IPO feed
 on:
   workflow_dispatch:
   schedule:
+    # Normal hourly refresh (UTC minute 17).
     - cron: "17 * * * *"
+    # IPO closing-day checks: every 15 minutes from 9:00 AM to 3:45 PM IST.
+    - cron: "30,45 3 * * 1-5"
+    - cron: "*/15 4-9 * * 1-5"
+    - cron: "0,15 10 * * 1-5"
+    # Final hour of an IPO closing day: every 5 minutes from 4:00 PM to 4:55 PM IST.
+    - cron: "30,35,40,45,50,55 10 * * 1-5"
+    - cron: "0,5,10,15,20,25 11 * * 1-5"
   push:
     paths:
       - "scrape_groww_ipo.py"
