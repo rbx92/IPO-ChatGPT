@@ -13,6 +13,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   transition:
+    # Paused pending written permission from Screener.in for automated access and public data use.
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
