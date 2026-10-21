@@ -136,8 +136,25 @@ def main():
         for ipo in apply_ipos
     )
     if is_scheduled_run and now_ist.minute != 17 and not closes_today:
-        print("No IPO closes today; skipping this extra high-frequency run.")
-        return
+        # Extra schedule slots should normally be skipped on non-closing days.
+        # However, GitHub may delay or miss the regular :17 run. If the saved
+        # feed is stale, allow this run to refresh it so Open IPOs do not vanish
+        # from the dashboard merely because the hourly schedule was delayed.
+        feed_is_fresh = False
+        if OUT.exists():
+            try:
+                saved = json.loads(OUT.read_text(encoding="utf-8"))
+                updated = datetime.fromisoformat(str(saved.get("updatedAt", "")).replace("Z", "+00:00"))
+                if updated.tzinfo is None:
+                    updated = updated.replace(tzinfo=timezone.utc)
+                feed_age_minutes = (datetime.now(timezone.utc) - updated.astimezone(timezone.utc)).total_seconds() / 60
+                feed_is_fresh = 0 <= feed_age_minutes < 45
+            except (ValueError, TypeError, json.JSONDecodeError):
+                feed_is_fresh = False
+        if feed_is_fresh:
+            print("No IPO closes today and feed is fresh; skipping this extra high-frequency run.")
+            return
+        print("No IPO closes today, but live feed is stale or unreadable; refreshing as a safety fallback.")
     if closes_today and is_scheduled_run:
         print("IPO closing day detected; refreshing subscription figures on the enhanced schedule.")
 
