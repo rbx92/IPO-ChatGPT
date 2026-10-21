@@ -28,7 +28,47 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:27+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:09+00:00",
+    "yahooSymbol": "EIMS.BO",
+    "priceHistory": [
+      {
+        "date": "2026-10-08",
+        "close": 119.7
+      },
+      {
+        "date": "2026-10-09",
+        "close": 113.72
+      },
+      {
+        "date": "2026-10-12",
+        "close": 112.28
+      },
+      {
+        "date": "2026-10-13",
+        "close": 106.67
+      },
+      {
+        "date": "2026-10-14",
+        "close": 105.6
+      },
+      {
+        "date": "2026-10-15",
+        "close": 110.88
+      },
+      {
+        "date": "2026-10-16",
+        "close": 116.42
+      },
+      {
+        "date": "2026-10-19",
+        "close": 110.6
+      },
+      {
+        "date": "2026-10-21",
+        "close": 105.07
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Shree TNB Polymers",
@@ -73,7 +113,51 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:29+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:11+00:00",
+    "yahooSymbol": "VANS.BO",
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "close": 235.4
+      },
+      {
+        "date": "2026-10-08",
+        "close": 247.15
+      },
+      {
+        "date": "2026-10-09",
+        "close": 259.5
+      },
+      {
+        "date": "2026-10-12",
+        "close": 272.45
+      },
+      {
+        "date": "2026-10-13",
+        "close": 286.05
+      },
+      {
+        "date": "2026-10-14",
+        "close": 300.35
+      },
+      {
+        "date": "2026-10-15",
+        "close": 315.35
+      },
+      {
+        "date": "2026-10-16",
+        "close": 331.1
+      },
+      {
+        "date": "2026-10-19",
+        "close": 347.65
+      },
+      {
+        "date": "2026-10-21",
+        "close": 365.0
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Acme Universal Safezone 9",
@@ -120,7 +204,63 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:30+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:12+00:00",
+    "yahooSymbol": "ROOPA.BO",
+    "priceHistory": [
+      {
+        "date": "2026-10-01",
+        "close": 115.52
+      },
+      {
+        "date": "2026-10-05",
+        "close": 109.75
+      },
+      {
+        "date": "2026-10-06",
+        "close": 113.29
+      },
+      {
+        "date": "2026-10-07",
+        "close": 111.15
+      },
+      {
+        "date": "2026-10-08",
+        "close": 105.6
+      },
+      {
+        "date": "2026-10-09",
+        "close": 102.75
+      },
+      {
+        "date": "2026-10-12",
+        "close": 104.03
+      },
+      {
+        "date": "2026-10-13",
+        "close": 105.54
+      },
+      {
+        "date": "2026-10-14",
+        "close": 106.45
+      },
+      {
+        "date": "2026-10-15",
+        "close": 104.52
+      },
+      {
+        "date": "2026-10-16",
+        "close": 102.73
+      },
+      {
+        "date": "2026-10-19",
+        "close": 102.0
+      },
+      {
+        "date": "2026-10-21",
+        "close": 93.0
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Himalaya Nutravedics",
@@ -151,7 +291,75 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:31+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:13+00:00",
+    "yahooSymbol": "ROBOKIDZ.BO",
+    "priceHistory": [
+      {
+        "date": "2026-09-28",
+        "close": 211.45
+      },
+      {
+        "date": "2026-09-29",
+        "close": 222.0
+      },
+      {
+        "date": "2026-09-30",
+        "close": 232.7
+      },
+      {
+        "date": "2026-10-01",
+        "close": 221.1
+      },
+      {
+        "date": "2026-10-05",
+        "close": 210.05
+      },
+      {
+        "date": "2026-10-06",
+        "close": 203.9
+      },
+      {
+        "date": "2026-10-07",
+        "close": 206.7
+      },
+      {
+        "date": "2026-10-08",
+        "close": 198.6
+      },
+      {
+        "date": "2026-10-09",
+        "close": 200.65
+      },
+      {
+        "date": "2026-10-12",
+        "close": 193.15
+      },
+      {
+        "date": "2026-10-13",
+        "close": 205.65
+      },
+      {
+        "date": "2026-10-14",
+        "close": 207.85
+      },
+      {
+        "date": "2026-10-15",
+        "close": 192.4
+      },
+      {
+        "date": "2026-10-16",
+        "close": 179.35
+      },
+      {
+        "date": "2026-10-19",
+        "close": 149.8
+      },
+      {
+        "date": "2026-10-21",
+        "close": 143.85
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "SpectraA Technology Solutions",
@@ -244,7 +452,15 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:33+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:15+00:00",
+    "yahooSymbol": "ASHUTOSH-SM.NS",
+    "priceHistory": [
+      {
+        "date": "2026-10-21",
+        "close": 125.5
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Shanti Inorganics",
@@ -261,7 +477,15 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:34+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:16+00:00",
+    "yahooSymbol": "SHANTIINOR-SM.NS",
+    "priceHistory": [
+      {
+        "date": "2026-10-21",
+        "close": 198.3
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Kwick Forensic Solutions",
@@ -278,7 +502,139 @@
     "stockType": "SME",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:36+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:17+00:00",
+    "yahooSymbol": "KWICK.BO",
+    "priceHistory": [
+      {
+        "date": "2026-09-03",
+        "close": 157.5
+      },
+      {
+        "date": "2026-09-04",
+        "close": 165.32
+      },
+      {
+        "date": "2026-09-07",
+        "close": 157.58
+      },
+      {
+        "date": "2026-09-08",
+        "close": 149.71
+      },
+      {
+        "date": "2026-09-09",
+        "close": 155.46
+      },
+      {
+        "date": "2026-09-10",
+        "close": 155.61
+      },
+      {
+        "date": "2026-09-11",
+        "close": 155.36
+      },
+      {
+        "date": "2026-09-15",
+        "close": 147.6
+      },
+      {
+        "date": "2026-09-16",
+        "close": 142.35
+      },
+      {
+        "date": "2026-09-17",
+        "close": 139.38
+      },
+      {
+        "date": "2026-09-18",
+        "close": 147.77
+      },
+      {
+        "date": "2026-09-21",
+        "close": 147.88
+      },
+      {
+        "date": "2026-09-22",
+        "close": 140.49
+      },
+      {
+        "date": "2026-09-23",
+        "close": 156.08
+      },
+      {
+        "date": "2026-09-24",
+        "close": 178.93
+      },
+      {
+        "date": "2026-09-25",
+        "close": 172.93
+      },
+      {
+        "date": "2026-09-28",
+        "close": 168.32
+      },
+      {
+        "date": "2026-09-29",
+        "close": 191.71
+      },
+      {
+        "date": "2026-09-30",
+        "close": 186.36
+      },
+      {
+        "date": "2026-10-01",
+        "close": 178.8
+      },
+      {
+        "date": "2026-10-05",
+        "close": 172.8
+      },
+      {
+        "date": "2026-10-06",
+        "close": 196.9
+      },
+      {
+        "date": "2026-10-07",
+        "close": 213.25
+      },
+      {
+        "date": "2026-10-08",
+        "close": 210.85
+      },
+      {
+        "date": "2026-10-09",
+        "close": 234.1
+      },
+      {
+        "date": "2026-10-12",
+        "close": 236.15
+      },
+      {
+        "date": "2026-10-13",
+        "close": 227.1
+      },
+      {
+        "date": "2026-10-14",
+        "close": 228.7
+      },
+      {
+        "date": "2026-10-15",
+        "close": 221.05
+      },
+      {
+        "date": "2026-10-16",
+        "close": 213.45
+      },
+      {
+        "date": "2026-10-19",
+        "close": 200.25
+      },
+      {
+        "date": "2026-10-21",
+        "close": 190.45
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Technocrats Plasma Systems",
@@ -987,7 +1343,83 @@
     "stockType": "Mainboard",
     "priceUpdatedAt": "2026-10-19T17:09+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:38+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:19+00:00",
+    "yahooSymbol": "JSIPL.BO",
+    "priceHistory": [
+      {
+        "date": "2026-09-24",
+        "close": 134.38
+      },
+      {
+        "date": "2026-09-25",
+        "close": 141.09
+      },
+      {
+        "date": "2026-09-28",
+        "close": 148.14
+      },
+      {
+        "date": "2026-09-29",
+        "close": 155.54
+      },
+      {
+        "date": "2026-09-30",
+        "close": 163.31
+      },
+      {
+        "date": "2026-10-01",
+        "close": 171.45
+      },
+      {
+        "date": "2026-10-05",
+        "close": 180.0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 189.0
+      },
+      {
+        "date": "2026-10-07",
+        "close": 198.45
+      },
+      {
+        "date": "2026-10-08",
+        "close": 178.65
+      },
+      {
+        "date": "2026-10-09",
+        "close": 167.55
+      },
+      {
+        "date": "2026-10-12",
+        "close": 159.2
+      },
+      {
+        "date": "2026-10-13",
+        "close": 167.15
+      },
+      {
+        "date": "2026-10-14",
+        "close": 168.8
+      },
+      {
+        "date": "2026-10-15",
+        "close": 163.1
+      },
+      {
+        "date": "2026-10-16",
+        "close": 160.85
+      },
+      {
+        "date": "2026-10-19",
+        "close": 156.65
+      },
+      {
+        "date": "2026-10-21",
+        "close": 149.15
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Veegaland Developers",
@@ -1064,7 +1496,99 @@
     "stockType": "Mainboard",
     "priceUpdatedAt": "2026-10-19T06:10+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:39+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:20+00:00",
+    "yahooSymbol": "KARAMTARA.BO",
+    "priceHistory": [
+      {
+        "date": "2026-09-18",
+        "close": 356.35
+      },
+      {
+        "date": "2026-09-21",
+        "close": 357.15
+      },
+      {
+        "date": "2026-09-22",
+        "close": 364.75
+      },
+      {
+        "date": "2026-09-23",
+        "close": 362.05
+      },
+      {
+        "date": "2026-09-24",
+        "close": 370.7
+      },
+      {
+        "date": "2026-09-25",
+        "close": 358.7
+      },
+      {
+        "date": "2026-09-28",
+        "close": 359.75
+      },
+      {
+        "date": "2026-09-29",
+        "close": 360.15
+      },
+      {
+        "date": "2026-09-30",
+        "close": 396.15
+      },
+      {
+        "date": "2026-10-01",
+        "close": 411.05
+      },
+      {
+        "date": "2026-10-05",
+        "close": 416.3
+      },
+      {
+        "date": "2026-10-06",
+        "close": 439.85
+      },
+      {
+        "date": "2026-10-07",
+        "close": 415.9
+      },
+      {
+        "date": "2026-10-08",
+        "close": 392.75
+      },
+      {
+        "date": "2026-10-09",
+        "close": 406.1
+      },
+      {
+        "date": "2026-10-12",
+        "close": 387.25
+      },
+      {
+        "date": "2026-10-13",
+        "close": 372.1
+      },
+      {
+        "date": "2026-10-14",
+        "close": 382.3
+      },
+      {
+        "date": "2026-10-15",
+        "close": 393.5
+      },
+      {
+        "date": "2026-10-16",
+        "close": 386.35
+      },
+      {
+        "date": "2026-10-19",
+        "close": 371.3
+      },
+      {
+        "date": "2026-10-21",
+        "close": 359.35
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Pranav Constructions",
@@ -1125,7 +1649,131 @@
     "stockType": "Mainboard",
     "priceUpdatedAt": "2026-10-19T06:10+00:00",
     "priceSource": "Screener.in",
-    "priceHistoryUpdatedAt": "2026-10-21T10:20:41+00:00"
+    "priceHistoryUpdatedAt": "2026-10-21T18:12:22+00:00",
+    "yahooSymbol": "ESDS.BO",
+    "priceHistory": [
+      {
+        "date": "2026-09-07",
+        "close": 1074.65
+      },
+      {
+        "date": "2026-09-08",
+        "close": 1289.55
+      },
+      {
+        "date": "2026-09-09",
+        "close": 1418.5
+      },
+      {
+        "date": "2026-09-10",
+        "close": 1560.35
+      },
+      {
+        "date": "2026-09-11",
+        "close": 1716.35
+      },
+      {
+        "date": "2026-09-15",
+        "close": 1802.15
+      },
+      {
+        "date": "2026-09-16",
+        "close": 1712.05
+      },
+      {
+        "date": "2026-09-17",
+        "close": 1626.45
+      },
+      {
+        "date": "2026-09-18",
+        "close": 1545.15
+      },
+      {
+        "date": "2026-09-21",
+        "close": 1622.4
+      },
+      {
+        "date": "2026-09-22",
+        "close": 1703.5
+      },
+      {
+        "date": "2026-09-23",
+        "close": 1775.6
+      },
+      {
+        "date": "2026-09-24",
+        "close": 1850.15
+      },
+      {
+        "date": "2026-09-25",
+        "close": 1757.65
+      },
+      {
+        "date": "2026-09-28",
+        "close": 1669.8
+      },
+      {
+        "date": "2026-09-29",
+        "close": 1586.35
+      },
+      {
+        "date": "2026-09-30",
+        "close": 1507.05
+      },
+      {
+        "date": "2026-10-01",
+        "close": 1431.7
+      },
+      {
+        "date": "2026-10-05",
+        "close": 1360.15
+      },
+      {
+        "date": "2026-10-06",
+        "close": 1292.15
+      },
+      {
+        "date": "2026-10-07",
+        "close": 1356.75
+      },
+      {
+        "date": "2026-10-08",
+        "close": 1424.55
+      },
+      {
+        "date": "2026-10-09",
+        "close": 1495.75
+      },
+      {
+        "date": "2026-10-12",
+        "close": 1570.2
+      },
+      {
+        "date": "2026-10-13",
+        "close": 1593.45
+      },
+      {
+        "date": "2026-10-14",
+        "close": 1673.1
+      },
+      {
+        "date": "2026-10-15",
+        "close": 1589.45
+      },
+      {
+        "date": "2026-10-16",
+        "close": 1510.0
+      },
+      {
+        "date": "2026-10-19",
+        "close": 1434.5
+      },
+      {
+        "date": "2026-10-21",
+        "close": 1362.8
+      }
+    ],
+    "priceHistorySource": "Yahoo Finance"
   },
   {
     "companyName": "Lumino Industries",
