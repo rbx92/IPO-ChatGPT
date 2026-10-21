@@ -7,7 +7,8 @@ is mirrored to data.js for the dashboard. Run after market close.
 """
 from __future__ import annotations
 import json, re, sys, time
-from datetime import datetime, date
+from datetime import datetime, date, time as clock_time
+from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -75,7 +76,13 @@ def current_price(path):
     return round(p.prices[0],2)
 
 def main():
-    today=date.today().isoformat()
+    india_now=datetime.now(ZoneInfo("Asia/Kolkata"))
+    if india_now.weekday() >= 5:
+        print("Skipped: no regular NSE trading session expected today (weekend).")
+        return 0
+    if india_now.time() < clock_time(15, 45):
+        raise SystemExit("Run only after 15:45 India time so the saved price is the post-market CMP.")
+    today=india_now.date().isoformat()
     rows=json.loads(DATA.read_text(encoding="utf-8"))
     paths=json.loads(MAP.read_text(encoding="utf-8")) if MAP.exists() else {}
     listed=[]
