@@ -1,0 +1,28 @@
+name: Record Daily IPO CMP History
+on:
+  workflow_dispatch:
+  # Scheduled automation intentionally not enabled until permitted automated access to Screener is confirmed.
+permissions:
+  contents: write
+jobs:
+  record-cmp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Record listed IPO closing prices
+        run: python scripts/record_cmp_history.py
+      - name: Commit updated price history
+        run: |
+          if git diff --quiet -- ipos.json data.js screener_map.json; then
+            echo "No price history changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ipos.json data.js screener_map.json
+          git commit -m "Record daily IPO CMP history"
+          git push
