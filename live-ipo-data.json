@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-22T10:13:22+00:00",
+  "updatedAt": "2026-10-22T14:31:17+00:00",
   "ipos": [
     {
       "companyName": "Paras Healthcare",
@@ -10,9 +10,9 @@
       "applicationEnd": "23 Oct 2026",
       "issuePrice": 693.0,
       "qib": "0.06x",
-      "hni": "0.20x",
-      "retail": "1.22x",
-      "total": "0.31x",
+      "hni": "0.25x",
+      "retail": "1.31x",
+      "total": "0.34x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -26,10 +26,10 @@
       "listingDate": "23 Oct 2026",
       "applicationEnd": "23 Oct 2026",
       "issuePrice": 1119.0,
-      "qib": "10.07x",
-      "hni": "4.63x",
-      "retail": "1.37x",
-      "total": "4.37x",
+      "qib": "12.87x",
+      "hni": "5.65x",
+      "retail": "1.51x",
+      "total": "5.38x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -53,7 +53,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T10:13:22+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -71,7 +71,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T10:13:22+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
     },
     {
       "companyName": "Tonbo Imaging",
@@ -89,7 +89,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T10:13:22+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
@@ -107,7 +107,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T10:13:22+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
     },
     {
       "companyName": "Shellz India",
@@ -125,7 +125,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T10:13:22+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
     },
     {
       "companyName": "Fusion CX",
