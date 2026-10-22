@@ -163,7 +163,7 @@ def main():
             if is_screener_rate_limit(exc):
                 print("Stopping lifecycle network lookups after Screener denial/throttling; no retries or bypasses.", file=sys.stderr)
                 break
-        time.sleep(5)
+        time.sleep(60)  # 60 seconds between Screener requests, as in the CMP updater
     feed["updatedAt"] = datetime.now().astimezone().isoformat(timespec="seconds")
     FEED.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     rows = list(by_name.values())

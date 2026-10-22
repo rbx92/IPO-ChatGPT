@@ -18,11 +18,11 @@ The authoritative numeric thresholds and normalized company exclusions are in `e
 
 - **Historical IPO data:** `ipos.json`, mirrored into `data.js` for the static browser dashboard.
 - **Live IPO feed:** Groww subscription data is saved in `live-ipo-data.json`.
-- **Current market price (CMP):** The existing updater uses Screener.in for both SME and Mainboard IPOs, with exact company-name matching and saved paths in `screener_map.json`. Automated CMP updates are currently paused pending written permission from Screener.in for automated access and public data use.
+- **Current market price (CMP):** The existing updater uses Screener.in for both SME and Mainboard IPOs, with exact company-name matching and saved paths in `screener_map.json`. Automated CMP updates run daily in batches of 9 with a 60-second delay. Screener.in written permission was not obtained; the owner has chosen to scrape. The updater stops on any HTTP 401, 403 or 429 and does not retry or bypass it.
 - `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly. Its expired-application checks use India Standard Time (IST). It also runs on pushes that change `scrape_groww_ipo.py` or that workflow file.
-- `.github/workflows/ipo-lifecycle.yml` is currently paused pending written permission from Screener.in for automated access and public data use. Its lifecycle updater can advance records through Apply, Waiting for Listing, and Listed; date-based decisions use India Standard Time (IST).
-- `.github/workflows/daily-price-update.yml` is currently paused pending written permission from Screener.in. When permitted and re-enabled, it updates eligible IPO CMP in batches of 9 with a 60-second delay while preserving historical records.
-- The Groww feed refresh remains scheduled hourly. The two Screener-dependent jobs above are paused and skip execution; do not re-enable them until written permission is resolved.
+- `.github/workflows/ipo-lifecycle.yml` runs on weekdays. Its lifecycle updater, with a 60-second delay between Screener requests, can advance records through Apply, Waiting for Listing, and Listed; date-based decisions use India Standard Time (IST).
+- `.github/workflows/daily-price-update.yml` runs on weekdays. It updates eligible IPO CMP in batches of 9 with a 60-second delay while preserving historical records.
+- The Groww feed refresh runs hourly. The two Screener-dependent jobs above run on weekdays. Stop them if Screener returns HTTP 401, 403 or 429.
 
 The Screener CMP updater uses exact company-name matching and saved Screener paths, writes current-price fields only, preserves the full historical dataset, and stops on throttling or parse errors while retaining completed batches. The lifecycle updater may use Screener's first available daily close as a clearly labelled listing-price proxy. It also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
 
