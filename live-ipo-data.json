@@ -1,14 +1,15 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-22T15:19:45+00:00",
+  "updatedAt": "2026-10-22T18:09:17+00:00",
   "ipos": [
     {
       "companyName": "Paras Healthcare",
       "currentPrice": null,
       "listingDate": "23 Oct 2026",
       "applicationEnd": "23 Oct 2026",
-      "issuePrice": 693.0,
+      "issuePrice": null,
+      "priceBand": "₹660 - ₹693",
       "qib": "0.06x",
       "hni": "0.25x",
       "retail": "1.31x",
@@ -25,7 +26,8 @@
       "currentPrice": null,
       "listingDate": "23 Oct 2026",
       "applicationEnd": "23 Oct 2026",
-      "issuePrice": 1119.0,
+      "issuePrice": null,
+      "priceBand": "₹1065 - ₹1119",
       "qib": "13.29x",
       "hni": "5.89x",
       "retail": "1.53x",
@@ -42,7 +44,7 @@
       "currentPrice": null,
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
-      "issuePrice": 151.0,
+      "issuePrice": null,
       "qib": "4.73x",
       "hni": "1.40x",
       "retail": "0.72x",
@@ -53,14 +55,15 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T18:09:17+00:00",
+      "priceBand": "₹143 - ₹151"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
       "currentPrice": null,
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
-      "issuePrice": 344.0,
+      "issuePrice": null,
       "qib": "34.70x",
       "hni": "14.59x",
       "retail": "2.90x",
@@ -71,14 +74,15 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T18:09:17+00:00",
+      "priceBand": "₹327 - ₹344"
     },
     {
       "companyName": "Tonbo Imaging",
       "currentPrice": null,
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
-      "issuePrice": 700.0,
+      "issuePrice": null,
       "qib": "293.56x",
       "hni": "170.81x",
       "retail": "30.63x",
@@ -89,14 +93,15 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T18:09:17+00:00",
+      "priceBand": "₹665 - ₹700"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
       "currentPrice": null,
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
-      "issuePrice": 586.0,
+      "issuePrice": null,
       "qib": "120.78x",
       "hni": "40.36x",
       "retail": "5.78x",
@@ -107,14 +112,15 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T18:09:17+00:00",
+      "priceBand": "₹558 - ₹586"
     },
     {
       "companyName": "Shellz India",
       "currentPrice": null,
       "listingDate": "19 Oct 2026",
       "applicationEnd": "19 Oct 2026",
-      "issuePrice": 179.0,
+      "issuePrice": null,
       "qib": "41.92x",
       "hni": "50.44x",
       "retail": "55.43x",
@@ -125,7 +131,8 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T18:09:17+00:00",
+      "priceBand": "₹170 - ₹179"
     },
     {
       "companyName": "Fusion CX",
