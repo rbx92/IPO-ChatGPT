@@ -1954,7 +1954,7 @@
   {
     "companyName": "Aptus Pharma",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2153/aptus-pharma-ltd/",
-    "currentPrice": 463.6,
+    "currentPrice": null,
     "listingDate": "2025-09-30",
     "issuePrice": 70,
     "qib": "0.7x",
@@ -1962,8 +1962,9 @@
     "retail": "41.9x",
     "total": "20.8x",
     "listingGain": "15.40%",
-    "currentGain": "1555.70%",
-    "stockType": "SME"
+    "currentGain": null,
+    "stockType": "SME",
+    "dataIssue": "Current price and gain removed: the saved current price did not match the saved current gain. Needs re-checking from a source."
   },
   {
     "companyName": "TechD Cybersecurity",
@@ -2756,7 +2757,7 @@
   {
     "companyName": "Avax Apparels and Ornaments Ltd.",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1715/avax-apparels-and-ornaments-ltd/",
-    "currentPrice": 50.4,
+    "currentPrice": null,
     "listingDate": "2025-01-14",
     "issuePrice": 70,
     "qib": "-",
@@ -2764,8 +2765,9 @@
     "retail": "360.9x",
     "total": "247.2x",
     "listingGain": "90.00%",
-    "currentGain": "475.50%",
-    "stockType": "SME"
+    "currentGain": null,
+    "stockType": "SME",
+    "dataIssue": "Current price and gain removed: the saved current price did not match the saved current gain. Needs re-checking from a source."
   },
   {
     "companyName": "Indobell Insulation Ltd.",
@@ -3534,7 +3536,7 @@
   {
     "companyName": "Hamps Bio Ltd.",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1813/hamps-bio-ltd/",
-    "currentPrice": 25.5,
+    "currentPrice": null,
     "listingDate": "2024-12-20",
     "issuePrice": 51,
     "qib": "-",
@@ -3542,8 +3544,9 @@
     "retail": "1286.8x",
     "total": "1003.3x",
     "listingGain": "90.00%",
-    "currentGain": "0.00%",
-    "stockType": "SME"
+    "currentGain": null,
+    "stockType": "SME",
+    "dataIssue": "Current price and gain removed: the saved current price did not match the saved current gain. Needs re-checking from a source."
   },
   {
     "companyName": "Yash Highvoltage Ltd.",
@@ -4406,7 +4409,7 @@
   {
     "companyName": "Dhariwalcorp",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1637/dhariwalcorp-ltd/",
-    "currentPrice": 26.8,
+    "currentPrice": null,
     "listingDate": "2024-08-08",
     "issuePrice": 106,
     "qib": "39.8x",
@@ -4414,8 +4417,9 @@
     "retail": "251.8x",
     "total": "165.0x",
     "listingGain": "41.50%",
-    "currentGain": "26.40%",
-    "stockType": "SME"
+    "currentGain": null,
+    "stockType": "SME",
+    "dataIssue": "Current price and gain removed: the saved current price did not match the saved current gain. Needs re-checking from a source."
   },
   {
     "companyName": "Kizi Apparels",
