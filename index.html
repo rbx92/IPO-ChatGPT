@@ -95,7 +95,16 @@
 @keyframes ipoRainbowGlow{from{filter:drop-shadow(0 0 2px rgba(255,65,205,.65));box-shadow:0 0 7px rgba(255,53,184,.8),0 0 17px rgba(61,220,255,.65),0 0 28px rgba(128,68,255,.35),0 4px 14px #14213b0a}to{filter:drop-shadow(0 0 5px rgba(47,231,255,.85));box-shadow:0 0 11px rgba(255,53,184,.95),0 0 24px rgba(61,220,255,.8),0 0 36px rgba(128,68,255,.55),0 4px 14px #14213b0a}}
 @media(prefers-reduced-motion:reduce){.ipo.ipo-rainbow{animation:none;background:linear-gradient(var(--card),var(--card)) padding-box,conic-gradient(#ff35b8,#ffdf4d,#5dff91,#20e5ff,#635bff,#df43ff,#ff35b8) border-box;box-shadow:0 0 8px rgba(61,220,255,.6)}}
 
-/* Locked IPO card hierarchy and labelled price/gain comparison. */\n.ipo .ipo-foot .price-pair{display:none!important}.glow-insight{display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;padding:13px 14px;margin:0 0 12px;border-radius:14px;background:linear-gradient(110deg,rgba(126,76,255,.10),rgba(76,180,255,.08));color:#713ce5}\n.ipo .ipo-foot{flex-direction:column;align-items:stretch;justify-content:flex-start;gap:12px}\n.ipo .ipo-foot .glow-insight{width:100%;margin:0;flex:0 0 auto}\n.ipo .ipo-foot .gain-tag{align-self:stretch;width:100%;justify-content:space-around;box-sizing:border-box}.glow-insight-icon{display:grid;place-items:center;flex:0 0 36px;height:36px;border-right:1px solid rgba(126,76,255,.22);padding-right:10px;font-size:27px;font-weight:800}.glow-insight div{display:flex;flex-direction:column;gap:4px;min-width:0}.glow-insight b{font-size:13px;line-height:1.4;font-weight:800}.glow-insight small{font-size:11px;line-height:1.35;color:#71809a}
+/* Locked IPO card hierarchy and labelled price/gain comparison. */
+.ipo .ipo-foot .price-pair{display:none!important}
+.glow-insight{display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;padding:13px 14px;margin:0;border-radius:14px;background:linear-gradient(110deg,rgba(126,76,255,.10),rgba(76,180,255,.08));color:#713ce5}
+.ipo .ipo-foot{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:12px}
+.ipo .ipo-foot .glow-insight{width:100%;margin:0;flex:0 0 auto}
+.ipo .ipo-foot .gain-tag{align-self:stretch;width:100%;justify-content:space-around;box-sizing:border-box}
+.glow-insight-icon{display:grid;place-items:center;flex:0 0 36px;height:36px;border-right:1px solid rgba(126,76,255,.22);padding-right:10px;font-size:27px;font-weight:800}
+.glow-insight div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.glow-insight b{font-size:13px;line-height:1.4;font-weight:800}
+.glow-insight small{font-size:11px;line-height:1.35;color:#71809a}
 .ipo h2{color:#1e2d46}
 .qib-value{color:#1e2d46;margin-bottom:0}
 .qib-label{font-size:12px;color:#66758d;font-weight:600;margin:3px 0 17px}
