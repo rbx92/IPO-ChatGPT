@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-22T18:09:36+00:00",
+  "updatedAt": "2026-10-22T18:33:44+00:00",
   "ipos": [
     {
       "companyName": "Paras Healthcare",
       "currentPrice": null,
-      "listingDate": "23 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "23 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹660 - ₹693",
@@ -24,7 +24,7 @@
     {
       "companyName": "Jio Platforms",
       "currentPrice": null,
-      "listingDate": "23 Oct 2026",
+      "listingDate": null,
       "applicationEnd": "23 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹1065 - ₹1119",
@@ -56,7 +56,8 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "subscriptionUpdatedAt": "2026-10-22T18:09:36+00:00",
-      "priceBand": "₹143 - ₹151"
+      "priceBand": "₹143 - ₹151",
+      "listingPrice": null
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -75,7 +76,8 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "subscriptionUpdatedAt": "2026-10-22T18:09:36+00:00",
-      "priceBand": "₹327 - ₹344"
+      "priceBand": "₹327 - ₹344",
+      "listingPrice": null
     },
     {
       "companyName": "Tonbo Imaging",
@@ -94,7 +96,8 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "subscriptionUpdatedAt": "2026-10-22T18:09:36+00:00",
-      "priceBand": "₹665 - ₹700"
+      "priceBand": "₹665 - ₹700",
+      "listingPrice": null
     },
     {
       "companyName": "Bonfiglioli Transmissions",
@@ -113,7 +116,8 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "subscriptionUpdatedAt": "2026-10-22T18:09:36+00:00",
-      "priceBand": "₹558 - ₹586"
+      "priceBand": "₹558 - ₹586",
+      "listingPrice": null
     },
     {
       "companyName": "Shellz India",
@@ -132,61 +136,59 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "subscriptionUpdatedAt": "2026-10-22T18:09:36+00:00",
-      "priceBand": "₹170 - ₹179"
+      "priceBand": "₹170 - ₹179",
+      "listingPrice": null
     },
     {
       "companyName": "Fusion CX",
-      "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": "22 Oct 2026",
       "applicationEnd": "16 Oct 2026",
       "issuePrice": 289.0,
       "qib": "0.05x",
       "hni": "1.81x",
       "retail": "4.31x",
       "total": "1.30x",
-      "listingGain": null,
-      "currentGain": null,
+      "listingGain": "0.2%",
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
-      "listingPrice": null
+      "status": "Listed",
+      "stage": "Listed",
+      "listingPrice": 289.65,
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
     },
     {
       "companyName": "Ravita Engineering Services",
-      "currentPrice": null,
-      "listingDate": "16 Oct 2026",
+      "listingDate": "22 Oct 2026",
       "applicationEnd": "16 Oct 2026",
       "issuePrice": 112.0,
       "qib": "1.33x",
       "hni": "2.50x",
       "retail": "1.74x",
       "total": "1.83x",
-      "listingGain": null,
-      "currentGain": null,
+      "listingGain": "1.5%",
       "stockType": "SME",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
-      "listingPrice": null
+      "status": "Listed",
+      "stage": "Listed",
+      "listingPrice": 113.7,
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
     },
     {
       "companyName": "HD Fire Protect",
-      "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "21 Oct 2026",
       "issuePrice": 271.0,
       "qib": "13.03x",
       "hni": "126.93x",
       "retail": "20.93x",
       "total": "41.29x",
-      "listingGain": null,
-      "currentGain": null,
+      "listingGain": "13.2%",
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
+      "status": "Listed",
+      "stage": "Listed",
       "applicationEnd": "15 Oct 2026",
-      "listingPrice": null
+      "listingPrice": 306.75,
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
     },
     {
       "companyName": "Vaibhav Vyapar",
