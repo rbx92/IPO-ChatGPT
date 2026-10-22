@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-22T14:31:17+00:00",
+  "updatedAt": "2026-10-22T15:19:45+00:00",
   "ipos": [
     {
       "companyName": "Paras Healthcare",
@@ -26,10 +26,10 @@
       "listingDate": "23 Oct 2026",
       "applicationEnd": "23 Oct 2026",
       "issuePrice": 1119.0,
-      "qib": "12.87x",
-      "hni": "5.65x",
-      "retail": "1.51x",
-      "total": "5.38x",
+      "qib": "13.29x",
+      "hni": "5.89x",
+      "retail": "1.53x",
+      "total": "5.54x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -53,7 +53,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
     },
     {
       "companyName": "Sahajanand Medical Technologies",
@@ -71,7 +71,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
     },
     {
       "companyName": "Tonbo Imaging",
@@ -89,7 +89,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
     },
     {
       "companyName": "Bonfiglioli Transmissions",
@@ -107,7 +107,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
     },
     {
       "companyName": "Shellz India",
@@ -125,7 +125,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-22T14:31:17+00:00"
+      "subscriptionUpdatedAt": "2026-10-22T15:19:45+00:00"
     },
     {
       "companyName": "Fusion CX",
