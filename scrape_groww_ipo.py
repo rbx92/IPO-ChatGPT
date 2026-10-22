@@ -28,6 +28,22 @@ def clean(value):
     return re.sub(r"\s+", " ", str(value)).strip()
 
 
+def price_terms(value):
+    """Return (issue_price, price_band).
+
+    A single figure is a fixed issue price. A range (for example
+    "₹660 to ₹693") is a price band: the final issue price is not known until
+    allotment, so it is stored as text and never as a single number.
+    """
+    text = clean(value)
+    numbers = re.findall(r"\d[\d,]*(?:\.\d+)?", text)
+    if not numbers:
+        return None, None
+    if len(numbers) >= 2:
+        return None, text
+    return float(numbers[0].replace(",", "")), None
+
+
 def normalized_name(value):
     return re.sub(r"[^a-z0-9]", "", clean(value).lower())
 
@@ -109,7 +125,8 @@ def main():
             "name": name,
             "key": normalized_name(name),
             "close_date": clean(row[close_col]),
-            "issue_price": number(row[price_col]) if price_col else None,
+            "issue_price": price_terms(row[price_col])[0] if price_col else None,
+            "price_band": price_terms(row[price_col])[1] if price_col else None,
             "stock_type": "SME" if "sme" in kind else "Mainboard",
         })
 
@@ -193,17 +210,15 @@ def main():
         if matched is None:
             unmatched.append(ipo["name"])
             qib = hni = retail = total = "—"
-            issue_price = ipo["issue_price"]
+            issue_price, price_band = ipo["issue_price"], ipo["price_band"]
         else:
             qib = clean(matched[qib_col]) or "—"
             hni = clean(matched[nii_col]) or "—"
             retail = clean(matched[retail_col]) or "—"
             total = clean(matched[total_col]) or "—"
-            issue_price = (
-                number(matched[sub_price_col])
-                if sub_price_col and clean(matched[sub_price_col])
-                else ipo["issue_price"]
-            )
+            issue_price, price_band = ipo["issue_price"], ipo["price_band"]
+            if sub_price_col and clean(matched[sub_price_col]):
+                issue_price, price_band = price_terms(matched[sub_price_col])
 
         # Preserve the current dashboard schema. Historically, listingDate in
         # this feed contains the IPO close date; do not silently rename it here.
@@ -213,6 +228,7 @@ def main():
             "listingDate": ipo["close_date"],
             "applicationEnd": ipo["close_date"],
             "issuePrice": issue_price,
+            "priceBand": price_band,
             "qib": qib,
             "hni": hni,
             "retail": retail,
@@ -266,9 +282,9 @@ def main():
                 old["retail"] = clean(matched[retail_col]) or old.get("retail", "—")
                 old["total"] = clean(matched[total_col]) or old.get("total", "—")
                 if sub_price_col and clean(matched[sub_price_col]):
-                    parsed_price = number(matched[sub_price_col])
-                    if parsed_price is not None:
-                        old["issuePrice"] = parsed_price
+                    parsed_price, parsed_band = price_terms(matched[sub_price_col])
+                    old["issuePrice"] = parsed_price
+                    old["priceBand"] = parsed_band
                 old["subscriptionUpdatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         records.append(old)
         current_keys.add(key)
