@@ -1,26 +1,8 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-23T10:06:02+00:00",
+  "updatedAt": "2026-10-23T14:14:45+00:00",
   "ipos": [
-    {
-      "companyName": "Paras Healthcare",
-      "currentPrice": null,
-      "listingDate": "23 Oct 2026",
-      "applicationEnd": "23 Oct 2026",
-      "issuePrice": null,
-      "priceBand": "₹660 - ₹693",
-      "qib": "1.52x",
-      "hni": "0.56x",
-      "retail": "1.81x",
-      "total": "1.31x",
-      "listingGain": null,
-      "currentGain": null,
-      "stockType": "Mainboard",
-      "source": "Groww",
-      "status": "Open",
-      "stage": "Apply"
-    },
     {
       "companyName": "Jio Platforms",
       "currentPrice": null,
@@ -28,10 +10,10 @@
       "applicationEnd": "23 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹1065 - ₹1119",
-      "qib": "33.50x",
-      "hni": "13.38x",
-      "retail": "2.46x",
-      "total": "12.71x",
+      "qib": "67.68x",
+      "hni": "13.99x",
+      "retail": "2.70x",
+      "total": "21.46x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -48,11 +30,29 @@
       "priceBand": "₹88 - ₹93",
       "qib": "0.00x",
       "hni": "0.02x",
-      "retail": "0.12x",
-      "total": "0.06x",
+      "retail": "0.14x",
+      "total": "0.07x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
+      "source": "Groww",
+      "status": "Open",
+      "stage": "Apply"
+    },
+    {
+      "companyName": "Paras Healthcare",
+      "currentPrice": null,
+      "listingDate": "23 Oct 2026",
+      "applicationEnd": "23 Oct 2026",
+      "issuePrice": null,
+      "priceBand": "₹660 - ₹693",
+      "qib": "1.52x",
+      "hni": "0.56x",
+      "retail": "1.81x",
+      "total": "1.31x",
+      "listingGain": null,
+      "currentGain": null,
+      "stockType": "Mainboard",
       "source": "Groww",
       "status": "Open",
       "stage": "Apply"
@@ -73,7 +73,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T10:06:02+00:00",
+      "subscriptionUpdatedAt": "2026-10-23T14:14:45+00:00",
       "priceBand": "₹143 - ₹151"
     },
     {
@@ -92,7 +92,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T10:06:02+00:00",
+      "subscriptionUpdatedAt": "2026-10-23T14:14:45+00:00",
       "priceBand": "₹327 - ₹344"
     },
     {
@@ -111,7 +111,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T10:06:02+00:00",
+      "subscriptionUpdatedAt": "2026-10-23T14:14:45+00:00",
       "priceBand": "₹665 - ₹700"
     },
     {
@@ -149,7 +149,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T10:06:02+00:00",
+      "subscriptionUpdatedAt": "2026-10-23T14:14:45+00:00",
       "priceBand": "₹170 - ₹179"
     },
     {
