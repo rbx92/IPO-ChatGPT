@@ -1,0 +1,29 @@
+name: Groww probe (temporary)
+on:
+  push:
+    branches: [debug/groww-probe]
+    paths: [".github/workflows/zz-groww-probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python -m pip install --upgrade requests pandas lxml
+      - name: Probe
+        run: |
+          mkdir -p probe
+          for u in ipo ipo/subscription ipo/reliance-jio-ipo; do
+            f=probe/$(echo $u | tr / _).html
+            curl -sS -L -A "Mozilla/5.0" -o "$f" -w "$u %{http_code} %{size_download}\n" "https://groww.in/$u" >> probe/status.txt 2>&1 || true
+          done
+          python scrape_groww_ipo.py > probe/scraper.txt 2>&1 || echo "exit $?" >> probe/scraper.txt
+          python -c "import pandas,requests;print(pandas.__version__,requests.__version__)" >> probe/status.txt
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f probe && git commit -m "probe output" && git push
