@@ -1,0 +1,10 @@
+Fetching Groww main IPO page...
+Found 2 IPOs marked Apply.
+Fetching Groww subscription page...
+Traceback (most recent call last):
+  File "/home/runner/work/IPO-ChatGPT/IPO-ChatGPT/scrape_groww_ipo.py", line 324, in <module>
+    main()
+  File "/home/runner/work/IPO-ChatGPT/IPO-ChatGPT/scrape_groww_ipo.py", line 299, in main
+    raise RuntimeError(f"Output schema validation failed for {record['companyName']}.")
+RuntimeError: Output schema validation failed for Fusion CX.
+exit 1
