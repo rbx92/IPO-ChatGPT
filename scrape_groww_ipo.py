@@ -13,6 +13,8 @@ from zoneinfo import ZoneInfo
 from io import StringIO
 from pathlib import Path
 
+import time
+
 import pandas as pd
 import requests
 
@@ -53,10 +55,78 @@ def number(value):
     return float(found[-1]) if found else None
 
 
-def fetch_tables(url):
+DETAIL_URL = "https://groww.in/ipo/{slug}"
+NEXT_DATA = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.S)
+
+
+def next_data(html):
+    """Return the Next.js page props Groww embeds in every IPO page, or {}."""
+    found = NEXT_DATA.search(html)
+    if not found:
+        return {}
+    try:
+        return json.loads(found.group(1)).get("props", {}).get("pageProps", {}) or {}
+    except (ValueError, AttributeError):
+        return {}
+
+
+def detail_slugs(html):
+    """Map normalised company name -> Groww detail-page slug for open IPOs."""
+    slugs = {}
+    for item in next_data(html).get("openDataList") or []:
+        name, slug = item.get("companyName"), item.get("searchId")
+        if name and slug:
+            slugs[normalized_name(name)] = slug
+    return slugs
+
+
+def times(value):
+    return f"{value:.2f}x" if isinstance(value, (int, float)) else None
+
+
+def fetch_detail(slug):
+    """Read live category subscription and key dates from one IPO's own page.
+
+    Returns None on any problem so the caller falls back to the subscription
+    table instead of failing the whole refresh.
+    """
+    url = DETAIL_URL.format(slug=slug)
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=40)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"  Detail page unavailable for {slug}: {exc}")
+        return None
+    data = next_data(response.text).get("ipoData") or {}
+    rates = {
+        str(rate.get("category", "")).upper(): rate.get("subscriptionRate")
+        for rate in data.get("subscriptionRates") or []
+    }
+    if not rates:
+        print(f"  No subscription data on detail page for {slug}; using table.")
+        return None
+    return {
+        "sourceUrl": url,
+        "qib": times(rates.get("QIB")),
+        "hni": times(rates.get("NII") or rates.get("HNI")),
+        "retail": times(rates.get("RETAIL") or rates.get("RII")),
+        "total": times(rates.get("TOTAL")),
+        "subscriptionUpdatedAt": data.get("subscriptionUpdatedAt"),
+        "allotmentDate": str(data.get("allotmentDate") or "")[:10] or None,
+        "expectedListingDate": str(data.get("listingDate") or "")[:10] or None,
+    }
+
+
+def fetch_html(url):
     response = requests.get(url, headers=HEADERS, timeout=40)
     response.raise_for_status()
-    tables = pd.read_html(StringIO(response.text))
+    return response.text
+
+
+def fetch_tables(url, html=None):
+    if html is None:
+        html = fetch_html(url)
+    tables = pd.read_html(StringIO(html))
     if not tables:
         raise RuntimeError(f"No HTML tables found at {url}")
     return tables
@@ -97,7 +167,9 @@ def parse_close_date(value):
 
 def main():
     print("Fetching Groww main IPO page...")
-    ipo_tables = fetch_tables(IPO_URL)
+    ipo_html = fetch_html(IPO_URL)
+    ipo_tables = fetch_tables(IPO_URL, ipo_html)
+    slugs = detail_slugs(ipo_html)
     ipo_table = ipo_tables[0].copy()
     ipo_table.columns = [clean(column) for column in ipo_table.columns]
 
@@ -128,6 +200,7 @@ def main():
             "issue_price": price_terms(row[price_col])[0] if price_col else None,
             "price_band": price_terms(row[price_col])[1] if price_col else None,
             "stock_type": "SME" if "sme" in kind else "Mainboard",
+            "slug": slugs.get(normalized_name(name)),
         })
 
     if not apply_ipos:
@@ -220,6 +293,19 @@ def main():
             if sub_price_col and clean(matched[sub_price_col]):
                 issue_price, price_band = price_terms(matched[sub_price_col])
 
+        # Prefer each open IPO's own page: it carries the latest category
+        # figures with a timestamp, plus allotment and listing dates.
+        detail = fetch_detail(ipo["slug"]) if ipo["slug"] else None
+        if ipo["slug"]:
+            time.sleep(2)  # be gentle: one detail page every 2 seconds
+        if detail:
+            qib = detail["qib"] or qib
+            hni = detail["hni"] or hni
+            retail = detail["retail"] or retail
+            total = detail["total"] or total
+            if ipo["name"] in unmatched:
+                unmatched.remove(ipo["name"])
+
         # Preserve the current dashboard schema. Historically, listingDate in
         # this feed contains the IPO close date; do not silently rename it here.
         records.append({
@@ -240,6 +326,12 @@ def main():
             "status": "Open",
             "stage": "Apply",
         })
+        if detail:
+            records[-1].update({
+                key: detail[key]
+                for key in ("sourceUrl", "subscriptionUpdatedAt", "allotmentDate", "expectedListingDate")
+                if detail[key]
+            })
 
     if len(records) != len(apply_ipos):
         raise RuntimeError("Record count validation failed; refusing to write.")
@@ -295,8 +387,17 @@ def main():
         "source", "status", "stage",
     }
     for record in records:
-        if required_fields - set(record):
-            raise RuntimeError(f"Output schema validation failed for {record['companyName']}.")
+        missing = required_fields - set(record)
+        if not missing:
+            continue
+        if "companyName" in missing:
+            raise RuntimeError(f"Output schema validation failed: record without a name: {record}")
+        # Older saved records (for example ones another job marked Listed) can
+        # lack optional fields. Fill them with blanks instead of blocking the
+        # whole feed refresh, which is what stopped updates on 23 Oct 2026.
+        print(f"Repairing saved record {record['companyName']}: adding {sorted(missing)}")
+        for key in missing:
+            record[key] = None
 
     output = {
         "source": IPO_URL,

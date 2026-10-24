@@ -108,11 +108,16 @@ def apply_listing_result(row, listed_on, listing_price, issue_price):
     row["listingPrice"] = round(listing_price, 2)
     row["listingPriceBasis"] = "Screener first available daily close on/after application close; not official listing/opening price"
     row["listingGain"] = f"{(listing_price - issue_price) / issue_price * 100:.1f}%"
-    # CMP is owned exclusively by the Groww updater. Remove any placeholder fields
-    # from the live record so merging cannot replace a known historical Groww CMP
-    # with the first listing close from Screener.
-    for key in ("currentPrice", "currentGain", "priceSource", "priceUpdatedAt"):
+    # CMP is owned by the separate CMP updater. Keep the live feed's schema
+    # complete (blank placeholders) so the Groww refresh never rejects it;
+    # the history merge below skips these keys so a known CMP is not wiped.
+    row["currentPrice"] = None
+    row["currentGain"] = None
+    for key in ("priceSource", "priceUpdatedAt"):
         row.pop(key, None)
+
+
+CMP_KEYS = ("currentPrice", "currentGain", "priceSource", "priceUpdatedAt")
 
 
 def main():
@@ -156,7 +161,8 @@ def main():
                         # Only listed records with complete eligibility data enter the persistent dataset.
                         if qualifies({**row, "companyName": row.get("companyName")}):
                             prior = by_name.get(name, {})
-                            by_name[name] = {**prior, **row, "companyName": row["companyName"]}
+                            listed = {k: v for k, v in row.items() if k not in CMP_KEYS}
+                            by_name[name] = {**prior, **listed, "companyName": row["companyName"]}
                         changed += 1
         except (RuntimeError, URLError, ValueError, KeyError) as exc:
             print(f"Deferred {row.get('companyName')}: {exc}", file=sys.stderr)
