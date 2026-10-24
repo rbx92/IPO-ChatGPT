@@ -12,5 +12,12 @@
     "private",
     "company",
     "co"
-  ]
+  ],
+  "pullback_signal": {
+    "qib_min_multiple": 50,
+    "listing_gain_min_percent": 25,
+    "max_days_since_listing": 60,
+    "min_fall_percent": 15,
+    "max_fall_percent": 30
+  }
 }

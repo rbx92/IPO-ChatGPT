@@ -39,6 +39,10 @@ waiting_ipo = valid_qib AND (qib >= 10) AND NOT explicitly_excluded_company
 listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain >= 0.15) AND NOT explicitly_excluded_company
 ```
 
+## Post-listing pullback signal
+
+A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 60 days, and the fall from its highest close since listing to the latest close is 15-30%. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
+
 ## Current archive count (2026-10-24)
 
 - After deleting non-qualifying records: **219** IPO records (104 removed: 41 QIB below 10x, 35 listing gain below 15%, 27 with no QIB category, 1 excluded company).
