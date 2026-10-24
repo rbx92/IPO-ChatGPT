@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-23T19:22:46+00:00",
+  "updatedAt": "2026-10-24T17:29:46+00:00",
   "ipos": [
     {
       "companyName": "Jio Platforms",
@@ -18,14 +18,17 @@
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
-      "listingPrice": null
+      "status": "Open",
+      "stage": "Apply",
+      "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
+      "subscriptionUpdatedAt": "2026-10-23T18:55:36",
+      "allotmentDate": "2026-10-26",
+      "expectedListingDate": "2026-10-28"
     },
     {
       "companyName": "Core4 Engineer",
       "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "27 Oct 2026",
       "applicationEnd": "27 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹88 - ₹93",
@@ -38,7 +41,11 @@
       "stockType": "SME",
       "source": "Groww",
       "status": "Open",
-      "stage": "Apply"
+      "stage": "Apply",
+      "sourceUrl": "https://groww.in/ipo/core4-engineers-ipo",
+      "subscriptionUpdatedAt": "2026-10-23T18:55:37",
+      "allotmentDate": "2026-10-28",
+      "expectedListingDate": "2026-10-30"
     },
     {
       "companyName": "Paras Healthcare",
@@ -47,17 +54,18 @@
       "applicationEnd": "23 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹660 - ₹693",
-      "qib": "1.52x",
-      "hni": "0.56x",
-      "retail": "1.81x",
-      "total": "1.31x",
+      "qib": "3.09x",
+      "hni": "0.64x",
+      "retail": "1.96x",
+      "total": "2.22x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "listingPrice": null
+      "listingPrice": null,
+      "subscriptionUpdatedAt": "2026-10-24T17:29:46+00:00"
     },
     {
       "companyName": "Zetwerk",
@@ -75,7 +83,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T15:21:41+00:00",
+      "subscriptionUpdatedAt": "2026-10-24T17:29:46+00:00",
       "priceBand": "₹143 - ₹151",
       "listingPrice": null
     },
@@ -95,7 +103,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T15:21:41+00:00",
+      "subscriptionUpdatedAt": "2026-10-24T17:29:46+00:00",
       "priceBand": "₹327 - ₹344",
       "listingPrice": null
     },
@@ -115,7 +123,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T15:21:41+00:00",
+      "subscriptionUpdatedAt": "2026-10-24T17:29:46+00:00",
       "priceBand": "₹665 - ₹700",
       "listingPrice": null
     },
@@ -155,7 +163,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-23T15:21:41+00:00",
+      "subscriptionUpdatedAt": "2026-10-24T17:29:46+00:00",
       "priceBand": "₹170 - ₹179",
       "listingPrice": null
     },
@@ -174,7 +182,9 @@
       "status": "Listed",
       "stage": "Listed",
       "listingPrice": 289.65,
-      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price",
+      "currentPrice": null,
+      "currentGain": null
     },
     {
       "companyName": "Ravita Engineering Services",
@@ -191,7 +201,9 @@
       "status": "Listed",
       "stage": "Listed",
       "listingPrice": 113.7,
-      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price",
+      "currentPrice": null,
+      "currentGain": null
     },
     {
       "companyName": "HD Fire Protect",
@@ -208,7 +220,9 @@
       "stage": "Listed",
       "applicationEnd": "15 Oct 2026",
       "listingPrice": 306.75,
-      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price",
+      "currentPrice": null,
+      "currentGain": null
     },
     {
       "companyName": "Vaibhav Vyapar",
