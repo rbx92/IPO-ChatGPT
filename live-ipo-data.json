@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-25T19:39:20+00:00",
+  "updatedAt": "2026-10-25T22:34:55+00:00",
   "ipos": [
     {
       "companyName": "Core4 Engineer",
@@ -43,7 +43,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
-      "subscriptionUpdatedAt": "2026-10-25T19:39:20+00:00",
+      "subscriptionUpdatedAt": "2026-10-25T22:34:55+00:00",
       "allotmentDate": "2026-10-26",
       "expectedListingDate": "2026-10-28"
     },
@@ -65,7 +65,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "listingPrice": null,
-      "subscriptionUpdatedAt": "2026-10-25T19:39:20+00:00"
+      "subscriptionUpdatedAt": "2026-10-25T22:34:55+00:00"
     },
     {
       "companyName": "Zetwerk",
@@ -83,7 +83,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-25T19:39:20+00:00",
+      "subscriptionUpdatedAt": "2026-10-25T22:34:55+00:00",
       "priceBand": "₹143 - ₹151",
       "listingPrice": null
     },
@@ -103,7 +103,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-25T19:39:20+00:00",
+      "subscriptionUpdatedAt": "2026-10-25T22:34:55+00:00",
       "priceBand": "₹327 - ₹344",
       "listingPrice": null
     },
@@ -123,7 +123,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-25T19:39:20+00:00",
+      "subscriptionUpdatedAt": "2026-10-25T22:34:55+00:00",
       "priceBand": "₹665 - ₹700",
       "listingPrice": null
     },
