@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-26T09:15:50+00:00",
+  "updatedAt": "2026-10-26T13:19:33+00:00",
   "ipos": [
     {
       "companyName": "EAAA India Alternatives",
@@ -11,9 +11,9 @@
       "issuePrice": null,
       "priceBand": "₹1585 - ₹1665",
       "qib": "0.08x",
-      "hni": "0.16x",
-      "retail": "0.03x",
-      "total": "0.07x",
+      "hni": "0.32x",
+      "retail": "0.04x",
+      "total": "0.11x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/eaaa-india-alternatives-ipo",
-      "subscriptionUpdatedAt": "2026-10-26T14:35:46",
+      "subscriptionUpdatedAt": "2026-10-26T18:46:04",
       "allotmentDate": "2026-10-29",
       "expectedListingDate": "2026-11-02"
     },
@@ -33,9 +33,9 @@
       "issuePrice": null,
       "priceBand": "₹88 - ₹93",
       "qib": "0.00x",
-      "hni": "1.00x",
-      "retail": "0.34x",
-      "total": "0.49x",
+      "hni": "1.71x",
+      "retail": "0.40x",
+      "total": "0.76x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/core4-engineers-ipo",
-      "subscriptionUpdatedAt": "2026-10-26T14:35:47",
+      "subscriptionUpdatedAt": "2026-10-26T18:36:03",
       "allotmentDate": "2026-10-28",
       "expectedListingDate": "2026-10-30"
     },
@@ -65,7 +65,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
-      "subscriptionUpdatedAt": "2026-10-26T09:15:50+00:00",
+      "subscriptionUpdatedAt": "2026-10-26T13:19:33+00:00",
       "allotmentDate": "2026-10-26",
       "expectedListingDate": "2026-10-28"
     },
@@ -87,7 +87,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "listingPrice": null,
-      "subscriptionUpdatedAt": "2026-10-26T09:15:50+00:00"
+      "subscriptionUpdatedAt": "2026-10-26T13:19:33+00:00"
     },
     {
       "companyName": "Zetwerk",
@@ -105,7 +105,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-26T09:15:50+00:00",
+      "subscriptionUpdatedAt": "2026-10-26T13:19:33+00:00",
       "priceBand": "₹143 - ₹151",
       "listingPrice": null
     },
@@ -125,7 +125,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-26T09:15:50+00:00",
+      "subscriptionUpdatedAt": "2026-10-26T13:19:33+00:00",
       "priceBand": "₹327 - ₹344",
       "listingPrice": null
     },
@@ -145,7 +145,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-26T09:15:50+00:00",
+      "subscriptionUpdatedAt": "2026-10-26T13:19:33+00:00",
       "priceBand": "₹665 - ₹700",
       "listingPrice": null
     },
