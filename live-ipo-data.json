@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-27T19:54:01+00:00",
+  "updatedAt": "2026-10-27T21:21:45+00:00",
   "ipos": [
     {
       "companyName": "EAAA India Alternatives",
       "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "28 Oct 2026",
       "applicationEnd": "28 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹1585 - ₹1665",
@@ -28,7 +28,7 @@
     {
       "companyName": "BLS Polymers",
       "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "29 Oct 2026",
       "applicationEnd": "29 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹142 - ₹150",
@@ -50,7 +50,7 @@
     {
       "companyName": "SFC Environmental Technologies",
       "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "29 Oct 2026",
       "applicationEnd": "29 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹313 - ₹330",
@@ -72,7 +72,7 @@
     {
       "companyName": "Wiscon Industries",
       "currentPrice": null,
-      "listingDate": null,
+      "listingDate": "29 Oct 2026",
       "applicationEnd": "29 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹194 - ₹204",
@@ -98,10 +98,10 @@
       "applicationEnd": "27 Oct 2026",
       "issuePrice": null,
       "priceBand": "₹88 - ₹93",
-      "qib": "1.98x",
-      "hni": "6.31x",
-      "retail": "2.17x",
-      "total": "3.55x",
+      "qib": "5.06x",
+      "hni": "6.78x",
+      "retail": "2.59x",
+      "total": "4.62x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -109,7 +109,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/core4-engineers-ipo",
-      "subscriptionUpdatedAt": "2026-10-27T15:55:42",
+      "subscriptionUpdatedAt": "2026-10-27T21:21:45+00:00",
       "allotmentDate": "2026-10-28",
       "expectedListingDate": "2026-10-30",
       "listingPrice": null
@@ -132,7 +132,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
-      "subscriptionUpdatedAt": "2026-10-27T15:33:39+00:00",
+      "subscriptionUpdatedAt": "2026-10-27T21:21:45+00:00",
       "allotmentDate": "2026-10-26",
       "expectedListingDate": "2026-10-28",
       "listingPrice": null
@@ -155,7 +155,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "listingPrice": null,
-      "subscriptionUpdatedAt": "2026-10-27T15:33:39+00:00"
+      "subscriptionUpdatedAt": "2026-10-27T21:21:45+00:00"
     },
     {
       "companyName": "Zetwerk",
@@ -173,7 +173,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-27T15:33:39+00:00",
+      "subscriptionUpdatedAt": "2026-10-27T21:21:45+00:00",
       "priceBand": "₹143 - ₹151",
       "listingPrice": null
     },
@@ -193,7 +193,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-27T15:33:39+00:00",
+      "subscriptionUpdatedAt": "2026-10-27T21:21:45+00:00",
       "priceBand": "₹327 - ₹344",
       "listingPrice": null
     },
