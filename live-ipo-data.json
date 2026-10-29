@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-28T21:07:35+00:00",
+  "updatedAt": "2026-10-29T00:59:41+00:00",
   "ipos": [
     {
       "companyName": "BLS Polymers",
@@ -149,7 +149,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/eaaa-india-alternatives-ipo",
-      "subscriptionUpdatedAt": "2026-10-28T21:07:35+00:00",
+      "subscriptionUpdatedAt": "2026-10-29T00:59:41+00:00",
       "allotmentDate": "2026-10-29",
       "expectedListingDate": "2026-11-02",
       "listingPrice": null
@@ -172,7 +172,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/core4-engineers-ipo",
-      "subscriptionUpdatedAt": "2026-10-28T21:07:35+00:00",
+      "subscriptionUpdatedAt": "2026-10-29T00:59:41+00:00",
       "allotmentDate": "2026-10-28",
       "expectedListingDate": "2026-10-30",
       "listingPrice": null
@@ -195,7 +195,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
-      "subscriptionUpdatedAt": "2026-10-28T21:07:35+00:00",
+      "subscriptionUpdatedAt": "2026-10-29T00:59:41+00:00",
       "allotmentDate": "2026-10-26",
       "expectedListingDate": "2026-10-28",
       "listingPrice": null
@@ -218,7 +218,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "listingPrice": null,
-      "subscriptionUpdatedAt": "2026-10-28T21:07:35+00:00"
+      "subscriptionUpdatedAt": "2026-10-29T00:59:41+00:00"
     },
     {
       "companyName": "Zetwerk",
@@ -236,7 +236,7 @@
       "source": "Groww",
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-10-28T21:07:35+00:00",
+      "subscriptionUpdatedAt": "2026-10-29T00:59:41+00:00",
       "priceBand": "₹143 - ₹151",
       "listingPrice": null
     },
