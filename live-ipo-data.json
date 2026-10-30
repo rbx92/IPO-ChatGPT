@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-10-30T14:11:57+00:00",
+  "updatedAt": "2026-10-30T16:36:41+00:00",
   "ipos": [
     {
       "companyName": "Bombay Coated & Special Steels",
@@ -215,7 +215,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/bls-polymers-ipo",
-      "subscriptionUpdatedAt": "2026-10-30T14:11:57+00:00",
+      "subscriptionUpdatedAt": "2026-10-30T16:36:41+00:00",
       "allotmentDate": "2026-10-30",
       "expectedListingDate": "2026-11-03"
     },
@@ -237,7 +237,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/sfc-environmental-technologies-ipo",
-      "subscriptionUpdatedAt": "2026-10-30T14:11:57+00:00",
+      "subscriptionUpdatedAt": "2026-10-30T16:36:41+00:00",
       "allotmentDate": "2026-10-30",
       "expectedListingDate": "2026-11-03"
     },
