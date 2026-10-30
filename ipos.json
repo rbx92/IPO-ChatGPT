@@ -74,9 +74,13 @@
       {
         "date": "2026-10-29",
         "close": 91.75
+      },
+      {
+        "date": "2026-10-30",
+        "close": 87.25
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:24:31+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:01:00+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -158,9 +162,13 @@
       {
         "date": "2026-10-29",
         "close": 425.0
+      },
+      {
+        "date": "2026-10-30",
+        "close": 414.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:25:32+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:02:00+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -270,9 +278,13 @@
       {
         "date": "2026-10-29",
         "close": 96.93
+      },
+      {
+        "date": "2026-10-30",
+        "close": 95.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:26:33+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:03:01+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -378,9 +390,13 @@
       {
         "date": "2026-10-29",
         "close": 146.15
+      },
+      {
+        "date": "2026-10-30",
+        "close": 139.95
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:27:33+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:04:02+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -494,9 +510,13 @@
       {
         "date": "2026-10-29",
         "close": 242.05
+      },
+      {
+        "date": "2026-10-30",
+        "close": 230.8
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:28:34+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:05:02+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -672,9 +692,13 @@
       {
         "date": "2026-10-29",
         "close": 182.0
+      },
+      {
+        "date": "2026-10-30",
+        "close": 174.8
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:29:35+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:06:03+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -836,9 +860,13 @@
       {
         "date": "2026-10-29",
         "close": 130.1
+      },
+      {
+        "date": "2026-10-30",
+        "close": 128.1
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:30:36+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:07:04+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1000,9 +1028,13 @@
       {
         "date": "2026-10-29",
         "close": 191.3
+      },
+      {
+        "date": "2026-10-30",
+        "close": 181.75
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:31:36+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:08:04+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1172,9 +1204,13 @@
       {
         "date": "2026-10-29",
         "close": 181.65
+      },
+      {
+        "date": "2026-10-30",
+        "close": 173.4
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:32:37+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:09:05+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1696,9 +1732,13 @@
       {
         "date": "2026-10-29",
         "close": 359.55
+      },
+      {
+        "date": "2026-10-30",
+        "close": 344.35
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:33:38+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:10:05+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1792,9 +1832,13 @@
       {
         "date": "2026-10-29",
         "close": 52.64
+      },
+      {
+        "date": "2026-10-30",
+        "close": 50.34
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:34:38+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:11:06+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1892,9 +1936,13 @@
       {
         "date": "2026-10-29",
         "close": 180.38
+      },
+      {
+        "date": "2026-10-30",
+        "close": 168.05
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:35:39+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:12:07+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2012,9 +2060,13 @@
       {
         "date": "2026-10-29",
         "close": 642.55
+      },
+      {
+        "date": "2026-10-30",
+        "close": 635.5
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:36:40+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:13:07+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2132,9 +2184,13 @@
       {
         "date": "2026-10-29",
         "close": 156.06
+      },
+      {
+        "date": "2026-10-30",
+        "close": 163.86
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:37:40+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:14:08+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2298,9 +2354,13 @@
       {
         "date": "2026-10-29",
         "close": 130.25
+      },
+      {
+        "date": "2026-10-30",
+        "close": 131.61
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:38:41+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:15:09+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2434,9 +2494,13 @@
       {
         "date": "2026-10-29",
         "close": 349.25
+      },
+      {
+        "date": "2026-10-30",
+        "close": 374.9
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:39:42+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:16:09+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2578,9 +2642,13 @@
       {
         "date": "2026-10-29",
         "close": 93.01
+      },
+      {
+        "date": "2026-10-30",
+        "close": 92.98
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:40:43+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:17:10+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2778,9 +2846,13 @@
       {
         "date": "2026-10-29",
         "close": 1221.0
+      },
+      {
+        "date": "2026-10-30",
+        "close": 1160.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:41:43+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:18:11+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2950,9 +3022,13 @@
       {
         "date": "2026-10-29",
         "close": 89.69
+      },
+      {
+        "date": "2026-10-30",
+        "close": 86.8
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-29T21:42:44+00:00",
+    "priceHistoryUpdatedAt": "2026-10-30T21:19:11+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
