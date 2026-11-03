@@ -78,9 +78,17 @@
       {
         "date": "2026-10-30",
         "close": 87.25
+      },
+      {
+        "date": "2026-11-02",
+        "close": 87.5
+      },
+      {
+        "date": "2026-11-03",
+        "close": 82.64
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:01:00+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T21:57:05+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -166,9 +174,17 @@
       {
         "date": "2026-10-30",
         "close": 414.0
+      },
+      {
+        "date": "2026-11-02",
+        "close": 393.3
+      },
+      {
+        "date": "2026-11-03",
+        "close": 412.95
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:02:00+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T21:58:06+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -282,9 +298,17 @@
       {
         "date": "2026-10-30",
         "close": 95.0
+      },
+      {
+        "date": "2026-11-02",
+        "close": 95.0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 90.79
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:03:01+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T21:59:07+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -394,9 +418,17 @@
       {
         "date": "2026-10-30",
         "close": 139.95
+      },
+      {
+        "date": "2026-11-02",
+        "close": 139.05
+      },
+      {
+        "date": "2026-11-03",
+        "close": 135.6
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:04:02+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:00:07+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -514,9 +546,17 @@
       {
         "date": "2026-10-30",
         "close": 230.8
+      },
+      {
+        "date": "2026-11-02",
+        "close": 237.5
+      },
+      {
+        "date": "2026-11-03",
+        "close": 240.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:05:02+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:01:08+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -696,9 +736,17 @@
       {
         "date": "2026-10-30",
         "close": 174.8
+      },
+      {
+        "date": "2026-11-02",
+        "close": 139.85
+      },
+      {
+        "date": "2026-11-03",
+        "close": 127.65
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:06:03+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:02:09+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -864,9 +912,17 @@
       {
         "date": "2026-10-30",
         "close": 128.1
+      },
+      {
+        "date": "2026-11-02",
+        "close": 130.0
+      },
+      {
+        "date": "2026-11-03",
+        "close": 129.65
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:07:04+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:03:09+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1032,9 +1088,17 @@
       {
         "date": "2026-10-30",
         "close": 181.75
+      },
+      {
+        "date": "2026-11-02",
+        "close": 171.05
+      },
+      {
+        "date": "2026-11-03",
+        "close": 177.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:08:04+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:04:10+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1051,167 +1115,7 @@
     "currentGain": "92.2%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-03T18:01+00:00",
-    "priceSource": "Screener.in",
-    "priceHistory": [
-      {
-        "date": "2026-09-03",
-        "close": 157.5
-      },
-      {
-        "date": "2026-09-04",
-        "close": 165.32
-      },
-      {
-        "date": "2026-09-07",
-        "close": 157.58
-      },
-      {
-        "date": "2026-09-08",
-        "close": 149.71
-      },
-      {
-        "date": "2026-09-09",
-        "close": 155.46
-      },
-      {
-        "date": "2026-09-10",
-        "close": 155.61
-      },
-      {
-        "date": "2026-09-11",
-        "close": 155.36
-      },
-      {
-        "date": "2026-09-15",
-        "close": 147.6
-      },
-      {
-        "date": "2026-09-16",
-        "close": 142.35
-      },
-      {
-        "date": "2026-09-17",
-        "close": 139.38
-      },
-      {
-        "date": "2026-09-18",
-        "close": 147.77
-      },
-      {
-        "date": "2026-09-21",
-        "close": 147.88
-      },
-      {
-        "date": "2026-09-22",
-        "close": 140.49
-      },
-      {
-        "date": "2026-09-23",
-        "close": 156.08
-      },
-      {
-        "date": "2026-09-24",
-        "close": 178.93
-      },
-      {
-        "date": "2026-09-25",
-        "close": 172.93
-      },
-      {
-        "date": "2026-09-28",
-        "close": 168.32
-      },
-      {
-        "date": "2026-09-29",
-        "close": 191.71
-      },
-      {
-        "date": "2026-09-30",
-        "close": 186.36
-      },
-      {
-        "date": "2026-10-01",
-        "close": 178.8
-      },
-      {
-        "date": "2026-10-05",
-        "close": 172.8
-      },
-      {
-        "date": "2026-10-06",
-        "close": 196.9
-      },
-      {
-        "date": "2026-10-07",
-        "close": 213.25
-      },
-      {
-        "date": "2026-10-08",
-        "close": 210.85
-      },
-      {
-        "date": "2026-10-09",
-        "close": 234.1
-      },
-      {
-        "date": "2026-10-12",
-        "close": 236.15
-      },
-      {
-        "date": "2026-10-13",
-        "close": 227.1
-      },
-      {
-        "date": "2026-10-14",
-        "close": 228.7
-      },
-      {
-        "date": "2026-10-15",
-        "close": 221.05
-      },
-      {
-        "date": "2026-10-16",
-        "close": 213.45
-      },
-      {
-        "date": "2026-10-19",
-        "close": 200.25
-      },
-      {
-        "date": "2026-10-21",
-        "close": 190.45
-      },
-      {
-        "date": "2026-10-22",
-        "close": 203.85
-      },
-      {
-        "date": "2026-10-23",
-        "close": 188.95
-      },
-      {
-        "date": "2026-10-26",
-        "close": 184.6
-      },
-      {
-        "date": "2026-10-27",
-        "close": 175.1
-      },
-      {
-        "date": "2026-10-28",
-        "close": 178.1
-      },
-      {
-        "date": "2026-10-29",
-        "close": 181.65
-      },
-      {
-        "date": "2026-10-30",
-        "close": 173.4
-      }
-    ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:09:05+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceSource": "Screener.in"
   },
   {
     "companyName": "Technocrats Plasma Systems",
@@ -1736,9 +1640,17 @@
       {
         "date": "2026-10-30",
         "close": 344.35
+      },
+      {
+        "date": "2026-11-02",
+        "close": 341.1
+      },
+      {
+        "date": "2026-11-03",
+        "close": 337.45
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:10:05+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:05:11+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1836,9 +1748,17 @@
       {
         "date": "2026-10-30",
         "close": 50.34
+      },
+      {
+        "date": "2026-11-02",
+        "close": 51.54
+      },
+      {
+        "date": "2026-11-03",
+        "close": 53.89
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:11:06+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:06:12+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -1940,9 +1860,17 @@
       {
         "date": "2026-10-30",
         "close": 168.05
+      },
+      {
+        "date": "2026-11-02",
+        "close": 163.6
+      },
+      {
+        "date": "2026-11-03",
+        "close": 171.52
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:12:07+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:07:12+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2064,9 +1992,17 @@
       {
         "date": "2026-10-30",
         "close": 635.5
+      },
+      {
+        "date": "2026-11-02",
+        "close": 640.9
+      },
+      {
+        "date": "2026-11-03",
+        "close": 636.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:13:07+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:08:13+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2188,9 +2124,17 @@
       {
         "date": "2026-10-30",
         "close": 163.86
+      },
+      {
+        "date": "2026-11-02",
+        "close": 160.73
+      },
+      {
+        "date": "2026-11-03",
+        "close": 159.01
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:14:08+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:09:14+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2358,9 +2302,17 @@
       {
         "date": "2026-10-30",
         "close": 131.61
+      },
+      {
+        "date": "2026-11-02",
+        "close": 133.13
+      },
+      {
+        "date": "2026-11-03",
+        "close": 136.5
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:15:09+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:10:14+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2498,9 +2450,17 @@
       {
         "date": "2026-10-30",
         "close": 374.9
+      },
+      {
+        "date": "2026-11-02",
+        "close": 374.6
+      },
+      {
+        "date": "2026-11-03",
+        "close": 369.65
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:16:09+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:11:15+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2646,9 +2606,17 @@
       {
         "date": "2026-10-30",
         "close": 92.98
+      },
+      {
+        "date": "2026-11-02",
+        "close": 89.97
+      },
+      {
+        "date": "2026-11-03",
+        "close": 89.6
       }
     ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:17:10+00:00",
+    "priceHistoryUpdatedAt": "2026-11-03T22:12:16+00:00",
     "priceHistorySource": "Screener.in daily close"
   },
   {
@@ -2697,163 +2665,7 @@
     "currentGain": "176.9%",
     "stockType": "Mainboard",
     "priceUpdatedAt": "2026-11-03T18:01+00:00",
-    "priceSource": "Screener.in",
-    "priceHistory": [
-      {
-        "date": "2026-09-04",
-        "close": 908.4
-      },
-      {
-        "date": "2026-09-07",
-        "close": 1090.05
-      },
-      {
-        "date": "2026-09-08",
-        "close": 1308.05
-      },
-      {
-        "date": "2026-09-09",
-        "close": 1438.85
-      },
-      {
-        "date": "2026-09-10",
-        "close": 1582.2
-      },
-      {
-        "date": "2026-09-11",
-        "close": 1740.4
-      },
-      {
-        "date": "2026-09-15",
-        "close": 1824.7
-      },
-      {
-        "date": "2026-09-16",
-        "close": 1733.5
-      },
-      {
-        "date": "2026-09-17",
-        "close": 1646.85
-      },
-      {
-        "date": "2026-09-18",
-        "close": 1564.55
-      },
-      {
-        "date": "2026-09-21",
-        "close": 1642.75
-      },
-      {
-        "date": "2026-09-22",
-        "close": 1724.85
-      },
-      {
-        "date": "2026-09-23",
-        "close": 1770.7
-      },
-      {
-        "date": "2026-09-24",
-        "close": 1853.15
-      },
-      {
-        "date": "2026-09-25",
-        "close": 1760.5
-      },
-      {
-        "date": "2026-09-28",
-        "close": 1672.5
-      },
-      {
-        "date": "2026-09-29",
-        "close": 1588.9
-      },
-      {
-        "date": "2026-09-30",
-        "close": 1509.5
-      },
-      {
-        "date": "2026-10-01",
-        "close": 1434.1
-      },
-      {
-        "date": "2026-10-05",
-        "close": 1362.4
-      },
-      {
-        "date": "2026-10-06",
-        "close": 1294.3
-      },
-      {
-        "date": "2026-10-07",
-        "close": 1359.0
-      },
-      {
-        "date": "2026-10-08",
-        "close": 1426.9
-      },
-      {
-        "date": "2026-10-09",
-        "close": 1498.2
-      },
-      {
-        "date": "2026-10-12",
-        "close": 1571.1
-      },
-      {
-        "date": "2026-10-13",
-        "close": 1595.6
-      },
-      {
-        "date": "2026-10-14",
-        "close": 1675.3
-      },
-      {
-        "date": "2026-10-15",
-        "close": 1591.6
-      },
-      {
-        "date": "2026-10-16",
-        "close": 1512.1
-      },
-      {
-        "date": "2026-10-19",
-        "close": 1436.5
-      },
-      {
-        "date": "2026-10-21",
-        "close": 1364.7
-      },
-      {
-        "date": "2026-10-22",
-        "close": 1296.5
-      },
-      {
-        "date": "2026-10-23",
-        "close": 1231.7
-      },
-      {
-        "date": "2026-10-26",
-        "close": 1293.2
-      },
-      {
-        "date": "2026-10-27",
-        "close": 1283.5
-      },
-      {
-        "date": "2026-10-28",
-        "close": 1271.7
-      },
-      {
-        "date": "2026-10-29",
-        "close": 1221.0
-      },
-      {
-        "date": "2026-10-30",
-        "close": 1160.0
-      }
-    ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:18:11+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceSource": "Screener.in"
   },
   {
     "companyName": "Lumino Industries",
@@ -2869,167 +2681,7 @@
     "currentGain": "14.6%",
     "stockType": "Mainboard",
     "priceUpdatedAt": "2026-11-03T18:01+00:00",
-    "priceSource": "Screener.in",
-    "priceHistory": [
-      {
-        "date": "2026-09-03",
-        "close": 110.32
-      },
-      {
-        "date": "2026-09-04",
-        "close": 114.5
-      },
-      {
-        "date": "2026-09-07",
-        "close": 114.82
-      },
-      {
-        "date": "2026-09-08",
-        "close": 108.12
-      },
-      {
-        "date": "2026-09-09",
-        "close": 106.32
-      },
-      {
-        "date": "2026-09-10",
-        "close": 107.93
-      },
-      {
-        "date": "2026-09-11",
-        "close": 108.81
-      },
-      {
-        "date": "2026-09-15",
-        "close": 103.16
-      },
-      {
-        "date": "2026-09-16",
-        "close": 100.29
-      },
-      {
-        "date": "2026-09-17",
-        "close": 107.14
-      },
-      {
-        "date": "2026-09-18",
-        "close": 111.52
-      },
-      {
-        "date": "2026-09-21",
-        "close": 113.36
-      },
-      {
-        "date": "2026-09-22",
-        "close": 108.27
-      },
-      {
-        "date": "2026-09-23",
-        "close": 109.9
-      },
-      {
-        "date": "2026-09-24",
-        "close": 107.22
-      },
-      {
-        "date": "2026-09-25",
-        "close": 105.26
-      },
-      {
-        "date": "2026-09-28",
-        "close": 104.79
-      },
-      {
-        "date": "2026-09-29",
-        "close": 104.4
-      },
-      {
-        "date": "2026-09-30",
-        "close": 102.46
-      },
-      {
-        "date": "2026-10-01",
-        "close": 96.48
-      },
-      {
-        "date": "2026-10-05",
-        "close": 98.88
-      },
-      {
-        "date": "2026-10-06",
-        "close": 101.67
-      },
-      {
-        "date": "2026-10-07",
-        "close": 108.9
-      },
-      {
-        "date": "2026-10-08",
-        "close": 101.95
-      },
-      {
-        "date": "2026-10-09",
-        "close": 101.17
-      },
-      {
-        "date": "2026-10-12",
-        "close": 105.12
-      },
-      {
-        "date": "2026-10-13",
-        "close": 104.41
-      },
-      {
-        "date": "2026-10-14",
-        "close": 104.64
-      },
-      {
-        "date": "2026-10-15",
-        "close": 101.63
-      },
-      {
-        "date": "2026-10-16",
-        "close": 102.16
-      },
-      {
-        "date": "2026-10-19",
-        "close": 100.41
-      },
-      {
-        "date": "2026-10-21",
-        "close": 96.67
-      },
-      {
-        "date": "2026-10-22",
-        "close": 94.25
-      },
-      {
-        "date": "2026-10-23",
-        "close": 89.56
-      },
-      {
-        "date": "2026-10-26",
-        "close": 89.87
-      },
-      {
-        "date": "2026-10-27",
-        "close": 89.88
-      },
-      {
-        "date": "2026-10-28",
-        "close": 90.5
-      },
-      {
-        "date": "2026-10-29",
-        "close": 89.69
-      },
-      {
-        "date": "2026-10-30",
-        "close": 86.8
-      }
-    ],
-    "priceHistoryUpdatedAt": "2026-10-30T21:19:11+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceSource": "Screener.in"
   },
   {
     "companyName": "HyTech Engineers",
