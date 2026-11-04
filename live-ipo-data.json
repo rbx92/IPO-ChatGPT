@@ -1,12 +1,12 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-04T18:10:12+00:00",
+  "updatedAt": "2026-11-04T22:19:48+00:00",
   "ipos": [
     {
       "companyName": "Antala Industries",
       "currentPrice": null,
-      "listingDate": "05 Nov 2026",
+      "listingDate": null,
       "applicationEnd": "05 Nov 2026",
       "issuePrice": null,
       "priceBand": "₹62 - ₹66",
@@ -40,12 +40,13 @@
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply",
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/vedant-poly-fabs-ipo",
       "subscriptionUpdatedAt": "2026-11-04T16:45:40",
       "allotmentDate": "2026-11-05",
-      "expectedListingDate": "2026-11-09"
+      "expectedListingDate": "2026-11-09",
+      "listingPrice": null
     },
     {
       "companyName": "Vectras Enprocon",
@@ -67,7 +68,8 @@
       "sourceUrl": "https://groww.in/ipo/vectras-enprocon-ipo",
       "subscriptionUpdatedAt": "2026-11-04T18:10:12+00:00",
       "allotmentDate": "2026-11-04",
-      "expectedListingDate": "2026-11-06"
+      "expectedListingDate": "2026-11-06",
+      "listingPrice": null
     },
     {
       "companyName": "Maxwell Engineering",
@@ -89,7 +91,8 @@
       "sourceUrl": "https://groww.in/ipo/maxwell-engineering-ipo",
       "subscriptionUpdatedAt": "2026-11-04T18:10:12+00:00",
       "allotmentDate": "2026-11-04",
-      "expectedListingDate": "2026-11-06"
+      "expectedListingDate": "2026-11-06",
+      "listingPrice": null
     },
     {
       "companyName": "Johnsoncab Electricals",
@@ -111,7 +114,8 @@
       "sourceUrl": "https://groww.in/ipo/johnsoncab-electricals-ipo",
       "subscriptionUpdatedAt": "2026-11-04T18:10:12+00:00",
       "allotmentDate": "2026-11-04",
-      "expectedListingDate": "2026-11-06"
+      "expectedListingDate": "2026-11-06",
+      "listingPrice": null
     },
     {
       "companyName": "HGS India",
@@ -133,7 +137,8 @@
       "sourceUrl": "https://groww.in/ipo/hgs-india-ipo",
       "subscriptionUpdatedAt": "2026-11-04T18:10:12+00:00",
       "allotmentDate": "2026-11-04",
-      "expectedListingDate": "2026-11-06"
+      "expectedListingDate": "2026-11-06",
+      "listingPrice": null
     },
     {
       "companyName": "Bombay Coated & Special Steels",
@@ -155,7 +160,8 @@
       "sourceUrl": "https://groww.in/ipo/bombay-coated-and-special-steels-ipo",
       "subscriptionUpdatedAt": "2026-11-04T11:24:25+00:00",
       "allotmentDate": "2026-11-03",
-      "expectedListingDate": "2026-11-05"
+      "expectedListingDate": "2026-11-05",
+      "listingPrice": null
     },
     {
       "companyName": "M. K. Sons Fine Jewels",
@@ -177,7 +183,8 @@
       "sourceUrl": "https://groww.in/ipo/mksons-fine-jewels-ipo",
       "subscriptionUpdatedAt": "2026-11-03T11:13:35+00:00",
       "allotmentDate": "2026-11-02",
-      "expectedListingDate": "2026-11-04"
+      "expectedListingDate": "2026-11-04",
+      "listingPrice": null
     },
     {
       "companyName": "Carver Roboweld",
@@ -199,12 +206,13 @@
       "sourceUrl": "https://groww.in/ipo/carver-roboweld-ipo",
       "subscriptionUpdatedAt": "2026-11-03T11:13:35+00:00",
       "allotmentDate": "2026-11-02",
-      "expectedListingDate": "2026-11-04"
+      "expectedListingDate": "2026-11-04",
+      "listingPrice": null
     },
     {
       "companyName": "Ajwa Projects",
       "currentPrice": null,
-      "listingDate": "30 Oct 2026",
+      "listingDate": "04 Nov 2026",
       "applicationEnd": "30 Oct 2026",
       "issuePrice": 203.0,
       "priceBand": null,
@@ -212,13 +220,15 @@
       "hni": "--",
       "retail": "--",
       "total": "--",
-      "listingGain": null,
+      "listingGain": "-5.0%",
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
-      "subscriptionUpdatedAt": "2026-11-03T11:13:35+00:00"
+      "status": "Listed",
+      "stage": "Listed",
+      "subscriptionUpdatedAt": "2026-11-03T11:13:35+00:00",
+      "listingPrice": 192.85,
+      "listingPriceBasis": "Screener first available daily close on/after application close; not official listing/opening price"
     },
     {
       "companyName": "BLS Polymers",
@@ -240,7 +250,8 @@
       "sourceUrl": "https://groww.in/ipo/bls-polymers-ipo",
       "subscriptionUpdatedAt": "2026-11-02T11:34:11+00:00",
       "allotmentDate": "2026-10-30",
-      "expectedListingDate": "2026-11-03"
+      "expectedListingDate": "2026-11-03",
+      "listingPrice": null
     },
     {
       "companyName": "SFC Environmental Technologies",
@@ -262,7 +273,8 @@
       "sourceUrl": "https://groww.in/ipo/sfc-environmental-technologies-ipo",
       "subscriptionUpdatedAt": "2026-11-02T11:34:11+00:00",
       "allotmentDate": "2026-10-30",
-      "expectedListingDate": "2026-11-03"
+      "expectedListingDate": "2026-11-03",
+      "listingPrice": null
     },
     {
       "companyName": "Wiscon Industries",
@@ -284,7 +296,8 @@
       "sourceUrl": "https://groww.in/ipo/wiscon-industries-ipo",
       "subscriptionUpdatedAt": "2026-10-30T10:43:16+00:00",
       "allotmentDate": "2026-10-30",
-      "expectedListingDate": "2026-11-03"
+      "expectedListingDate": "2026-11-03",
+      "listingPrice": null
     },
     {
       "companyName": "EAAA India Alternatives",
