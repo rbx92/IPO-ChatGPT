@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-04T23:41:15+00:00",
+  "updatedAt": "2026-11-05T06:50:25+00:00",
   "ipos": [
     {
       "companyName": "Antala Industries",
@@ -11,9 +11,9 @@
       "issuePrice": null,
       "priceBand": "₹62 - ₹66",
       "qib": "66.72x",
-      "hni": "16.74x",
-      "retail": "0.80x",
-      "total": "4.63x",
+      "hni": "20.26x",
+      "retail": "2.22x",
+      "total": "6.44x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/antala-industries-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T18:57:22",
+      "subscriptionUpdatedAt": "2026-11-05T12:15:59",
       "allotmentDate": "2026-11-06",
       "expectedListingDate": "2026-11-11"
     },
@@ -43,7 +43,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/vedant-poly-fabs-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T23:41:15+00:00",
+      "subscriptionUpdatedAt": "2026-11-05T06:50:25+00:00",
       "allotmentDate": "2026-11-05",
       "expectedListingDate": "2026-11-09",
       "listingPrice": null
@@ -66,7 +66,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/vectras-enprocon-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T23:41:15+00:00",
+      "subscriptionUpdatedAt": "2026-11-05T06:50:25+00:00",
       "allotmentDate": "2026-11-04",
       "expectedListingDate": "2026-11-06",
       "listingPrice": null
@@ -89,7 +89,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/maxwell-engineering-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T23:41:15+00:00",
+      "subscriptionUpdatedAt": "2026-11-05T06:50:25+00:00",
       "allotmentDate": "2026-11-04",
       "expectedListingDate": "2026-11-06",
       "listingPrice": null
@@ -112,7 +112,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/johnsoncab-electricals-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T23:41:15+00:00",
+      "subscriptionUpdatedAt": "2026-11-05T06:50:25+00:00",
       "allotmentDate": "2026-11-04",
       "expectedListingDate": "2026-11-06",
       "listingPrice": null
@@ -135,7 +135,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/hgs-india-ipo",
-      "subscriptionUpdatedAt": "2026-11-04T23:41:15+00:00",
+      "subscriptionUpdatedAt": "2026-11-05T06:50:25+00:00",
       "allotmentDate": "2026-11-04",
       "expectedListingDate": "2026-11-06",
       "listingPrice": null
