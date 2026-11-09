@@ -97,7 +97,7 @@ def main():
             continue
         row.update({
             "stage": "Listed", "status": "Listed",
-            "listingDate": day.strftime("%d %b %Y"),
+            "listingDate": day.isoformat(),
             "listingPrice": round(price, 2),
             "listingPriceBasis": "Groww official listing price",
             "listingGain": f"{(price - issue) / issue * 100:.1f}%",

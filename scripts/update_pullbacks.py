@@ -39,7 +39,7 @@ def load(path, default):
 def is_candidate(row, today):
     qib = multiple_value(row.get("qib"))
     gain = percent_value(row.get("listingGain"))
-    listed = parse_date(str(row.get("listingDate") or "")[:10])
+    listed = parse_date(str(row.get("listingDate") or "").strip())
     if qib is None or gain is None or listed is None:
         return False
     age = (today - listed).days
@@ -117,7 +117,7 @@ def main():
                     company_id = chart_identity(path)
                     wait()
                     ids[path] = company_id
-                history = closes_since(company_id, parse_date(row["listingDate"][:10]))
+                history = closes_since(company_id, parse_date(str(row["listingDate"]).strip()))
                 wait()
             except (RuntimeError, ValueError, KeyError, OSError) as exc:
                 if is_screener_rate_limit(exc):

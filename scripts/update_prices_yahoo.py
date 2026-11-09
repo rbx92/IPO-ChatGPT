@@ -59,6 +59,10 @@ def chart(ticker):
     days = [datetime.fromtimestamp(t, tz=timezone.utc).astimezone(IST).date().isoformat()
             for t in result.get("timestamp") or []]
     history = [{"date": d, "close": round(c, 2)} for d, c in zip(days, closes) if c]
+    now = datetime.now(IST)
+    if now.weekday() < 5 and now.hour * 60 + now.minute < 15 * 60 + 45:
+        # Market still open (closes 15:30 IST): today's bar is not a close yet.
+        history = [h for h in history if h["date"] != now.date().isoformat()]
     return price, history
 
 
