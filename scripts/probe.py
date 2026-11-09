@@ -19,7 +19,7 @@ out = {}
 for n in names:
     first = words(n)[0]
     g = inst[inst.name.fillna("").str.lower().str.contains(first, regex=False)][["exchange","trading_symbol","name","series","isin"]]
-    isins = set(g.isin.dropna())
+    isins = set(g["isin"].dropna())
     seen = {}
     for day, rows in days.items():
         for sym, isin, nm, close, ex in rows:
