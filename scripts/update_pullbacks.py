@@ -97,7 +97,10 @@ def main():
         time.sleep(args.delay)
 
     updated = skipped = 0
-    fetch = [r for r in candidates if not args.stock_type or r.get("stockType") == args.stock_type]
+    today_iso = datetime.now(timezone.utc).date().isoformat()
+    # Backup only: skip candidates whose history the official close refreshed today.
+    fetch = [r for r in candidates if (not args.stock_type or r.get("stockType") == args.stock_type)
+             and not str(r.get("priceHistoryUpdatedAt", "")).startswith(today_iso)]
     print(f"Fetching Screener closes for {len(fetch)} candidates (stock type: {args.stock_type or 'all'}).")
     try:
         for row in fetch:

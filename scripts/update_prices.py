@@ -137,14 +137,14 @@ def main():
     # not which rows survive in ipos.json or data.js.
     eligible = select_eligible_rows(rows)
     if args.stock_type:
-        # SME run also covers any Mainboard stock Yahoo did not price today (fallback).
+        # Backup only: price stocks of this type, plus any Mainboard stock, that
+        # the official close (or Yahoo) did not already price today.
         today = datetime.now().astimezone().date().isoformat()
         def wanted(r):
-            if r.get("stockType") == args.stock_type:
-                return True
-            return (args.stock_type == "SME" and r.get("stockType") == "Mainboard"
-                    and not (r.get("priceSource") == "Yahoo Finance"
-                             and str(r.get("priceUpdatedAt", "")).startswith(today)))
+            if str(r.get("priceUpdatedAt", "")).startswith(today):
+                return False
+            return r.get("stockType") == args.stock_type or (
+                args.stock_type == "SME" and r.get("stockType") == "Mainboard")
         eligible = [(i, r) for i, r in eligible if wanted(r)]
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")

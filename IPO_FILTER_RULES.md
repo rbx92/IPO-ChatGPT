@@ -45,9 +45,10 @@ A listed card shows "Stock fell more than X% in the last N trading days" when QI
 
 ## Price sources (since 9 Nov 2026)
 
-- **Mainboard:** CMP and daily closes from Yahoo Finance (`scripts/update_prices_yahoo.py`), ticker from the Groww symbol or a Yahoo name search, cached in `yahoo_symbols.json`.
-- **SME:** CMP and pullback closes from Screener.in (`scripts/update_prices.py --stock-type SME`, `scripts/update_pullbacks.py --stock-type SME`), 60 s between requests.
-- All run in order in one nightly workflow, `daily-data-update.yml`.
+- **Main source, all stocks:** the official NSE and BSE closing-price files (bhavcopy), via `scripts/update_prices_official.py`. Stocks are identified by ISIN (`isin_map.json`, editable by hand). Closes for the last ~100 days are cached in `official_closes.json` and feed the pullback signal.
+- **Backups, only for stocks not priced from the official files that day:** Yahoo Finance for mainboard (`update_prices_yahoo.py`), then Screener.in for anything left (`update_prices.py --stock-type SME`, 60 s between requests) and for SME pullback history (`update_pullbacks.py --stock-type SME`).
+- All run in order in one nightly workflow, `daily-data-update.yml`, at 20:00 IST on weekdays.
+- `verify-prices.yml` (manual) compares saved prices with the official closes for any day.
 
 ## Current archive count (2026-10-24)
 

@@ -79,7 +79,10 @@ def main():
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     today = datetime.now(IST).date()
     stamp = datetime.now().astimezone().isoformat(timespec="minutes")
-    targets = [r for r in rows if r.get("stockType") == "Mainboard" and qualifies(r)]
+    today = datetime.now(IST).date().isoformat()
+    # Backup only: skip stocks the official exchange close already priced today.
+    targets = [r for r in rows if r.get("stockType") == "Mainboard" and qualifies(r)
+               and not str(r.get("priceUpdatedAt", "")).startswith(today)]
     print(f"Mainboard IPOs to price from Yahoo: {len(targets)}")
     updated, unmatched = 0, []
     try:

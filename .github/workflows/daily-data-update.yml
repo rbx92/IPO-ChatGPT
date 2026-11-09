@@ -2,15 +2,16 @@ name: Daily data update (listings, prices, pullbacks)
 
 # One job, run in order, so no step can be cancelled while queued behind another:
 #   1. Listings from Groww (one request)
-#   2. Mainboard prices and closes from Yahoo (a few seconds)
-#   3. SME prices from Screener (60 s between requests)
-#   4. SME closes for the pullback signal from Screener (60 s between requests)
+#   2. Official NSE/BSE closing prices for every stock (main source)
+#   3. Backup: Yahoo for mainboard stocks the official files missed
+#   4. Backup: Screener for anything still unpriced (60 s between requests)
+#   5. Backup: Screener closes for SME pullback candidates without official history
 # Each stage commits on its own, so a later failure never loses earlier work.
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 10 * * 1-5" # 16:15 IST weekdays (GitHub often starts scheduled jobs late)
+    - cron: "30 14 * * 1-5" # 20:00 IST weekdays, after NSE/BSE publish the day's closes
 
 permissions:
   contents: write
@@ -36,17 +37,22 @@ jobs:
       - name: 1. Listings from Groww
         run: python scripts/update_lifecycle_groww.py
       - run: "bash scripts/commit_data.sh 'chore: advance IPO listings from Groww'"
-      - name: 2. Mainboard prices from Yahoo
+      - name: 2. Official NSE/BSE closing prices
+        if: always()
+        run: python scripts/update_prices_official.py
+      - if: always()
+        run: "bash scripts/commit_data.sh 'chore: refresh prices from official NSE/BSE closes'"
+      - name: 3. Backup - mainboard prices from Yahoo
         if: always()
         run: python scripts/update_prices_yahoo.py
       - if: always()
         run: "bash scripts/commit_data.sh 'chore: refresh mainboard CMP from Yahoo'"
-      - name: 3. SME prices from Screener
+      - name: 4. Backup - remaining prices from Screener
         if: always()
         run: python scripts/update_prices.py --stock-type SME --batch-size 9 --delay 60
       - if: always()
         run: "bash scripts/commit_data.sh 'chore: refresh SME CMP from Screener'"
-      - name: 4. SME pullback closes from Screener
+      - name: 5. Backup - SME pullback closes from Screener
         if: always()
         run: python scripts/update_pullbacks.py --stock-type SME --delay 60
       - if: always()
