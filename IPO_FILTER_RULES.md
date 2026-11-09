@@ -10,7 +10,7 @@ Eligibility depends on the IPO lifecycle stage:
 2. **Waiting for Listing:** require QIB subscription >= 10x. Listing gain is not required before listing.
 3. **Listed IPOs:** require QIB subscription >= 10x and listing gain >= 15%. Exclude missing or invalid QIB/listing-gain values.
 4. **No QIB category:** fixed-price SME IPOs with no QIB portion are not eligible at any stage after applications close.
-5. **Highlight:** every displayed card that passes its stage's rule gets the rainbow glow (Open IPOs only when QIB >= 10x).
+5. **Highlight:** the rainbow glow marks cards worth a look today: Open IPOs with QIB >= 10x, and Listed stocks showing the post-listing pullback message.
 6. **Listing:** an IPO moves to Listed when Groww's IPO page marks it listed; listing price and listing gain are Groww's official figures (before 9 Nov 2026 Screener's first daily close was used).
 
 ## Explicit company exclusion
