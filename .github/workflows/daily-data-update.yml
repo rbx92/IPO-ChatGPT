@@ -33,29 +33,21 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          cat > /tmp/commit.sh <<'SH'
-          set -e
-          git add -A ipos.json data.js live-ipo-data.json screener_map.json screener_chart_ids.json yahoo_symbols.json 2>/dev/null || true
-          if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
-          git commit -q -m "$1"
-          for i in 1 2 3; do git pull -q --rebase origin main && git push -q && exit 0; sleep 5; done
-          exit 1
-          SH
       - name: 1. Listings from Groww
         run: python scripts/update_lifecycle_groww.py
-      - run: bash /tmp/commit.sh "chore: advance IPO listings from Groww"
+      - run: bash scripts/commit_data.sh 'chore: advance IPO listings from Groww'
       - name: 2. Mainboard prices from Yahoo
         if: always()
         run: python scripts/update_prices_yahoo.py
       - if: always()
-        run: bash /tmp/commit.sh "chore: refresh mainboard CMP from Yahoo"
+        run: bash scripts/commit_data.sh 'chore: refresh mainboard CMP from Yahoo'
       - name: 3. SME prices from Screener
         if: always()
         run: python scripts/update_prices.py --stock-type SME --batch-size 9 --delay 60
       - if: always()
-        run: bash /tmp/commit.sh "chore: refresh SME CMP from Screener"
+        run: bash scripts/commit_data.sh 'chore: refresh SME CMP from Screener'
       - name: 4. SME pullback closes from Screener
         if: always()
         run: python scripts/update_pullbacks.py --stock-type SME --delay 60
       - if: always()
-        run: bash /tmp/commit.sh "chore: refresh SME price history from Screener"
+        run: bash scripts/commit_data.sh 'chore: refresh SME price history from Screener'
