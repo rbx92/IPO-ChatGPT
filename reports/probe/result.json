@@ -1,0 +1,133 @@
+{
+  "ipo": 200,
+  "subscription": 200,
+  "RELIANCE.NS": {
+    "status": 200,
+    "price": 1307.6,
+    "name": "Reliance Industries Limited",
+    "err": null
+  },
+  "JPL.NS": {
+    "status": 200,
+    "price": 1409.4,
+    "name": "Jio Platforms Limited",
+    "err": null
+  },
+  "TONBO.NS": {
+    "status": 200,
+    "price": 1533.1,
+    "name": "Tonbo Imaging India Limited",
+    "err": null
+  },
+  "HDFIRE.NS": {
+    "status": 200,
+    "price": 261.35,
+    "name": "HD Fire Protect Limited",
+    "err": null
+  },
+  "yahooSearch": [
+    [
+      "TONBO.NS",
+      "Tonbo Imaging India Limited"
+    ],
+    [
+      "TONBO.BO",
+      "Tonbo Imaging India Limited"
+    ]
+  ],
+  "instCols": [
+    "exchange",
+    "exchange_token",
+    "trading_symbol",
+    "groww_symbol",
+    "name",
+    "instrument_type",
+    "segment",
+    "series",
+    "isin",
+    "underlying_symbol",
+    "underlying_exchange_token",
+    "expiry_date",
+    "strike_price",
+    "lot_size",
+    "tick_size",
+    "freeze_quantity",
+    "is_reserved",
+    "buy_allowed",
+    "sell_allowed",
+    "internal_trading_symbol",
+    "is_intraday"
+  ],
+  "instSample": [
+    {
+      "exchange": "NSE",
+      "trading_symbol": "BONFIG",
+      "name": "Bonfiglioli Tran",
+      "series": "EQ",
+      "isin": "INE28SO01013"
+    },
+    {
+      "exchange": "NSE",
+      "trading_symbol": "JPL",
+      "name": "Jio Platforms",
+      "series": "EQ",
+      "isin": "INE0BJO01010"
+    },
+    {
+      "exchange": "NSE",
+      "trading_symbol": "SMT",
+      "name": "Sahajanand Medical",
+      "series": "EQ",
+      "isin": "INE356Y01018"
+    },
+    {
+      "exchange": "NSE",
+      "trading_symbol": "TONBO",
+      "name": "Tonbo Imaging India",
+      "series": "EQ",
+      "isin": "INE0LDG01026"
+    },
+    {
+      "exchange": "NSE",
+      "trading_symbol": "ZETWERK",
+      "name": "Zetwerk Manufacturing",
+      "series": "EQ",
+      "isin": "INE09PO01019"
+    },
+    {
+      "exchange": "BSE",
+      "trading_symbol": "BONFIG",
+      "name": "Bonfiglioli Tran",
+      "series": "B",
+      "isin": "INE28SO01013"
+    },
+    {
+      "exchange": "BSE",
+      "trading_symbol": "JPL",
+      "name": "Jio Platforms",
+      "series": "A",
+      "isin": "INE0BJO01010"
+    },
+    {
+      "exchange": "BSE",
+      "trading_symbol": "SMT",
+      "name": "Sahajanand Medical",
+      "series": "B",
+      "isin": "INE356Y01018"
+    },
+    {
+      "exchange": "BSE",
+      "trading_symbol": "TONBO",
+      "name": "Tonbo Imaging India",
+      "series": "B",
+      "isin": "INE0LDG01026"
+    },
+    {
+      "exchange": "BSE",
+      "trading_symbol": "ZETWERK",
+      "name": "Zetwerk Manufacturing",
+      "series": "B",
+      "isin": "INE09PO01019"
+    }
+  ]
+}
