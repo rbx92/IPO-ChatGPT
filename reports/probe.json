@@ -1,0 +1,1384 @@
+{
+ "Goldline Pharmaceutical": {
+  "groww": [
+   {
+    "exchange": "BSE",
+    "trading_symbol": "GLPL",
+    "name": "Goldline Pharma.",
+    "series": "M",
+    "isin": "INE1CLW01015"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE1CLW01015": {
+    "symbol": "GLPL",
+    "name": "GOLDLINE PHARMACEUTICAL LIMITE",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-05",
+      30.88
+     ],
+     [
+      "2026-11-02",
+      29.98
+     ],
+     [
+      "2026-10-30",
+      31.2
+     ]
+    ],
+    "count": 11
+   }
+  },
+  "yahoo": [
+   [
+    "GLPL.BO",
+    "Goldline Pharmaceutical Limited"
+   ]
+  ]
+ },
+ "Defrail Technologies": {
+  "groww": [
+   {
+    "exchange": "BSE",
+    "trading_symbol": "DEFRAIL",
+    "name": "Defrail Technologies",
+    "series": "M",
+    "isin": "INE0ZE201010"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0ZE201010": {
+    "symbol": "DEFRAIL",
+    "name": "Defrail Technologies Limited",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-04",
+      69.99
+     ],
+     [
+      "2026-11-03",
+      69.99
+     ],
+     [
+      "2026-11-02",
+      74.77
+     ]
+    ],
+    "count": 6
+   }
+  },
+  "yahoo": [
+   [
+    "DEFRAIL.BO",
+    "Defrail Technologies Limited"
+   ]
+  ]
+ },
+ "E to E Transportation": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "1075SCL35",
+    "name": "Sammaan Capital Limited Mar'35",
+    "series": "N1",
+    "isin": "INE148I07WR7"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "10IIFL28A",
+    "name": "Iifl Finance Limited Jun'28",
+    "series": "NE",
+    "isin": "INE530B08094"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "10CAGL27",
+    "name": "Creditaccess Grameen Limited Nov'27",
+    "series": "N5",
+    "isin": "INE741K07496"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "1015SCL28A",
+    "name": "Sammaan Capital Limited Mar'28",
+    "series": "AL",
+    "isin": "INE148I07OH5"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "1025SCL34",
+    "name": "Sammaan Capital Limited Mar'34",
+    "series": "Z8",
+    "isin": "INE148I07SQ7"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "1015SCFL29",
+    "name": "Sammaan Capital Limited Mar'29",
+    "series": "YY",
+    "isin": "INE148I07SS3"
+   }
+  ],
+  "bhavcopy15d": {
+   "IN0020210145": {
+    "symbol": "SGBSEP29VI",
+    "name": "2.5%GOLDBONDS2029SR-VI",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14279.17
+     ],
+     [
+      "2026-11-06",
+      14231.94
+     ],
+     [
+      "2026-11-05",
+      14355.0
+     ]
+    ],
+    "count": 28
+   },
+   "IN0020180389": {
+    "symbol": "SGBDEC26",
+    "name": "2.50%GOLDBONDS2026SR-IV",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14239.99
+     ],
+     [
+      "2026-11-05",
+      14400.0
+     ],
+     [
+      "2026-11-04",
+      14150.0
+     ]
+    ],
+    "count": 17
+   },
+   "IN0020180561": {
+    "symbol": "SGBFEB27",
+    "name": "2.50%GOLDBONDS2027SR-VI",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14306.03
+     ],
+     [
+      "2026-11-06",
+      14355.0
+     ],
+     [
+      "2026-11-05",
+      14365.0
+     ]
+    ],
+    "count": 22
+   },
+   "IN0020190461": {
+    "symbol": "SGBDC27VII",
+    "name": "2.50%GOLDBONDS2027SR-VII",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14449.99
+     ],
+     [
+      "2026-11-05",
+      14330.19
+     ],
+     [
+      "2026-11-04",
+      14499.99
+     ]
+    ],
+    "count": 26
+   },
+   "IN0020190545": {
+    "symbol": "SGBFEB28IX",
+    "name": "2.50%GOLDBONDS2028SR-IX",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14250.0
+     ],
+     [
+      "2026-11-05",
+      14462.25
+     ],
+     [
+      "2026-11-04",
+      14200.0
+     ]
+    ],
+    "count": 16
+   },
+   "IN0020200195": {
+    "symbol": "SGBSEP28VI",
+    "name": "2.50%GOLDBONDS2028SR-VI",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      14290.27
+     ],
+     [
+      "2026-11-06",
+      14289.23
+     ],
+     [
+      "2026-11-05",
+      14342.0
+     ]
+    ],
+    "count": 30
+   }
+  },
+  "yahoo": []
+ },
+ "HyTech Engineers": {
+  "groww": [],
+  "bhavcopy15d": {},
+  "yahoo": []
+ },
+ "IndoMIM": {
+  "groww": [],
+  "bhavcopy15d": {},
+  "yahoo": [
+   [
+    "INDOMIM.NS",
+    "INDO-MIM Limited"
+   ],
+   [
+    "INDOMIM.BO",
+    "INDO-MIM Limited"
+   ]
+  ]
+ },
+ "HRS Aluglaze": {
+  "groww": [
+   {
+    "exchange": "BSE",
+    "trading_symbol": "HRS",
+    "name": "HRS Aluglaze",
+    "series": "M",
+    "isin": "INE1E1V01017"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE775A01035": {
+    "symbol": "MOTHERSON",
+    "name": "SAMVRDHNA MTHRSN INTL LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      158.55
+     ],
+     [
+      "2026-11-05",
+      168.0
+     ],
+     [
+      "2026-11-04",
+      159.49
+     ]
+    ],
+    "count": 15
+   },
+   "INE1E1V01017": {
+    "symbol": "HRS",
+    "name": "HRS ALUGLAZE LIMITED",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-05",
+      248.4
+     ],
+     [
+      "2026-11-04",
+      241.35
+     ],
+     [
+      "2026-11-03",
+      239.0
+     ]
+    ],
+    "count": 13
+   }
+  },
+  "yahoo": [
+   [
+    "HRS.BO",
+    "HRS Aluglaze Limited"
+   ]
+  ]
+ },
+ "Sheel Biotech": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "MAYASHEEL",
+    "name": "Mayasheel Ventures",
+    "series": "SM",
+    "isin": "INE0ZTO01018"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SFL",
+    "name": "Sheela Foam",
+    "series": "EQ",
+    "isin": "INE916U01025"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SHEEL",
+    "name": "Sheel Biotech",
+    "series": "SM",
+    "isin": "INE0YJV01017"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "PANCHSHEEL",
+    "name": "Panchsheel Organics",
+    "series": "X",
+    "isin": "INE316G01019"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "SFL",
+    "name": "Sheela Foam",
+    "series": "A",
+    "isin": "INE916U01025"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0ZTO01018": {
+    "symbol": "MAYASHEEL",
+    "name": "MAYASHEEL VENTURES LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      26.5
+     ],
+     [
+      "2026-11-05",
+      28.3
+     ],
+     [
+      "2026-11-04",
+      26.7
+     ]
+    ],
+    "count": 13
+   },
+   "INE916U01025": {
+    "symbol": "SFL",
+    "name": "SHEELA FOAM LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      530.6
+     ],
+     [
+      "2026-11-06",
+      531.3
+     ],
+     [
+      "2026-11-05",
+      529.85
+     ]
+    ],
+    "count": 30
+   },
+   "INE316G01019": {
+    "symbol": "PANCHSHEEL",
+    "name": "PANCHSHEEL ORGANICS LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      106.02
+     ],
+     [
+      "2026-11-05",
+      106.57
+     ],
+     [
+      "2026-11-04",
+      101.5
+     ]
+    ],
+    "count": 15
+   },
+   "INE0YJV01017": {
+    "symbol": "SHEEL",
+    "name": "SHEEL BIOTECH LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-05",
+      59.15
+     ],
+     [
+      "2026-10-29",
+      56.65
+     ],
+     [
+      "2026-10-27",
+      58.7
+     ]
+    ],
+    "count": 6
+   }
+  },
+  "yahoo": [
+   [
+    "SHEEL-SM.NS",
+    null
+   ]
+  ]
+ },
+ "Sat Kartar Shopping": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SATIA",
+    "name": "Satia Industries",
+    "series": "EQ",
+    "isin": "INE170E01023"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SATKARTAR",
+    "name": "Sat Kartar Life",
+    "series": "SM",
+    "isin": "INE0NB801022"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SATIN",
+    "name": "Satin Creditcare Net",
+    "series": "EQ",
+    "isin": "INE836B01017"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SATTVAENGG",
+    "name": "Sattva Engg. Constn.",
+    "series": "SM",
+    "isin": "INE14DW01018"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SATIPOLY",
+    "name": "Sati Poly Plast",
+    "series": "SM",
+    "isin": "INE0RPM01017"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SSEGL",
+    "name": "Sathlokhar Synergys",
+    "series": "SM",
+    "isin": "INE0RFP01011"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0NB801022": {
+    "symbol": "SATKARTAR",
+    "name": "SAT KARTAR LIFE LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      141.2
+     ],
+     [
+      "2026-11-05",
+      134.5
+     ],
+     [
+      "2026-11-04",
+      132.15
+     ]
+    ],
+    "count": 15
+   },
+   "INE0RFP01011": {
+    "symbol": "SSEGL",
+    "name": "SATHLOKHAR SYN E&C GLOB L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      356.1
+     ],
+     [
+      "2026-11-05",
+      348.2
+     ],
+     [
+      "2026-11-04",
+      347.9
+     ]
+    ],
+    "count": 15
+   },
+   "INE0RPM01017": {
+    "symbol": "SATIPOLY",
+    "name": "SATI POLY PLAST LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      36.0
+     ],
+     [
+      "2026-11-03",
+      35.0
+     ],
+     [
+      "2026-11-02",
+      36.8
+     ]
+    ],
+    "count": 9
+   },
+   "INE170E01023": {
+    "symbol": "SATIA",
+    "name": "SATIA INDUSTRIES LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      66.16
+     ],
+     [
+      "2026-11-06",
+      66.1
+     ],
+     [
+      "2026-11-05",
+      66.44
+     ]
+    ],
+    "count": 30
+   },
+   "INE836B01017": {
+    "symbol": "SATIN",
+    "name": "SATIN CREDIT NET LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      262.51
+     ],
+     [
+      "2026-11-06",
+      262.7
+     ],
+     [
+      "2026-11-05",
+      261.04
+     ]
+    ],
+    "count": 30
+   },
+   "INE14DW01018": {
+    "symbol": "SATTVAENGG",
+    "name": "SATTVA ENGINEERING CSTN L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      50.8
+     ],
+     [
+      "2026-11-05",
+      48.45
+     ],
+     [
+      "2026-11-04",
+      49.0
+     ]
+    ],
+    "count": 15
+   }
+  },
+  "yahoo": []
+ },
+ "Standard Glass Lining": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "NATIONSTD",
+    "name": "National Standard(I)",
+    "series": "EQ",
+    "isin": "INE166R01015"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SETL",
+    "name": "Standard Engg. Tech.",
+    "series": "EQ",
+    "isin": "INE0M4D01010"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SIL",
+    "name": "Standard Industries",
+    "series": "EQ",
+    "isin": "INE173A01025"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "NATIONSTD",
+    "name": "National Standard(I)",
+    "series": "B",
+    "isin": "INE166R01015"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "SETL",
+    "name": "Standard Engg. Tech.",
+    "series": "B",
+    "isin": "INE0M4D01010"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "SIL",
+    "name": "Standard Industries",
+    "series": "B",
+    "isin": "INE173A01025"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE166R01015": {
+    "symbol": "NATIONSTD",
+    "name": "NATIONAL STAND (INDIA) L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      106.5
+     ],
+     [
+      "2026-11-06",
+      106.2
+     ],
+     [
+      "2026-11-05",
+      109.87
+     ]
+    ],
+    "count": 30
+   },
+   "INE0M4D01010": {
+    "symbol": "SETL",
+    "name": "STANDARD ENGNG TCNLGY LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      376.95
+     ],
+     [
+      "2026-11-06",
+      377.05
+     ],
+     [
+      "2026-11-05",
+      396.75
+     ]
+    ],
+    "count": 30
+   },
+   "INE173A01025": {
+    "symbol": "SIL",
+    "name": "STANDARD INDUSTRIES LTD.",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      15.15
+     ],
+     [
+      "2026-11-06",
+      15.2
+     ],
+     [
+      "2026-11-05",
+      15.26
+     ]
+    ],
+    "count": 30
+   },
+   "INE502C01039": {
+    "symbol": "STDBAT",
+    "name": "STANDARD BATTERIES LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      37.87
+     ],
+     [
+      "2026-11-05",
+      37.95
+     ],
+     [
+      "2026-11-04",
+      38.05
+     ]
+    ],
+    "count": 15
+   },
+   "INE625D01028": {
+    "symbol": "STANCAP",
+    "name": "STANDARD CAPITAL MARKETS LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      0.35
+     ],
+     [
+      "2026-11-05",
+      0.34
+     ],
+     [
+      "2026-11-04",
+      0.34
+     ]
+    ],
+    "count": 15
+   },
+   "INE307D01015": {
+    "symbol": "STDSFAC",
+    "name": "STANDARD SURFACTANTS LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      133.85
+     ],
+     [
+      "2026-11-05",
+      127.5
+     ],
+     [
+      "2026-11-04",
+      121.45
+     ]
+    ],
+    "count": 15
+   }
+  },
+  "yahoo": []
+ },
+ "Dhanlaxmi Crop Science": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "DHANBANK",
+    "name": "Dhanlaxmi Bank",
+    "series": "EQ",
+    "isin": "INE680A01011"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "DHANLAXMI",
+    "name": "Dhanlaxmi Crop ",
+    "series": "SM",
+    "isin": "INE0V9V01010"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "DHANFAB",
+    "name": "Dhanlaxmi Fabrics",
+    "series": "X",
+    "isin": "INE953D01016"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "DHANBANK",
+    "name": "Dhanlaxmi Bank",
+    "series": "B",
+    "isin": "INE680A01011"
+   },
+   {
+    "exchange": "BSE",
+    "trading_symbol": "DHANCOT",
+    "name": "Dhanlaxmi Cotex",
+    "series": "X",
+    "isin": "INE977F01010"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE680A01011": {
+    "symbol": "DHANBANK",
+    "name": "DHANLAXMI BANK LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      32.78
+     ],
+     [
+      "2026-11-06",
+      32.94
+     ],
+     [
+      "2026-11-05",
+      33.38
+     ]
+    ],
+    "count": 30
+   },
+   "INE977F01010": {
+    "symbol": "DHANCOT",
+    "name": "DHANLAXMI COTEX LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      93.2
+     ],
+     [
+      "2026-11-05",
+      98.05
+     ],
+     [
+      "2026-11-04",
+      101.05
+     ]
+    ],
+    "count": 7
+   },
+   "INE953D01016": {
+    "symbol": "DHANFAB",
+    "name": "DHANLAXMI FABRICS LTD.",
+    "ex": "BSE",
+    "days": [
+     [
+      "2026-11-06",
+      50.06
+     ],
+     [
+      "2026-11-05",
+      50.0
+     ],
+     [
+      "2026-11-04",
+      51.0
+     ]
+    ],
+    "count": 11
+   },
+   "INE0V9V01010": {
+    "symbol": "DHANLAXMI",
+    "name": "DHANLAXMI CROP SCIENCE L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-05",
+      28.5
+     ],
+     [
+      "2026-11-04",
+      27.75
+     ],
+     [
+      "2026-11-02",
+      27.75
+     ]
+    ],
+    "count": 13
+   }
+  },
+  "yahoo": [
+   [
+    "DHANLAXMI-SM.NS",
+    null
+   ]
+  ]
+ },
+ "Shiv Texchem": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "KRISHIVAL",
+    "name": "Krishival Foods",
+    "series": "EQ",
+    "isin": "INE0GGO01015"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SBCL",
+    "name": "Shivalik Bimetal",
+    "series": "EQ",
+    "isin": "INE386D01027"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SHIVALIK",
+    "name": "Shivalik Rasayan",
+    "series": "EQ",
+    "isin": "INE788J01021"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SHIVACEM",
+    "name": "Shiva Cement",
+    "series": "EQ",
+    "isin": "INE555C01029"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SHIVAMAUTO",
+    "name": "Shivam Autotech",
+    "series": "EQ",
+    "isin": "INE637H01024"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SHIVAM-RE1-BE",
+    "name": "SHIVAM-RE1",
+    "series": "BE",
+    "isin": "INE637H20024"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0GGO01015": {
+    "symbol": "KRISHIVAL",
+    "name": "KRISHIVAL FOODS LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      351.8
+     ],
+     [
+      "2026-11-06",
+      353.05
+     ],
+     [
+      "2026-11-05",
+      355.55
+     ]
+    ],
+    "count": 30
+   },
+   "INE719F01016": {
+    "symbol": "SHIVAUM",
+    "name": "SHIV AUM STEELS LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      554.35
+     ],
+     [
+      "2026-11-06",
+      545.6
+     ],
+     [
+      "2026-11-05",
+      540.05
+     ]
+    ],
+    "count": 29
+   },
+   "INE555C01029": {
+    "symbol": "SHIVACEM",
+    "name": "SHIVA CEMENT LTD.",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      12.98
+     ],
+     [
+      "2026-11-06",
+      12.87
+     ],
+     [
+      "2026-11-05",
+      13.09
+     ]
+    ],
+    "count": 30
+   },
+   "INE960E01019": {
+    "symbol": "SHIVAAGRO",
+    "name": "SHIVA GLOBAL AGRO INDS. L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      38.15
+     ],
+     [
+      "2026-11-06",
+      38.74
+     ],
+     [
+      "2026-11-05",
+      36.05
+     ]
+    ],
+    "count": 28
+   },
+   "INE644Y01017": {
+    "symbol": "SHIVAMILLS",
+    "name": "SHIVA MILLS LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      58.5
+     ],
+     [
+      "2026-11-05",
+      57.17
+     ],
+     [
+      "2026-11-05",
+      55.8
+     ]
+    ],
+    "count": 23
+   },
+   "INE705C01020": {
+    "symbol": "SHIVATEX",
+    "name": "SHIVA TEXYARN LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      169.48
+     ],
+     [
+      "2026-11-06",
+      157.1
+     ],
+     [
+      "2026-11-05",
+      166.13
+     ]
+    ],
+    "count": 22
+   }
+  },
+  "yahoo": [
+   [
+    "SHIVTEXCHEM.BO",
+    "Shiv Texchem Limited"
+   ]
+  ]
+ },
+ "Mach Conferences and Events": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "EMMIL",
+    "name": "Energy-Mission Mach.",
+    "series": "SM",
+    "isin": "INE0S1L01013"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "INFINIUM",
+    "name": "Infinium Pharmachem",
+    "series": "ST",
+    "isin": "INE0MRE01011"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "LOKESHMACH",
+    "name": "Lokesh Machines",
+    "series": "EQ",
+    "isin": "INE397H01017"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "MAMATA",
+    "name": "Mamata Machinery",
+    "series": "EQ",
+    "isin": "INE0TO701015"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SCML",
+    "name": "Sharp Chucks & Mach.",
+    "series": "SM",
+    "isin": "INE460Q01014"
+   },
+   {
+    "exchange": "NSE",
+    "trading_symbol": "SONAMAC",
+    "name": "Sona Machinery",
+    "series": "SM",
+    "isin": "INE0Q6H01012"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0S1L01013": {
+    "symbol": "EMMIL",
+    "name": "ENERGY MISSION MACH IND L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      108.0
+     ],
+     [
+      "2026-11-05",
+      107.95
+     ],
+     [
+      "2026-11-04",
+      108.0
+     ]
+    ],
+    "count": 15
+   },
+   "INE0MRE01011": {
+    "symbol": "INFINIUM",
+    "name": "INFINIUM PHARMACHEM LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      279.15
+     ],
+     [
+      "2026-11-05",
+      270.0
+     ],
+     [
+      "2026-11-04",
+      271.6
+     ]
+    ],
+    "count": 15
+   },
+   "INE397H01017": {
+    "symbol": "LOKESHMACH",
+    "name": "LOKESH MACHINES LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      369.05
+     ],
+     [
+      "2026-11-06",
+      368.85
+     ],
+     [
+      "2026-11-05",
+      387.6
+     ]
+    ],
+    "count": 30
+   },
+   "INE155Z01011": {
+    "symbol": "MACPOWER",
+    "name": "MACPOWER CNC MACHINES LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      2299.0
+     ],
+     [
+      "2026-11-05",
+      2291.6
+     ],
+     [
+      "2026-11-04",
+      2204.0
+     ]
+    ],
+    "count": 15
+   },
+   "INE0TO701015": {
+    "symbol": "MAMATA",
+    "name": "MAMATA MACHINERY LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      320.15
+     ],
+     [
+      "2026-11-06",
+      321.15
+     ],
+     [
+      "2026-11-05",
+      349.4
+     ]
+    ],
+    "count": 30
+   },
+   "INE10QL01011": {
+    "symbol": "READYMIX",
+    "name": "READYMIX CONSTRU MACHI L",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-06",
+      50.3
+     ],
+     [
+      "2026-11-05",
+      50.0
+     ],
+     [
+      "2026-11-04",
+      53.9
+     ]
+    ],
+    "count": 15
+   }
+  },
+  "yahoo": []
+ },
+ "Aesthetik Engineers": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "AESTHETIK",
+    "name": "Aesthetik Engineers",
+    "series": "SM",
+    "isin": "INE0TSF01011"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0TSF01011": {
+    "symbol": "AESTHETIK",
+    "name": "AESTHETIK ENGINEERS LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-05",
+      71.0
+     ],
+     [
+      "2026-11-04",
+      71.0
+     ],
+     [
+      "2026-11-03",
+      72.0
+     ]
+    ],
+    "count": 10
+   }
+  },
+  "yahoo": [
+   [
+    "AESTHETIK-SM.NS",
+    null
+   ]
+  ]
+ },
+ "Manglam Infra": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "MIEL",
+    "name": "Manglam Infra &Engg.",
+    "series": "SM",
+    "isin": "INE0R3101011"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0R3101011": {
+    "symbol": "MIEL",
+    "name": "MANGLAM INFRA & ENG LTD",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-04",
+      12.1
+     ],
+     [
+      "2026-11-03",
+      11.7
+     ],
+     [
+      "2026-11-02",
+      11.9
+     ]
+    ],
+    "count": 11
+   }
+  },
+  "yahoo": [
+   [
+    "MIEL-SM.NS",
+    null
+   ]
+  ]
+ },
+ "Chetana Education": {
+  "groww": [
+   {
+    "exchange": "NSE",
+    "trading_symbol": "CHETANA",
+    "name": "Chetana Education",
+    "series": "SM",
+    "isin": "INE0U1T01012"
+   }
+  ],
+  "bhavcopy15d": {
+   "INE0U1T01012": {
+    "symbol": "CHETANA",
+    "name": "CHETANA EDUCATION LIMITED",
+    "ex": "NSE",
+    "days": [
+     [
+      "2026-11-05",
+      33.35
+     ],
+     [
+      "2026-11-04",
+      32.2
+     ],
+     [
+      "2026-11-03",
+      30.7
+     ]
+    ],
+    "count": 13
+   }
+  },
+  "yahoo": [
+   [
+    "CHETANA-SM.NS",
+    null
+   ]
+  ]
+ },
+ "Ambey Laboratories": {
+  "groww": [],
+  "bhavcopy15d": {},
+  "yahoo": []
+ }
+}
