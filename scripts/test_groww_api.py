@@ -47,8 +47,19 @@ def login(report):
     report["secretShape"] = {"token": describe(token), "secret": describe(raw)}
     if not token or not raw:
         raise SystemExit("Missing GROWW_TOTP_TOKEN or GROWW_TOTP_SECRET repository secret.")
-    secret = clean_secret(raw)
     import base64
+    try:  # read only the token's "role" claim, nothing secret
+        part = token.split(".")[1]
+        claims = json.loads(base64.urlsafe_b64decode(part + "=" * (-len(part) % 4)))
+        report["tokenRole"] = json.loads(claims.get("sub", "{}")).get("role")
+    except Exception:
+        report["tokenRole"] = "unreadable"
+    if report["tokenRole"] != "auth-totp":
+        # API key + secret flow (needs daily approval on Groww's API Keys page).
+        report["flow"] = "api key + secret"
+        return GrowwAPI(GrowwAPI.get_access_token(api_key=token, secret=raw.strip()))
+    report["flow"] = "totp"
+    secret = clean_secret(raw)
     import binascii
     try:
         base64.b32decode(secret + "=" * (-len(secret) % 8))
