@@ -117,22 +117,22 @@ def main():
             continue
         ex, sym, oname, close, series = off
         rec.update({"exchange": ex, "symbol": sym, "series": series, "officialClose": close})
-        if r.get("stockType") == "Mainboard":
+        if r.get("stockType") == "Mainboard" and r.get("priceSource") != "NSE/BSE official close":
             ticker = yahoo.get(r["companyName"]) or (f"{r['symbol']}.NS" if r.get("symbol") else None)
             ours = yahoo_close(ticker, day) if ticker else None
             time.sleep(1)
             rec.update({"source": "Yahoo close", "ticker": ticker, "ours": ours})
         else:
-            stamp = str(r.get("priceUpdatedAt") or "")[:10]
+            stamp = str(r.get("priceDate") or r.get("priceUpdatedAt") or "")[:10]
             hist = {h["date"]: h["close"] for h in r.get("priceHistory") or []}
-            rec.update({"source": "Screener (saved)", "ours": hist.get(day.isoformat()) or
+            rec.update({"source": r.get("priceSource") or "saved", "ours": hist.get(day.isoformat()) or
                         (r.get("currentPrice") if stamp == day.isoformat() else None),
                         "savedOn": stamp})
         if rec.get("ours"):
             diff = (float(rec["ours"]) - close) / close * 100
             rec["diffPercent"] = round(diff, 2)
             # Screener CMP is stored rounded to whole rupees, so allow rounding.
-            tol = max(1.0, 0.6 / close * 100) if rec["source"].startswith("Screener") else 0.5
+            tol = max(1.0, 0.6 / close * 100) if str(rec["source"]).startswith("Screener") else 0.5
             rec["status"] = "match" if abs(diff) <= tol else "MISMATCH"
         else:
             rec["status"] = "no stored/fetched price for that day"
