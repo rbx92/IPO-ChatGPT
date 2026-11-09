@@ -47,7 +47,17 @@ def login(report):
     report["secretShape"] = {"token": describe(token), "secret": describe(raw)}
     if not token or not raw:
         raise SystemExit("Missing GROWW_TOTP_TOKEN or GROWW_TOTP_SECRET repository secret.")
-    access = GrowwAPI.get_access_token(api_key=token, totp=pyotp.TOTP(clean_secret(raw)).now())
+    secret = clean_secret(raw)
+    import base64
+    import binascii
+    try:
+        base64.b32decode(secret + "=" * (-len(secret) % 8))
+        report["secretFormat"] = "base32"
+    except binascii.Error:
+        # Some sites show the TOTP key as hex; convert it to the base32 form.
+        secret = base64.b32encode(bytes.fromhex(secret)).decode().rstrip("=")
+        report["secretFormat"] = "hex converted to base32"
+    access = GrowwAPI.get_access_token(api_key=token, totp=pyotp.TOTP(secret).now())
     return GrowwAPI(access)
 
 
