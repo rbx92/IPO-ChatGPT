@@ -121,6 +121,12 @@ def main():
     for r in rows:
         off = official(r)
         rec = {"company": r["companyName"], "type": r.get("stockType"), "date": day.isoformat()}
+        if not off and (r.get("isin") or isin_map.get(r["companyName"])):
+            rec["status"] = "did not trade that day"
+            rec["ours"], rec["source"] = r.get("currentPrice"), r.get("priceSource")
+            rec["lastTraded"] = r.get("priceDate")
+            results.append(rec)
+            continue
         if not off:
             rec["status"] = "not found in NSE/BSE bhavcopy"
             results.append(rec)

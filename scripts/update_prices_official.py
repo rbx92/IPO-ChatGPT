@@ -100,7 +100,7 @@ def abbrev_match(ours, theirs):
 def match_isin(row, latest, yahoo):
     """Find a stock's ISIN in the latest bhavcopy. Returns (isin, how) or (None, reason)."""
     by_sym, by_name = latest["by_sym"], latest["by_name"]
-    symbols = [row.get("symbol"), (yahoo.get(row["companyName"]) or "").replace(".NS", "")]
+    symbols = [row.get("symbol"), (yahoo.get(row["companyName"]) or "").replace(".NS", "").replace(".BO", "")]
     for sym in filter(None, symbols):
         hit = by_sym.get(sym.upper())
         if hit and plausible(hit[3], row):
@@ -182,6 +182,9 @@ def main():
             del closes[d]
     # Stocks matched for the first time need their closes since listing from days
     # cached before they were tracked: refetch only those days, once.
+    seen_any = {i for k, v in closes.items() if not k.startswith("_") for i in v}
+    for isin in tracked - seen_any:  # e.g. added to isin_map.json by hand
+        new_since.setdefault(isin, "0000")
     missing_back = [k for k in closes if not k.startswith("_") and k != day_key
                     and any(k >= since and i not in closes[k] for i, since in new_since.items())]
     print(f"Backfilling {len(missing_back)} earlier days for {len(new_since)} newly matched stocks.")
@@ -196,15 +199,20 @@ def main():
     from update_pullbacks import is_candidate  # noqa: E402
     for row in targets:
         isin = isin_map.get(row["companyName"])
-        if not isin or isin not in closes.get(day_key, {}):
+        if not isin:
             continue
-        close = closes[day_key][isin]
+        # Thinly traded stocks are missing from days they did not trade: use the
+        # last day they did trade (within the cached window).
+        traded = next((d for d in reversed(days) if isin in closes[d]), None)
+        if not traded:
+            continue
+        close = closes[traded][isin]
         issue = float(row.get("issuePrice") or 0)
         row["isin"] = isin
         row["currentPrice"] = round(close, 2)
         row["currentGain"] = f"{(close - issue) / issue * 100:.1f}%" if issue > 0 else "-"
         row["priceUpdatedAt"] = stamp
-        row["priceDate"] = day_key
+        row["priceDate"] = traded
         row["priceSource"] = "NSE/BSE official close"
         if is_candidate(row, now.date()):
             listed = parse_date(str(row.get("listingDate") or "").strip())
