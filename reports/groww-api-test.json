@@ -1,4 +1,22 @@
 {
-  "ranAt": "2026-11-09T04:51:19+00:00",
+  "ranAt": "2026-11-09T04:52:18+00:00",
+  "secretShape": {
+    "token": {
+      "length": 976,
+      "hasDot": true,
+      "hasSpace": false,
+      "hasLower": true,
+      "startsOtpauth": false,
+      "nonBase32": true
+    },
+    "secret": {
+      "length": 32,
+      "hasDot": false,
+      "hasSpace": false,
+      "hasLower": true,
+      "startsOtpauth": false,
+      "nonBase32": true
+    }
+  },
   "login": "failed: Error: Non-base32 digit found"
 }
