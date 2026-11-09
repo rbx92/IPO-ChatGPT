@@ -66,6 +66,15 @@ def fetch_day(day):
     return rows or None
 
 
+def by_isin(day_rows, keep=None):
+    """{isin: close}, preferring the NSE close when a stock trades on both exchanges."""
+    out = {}
+    for _, isin, _, close, ex in sorted(day_rows, key=lambda r: r[4] != "NSE"):
+        if (keep is None or isin in keep) and isin not in out:
+            out[isin] = close
+    return out
+
+
 def plausible(close, row):
     issue = float(row.get("issuePrice") or 0)
     return not issue or 0.1 <= close / issue <= 25
@@ -138,7 +147,7 @@ def main():
         if latest_rows is None:
             latest_rows, latest_day = day_rows, d
         mapped = set(isin_map.values())
-        closes[d.isoformat()] = {isin: c for _, isin, _, c, _ in day_rows if isin in mapped or not mapped}
+        closes[d.isoformat()] = by_isin(day_rows, mapped or None)
         print(f"Downloaded official closes for {d}: {len(day_rows)} rows")
 
     if latest_rows is None:
@@ -166,7 +175,7 @@ def main():
     # Re-filter stored days to the ISINs we track, and backfill days fetched before mapping.
     tracked = set(isin_map.values())
     day_key = latest_day.isoformat()
-    closes[day_key] = {isin: c for _, isin, _, c, _ in latest_rows if isin in tracked}
+    closes[day_key] = by_isin(latest_rows, tracked)
     for d in [k for k in closes if not k.startswith("_")]:
         closes[d] = {i: c for i, c in closes[d].items() if i in tracked}
         if date.fromisoformat(d) < last - timedelta(days=KEEP_DAYS):
@@ -179,7 +188,7 @@ def main():
     for d in missing_back:
         fresh = fetch_day(date.fromisoformat(d))
         if fresh:
-            closes[d] = {isin: c for _, isin, _, c, _ in fresh if isin in tracked}
+            closes[d] = by_isin(fresh, tracked)
 
     stamp = now.isoformat(timespec="minutes")
     days = sorted(k for k in closes if not k.startswith("_"))

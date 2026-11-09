@@ -93,7 +93,21 @@ def main():
     b_sym, b_name = index(bse_rows, "BSE")
     yahoo = json.loads((ROOT / "yahoo_symbols.json").read_text()) if (ROOT / "yahoo_symbols.json").exists() else {}
 
+    by_isin = {}
+    for table in (n_sym, b_sym):
+        for item in table.values():
+            pass
+    isin_close = {}
+    for rows_, ex in ((nse_rows, "NSE"), (bse_rows, "BSE")):
+        for r in rows_ or []:
+            if r.get("ISIN") and r.get("ClsPric") and r["ISIN"] not in isin_close:
+                isin_close[r["ISIN"]] = (ex, r.get("TckrSymb"), r.get("FinInstrmNm", ""), float(r["ClsPric"]), r.get("SctySrs"))
+    isin_map = json.loads((ROOT / "isin_map.json").read_text()) if (ROOT / "isin_map.json").exists() else {}
+
     def official(row):
+        isin = row.get("isin") or isin_map.get(row["companyName"])
+        if isin and isin in isin_close:
+            return isin_close[isin]
         sym = (row.get("symbol") or yahoo.get(row["companyName"], "").replace(".NS", "")).upper()
         if sym and sym in n_sym:
             return n_sym[sym]
