@@ -101,7 +101,8 @@
       }
     ],
     "priceHistoryUpdatedAt": "2026-11-06T21:48:20+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistorySource": "Screener.in daily close",
+    "symbol": "EIMS"
   },
   {
     "companyName": "VANS Electroengineerings",
@@ -209,7 +210,8 @@
       }
     ],
     "priceHistoryUpdatedAt": "2026-11-06T21:49:21+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistorySource": "Screener.in daily close",
+    "symbol": "VANS"
   },
   {
     "companyName": "Acme Universal Safezone 9",
@@ -225,7 +227,8 @@
     "currentGain": "43.7%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "ACMEUNIV"
   },
   {
     "companyName": "Roopa Screen",
@@ -345,7 +348,8 @@
       }
     ],
     "priceHistoryUpdatedAt": "2026-11-06T21:50:21+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistorySource": "Screener.in daily close",
+    "symbol": "ROOPA"
   },
   {
     "companyName": "Robokidz Eduventures",
@@ -477,7 +481,8 @@
       }
     ],
     "priceHistoryUpdatedAt": "2026-11-06T21:51:22+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistorySource": "Screener.in daily close",
+    "symbol": "ROBOKIDZ"
   },
   {
     "companyName": "SpectraA Technology Solutions",
@@ -647,7 +652,8 @@
     "currentGain": "12.0%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "AMTECH"
   },
   {
     "companyName": "Qualiance International",
@@ -819,7 +825,8 @@
       }
     ],
     "priceHistoryUpdatedAt": "2026-11-06T21:53:23+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistorySource": "Screener.in daily close",
+    "symbol": "QUALIANCE"
   },
   {
     "companyName": "Ashutosh Fibre",
@@ -835,7 +842,8 @@
     "currentGain": "33.7%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "ASHUTOSH"
   },
   {
     "companyName": "Shanti Inorganics",
@@ -851,7 +859,8 @@
     "currentGain": "120.5%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "SHANTIINOR"
   },
   {
     "companyName": "Kwick Forensic Solutions",
@@ -899,7 +908,8 @@
     "currentGain": "106.3%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "CREDENT"
   },
   {
     "companyName": "LAPL Automotive",
@@ -915,7 +925,8 @@
     "currentGain": "19.1%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "LAPL"
   },
   {
     "companyName": "G V Electricals",
@@ -931,7 +942,8 @@
     "currentGain": "-20.0%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "GVELECTRIC"
   },
   {
     "companyName": "Aegeus Technologies",
@@ -947,7 +959,8 @@
     "currentGain": "2.9%",
     "stockType": "SME",
     "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceSource": "Screener.in",
+    "symbol": "AEGEUS"
   },
   {
     "companyName": "Anawil Wire Engineering",
@@ -1304,7 +1317,7 @@
   {
     "companyName": "Orient Cables",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2057/orient-cables-india-ltd/",
-    "currentPrice": 338,
+    "currentPrice": 344,
     "listingDate": "2026-10-05",
     "issuePrice": 272,
     "qib": "182.8x",
@@ -1312,10 +1325,10 @@
     "retail": "30.6x",
     "total": "92.3x",
     "listingGain": "65.40%",
-    "currentGain": "24.3%",
+    "currentGain": "26.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-10-05",
@@ -1412,15 +1425,20 @@
       {
         "date": "2026-11-06",
         "close": 338.05
+      },
+      {
+        "date": "2026-11-09",
+        "close": 344.35
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:54:24+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:36:54+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "ORIENTCABL"
   },
   {
     "companyName": "Moneyview",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2382/moneyview-ltd/",
-    "currentPrice": 55,
+    "currentPrice": 53,
     "listingDate": "2026-10-01",
     "issuePrice": 34,
     "qib": "227.4x",
@@ -1428,10 +1446,10 @@
     "retail": "19.6x",
     "total": "98.5x",
     "listingGain": "61.80%",
-    "currentGain": "61.8%",
+    "currentGain": "56.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-10-01",
@@ -1532,15 +1550,20 @@
       {
         "date": "2026-11-06",
         "close": 54.95
+      },
+      {
+        "date": "2026-11-09",
+        "close": 53.16
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:55:24+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:36:56+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "MONEYVIEW"
   },
   {
     "companyName": "Adroit Industries",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2415/adroit-industries-india-ltd/",
-    "currentPrice": 165,
+    "currentPrice": 169,
     "listingDate": "2026-09-30",
     "issuePrice": 134,
     "qib": "195.0x",
@@ -1548,10 +1571,10 @@
     "retail": "99.8x",
     "total": "176.8x",
     "listingGain": "75.40%",
-    "currentGain": "23.1%",
+    "currentGain": "25.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-30",
@@ -1656,15 +1679,20 @@
       {
         "date": "2026-11-06",
         "close": 164.93
+      },
+      {
+        "date": "2026-11-09",
+        "close": 168.68
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:56:25+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:36:58+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "ADROITIND"
   },
   {
     "companyName": "SS Retail",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2334/ss-retail-ltd/",
-    "currentPrice": 635,
+    "currentPrice": 623,
     "listingDate": "2026-09-23",
     "issuePrice": 424,
     "qib": "203.6x",
@@ -1672,10 +1700,10 @@
     "retail": "36.4x",
     "total": "103.3x",
     "listingGain": "47.20%",
-    "currentGain": "49.8%",
+    "currentGain": "47.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-23",
@@ -1800,15 +1828,20 @@
       {
         "date": "2026-11-06",
         "close": 634.75
+      },
+      {
+        "date": "2026-11-09",
+        "close": 623.2
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:57:26+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:37:00+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "SSRETAIL"
   },
   {
     "companyName": "Jindal Supreme",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2300/jindal-supreme-india-ltd/",
-    "currentPrice": 159,
+    "currentPrice": 161,
     "listingDate": "2026-09-23",
     "issuePrice": 93,
     "qib": "126.4x",
@@ -1816,10 +1849,10 @@
     "retail": "149.3x",
     "total": "181.1x",
     "listingGain": "29.00%",
-    "currentGain": "71.0%",
+    "currentGain": "73.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-23",
@@ -1944,15 +1977,20 @@
       {
         "date": "2026-11-06",
         "close": 159.04
+      },
+      {
+        "date": "2026-11-09",
+        "close": 161.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:58:26+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:37:02+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "JSIPL"
   },
   {
     "companyName": "Rentomojo",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2401/rentomojo-ltd/",
-    "currentPrice": 579,
+    "currentPrice": 586,
     "listingDate": "2026-09-17",
     "issuePrice": 404,
     "qib": "177.3x",
@@ -1960,15 +1998,16 @@
     "retail": "15.6x",
     "total": "72.9x",
     "listingGain": "19.40%",
-    "currentGain": "43.3%",
+    "currentGain": "45.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "RENTOMOJO"
   },
   {
     "companyName": "Steamhouse",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2297/steamhouse-india-ltd/",
-    "currentPrice": 124.3,
+    "currentPrice": 132,
     "listingDate": "2026-09-17",
     "issuePrice": 81,
     "qib": "43.9x",
@@ -1976,8 +2015,10 @@
     "retail": "16.9x",
     "total": "30.5x",
     "listingGain": "16.70%",
-    "currentGain": "53.40%",
-    "stockType": "Mainboard"
+    "currentGain": "63.5%",
+    "stockType": "Mainboard",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Lcc Projects",
@@ -1990,10 +2031,10 @@
     "retail": "25.6x",
     "total": "48.5x",
     "listingGain": "29.40%",
-    "currentGain": "-7.5%",
+    "currentGain": "-7.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-17",
@@ -2134,15 +2175,20 @@
       {
         "date": "2026-11-06",
         "close": 134.78
+      },
+      {
+        "date": "2026-11-09",
+        "close": 134.95
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T21:59:27+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:37:11+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "LCCPROJECT"
   },
   {
     "companyName": "Karamtara Engineering",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1879/karamtara-engineering-ltd/",
-    "currentPrice": 376,
+    "currentPrice": 382,
     "listingDate": "2026-09-17",
     "issuePrice": 254,
     "qib": "159.6x",
@@ -2150,10 +2196,10 @@
     "retail": "13.3x",
     "total": "62.6x",
     "listingGain": "26.00%",
-    "currentGain": "48.0%",
+    "currentGain": "50.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-17",
@@ -2294,15 +2340,20 @@
       {
         "date": "2026-11-06",
         "close": 375.7
+      },
+      {
+        "date": "2026-11-09",
+        "close": 381.75
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T22:00:28+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:37:13+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "KARAMTARA"
   },
   {
     "companyName": "Pranav Constructions",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1916/pranav-constructions-ltd/",
-    "currentPrice": 85,
+    "currentPrice": 84,
     "listingDate": "2026-09-15",
     "issuePrice": 124,
     "qib": "258.7x",
@@ -2310,10 +2361,10 @@
     "retail": "43.3x",
     "total": "121.0x",
     "listingGain": "33.10%",
-    "currentGain": "-31.5%",
+    "currentGain": "-31.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
     "priceHistory": [
       {
         "date": "2026-09-15",
@@ -2462,15 +2513,20 @@
       {
         "date": "2026-11-06",
         "close": 84.97
+      },
+      {
+        "date": "2026-11-09",
+        "close": 84.4
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-06T22:01:28+00:00",
-    "priceHistorySource": "Screener.in daily close"
+    "priceHistoryUpdatedAt": "2026-11-09T05:37:15+00:00",
+    "priceHistorySource": "Yahoo Finance daily close",
+    "symbol": "PRANAV"
   },
   {
     "companyName": "Deepa Jewellers",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2333/deepa-jewellers-ltd/",
-    "currentPrice": 215,
+    "currentPrice": 210,
     "listingDate": "2026-09-08",
     "issuePrice": 177,
     "qib": "37.0x",
@@ -2478,15 +2534,16 @@
     "retail": "18.6x",
     "total": "42.6x",
     "listingGain": "24.90%",
-    "currentGain": "21.5%",
+    "currentGain": "18.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "DEEPA"
   },
   {
     "companyName": "Priority Jewels",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1963/priority-jewels-ltd/",
-    "currentPrice": 264,
+    "currentPrice": 265,
     "listingDate": "2026-09-04",
     "issuePrice": 200,
     "qib": "39.9x",
@@ -2494,15 +2551,16 @@
     "retail": "106.8x",
     "total": "100.5x",
     "listingGain": "15.00%",
-    "currentGain": "32.0%",
+    "currentGain": "32.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "PRIORITY"
   },
   {
     "companyName": "ESDS Software Solution",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1946/esds-software-solution-ltd/",
-    "currentPrice": 1116,
+    "currentPrice": 1139,
     "listingDate": "2026-09-04",
     "issuePrice": 429,
     "qib": "261.5x",
@@ -2510,15 +2568,16 @@
     "retail": "39.6x",
     "total": "135.9x",
     "listingGain": "76.50%",
-    "currentGain": "160.1%",
+    "currentGain": "165.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "ESDS"
   },
   {
     "companyName": "Lumino Industries",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1876/lumino-industries-ltd/",
-    "currentPrice": 93,
+    "currentPrice": 94,
     "listingDate": "2026-09-03",
     "issuePrice": 82,
     "qib": "221.4x",
@@ -2526,10 +2585,11 @@
     "retail": "38.5x",
     "total": "118.1x",
     "listingGain": "34.10%",
-    "currentGain": "13.4%",
+    "currentGain": "15.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "LUMINO"
   },
   {
     "companyName": "HyTech Engineers",
@@ -2548,7 +2608,7 @@
   {
     "companyName": "Augmont Enterprises",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2239/augmont-enterprises-ltd/",
-    "currentPrice": 922,
+    "currentPrice": 939,
     "listingDate": "2026-08-31",
     "issuePrice": 788,
     "qib": "227.0x",
@@ -2556,15 +2616,16 @@
     "retail": "31.0x",
     "total": "105.8x",
     "listingGain": "21.90%",
-    "currentGain": "17.0%",
+    "currentGain": "19.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "AUGMONT"
   },
   {
     "companyName": "Tempsens Instruments",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2217/tempsens-instruments-india-ltd/",
-    "currentPrice": 523,
+    "currentPrice": 534,
     "listingDate": "2026-08-28",
     "issuePrice": 300,
     "qib": "302.9x",
@@ -2572,10 +2633,11 @@
     "retail": "60.7x",
     "total": "184.1x",
     "listingGain": "111.30%",
-    "currentGain": "74.3%",
+    "currentGain": "77.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "TEMPSENS"
   },
   {
     "companyName": "Gaja Alternative Asset",
@@ -2594,7 +2656,7 @@
   {
     "companyName": "Lalithaa Jewellery Mart",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1994/lalithaa-jewellery-mart-ltd/",
-    "currentPrice": 374,
+    "currentPrice": 361,
     "listingDate": "2026-08-24",
     "issuePrice": 201,
     "qib": "145.4x",
@@ -2602,15 +2664,16 @@
     "retail": "11.8x",
     "total": "63.0x",
     "listingGain": "31.80%",
-    "currentGain": "86.1%",
+    "currentGain": "79.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "LALITHAA"
   },
   {
     "companyName": "Shiprocket",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2305/shiprocket-ltd/",
-    "currentPrice": 125,
+    "currentPrice": 131,
     "listingDate": "2026-08-19",
     "issuePrice": 97,
     "qib": "122.8x",
@@ -2618,15 +2681,16 @@
     "retail": "46.4x",
     "total": "99.4x",
     "listingGain": "35.00%",
-    "currentGain": "28.9%",
+    "currentGain": "35.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "SHIPROCKET"
   },
   {
     "companyName": "Behari Lal Engineering",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2198/behari-lal-engineering-ltd/",
-    "currentPrice": 454,
+    "currentPrice": 449,
     "listingDate": "2026-08-19",
     "issuePrice": 285,
     "qib": "165.3x",
@@ -2634,15 +2698,16 @@
     "retail": "53.3x",
     "total": "108.4x",
     "listingGain": "63.20%",
-    "currentGain": "59.3%",
+    "currentGain": "57.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "BLEL"
   },
   {
     "companyName": "Milky Mist Dairy Food",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2072/milky-mist-dairy-food-ltd/",
-    "currentPrice": 297,
+    "currentPrice": 295,
     "listingDate": "2026-08-18",
     "issuePrice": 140,
     "qib": "155.8x",
@@ -2650,15 +2715,16 @@
     "retail": "8.4x",
     "total": "56.1x",
     "listingGain": "17.90%",
-    "currentGain": "112.1%",
+    "currentGain": "110.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "MILKYMIST"
   },
   {
     "companyName": "Dhoot Transmission",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2453/dhoot-transmission-ltd/",
-    "currentPrice": 1602,
+    "currentPrice": 1615,
     "listingDate": "2026-08-17",
     "issuePrice": 871,
     "qib": "212.9x",
@@ -2666,15 +2732,16 @@
     "retail": "8.1x",
     "total": "74.2x",
     "listingGain": "37.80%",
-    "currentGain": "83.9%",
+    "currentGain": "85.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "DHOOTTRANS"
   },
   {
     "companyName": "Molbio Diagnostics",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2118/molbio-diagnostics-ltd/",
-    "currentPrice": 1339,
+    "currentPrice": 1347,
     "listingDate": "2026-08-17",
     "issuePrice": 807,
     "qib": "186.4x",
@@ -2682,15 +2749,16 @@
     "retail": "13.0x",
     "total": "70.3x",
     "listingGain": "21.40%",
-    "currentGain": "65.9%",
+    "currentGain": "66.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "MOLBIO"
   },
   {
     "companyName": "Technocraft Ventures",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2097/technocraft-ventures-ltd/",
-    "currentPrice": 510,
+    "currentPrice": 509,
     "listingDate": "2026-08-14",
     "issuePrice": 212,
     "qib": "42.3x",
@@ -2698,15 +2766,16 @@
     "retail": "25.4x",
     "total": "38.7x",
     "listingGain": "34.00%",
-    "currentGain": "140.6%",
+    "currentGain": "140.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "TECHNOCRAF"
   },
   {
     "companyName": "Ardee Industries",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2247/ardee-industries-ltd/",
-    "currentPrice": 46,
+    "currentPrice": 47,
     "listingDate": "2026-08-12",
     "issuePrice": 53,
     "qib": "197.8x",
@@ -2714,15 +2783,16 @@
     "retail": "45.7x",
     "total": "133.7x",
     "listingGain": "35.90%",
-    "currentGain": "-13.2%",
+    "currentGain": "-11.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance",
+    "symbol": "ARDEE"
   },
   {
     "companyName": "MV Electrosystems",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2299/mv-electrosystems-ltd/",
-    "currentPrice": 733,
+    "currentPrice": 768,
     "listingDate": "2026-08-06",
     "issuePrice": 425,
     "qib": "90.5x",
@@ -2730,10 +2800,10 @@
     "retail": "205.4x",
     "total": "188.8x",
     "listingGain": "22.40%",
-    "currentGain": "72.5%",
+    "currentGain": "80.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "IndoMIM",
@@ -2754,7 +2824,7 @@
   {
     "companyName": "Caliber Mining and Logistics",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1858/caliber-mining-and-logistics-ltd/",
-    "currentPrice": 520,
+    "currentPrice": 527,
     "listingDate": "2026-07-24",
     "issuePrice": 424,
     "qib": "240.7x",
@@ -2762,10 +2832,10 @@
     "retail": "41.1x",
     "total": "146.6x",
     "listingGain": "18.00%",
-    "currentGain": "22.6%",
+    "currentGain": "24.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Laser Power and Infra",
@@ -2786,7 +2856,7 @@
   {
     "companyName": "Kusumgar",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2245/kusumgar-ltd/",
-    "currentPrice": 552,
+    "currentPrice": 551,
     "listingDate": "2026-07-15",
     "issuePrice": 419,
     "qib": "284.1x",
@@ -2794,15 +2864,15 @@
     "retail": "26.5x",
     "total": "128.8x",
     "listingGain": "35.80%",
-    "currentGain": "31.7%",
+    "currentGain": "31.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Advit Jewels",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2218/advit-jewels-ltd/",
-    "currentPrice": 324,
+    "currentPrice": 331,
     "listingDate": "2026-07-01",
     "issuePrice": 138,
     "qib": "175.0x",
@@ -2810,15 +2880,15 @@
     "retail": "95.3x",
     "total": "212.6x",
     "listingGain": "36.90%",
-    "currentGain": "134.8%",
+    "currentGain": "139.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "CMR Green Technologies",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2138/cmr-green-technologies-ltd/",
-    "currentPrice": 218,
+    "currentPrice": 215,
     "listingDate": "2026-06-10",
     "issuePrice": 192,
     "qib": "270.5x",
@@ -2826,10 +2896,10 @@
     "retail": "27.0x",
     "total": "127.0x",
     "listingGain": "39.60%",
-    "currentGain": "13.5%",
+    "currentGain": "12.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Bharat Coking Coal",
@@ -2842,10 +2912,10 @@
     "retail": "49.3x",
     "total": "146.9x",
     "listingGain": "95.70%",
-    "currentGain": "39.1%",
+    "currentGain": "37.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Dhara Rail Projects",
@@ -3768,7 +3838,7 @@
   {
     "companyName": "ICICI Prudential Asset",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2049/icici-prudential-asset-management-company-ltd/",
-    "currentPrice": 2936,
+    "currentPrice": 2951,
     "listingDate": "2025-12-19",
     "issuePrice": 2165,
     "qib": "123.9x",
@@ -3776,15 +3846,15 @@
     "retail": "2.5x",
     "total": "39.2x",
     "listingGain": "20.10%",
-    "currentGain": "35.6%",
+    "currentGain": "36.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Corona Remedies",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1966/corona-remedies-ltd/",
-    "currentPrice": 2441,
+    "currentPrice": 2601,
     "listingDate": "2025-12-15",
     "issuePrice": 1062,
     "qib": "278.5x",
@@ -3792,15 +3862,15 @@
     "retail": "28.7x",
     "total": "137.0x",
     "listingGain": "38.40%",
-    "currentGain": "129.8%",
+    "currentGain": "144.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Meesho",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2253/meesho-ltd/",
-    "currentPrice": 233,
+    "currentPrice": 234,
     "listingDate": "2025-12-10",
     "issuePrice": 111,
     "qib": "120.2x",
@@ -3808,15 +3878,15 @@
     "retail": "19.1x",
     "total": "79.0x",
     "listingGain": "46.40%",
-    "currentGain": "109.9%",
+    "currentGain": "110.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Sudeep Pharma",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2025/sudeep-pharma-ltd/",
-    "currentPrice": 1178,
+    "currentPrice": 1220,
     "listingDate": "2025-11-28",
     "issuePrice": 593,
     "qib": "213.1x",
@@ -3824,15 +3894,15 @@
     "retail": "15.7x",
     "total": "93.7x",
     "listingGain": "23.10%",
-    "currentGain": "98.7%",
+    "currentGain": "105.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Tenneco Clean Air",
     "sourceUrl": "https://trendlyne.com/ipo/detail/2040/tenneco-clean-air-india-ltd/",
-    "currentPrice": 423,
+    "currentPrice": 425,
     "listingDate": "2025-11-19",
     "issuePrice": 397,
     "qib": "166.4x",
@@ -3840,15 +3910,15 @@
     "retail": "5.1x",
     "total": "58.8x",
     "listingGain": "27.20%",
-    "currentGain": "6.5%",
+    "currentGain": "6.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Rubicon Research",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1645/rubicon-research-ltd/",
-    "currentPrice": 1659,
+    "currentPrice": 1714,
     "listingDate": "2025-10-16",
     "issuePrice": 485,
     "qib": "130.3x",
@@ -3856,15 +3926,15 @@
     "retail": "35.5x",
     "total": "103.9x",
     "listingGain": "27.80%",
-    "currentGain": "242.1%",
+    "currentGain": "253.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "LG Electronics",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1809/lg-electronics-india-ltd/",
-    "currentPrice": 1754,
+    "currentPrice": 1787,
     "listingDate": "2025-10-14",
     "issuePrice": 1140,
     "qib": "166.5x",
@@ -3872,15 +3942,15 @@
     "retail": "3.5x",
     "total": "54.0x",
     "listingGain": "50.00%",
-    "currentGain": "53.9%",
+    "currentGain": "56.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Urban Company",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1959/urban-company-ltd/",
-    "currentPrice": 158,
+    "currentPrice": 157,
     "listingDate": "2025-09-17",
     "issuePrice": 103,
     "qib": "140.2x",
@@ -3888,15 +3958,15 @@
     "retail": "39.3x",
     "total": "103.6x",
     "listingGain": "57.50%",
-    "currentGain": "53.4%",
+    "currentGain": "52.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Patel Retail",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1528/patel-retail-ltd/",
-    "currentPrice": 251,
+    "currentPrice": 246,
     "listingDate": "2025-08-26",
     "issuePrice": 255,
     "qib": "272.4x",
@@ -3904,15 +3974,15 @@
     "retail": "42.5x",
     "total": "95.7x",
     "listingGain": "17.60%",
-    "currentGain": "-1.6%",
+    "currentGain": "-3.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Regaal Resources",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1851/regaal-resources-ltd/",
-    "currentPrice": 89,
+    "currentPrice": 90,
     "listingDate": "2025-08-20",
     "issuePrice": 102,
     "qib": "191.0x",
@@ -3920,10 +3990,10 @@
     "retail": "57.8x",
     "total": "159.9x",
     "listingGain": "38.20%",
-    "currentGain": "-12.7%",
+    "currentGain": "-11.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Highway Infrastructure",
@@ -3936,15 +4006,15 @@
     "retail": "155.6x",
     "total": "300.6x",
     "listingGain": "64.30%",
-    "currentGain": "2.9%",
+    "currentGain": "2.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Sri Lotus Developers",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1854/sri-lotus-developers-and-realty-ltd/",
-    "currentPrice": 234,
+    "currentPrice": 226,
     "listingDate": "2025-08-06",
     "issuePrice": 150,
     "qib": "163.9x",
@@ -3952,15 +4022,15 @@
     "retail": "20.3x",
     "total": "69.1x",
     "listingGain": "18.70%",
-    "currentGain": "56.0%",
+    "currentGain": "51.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Aditya Infotech",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1755/aditya-infotech-ltd/",
-    "currentPrice": 4131,
+    "currentPrice": 4306,
     "listingDate": "2025-08-05",
     "issuePrice": 675,
     "qib": "133.2x",
@@ -3968,15 +4038,15 @@
     "retail": "50.9x",
     "total": "100.7x",
     "listingGain": "50.40%",
-    "currentGain": "512.0%",
+    "currentGain": "537.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "GNG Electronics",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1820/gng-electronics-ltd/",
-    "currentPrice": 584,
+    "currentPrice": 542,
     "listingDate": "2025-07-30",
     "issuePrice": 237,
     "qib": "266.2x",
@@ -3984,15 +4054,15 @@
     "retail": "46.8x",
     "total": "147.9x",
     "listingGain": "49.80%",
-    "currentGain": "146.4%",
+    "currentGain": "128.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Anthem Biosciences",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1853/anthem-biosciences-ltd/",
-    "currentPrice": 916,
+    "currentPrice": 956,
     "listingDate": "2025-07-21",
     "issuePrice": 570,
     "qib": "182.7x",
@@ -4000,15 +4070,15 @@
     "retail": "5.6x",
     "total": "63.9x",
     "listingGain": "26.90%",
-    "currentGain": "60.7%",
+    "currentGain": "67.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Sambhv Steel Tubes",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1753/sambhv-steel-tubes-ltd/",
-    "currentPrice": 163,
+    "currentPrice": 164,
     "listingDate": "2025-07-02",
     "issuePrice": 82,
     "qib": "62.3x",
@@ -4016,10 +4086,10 @@
     "retail": "8.0x",
     "total": "28.5x",
     "listingGain": "34.10%",
-    "currentGain": "98.8%",
+    "currentGain": "99.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Globe Civil Projects",
@@ -4032,15 +4102,15 @@
     "retail": "53.7x",
     "total": "86.0x",
     "listingGain": "26.80%",
-    "currentGain": "-46.5%",
+    "currentGain": "-46.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Ellenbarrie Industrial Gases",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1735/ellenbarrie-industrial-gases-ltd/",
-    "currentPrice": 290,
+    "currentPrice": 291,
     "listingDate": "2025-07-01",
     "issuePrice": 400,
     "qib": "64.2x",
@@ -4048,10 +4118,10 @@
     "retail": "2.1x",
     "total": "22.2x",
     "listingGain": "21.50%",
-    "currentGain": "-27.5%",
+    "currentGain": "-27.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Stallion India Fluorochemicals Ltd.",
@@ -4072,7 +4142,7 @@
   {
     "companyName": "Laxmi Dental",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1718/laxmi-dental-ltd/",
-    "currentPrice": 196,
+    "currentPrice": 204,
     "listingDate": "2025-01-20",
     "issuePrice": 428,
     "qib": "110.4x",
@@ -4080,15 +4150,15 @@
     "retail": "76.2x",
     "total": "114.4x",
     "listingGain": "26.60%",
-    "currentGain": "-54.2%",
+    "currentGain": "-52.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Quadrant Future Tek",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1578/quadrant-future-tek-ltd/",
-    "currentPrice": 422,
+    "currentPrice": 426,
     "listingDate": "2025-01-14",
     "issuePrice": 290,
     "qib": "132.5x",
@@ -4096,10 +4166,10 @@
     "retail": "246.9x",
     "total": "186.7x",
     "listingGain": "27.60%",
-    "currentGain": "45.5%",
+    "currentGain": "47.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Standard Glass Lining",
@@ -4120,7 +4190,7 @@
   {
     "companyName": "Indo Farm Equipment",
     "sourceUrl": "https://trendlyne.com/ipo/detail/1366/indo-farm-equipment-ltd/",
-    "currentPrice": 122,
+    "currentPrice": 123,
     "listingDate": "2025-01-07",
     "issuePrice": 215,
     "qib": "242.4x",
@@ -4128,10 +4198,10 @@
     "retail": "104.9x",
     "total": "229.7x",
     "listingGain": "19.10%",
-    "currentGain": "-43.3%",
+    "currentGain": "-42.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-06T17:40+00:00",
-    "priceSource": "Screener.in"
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   },
   {
     "companyName": "Identical Brains Studios Ltd.",
@@ -5137,5 +5207,152 @@
     "listingGain": "75.40%",
     "currentGain": "134.10%",
     "stockType": "SME"
+  },
+  {
+    "companyName": "Maxwell Engineering",
+    "listingDate": "06 Nov 2026",
+    "applicationEnd": "03 Nov 2026",
+    "issuePrice": 158.0,
+    "priceBand": "₹150 - ₹158",
+    "qib": "259.45x",
+    "hni": "600.11x",
+    "retail": "552.00x",
+    "total": "489.41x",
+    "listingGain": "90.0%",
+    "stockType": "SME",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "sourceUrl": "https://groww.in/ipo/maxwell-engineering-ipo",
+    "subscriptionUpdatedAt": "2026-11-09T05:33:05+00:00",
+    "allotmentDate": "2026-11-04",
+    "expectedListingDate": "2026-11-06",
+    "listingPrice": 300.2,
+    "symbol": "MAXENGS",
+    "listingPriceBasis": "Groww official listing price"
+  },
+  {
+    "companyName": "Johnsoncab Electricals",
+    "listingDate": "06 Nov 2026",
+    "applicationEnd": "03 Nov 2026",
+    "issuePrice": 200.0,
+    "priceBand": "₹190 - ₹200",
+    "qib": "20.19x",
+    "hni": "31.46x",
+    "retail": "17.53x",
+    "total": "21.99x",
+    "listingGain": "19.2%",
+    "stockType": "SME",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "sourceUrl": "https://groww.in/ipo/johnsoncab-electricals-ipo",
+    "subscriptionUpdatedAt": "2026-11-09T05:33:05+00:00",
+    "allotmentDate": "2026-11-04",
+    "expectedListingDate": "2026-11-06",
+    "listingPrice": 238.5,
+    "symbol": "JOHNSONCAB",
+    "listingPriceBasis": "Groww official listing price"
+  },
+  {
+    "companyName": "HGS India",
+    "listingDate": "06 Nov 2026",
+    "applicationEnd": "03 Nov 2026",
+    "issuePrice": 120.0,
+    "priceBand": "₹114 - ₹120",
+    "qib": "138.65x",
+    "hni": "314.46x",
+    "retail": "233.35x",
+    "total": "230.03x",
+    "listingGain": "33.3%",
+    "stockType": "SME",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "sourceUrl": "https://groww.in/ipo/hgs-india-ipo",
+    "subscriptionUpdatedAt": "2026-11-05T11:21:54+00:00",
+    "allotmentDate": "2026-11-04",
+    "expectedListingDate": "2026-11-06",
+    "listingPrice": 160.0,
+    "symbol": "HGSINDIALT",
+    "listingPriceBasis": "Groww official listing price"
+  },
+  {
+    "companyName": "BLS Polymers",
+    "listingDate": "03 Nov 2026",
+    "applicationEnd": "29 Oct 2026",
+    "issuePrice": 150.0,
+    "priceBand": "₹142 - ₹150",
+    "qib": "200.25x",
+    "hni": "558.05x",
+    "retail": "123.68x",
+    "total": "238.64x",
+    "listingGain": "65.3%",
+    "stockType": "Mainboard",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "sourceUrl": "https://groww.in/ipo/bls-polymers-ipo",
+    "subscriptionUpdatedAt": "2026-11-02T11:34:11+00:00",
+    "allotmentDate": "2026-10-30",
+    "expectedListingDate": "2026-11-03",
+    "listingPrice": 248.0,
+    "symbol": "BLSPOLY",
+    "listingPriceBasis": "Groww official listing price",
+    "currentPrice": 237,
+    "currentGain": "58.1%",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
+  },
+  {
+    "companyName": "Jio Platforms",
+    "listingDate": "28 Oct 2026",
+    "applicationEnd": "23 Oct 2026",
+    "issuePrice": 1119.0,
+    "priceBand": "₹1065 - ₹1119",
+    "qib": "67.68x",
+    "hni": "13.99x",
+    "retail": "2.70x",
+    "total": "21.46x",
+    "listingGain": "21.4%",
+    "stockType": "Mainboard",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "sourceUrl": "https://groww.in/ipo/reliance-jio-ipo",
+    "subscriptionUpdatedAt": "2026-10-29T10:42:53+00:00",
+    "allotmentDate": "2026-10-26",
+    "expectedListingDate": "2026-10-28",
+    "listingPrice": 1358.0,
+    "symbol": "JPL",
+    "listingPriceBasis": "Groww official listing price",
+    "currentPrice": 1409,
+    "currentGain": "25.9%",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
+  },
+  {
+    "companyName": "Tonbo Imaging",
+    "listingDate": "23 Oct 2026",
+    "applicationEnd": "19 Oct 2026",
+    "issuePrice": 700.0,
+    "qib": "293.56x",
+    "hni": "170.81x",
+    "retail": "30.63x",
+    "total": "135.65x",
+    "listingGain": "65.7%",
+    "stockType": "Mainboard",
+    "source": "Groww",
+    "status": "Listed",
+    "stage": "Listed",
+    "subscriptionUpdatedAt": "2026-10-27T10:37:14+00:00",
+    "priceBand": "₹665 - ₹700",
+    "listingPrice": 1160.0,
+    "symbol": "TONBO",
+    "listingPriceBasis": "Groww official listing price",
+    "currentPrice": 1548,
+    "currentGain": "121.1%",
+    "priceUpdatedAt": "2026-11-09T05:36+00:00",
+    "priceSource": "Yahoo Finance"
   }
 ]
