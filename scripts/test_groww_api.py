@@ -135,18 +135,25 @@ def main():
     if sample:
         m = matched[sample["companyName"]]
         end = datetime.now()
-        try:
-            data = groww.get_historical_candles(
+        data, candle_errors = None, []
+        for label, call in (
+            ("get_historical_candles", lambda: groww.get_historical_candles(
                 exchange=m["exchange"], segment=groww.SEGMENT_CASH, groww_symbol=f"{m['exchange']}-{m['symbol']}",
                 start_time=(end - timedelta(days=90)).strftime("%Y-%m-%d %H:%M:%S"),
-                end_time=end.strftime("%Y-%m-%d %H:%M:%S"), candle_interval=groww.CANDLE_INTERVAL_DAY)
-        except Exception:
-            data = groww.get_historical_candle_data(
+                end_time=end.strftime("%Y-%m-%d %H:%M:%S"), candle_interval=groww.CANDLE_INTERVAL_DAY)),
+            ("get_historical_candle_data", lambda: groww.get_historical_candle_data(
                 trading_symbol=m["symbol"], exchange=m["exchange"], segment=groww.SEGMENT_CASH,
                 start_time=(end - timedelta(days=90)).strftime("%Y-%m-%d %H:%M:%S"),
-                end_time=end.strftime("%Y-%m-%d %H:%M:%S"), interval_in_minutes=1440)
+                end_time=end.strftime("%Y-%m-%d %H:%M:%S"), interval_in_minutes=1440)),
+        ):
+            try:
+                data = call()
+                break
+            except Exception as exc:
+                candle_errors.append(f"{label}: {exc}")
         candles = (data or {}).get("candles") or []
         report["dailyCandles"] = {"company": sample["companyName"], "count": len(candles),
+                                  "errors": candle_errors,
                                   "last": candles[-3:],
                                   "screenerLast": sample["priceHistory"][-3:]}
 
