@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-11-09T04:53:15+00:00",
+  "ranAt": "2026-11-09T04:54:13+00:00",
   "secretShape": {
     "token": {
       "length": 976,
@@ -18,5 +18,7 @@
       "nonBase32": true
     }
   },
+  "tokenRole": "auth-totp",
+  "flow": "totp",
   "login": "failed: ValueError: non-hexadecimal number found in fromhex() arg at position 1"
 }
