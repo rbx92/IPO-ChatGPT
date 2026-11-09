@@ -11,7 +11,7 @@ Eligibility depends on the IPO lifecycle stage:
 3. **Listed IPOs:** require QIB subscription >= 10x and listing gain >= 15%. Exclude missing or invalid QIB/listing-gain values.
 4. **No QIB category:** fixed-price SME IPOs with no QIB portion are not eligible at any stage after applications close.
 5. **Highlight:** every displayed card that passes its stage's rule gets the rainbow glow (Open IPOs only when QIB >= 10x).
-6. **Listing price:** Screener's first daily close is used as the listing price on purpose.
+6. **Listing:** an IPO moves to Listed when Groww's IPO page marks it listed; listing price and listing gain are Groww's official figures (before 9 Nov 2026 Screener's first daily close was used).
 
 ## Explicit company exclusion
 
@@ -42,6 +42,12 @@ listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain 
 ## Post-listing pullback signal
 
 A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 60 days, and the fall from its highest close since listing to the latest close is 15-30%. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
+
+## Price sources (since 9 Nov 2026)
+
+- **Mainboard:** CMP and daily closes from Yahoo Finance (`scripts/update_prices_yahoo.py`), ticker from the Groww symbol or a Yahoo name search, cached in `yahoo_symbols.json`.
+- **SME:** CMP and pullback closes from Screener.in (`scripts/update_prices.py --stock-type SME`, `scripts/update_pullbacks.py --stock-type SME`), 60 s between requests.
+- All run in order in one nightly workflow, `daily-data-update.yml`.
 
 ## Current archive count (2026-10-24)
 

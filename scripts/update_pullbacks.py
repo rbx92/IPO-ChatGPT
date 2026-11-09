@@ -75,6 +75,7 @@ def save(rows, paths, ids):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--delay", type=float, default=60, help="seconds between Screener requests")
+    ap.add_argument("--stock-type", default="", help="only fetch this stockType (e.g. SME); others keep their history")
     args = ap.parse_args()
 
     rows = load(DATA, [])
@@ -96,8 +97,10 @@ def main():
         time.sleep(args.delay)
 
     updated = skipped = 0
+    fetch = [r for r in candidates if not args.stock_type or r.get("stockType") == args.stock_type]
+    print(f"Fetching Screener closes for {len(fetch)} candidates (stock type: {args.stock_type or 'all'}).")
     try:
-        for row in candidates:
+        for row in fetch:
             name = row["companyName"]
             try:
                 path = paths.get(name)

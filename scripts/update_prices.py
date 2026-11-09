@@ -127,6 +127,7 @@ def main():
     ap.add_argument("--batch-size", type=int, default=9, help="rows per save batch (default 9)")
     ap.add_argument("--delay", type=float, default=60, help="seconds between requests, minimum 1 (default 60)")
     ap.add_argument("--dry-run", action="store_true", help="do not write files")
+    ap.add_argument("--stock-type", default="", help="only update this stockType (e.g. SME); empty means all")
     args = ap.parse_args()
     if args.start < 0 or args.limit < 0 or args.delay < 1 or args.batch_size < 1: ap.error("start/limit must be >=0, batch-size >=1 and delay >=1 second")
     rows = json.loads(DATA_PATH.read_text(encoding="utf-8"))
@@ -135,6 +136,8 @@ def main():
     # Keep the full source dataset intact; eligibility controls which rows are updated,
     # not which rows survive in ipos.json or data.js.
     eligible = select_eligible_rows(rows)
+    if args.stock_type:
+        eligible = [(i, r) for i, r in eligible if r.get("stockType") == args.stock_type]
     if eligible and args.start >= len(eligible): ap.error(f"start must be less than {len(eligible)} qualifying IPOs")
     if not eligible and args.start: ap.error("start must be 0 when there are no qualifying IPOs")
     selected = eligible[args.start:args.start + args.limit] if args.limit else eligible[args.start:]

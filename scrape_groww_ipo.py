@@ -179,7 +179,14 @@ def main():
     price_col = find_column(ipo_table, "issueprice", "priceband")
     stage_col = find_stage_column(ipo_table)
 
-    if not all([name_col, type_col, close_col, stage_col]):
+    open_now = next_data(ipo_html).get("openDataList")
+    if not all([name_col, type_col, close_col, stage_col]) and open_now == []:
+        # No IPO is open: Groww drops the open-IPO table, so the first table is
+        # the upcoming list, which has no stage column. Treat as zero Apply rows.
+        print("Groww lists no open IPOs right now; first table is the upcoming list.")
+        stage_col = None
+        ipo_table = ipo_table.iloc[0:0]
+    elif not all([name_col, type_col, close_col, stage_col]):
         raise RuntimeError(
             "Groww main IPO table headings changed: "
             f"{list(ipo_table.columns)}; detected stage column={stage_col!r}"
