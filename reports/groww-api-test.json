@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-11-09T04:52:18+00:00",
+  "ranAt": "2026-11-09T04:53:15+00:00",
   "secretShape": {
     "token": {
       "length": 976,
@@ -18,5 +18,5 @@
       "nonBase32": true
     }
   },
-  "login": "failed: Error: Non-base32 digit found"
+  "login": "failed: ValueError: non-hexadecimal number found in fromhex() arg at position 1"
 }
