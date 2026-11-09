@@ -71,6 +71,23 @@ def plausible(close, row):
     return not issue or 0.1 <= close / issue <= 25
 
 
+FILLER = {"and", "l", "lt", "ltd", "limit", "limite", "limited", "the", "co", "india", "ind"}
+
+
+def words(name):
+    return [w for w in normalized_name(name).split() if w not in FILLER]
+
+
+def abbrev_match(ours, theirs):
+    """True if exchange name is our name with words shortened, e.g.
+    'TECHERA ENGINEER (IND) L' ~ 'Techera Engineering India'."""
+    a, b = words(ours), words(theirs)
+    if len(a) < 2 or len(b) < 2 or a[0] != b[0]:
+        return False
+    n = min(len(a), len(b))
+    return all(x.startswith(y) or y.startswith(x) for x, y in zip(a[:n], b[:n])) and min(len(w) for w in b[:n]) >= 2
+
+
 def match_isin(row, latest, yahoo):
     """Find a stock's ISIN in the latest bhavcopy. Returns (isin, how) or (None, reason)."""
     by_sym, by_name = latest["by_sym"], latest["by_name"]
@@ -87,7 +104,10 @@ def match_isin(row, latest, yahoo):
               and plausible(r[3], row)}
     if len(prefix) == 1:
         return prefix.pop(), "name prefix"
-    return None, f"{len(exact) or len(prefix)} name candidates"
+    short = {r[1] for _, r in by_name if abbrev_match(row["companyName"], r[2]) and plausible(r[3], row)}
+    if len(short) == 1:
+        return short.pop(), "abbreviated name"
+    return None, f"{len(exact) or len(prefix) or len(short)} name candidates"
 
 
 def main():
