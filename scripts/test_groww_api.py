@@ -24,18 +24,37 @@ from rules import normalized_name  # noqa: E402
 REPORT = ROOT / "reports" / "groww-api-test.json"
 
 
-def login():
-    token, secret = os.environ.get("GROWW_TOTP_TOKEN"), os.environ.get("GROWW_TOTP_SECRET")
-    if not token or not secret:
+def clean_secret(raw):
+    """Accept the secret with spaces, dashes, lowercase, or as a full otpauth:// QR link."""
+    raw = (raw or "").strip()
+    if raw.lower().startswith("otpauth://"):
+        from urllib.parse import parse_qs, urlparse
+        raw = parse_qs(urlparse(raw).query).get("secret", [""])[0]
+    return "".join(ch for ch in raw if ch.isalnum()).upper()
+
+
+def describe(value):
+    """Shape of a secret without revealing it, for troubleshooting."""
+    value = value or ""
+    return {"length": len(value), "hasDot": "." in value, "hasSpace": " " in value,
+            "hasLower": any(c.islower() for c in value), "startsOtpauth": value.lower().startswith("otpauth"),
+            "nonBase32": sorted({c for c in value.upper() if c.isalnum() and c not in "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"})[:3] and True}
+
+
+def login(report):
+    token = (os.environ.get("GROWW_TOTP_TOKEN") or "").strip()
+    raw = os.environ.get("GROWW_TOTP_SECRET")
+    report["secretShape"] = {"token": describe(token), "secret": describe(raw)}
+    if not token or not raw:
         raise SystemExit("Missing GROWW_TOTP_TOKEN or GROWW_TOTP_SECRET repository secret.")
-    access = GrowwAPI.get_access_token(api_key=token, totp=pyotp.TOTP(secret).now())
+    access = GrowwAPI.get_access_token(api_key=token, totp=pyotp.TOTP(clean_secret(raw)).now())
     return GrowwAPI(access)
 
 
 def main():
     report = {"ranAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     try:
-        groww = login()
+        groww = login(report)
         report["login"] = "ok"
     except Exception as exc:  # report the reason without leaking secrets
         report["login"] = f"failed: {type(exc).__name__}: {str(exc)[:300]}"
