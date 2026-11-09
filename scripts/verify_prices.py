@@ -93,10 +93,6 @@ def main():
     b_sym, b_name = index(bse_rows, "BSE")
     yahoo = json.loads((ROOT / "yahoo_symbols.json").read_text()) if (ROOT / "yahoo_symbols.json").exists() else {}
 
-    by_isin = {}
-    for table in (n_sym, b_sym):
-        for item in table.values():
-            pass
     isin_close = {}
     for rows_, ex in ((nse_rows, "NSE"), (bse_rows, "BSE")):
         for r in rows_ or []:
