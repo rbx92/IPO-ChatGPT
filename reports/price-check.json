@@ -2,13 +2,13 @@
   "date": "2026-11-06",
   "summary": {
     "SME": {
-      "match": 7,
-      "no stored/fetched price for that day": 131,
-      "not found in NSE/BSE bhavcopy": 27
+      "match": 137,
+      "not found in NSE/BSE bhavcopy": 27,
+      "MISMATCH": 1
     },
     "Mainboard": {
-      "no stored/fetched price for that day": 7,
-      "match": 50,
+      "match": 54,
+      "MISMATCH": 3,
       "not found in NSE/BSE bhavcopy": 3
     }
   },
@@ -21,9 +21,9 @@
       "symbol": "EIMS",
       "series": "M",
       "officialClose": 82.33,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 82.33,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -35,9 +35,9 @@
       "symbol": "VANS",
       "series": "MT",
       "officialClose": 477.95,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 477.95,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -49,10 +49,11 @@
       "symbol": "ACMEUNIV",
       "series": "M",
       "officialClose": 102.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 102.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Roopa Screen",
@@ -62,9 +63,9 @@
       "symbol": "ROOPA",
       "series": "M",
       "officialClose": 93.5,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 93.5,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -76,9 +77,9 @@
       "symbol": "ROBOKIDZ",
       "series": "M",
       "officialClose": 165.25,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 165.25,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -102,10 +103,11 @@
       "symbol": "AMTECH",
       "series": "M",
       "officialClose": 83.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 83.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Qualiance International",
@@ -115,9 +117,9 @@
       "symbol": "QUALIANCE",
       "series": "SM",
       "officialClose": 136.45,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 136.45,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -129,10 +131,11 @@
       "symbol": "ASHUTOSH",
       "series": "SM",
       "officialClose": 122.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 122.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shanti Inorganics",
@@ -142,10 +145,11 @@
       "symbol": "SHANTIINOR",
       "series": "SM",
       "officialClose": 182.6,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 182.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Kwick Forensic Solutions",
@@ -155,10 +159,11 @@
       "symbol": "KWICK",
       "series": "M",
       "officialClose": 188.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 188.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Technocrats Plasma Systems",
@@ -168,10 +173,11 @@
       "symbol": "TECHNOCRAT",
       "series": "MT",
       "officialClose": 418.75,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 418.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Credent Connect N Care",
@@ -181,10 +187,11 @@
       "symbol": "CREDENT",
       "series": "SM",
       "officialClose": 389.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 389.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "LAPL Automotive",
@@ -194,10 +201,11 @@
       "symbol": "LAPL",
       "series": "M",
       "officialClose": 111.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 111.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "G V Electricals",
@@ -207,10 +215,11 @@
       "symbol": "GVELECTRIC",
       "series": "M",
       "officialClose": 104.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 104.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Aegeus Technologies",
@@ -220,10 +229,11 @@
       "symbol": "AEGEUS",
       "series": "M",
       "officialClose": 108.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 108.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Anawil Wire Engineering",
@@ -239,10 +249,11 @@
       "symbol": "PPEL",
       "series": "M",
       "officialClose": 949.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 949.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shree Balaji Mala Textiles",
@@ -252,10 +263,11 @@
       "symbol": "MALA",
       "series": "M",
       "officialClose": 48.75,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 48.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Millworks Technologies",
@@ -265,10 +277,11 @@
       "symbol": "MILLWORKS",
       "series": "M",
       "officialClose": 1021.2,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1021.2,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Devson Catalyst",
@@ -278,10 +291,11 @@
       "symbol": "DEVSON",
       "series": "MT",
       "officialClose": 354.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 354.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "IC Electricals Company",
@@ -291,10 +305,11 @@
       "symbol": "ICELCO",
       "series": "SM",
       "officialClose": 116.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 116.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Kratikal Tech",
@@ -304,10 +319,11 @@
       "symbol": "KRATIKAL",
       "series": "M",
       "officialClose": 159.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 159.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Avience Biomedicals",
@@ -317,10 +333,11 @@
       "symbol": "AVIENCE",
       "series": "SM",
       "officialClose": 250.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 250.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Horizon Reclaim",
@@ -330,10 +347,11 @@
       "symbol": "HORIZON",
       "series": "M",
       "officialClose": 118.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 118.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Susan Electricals",
@@ -343,10 +361,11 @@
       "symbol": "SUSAN",
       "series": "MT",
       "officialClose": 205.55,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 205.55,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Merritronix",
@@ -356,10 +375,11 @@
       "symbol": "MRTX",
       "series": "M",
       "officialClose": 404.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 404.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Q-Line Biotech",
@@ -369,10 +389,11 @@
       "symbol": "QLINE",
       "series": "SM",
       "officialClose": 511.7,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 511.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Vegorama Punjabi Angithi",
@@ -382,10 +403,11 @@
       "symbol": "VPAL",
       "series": "MT",
       "officialClose": 264.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 264.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Goldline Pharmaceutical",
@@ -401,10 +423,11 @@
       "symbol": "RECLTD",
       "series": "EQ",
       "officialClose": 296.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 407.4,
+      "savedOn": "2026-11-06",
+      "diffPercent": 37.33,
+      "status": "MISMATCH"
     },
     {
       "company": "Adisoft Technologies",
@@ -414,10 +437,11 @@
       "symbol": "ADISOFT",
       "series": "ST",
       "officialClose": 278.55,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 278.55,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Apsis Aerocom",
@@ -427,10 +451,11 @@
       "symbol": "APSISAERO",
       "series": "ST",
       "officialClose": 468.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 468.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Msafe Equipments",
@@ -440,10 +465,11 @@
       "symbol": "MSAFE",
       "series": "M",
       "officialClose": 268.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 268.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "KRM Ayurveda",
@@ -453,10 +479,11 @@
       "symbol": "KRMAYURVED",
       "series": "SM",
       "officialClose": 228.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 228.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Avana Electrosystems",
@@ -466,10 +493,11 @@
       "symbol": "AVANA",
       "series": "SM",
       "officialClose": 142.25,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 142.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Defrail Technologies",
@@ -491,10 +519,11 @@
       "symbol": "ORIENTCABL",
       "series": "EQ",
       "officialClose": 338.05,
-      "source": "Yahoo close",
-      "ticker": "ORIENTCABL.NS",
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 337.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.06,
+      "status": "match"
     },
     {
       "company": "Moneyview",
@@ -504,10 +533,10 @@
       "symbol": "MONEYVIEW",
       "series": "EQ",
       "officialClose": 54.95,
-      "source": "Yahoo close",
-      "ticker": "MONEYVIEW.NS",
-      "ours": 54.95,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 55.08,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.24,
       "status": "match"
     },
     {
@@ -518,10 +547,10 @@
       "symbol": "ADROITIND",
       "series": "EQ",
       "officialClose": 164.93,
-      "source": "Yahoo close",
-      "ticker": "ADROITIND.NS",
-      "ours": 164.93,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 164.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.08,
       "status": "match"
     },
     {
@@ -532,10 +561,11 @@
       "symbol": "SSRETAIL",
       "series": "EQ",
       "officialClose": 634.75,
-      "source": "Yahoo close",
-      "ticker": "SSRETAIL.NS",
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 634.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.01,
+      "status": "match"
     },
     {
       "company": "Jindal Supreme",
@@ -545,10 +575,10 @@
       "symbol": "JSIPL",
       "series": "BE",
       "officialClose": 159.04,
-      "source": "Yahoo close",
-      "ticker": "JSIPL.NS",
-      "ours": 159.04,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 158.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.09,
       "status": "match"
     },
     {
@@ -559,10 +589,10 @@
       "symbol": "RENTOMOJO",
       "series": "EQ",
       "officialClose": 579.35,
-      "source": "Yahoo close",
-      "ticker": "RENTOMOJO.NS",
-      "ours": 579.35,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 579.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.08,
       "status": "match"
     },
     {
@@ -573,10 +603,10 @@
       "symbol": "STEAMHOUSE",
       "series": "EQ",
       "officialClose": 131.87,
-      "source": "Yahoo close",
-      "ticker": "STEAMHOUSE.NS",
-      "ours": 131.87,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 131.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.02,
       "status": "match"
     },
     {
@@ -587,10 +617,10 @@
       "symbol": "LCCPROJECT",
       "series": "EQ",
       "officialClose": 134.78,
-      "source": "Yahoo close",
-      "ticker": "LCCPROJECT.NS",
-      "ours": 134.78,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 134.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.1,
       "status": "match"
     },
     {
@@ -601,10 +631,10 @@
       "symbol": "KARAMTARA",
       "series": "EQ",
       "officialClose": 375.7,
-      "source": "Yahoo close",
-      "ticker": "KARAMTARA.NS",
-      "ours": 375.7,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 376.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.2,
       "status": "match"
     },
     {
@@ -615,10 +645,10 @@
       "symbol": "PRANAV",
       "series": "EQ",
       "officialClose": 84.97,
-      "source": "Yahoo close",
-      "ticker": "PRANAV.NS",
-      "ours": 84.97,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 85.07,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.12,
       "status": "match"
     },
     {
@@ -629,10 +659,10 @@
       "symbol": "DEEPA",
       "series": "EQ",
       "officialClose": 214.62,
-      "source": "Yahoo close",
-      "ticker": "DEEPA.NS",
-      "ours": 214.62,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 214.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.01,
       "status": "match"
     },
     {
@@ -643,11 +673,11 @@
       "symbol": "PRIORITY",
       "series": "BE",
       "officialClose": 264.3,
-      "source": "Yahoo close",
-      "ticker": "PRIORITY.NS",
-      "ours": 264.3,
-      "diffPercent": 0.0,
-      "status": "match"
+      "source": "NSE/BSE official close",
+      "ours": 265.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.51,
+      "status": "MISMATCH"
     },
     {
       "company": "ESDS Software Solution",
@@ -657,10 +687,10 @@
       "symbol": "ESDS",
       "series": "EQ",
       "officialClose": 1115.5,
-      "source": "Yahoo close",
-      "ticker": "ESDS.NS",
-      "ours": 1115.5,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1115.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.03,
       "status": "match"
     },
     {
@@ -671,10 +701,10 @@
       "symbol": "LUMINO",
       "series": "EQ",
       "officialClose": 93.41,
-      "source": "Yahoo close",
-      "ticker": "LUMINO.NS",
-      "ours": 93.41,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 93.44,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.03,
       "status": "match"
     },
     {
@@ -691,10 +721,10 @@
       "symbol": "AUGMONT",
       "series": "EQ",
       "officialClose": 921.5,
-      "source": "Yahoo close",
-      "ticker": "AUGMONT.NS",
-      "ours": 921.5,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 921.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.03,
       "status": "match"
     },
     {
@@ -705,10 +735,10 @@
       "symbol": "TEMPSENS",
       "series": "EQ",
       "officialClose": 523.2,
-      "source": "Yahoo close",
-      "ticker": "TEMPSENS.NS",
-      "ours": 523.2,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 524.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.17,
       "status": "match"
     },
     {
@@ -719,10 +749,11 @@
       "symbol": "GAJA",
       "series": "B",
       "officialClose": 134.35,
-      "source": "Yahoo close",
-      "ticker": null,
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 134.35,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Lalithaa Jewellery Mart",
@@ -732,10 +763,10 @@
       "symbol": "LALITHAA",
       "series": "EQ",
       "officialClose": 373.5,
-      "source": "Yahoo close",
-      "ticker": "LALITHAA.NS",
-      "ours": 373.5,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 373.2,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.08,
       "status": "match"
     },
     {
@@ -746,10 +777,10 @@
       "symbol": "SHIPROCKET",
       "series": "EQ",
       "officialClose": 125.04,
-      "source": "Yahoo close",
-      "ticker": "SHIPROCKET.NS",
-      "ours": 125.04,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 125.05,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.01,
       "status": "match"
     },
     {
@@ -760,10 +791,10 @@
       "symbol": "BLEL",
       "series": "EQ",
       "officialClose": 453.55,
-      "source": "Yahoo close",
-      "ticker": "BLEL.NS",
-      "ours": 453.55,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 453.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.09,
       "status": "match"
     },
     {
@@ -774,10 +805,10 @@
       "symbol": "MILKYMIST",
       "series": "BE",
       "officialClose": 297.2,
-      "source": "Yahoo close",
-      "ticker": "MILKYMIST.NS",
-      "ours": 297.2,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 297.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.13,
       "status": "match"
     },
     {
@@ -788,10 +819,10 @@
       "symbol": "DHOOTTRANS",
       "series": "EQ",
       "officialClose": 1601.6,
-      "source": "Yahoo close",
-      "ticker": "DHOOTTRANS.NS",
-      "ours": 1601.6,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1600.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.06,
       "status": "match"
     },
     {
@@ -802,10 +833,10 @@
       "symbol": "MOLBIO",
       "series": "EQ",
       "officialClose": 1339.3,
-      "source": "Yahoo close",
-      "ticker": "MOLBIO.NS",
-      "ours": 1339.3,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1340.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.12,
       "status": "match"
     },
     {
@@ -816,10 +847,10 @@
       "symbol": "TECHNOCRAF",
       "series": "EQ",
       "officialClose": 510.3,
-      "source": "Yahoo close",
-      "ticker": "TECHNOCRAF.NS",
-      "ours": 510.3,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 511.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.19,
       "status": "match"
     },
     {
@@ -830,10 +861,10 @@
       "symbol": "ARDEE",
       "series": "EQ",
       "officialClose": 45.86,
-      "source": "Yahoo close",
-      "ticker": "ARDEE.NS",
-      "ours": 45.86,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 45.76,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.22,
       "status": "match"
     },
     {
@@ -844,10 +875,10 @@
       "symbol": "MVELECTRO",
       "series": "EQ",
       "officialClose": 733.35,
-      "source": "Yahoo close",
-      "ticker": "MVELECTRO.NS",
-      "ours": 733.35,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 733.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.05,
       "status": "match"
     },
     {
@@ -864,10 +895,10 @@
       "symbol": "CMLL",
       "series": "EQ",
       "officialClose": 520.15,
-      "source": "Yahoo close",
-      "ticker": "CMLL.NS",
-      "ours": 520.15,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 518.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.27,
       "status": "match"
     },
     {
@@ -878,10 +909,11 @@
       "symbol": "LASERPOWER",
       "series": "EQ",
       "officialClose": 204.68,
-      "source": "Yahoo close",
-      "ticker": null,
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 205.05,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.18,
+      "status": "match"
     },
     {
       "company": "Kusumgar",
@@ -891,10 +923,10 @@
       "symbol": "KUSUMGAR",
       "series": "EQ",
       "officialClose": 552.35,
-      "source": "Yahoo close",
-      "ticker": "KUSUMGAR.NS",
-      "ours": 552.35,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 550.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.33,
       "status": "match"
     },
     {
@@ -905,10 +937,10 @@
       "symbol": "RAMBHAJO",
       "series": "BE",
       "officialClose": 323.5,
-      "source": "Yahoo close",
-      "ticker": "RAMBHAJO.NS",
-      "ours": 323.5,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 322.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.31,
       "status": "match"
     },
     {
@@ -919,10 +951,10 @@
       "symbol": "CMRGREEN",
       "series": "EQ",
       "officialClose": 218.29,
-      "source": "Yahoo close",
-      "ticker": "CMRGREEN.NS",
-      "ours": 218.29,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 218.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.07,
       "status": "match"
     },
     {
@@ -933,10 +965,10 @@
       "symbol": "BHARATCOAL",
       "series": "EQ",
       "officialClose": 31.56,
-      "source": "Yahoo close",
-      "ticker": "BHARATCOAL.NS",
-      "ours": 31.56,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 31.55,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.03,
       "status": "match"
     },
     {
@@ -947,10 +979,11 @@
       "symbol": "DHARARAIL",
       "series": "SM",
       "officialClose": 133.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 133.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shyam Dhani Industries",
@@ -960,10 +993,11 @@
       "symbol": "SHYAMDHANI",
       "series": "SM",
       "officialClose": 52.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 52.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Exim Routes",
@@ -973,10 +1007,11 @@
       "symbol": "EXIMROUTES",
       "series": "SM",
       "officialClose": 71.7,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 71.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "HRS Aluglaze",
@@ -992,10 +1027,11 @@
       "symbol": "KVTOYS",
       "series": "M",
       "officialClose": 210.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 210.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Luxury Time",
@@ -1005,10 +1041,11 @@
       "symbol": "LUXURY",
       "series": "M",
       "officialClose": 69.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 69.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ravelcare",
@@ -1018,10 +1055,11 @@
       "symbol": "RAVEL",
       "series": "M",
       "officialClose": 93.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 93.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Exato Technologies",
@@ -1031,10 +1069,11 @@
       "symbol": "EXATO",
       "series": "M",
       "officialClose": 582.6,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 582.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Gallard Steel",
@@ -1044,10 +1083,11 @@
       "symbol": "GALLARD",
       "series": "M",
       "officialClose": 139.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 139.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Workmates Core2Cloud Solution",
@@ -1057,10 +1097,11 @@
       "symbol": "WORKMATES",
       "series": "M",
       "officialClose": 433.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 433.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sheel Biotech",
@@ -1076,10 +1117,11 @@
       "symbol": "INFINITY",
       "series": "MT",
       "officialClose": 730.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 730.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Suba Hotels",
@@ -1089,10 +1131,11 @@
       "symbol": "SUBAHOTELS",
       "series": "SM",
       "officialClose": 86.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 86.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Chatterbox Technologies",
@@ -1102,10 +1145,11 @@
       "symbol": "CHTR",
       "series": "M",
       "officialClose": 36.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 36.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "TechD Cybersecurity",
@@ -1115,10 +1159,11 @@
       "symbol": "TECHD",
       "series": "SM",
       "officialClose": 552.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 552.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "L T Elevator",
@@ -1128,10 +1173,11 @@
       "symbol": "LTELEVATOR",
       "series": "MT",
       "officialClose": 305.6,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 305.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Airfloa Rail Technology",
@@ -1141,10 +1187,11 @@
       "symbol": "AIRFLOA",
       "series": "M",
       "officialClose": 484.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 484.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Karbonsteel Engineering",
@@ -1154,10 +1201,11 @@
       "symbol": "KARBON",
       "series": "M",
       "officialClose": 97.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 97.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Austere Systems",
@@ -1167,10 +1215,11 @@
       "symbol": "AUSTERE",
       "series": "M",
       "officialClose": 41.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 41.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Optivalue Tek Consulting",
@@ -1180,10 +1229,11 @@
       "symbol": "OPTIVALUE",
       "series": "ST",
       "officialClose": 204.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 204.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Goel Construction Company",
@@ -1193,10 +1243,11 @@
       "symbol": "GOELCONS",
       "series": "M",
       "officialClose": 521.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 521.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sattva Engineering",
@@ -1206,10 +1257,11 @@
       "symbol": "SATTVAENGG",
       "series": "SM",
       "officialClose": 50.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 50.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Current Infraprojects",
@@ -1219,10 +1271,11 @@
       "symbol": "CURRENT",
       "series": "SM",
       "officialClose": 101.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 101.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Anondita Medicare",
@@ -1232,10 +1285,11 @@
       "symbol": "ANONDITA",
       "series": "SM",
       "officialClose": 971.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 971.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "BLT Logistics",
@@ -1245,10 +1299,11 @@
       "symbol": "BLT",
       "series": "M",
       "officialClose": 31.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 31.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Flysbs Aviation",
@@ -1258,10 +1313,11 @@
       "symbol": "FLYSBS",
       "series": "SM",
       "officialClose": 555.55,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 555.55,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Cash Ur Drive Marketing",
@@ -1271,10 +1327,11 @@
       "symbol": "CUDML",
       "series": "SM",
       "officialClose": 94.3,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 94.3,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shree Refrigerations",
@@ -1284,10 +1341,11 @@
       "symbol": "SHREEREF",
       "series": "M",
       "officialClose": 296.85,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 296.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Patel Chem Specialities",
@@ -1297,10 +1355,11 @@
       "symbol": "PATELCHEM",
       "series": "M",
       "officialClose": 123.85,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 123.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Monarch Surveyors",
@@ -1310,10 +1369,11 @@
       "symbol": "MSECL",
       "series": "M",
       "officialClose": 235.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 235.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Spunweb Nonwoven",
@@ -1323,10 +1383,11 @@
       "symbol": "SPUNWEB",
       "series": "SM",
       "officialClose": 104.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 104.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "GLEN Industries",
@@ -1336,10 +1397,11 @@
       "symbol": "GLEN",
       "series": "MT",
       "officialClose": 108.72,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 108.72,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Meta Infotech",
@@ -1349,10 +1411,11 @@
       "symbol": "METAINFO",
       "series": "M",
       "officialClose": 54.54,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 54.54,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Cryogenic OGS",
@@ -1362,10 +1425,11 @@
       "symbol": "CRYOGENIC",
       "series": "M",
       "officialClose": 374.45,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 374.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Adcounty Media",
@@ -1375,10 +1439,11 @@
       "symbol": "ADCOUNTY",
       "series": "M",
       "officialClose": 74.48,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 74.48,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Neetu Yoshi",
@@ -1388,10 +1453,11 @@
       "symbol": "NEETUYOSHI",
       "series": "M",
       "officialClose": 203.85,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 203.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ace Alpha Tech",
@@ -1401,10 +1467,11 @@
       "symbol": "ACEALPHA",
       "series": "M",
       "officialClose": 164.3,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 164.3,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Suntech Infra Solutions",
@@ -1414,10 +1481,11 @@
       "symbol": "SUNTECH",
       "series": "SM",
       "officialClose": 37.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 37.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Mayasheel Ventures",
@@ -1427,10 +1495,11 @@
       "symbol": "MAYASHEEL",
       "series": "SM",
       "officialClose": 26.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 26.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Influx Healthtech",
@@ -1440,10 +1509,11 @@
       "symbol": "INFLUX",
       "series": "SM",
       "officialClose": 251.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 251.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Eppeltone Engineers",
@@ -1453,10 +1523,11 @@
       "symbol": "EEPL",
       "series": "ST",
       "officialClose": 125.2,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 125.2,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Patil Automation",
@@ -1466,10 +1537,11 @@
       "symbol": "PATILAUTOM",
       "series": "ST",
       "officialClose": 328.2,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 328.2,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Monolithisch India",
@@ -1479,10 +1551,11 @@
       "symbol": "MONOLITH",
       "series": "SM",
       "officialClose": 1336.25,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1336.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sacheerome",
@@ -1492,10 +1565,11 @@
       "symbol": "SACHEEROME",
       "series": "SM",
       "officialClose": 390.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 390.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Virtual Galaxy Infotech",
@@ -1505,10 +1579,11 @@
       "symbol": "VGINFOTECH",
       "series": "SM",
       "officialClose": 127.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 127.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Srigee DLM",
@@ -1518,10 +1593,11 @@
       "symbol": "SRIGEE",
       "series": "M",
       "officialClose": 72.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 72.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Tankup Engineers",
@@ -1531,10 +1607,11 @@
       "symbol": "TANKUP",
       "series": "ST",
       "officialClose": 1795.25,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1795.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shri Ahimsa Naturals",
@@ -1544,10 +1621,11 @@
       "symbol": "SHRIAHIMSA",
       "series": "SM",
       "officialClose": 396.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 396.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Chamunda Electrical",
@@ -1557,10 +1635,11 @@
       "symbol": "CHAMUNDA",
       "series": "SM",
       "officialClose": 41.4,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 41.4,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "EMA Partners India Ltd.",
@@ -1570,10 +1649,11 @@
       "symbol": "EMAPARTNER",
       "series": "SM",
       "officialClose": 94.05,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 94.05,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Rikhav Securities Ltd.",
@@ -1583,10 +1663,11 @@
       "symbol": "RIKHAV",
       "series": "M",
       "officialClose": 50.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 50.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Kabra Jewels",
@@ -1596,10 +1677,11 @@
       "symbol": "KKJEWELS",
       "series": "SM",
       "officialClose": 136.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 136.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sat Kartar Shopping",
@@ -1615,10 +1697,11 @@
       "symbol": "DELTIC",
       "series": "SM",
       "officialClose": 37.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 37.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Fabtech Technologies Cleanrooms Ltd.",
@@ -1628,10 +1711,11 @@
       "symbol": "FABTECH",
       "series": "EQ",
       "officialClose": 131.98,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 132.4,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.32,
+      "status": "match"
     },
     {
       "company": "Parmeshwar Metal Ltd.",
@@ -1641,10 +1725,11 @@
       "symbol": "PARMESHWAR",
       "series": "MT",
       "officialClose": 284.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 284.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Leo Dryfruits & Spices Trading Ltd.",
@@ -1654,10 +1739,11 @@
       "symbol": "VANDU",
       "series": "M",
       "officialClose": 58.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 58.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Anya Polytech Fertilizers",
@@ -1673,10 +1759,10 @@
       "symbol": "ICICIAMC",
       "series": "EQ",
       "officialClose": 2935.8,
-      "source": "Yahoo close",
-      "ticker": "ICICIAMC.NS",
-      "ours": 2935.8,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 2936.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.01,
       "status": "match"
     },
     {
@@ -1687,10 +1773,10 @@
       "symbol": "CORONA",
       "series": "EQ",
       "officialClose": 2441.1,
-      "source": "Yahoo close",
-      "ticker": "CORONA.NS",
-      "ours": 2441.1,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 2438.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.09,
       "status": "match"
     },
     {
@@ -1701,10 +1787,10 @@
       "symbol": "MEESHO",
       "series": "EQ",
       "officialClose": 233.48,
-      "source": "Yahoo close",
-      "ticker": "MEESHO.NS",
-      "ours": 233.48,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 233.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.01,
       "status": "match"
     },
     {
@@ -1715,10 +1801,10 @@
       "symbol": "SUDEEPPHRM",
       "series": "EQ",
       "officialClose": 1178.3,
-      "source": "Yahoo close",
-      "ticker": "SUDEEPPHRM.NS",
-      "ours": 1178.3,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1178.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.03,
       "status": "match"
     },
     {
@@ -1729,10 +1815,10 @@
       "symbol": "TENNIND",
       "series": "EQ",
       "officialClose": 423.25,
-      "source": "Yahoo close",
-      "ticker": "TENNIND.NS",
-      "ours": 423.25,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 423.3,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.01,
       "status": "match"
     },
     {
@@ -1743,10 +1829,10 @@
       "symbol": "RUBICON",
       "series": "EQ",
       "officialClose": 1659.3,
-      "source": "Yahoo close",
-      "ticker": "RUBICON.NS",
-      "ours": 1659.3,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1658.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.05,
       "status": "match"
     },
     {
@@ -1757,10 +1843,10 @@
       "symbol": "LGEINDIA",
       "series": "EQ",
       "officialClose": 1754.1,
-      "source": "Yahoo close",
-      "ticker": "LGEINDIA.NS",
-      "ours": 1754.1,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 1754.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.05,
       "status": "match"
     },
     {
@@ -1771,10 +1857,10 @@
       "symbol": "URBANCO",
       "series": "EQ",
       "officialClose": 158.12,
-      "source": "Yahoo close",
-      "ticker": "URBANCO.NS",
-      "ours": 158.12,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 158.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.01,
       "status": "match"
     },
     {
@@ -1785,10 +1871,10 @@
       "symbol": "PATELRMART",
       "series": "EQ",
       "officialClose": 251.17,
-      "source": "Yahoo close",
-      "ticker": "PATELRMART.NS",
-      "ours": 251.17,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 251.2,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.01,
       "status": "match"
     },
     {
@@ -1799,10 +1885,10 @@
       "symbol": "REGAAL",
       "series": "EQ",
       "officialClose": 88.86,
-      "source": "Yahoo close",
-      "ticker": "REGAAL.NS",
-      "ours": 88.86,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 88.91,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.06,
       "status": "match"
     },
     {
@@ -1813,11 +1899,11 @@
       "symbol": "HILINFRA",
       "series": "BE",
       "officialClose": 72.05,
-      "source": "Yahoo close",
-      "ticker": "HILINFRA.NS",
-      "ours": 72.05,
-      "diffPercent": 0.0,
-      "status": "match"
+      "source": "NSE/BSE official close",
+      "ours": 71.66,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.54,
+      "status": "MISMATCH"
     },
     {
       "company": "Sri Lotus Developers",
@@ -1827,10 +1913,10 @@
       "symbol": "LOTUSDEV",
       "series": "EQ",
       "officialClose": 233.82,
-      "source": "Yahoo close",
-      "ticker": "LOTUSDEV.NS",
-      "ours": 233.82,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 233.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.14,
       "status": "match"
     },
     {
@@ -1841,10 +1927,10 @@
       "symbol": "CPPLUS",
       "series": "EQ",
       "officialClose": 4131.4,
-      "source": "Yahoo close",
-      "ticker": "CPPLUS.NS",
-      "ours": 4131.4,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 4129.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.05,
       "status": "match"
     },
     {
@@ -1855,10 +1941,10 @@
       "symbol": "EBGNG",
       "series": "EQ",
       "officialClose": 584.35,
-      "source": "Yahoo close",
-      "ticker": "EBGNG.NS",
-      "ours": 584.35,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 584.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.04,
       "status": "match"
     },
     {
@@ -1869,10 +1955,10 @@
       "symbol": "ANTHEM",
       "series": "EQ",
       "officialClose": 915.55,
-      "source": "Yahoo close",
-      "ticker": "ANTHEM.NS",
-      "ours": 915.55,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 914.35,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.13,
       "status": "match"
     },
     {
@@ -1883,10 +1969,10 @@
       "symbol": "SAMBHV",
       "series": "EQ",
       "officialClose": 163.39,
-      "source": "Yahoo close",
-      "ticker": "SAMBHV.NS",
-      "ours": 163.39,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 163.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.09,
       "status": "match"
     },
     {
@@ -1897,11 +1983,11 @@
       "symbol": "GLOBECIVIL",
       "series": "EQ",
       "officialClose": 38.04,
-      "source": "Yahoo close",
-      "ticker": "GLOBECIVIL.NS",
-      "ours": 38.04,
-      "diffPercent": 0.0,
-      "status": "match"
+      "source": "NSE/BSE official close",
+      "ours": 37.53,
+      "savedOn": "2026-11-06",
+      "diffPercent": -1.34,
+      "status": "MISMATCH"
     },
     {
       "company": "Ellenbarrie Industrial Gases",
@@ -1911,10 +1997,10 @@
       "symbol": "ELLEN",
       "series": "EQ",
       "officialClose": 290.1,
-      "source": "Yahoo close",
-      "ticker": "ELLEN.NS",
-      "ours": 290.1,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 290.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.03,
       "status": "match"
     },
     {
@@ -1925,10 +2011,11 @@
       "symbol": "STALLION",
       "series": "B",
       "officialClose": 199.8,
-      "source": "Yahoo close",
-      "ticker": null,
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 199.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Laxmi Dental",
@@ -1938,10 +2025,10 @@
       "symbol": "LAXMIDENTL",
       "series": "EQ",
       "officialClose": 196.42,
-      "source": "Yahoo close",
-      "ticker": "LAXMIDENTL.NS",
-      "ours": 196.42,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 196.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.17,
       "status": "match"
     },
     {
@@ -1952,10 +2039,10 @@
       "symbol": "QUADFUTURE",
       "series": "EQ",
       "officialClose": 421.95,
-      "source": "Yahoo close",
-      "ticker": "QUADFUTURE.NS",
-      "ours": 421.95,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 421.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.12,
       "status": "match"
     },
     {
@@ -1972,10 +2059,10 @@
       "symbol": "INDOFARM",
       "series": "EQ",
       "officialClose": 122.43,
-      "source": "Yahoo close",
-      "ticker": "INDOFARM.NS",
-      "ours": 122.43,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 123.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.47,
       "status": "match"
     },
     {
@@ -1992,10 +2079,11 @@
       "symbol": "YASHHV",
       "series": "M",
       "officialClose": 1202.45,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1202.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Purple United Sales Ltd.",
@@ -2005,10 +2093,11 @@
       "symbol": "PURPLEUTED",
       "series": "SM",
       "officialClose": 459.65,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 459.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Jungle Camps India Ltd.",
@@ -2018,10 +2107,11 @@
       "symbol": "JUNGLECAMP",
       "series": "M",
       "officialClose": 47.67,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 47.67,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Toss The Coin Ltd.",
@@ -2031,10 +2121,11 @@
       "symbol": "TTC",
       "series": "M",
       "officialClose": 172.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 172.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Dhanlaxmi Crop Science Ltd.",
@@ -2050,10 +2141,11 @@
       "symbol": "ETML",
       "series": "SM",
       "officialClose": 66.6,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 66.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Nisus Finance Services Co Ltd.",
@@ -2063,10 +2155,11 @@
       "symbol": "NISUS",
       "series": "M",
       "officialClose": 177.75,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 177.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ganesh Infraworld Ltd.",
@@ -2076,10 +2169,11 @@
       "symbol": "GANESHIN",
       "series": "SM",
       "officialClose": 81.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 81.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Apex Ecotech Ltd.",
@@ -2089,10 +2183,11 @@
       "symbol": "APEXECO",
       "series": "SM",
       "officialClose": 263.45,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 263.45,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Rajputana Biodiesel Ltd.",
@@ -2102,10 +2197,11 @@
       "symbol": "RAJPUTANA",
       "series": "SM",
       "officialClose": 201.7,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 201.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "C2C Advanced Systems Ltd.",
@@ -2115,10 +2211,11 @@
       "symbol": "C2C",
       "series": "SM",
       "officialClose": 150.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 150.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Rajesh Power Services Ltd.",
@@ -2128,10 +2225,11 @@
       "symbol": "RAJESH",
       "series": "M",
       "officialClose": 826.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 826.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Danish Power Ltd.",
@@ -2141,10 +2239,11 @@
       "symbol": "DANISH",
       "series": "SM",
       "officialClose": 942.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 942.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Freshara Agro Exports Ltd.",
@@ -2154,10 +2253,11 @@
       "symbol": "FRESHARA",
       "series": "ST",
       "officialClose": 406.55,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 406.55,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Lakshya Powertech Ltd.",
@@ -2167,10 +2267,11 @@
       "symbol": "LAKSHYA",
       "series": "SM",
       "officialClose": 102.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 102.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Shiv Texchem Ltd.",
@@ -2210,10 +2311,11 @@
       "symbol": "WOL3D",
       "series": "SM",
       "officialClose": 139.85,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 139.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Rappid Valves (India) Ltd.",
@@ -2223,10 +2325,11 @@
       "symbol": "RAPPID",
       "series": "SM",
       "officialClose": 368.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 368.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Paramount Speciality Forgings Ltd.",
@@ -2242,10 +2345,11 @@
       "symbol": "ENVIRO",
       "series": "SM",
       "officialClose": 55.95,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 55.95,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Osel Devcies Ltd.",
@@ -2267,10 +2371,11 @@
       "symbol": "MYMUDRA",
       "series": "SM",
       "officialClose": 81.6,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 81.6,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Namo eWaste Management Ltd.",
@@ -2280,10 +2385,11 @@
       "symbol": "NAMOEWASTE",
       "series": "SM",
       "officialClose": 339.35,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 339.35,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Mach Conferences and Events Ltd.",
@@ -2299,10 +2405,11 @@
       "symbol": "AERON",
       "series": "SM",
       "officialClose": 77.4,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 77.4,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Jay Bee Laminations Ltd.",
@@ -2312,10 +2419,11 @@
       "symbol": "JAYBEE",
       "series": "SM",
       "officialClose": 79.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 79.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Indian Phosphate Ltd.",
@@ -2325,10 +2433,11 @@
       "symbol": "IPHL",
       "series": "SM",
       "officialClose": 78.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 78.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Brace Port Logistics",
@@ -2338,10 +2447,11 @@
       "symbol": "BRACEPORT",
       "series": "SM",
       "officialClose": 71.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 71.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Forcas Studio",
@@ -2351,10 +2461,11 @@
       "symbol": "FORCAS",
       "series": "SM",
       "officialClose": 188.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 188.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Positron Energy",
@@ -2364,10 +2475,11 @@
       "symbol": "POSITRON",
       "series": "SM",
       "officialClose": 243.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 243.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sunlite Recycling",
@@ -2377,10 +2489,11 @@
       "symbol": "SUNLITE",
       "series": "SM",
       "officialClose": 598.75,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 598.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Aesthetik Engineers",
@@ -2396,10 +2509,11 @@
       "symbol": "PPSL",
       "series": "SM",
       "officialClose": 2.85,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 2.85,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Afcom Holdings",
@@ -2409,10 +2523,11 @@
       "symbol": "AFCOM",
       "series": "M",
       "officialClose": 1295.7,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1295.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Dhariwalcorp",
@@ -2422,10 +2537,11 @@
       "symbol": "DHARIWAL",
       "series": "SM",
       "officialClose": 23.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 23.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ashapura Logistics",
@@ -2435,10 +2551,11 @@
       "symbol": "ASHALOG",
       "series": "SM",
       "officialClose": 60.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 60.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Bulkcorp Intl",
@@ -2454,10 +2571,11 @@
       "symbol": "RAJINDLTD",
       "series": "SM",
       "officialClose": 59.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 59.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sathlokhar Synergys",
@@ -2473,10 +2591,11 @@
       "symbol": "SATECH",
       "series": "SM",
       "officialClose": 38.35,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 38.35,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Trom Industries",
@@ -2486,10 +2605,11 @@
       "symbol": "TROM",
       "series": "SM",
       "officialClose": 56.8,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 56.8,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Aprameya Engineering",
@@ -2499,10 +2619,11 @@
       "symbol": "APRAMEYA",
       "series": "SM",
       "officialClose": 130.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 130.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Manglam Infra",
@@ -2524,10 +2645,11 @@
       "symbol": "VVIPIL",
       "series": "M",
       "officialClose": 158.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 158.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "V L Infraprojects",
@@ -2537,10 +2659,11 @@
       "symbol": "VLINFRA",
       "series": "SM",
       "officialClose": 23.4,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 23.4,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "RNFI Services",
@@ -2550,10 +2673,11 @@
       "symbol": "RNFI",
       "series": "SM",
       "officialClose": 311.3,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 311.3,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Kataria Industries",
@@ -2563,10 +2687,11 @@
       "symbol": "KATARIA",
       "series": "ST",
       "officialClose": 135.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 135.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Macobs Technologies",
@@ -2576,10 +2701,11 @@
       "symbol": "MACOBSTECH",
       "series": "SM",
       "officialClose": 195.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 195.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Aelea Commodities",
@@ -2589,10 +2715,11 @@
       "symbol": "ACLD",
       "series": "M",
       "officialClose": 109.1,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 109.1,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sati Poly Plast",
@@ -2602,10 +2729,11 @@
       "symbol": "SATIPOLY",
       "series": "SM",
       "officialClose": 36.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 36.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Prizor Viztech",
@@ -2615,10 +2743,11 @@
       "symbol": "PRIZOR",
       "series": "SM",
       "officialClose": 1485.5,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1485.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Sahaj Solar",
@@ -2628,10 +2757,11 @@
       "symbol": "SAHAJSOLAR",
       "series": "SM",
       "officialClose": 82.35,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 82.35,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Effwa Infra & Research",
@@ -2641,10 +2771,11 @@
       "symbol": "EFFWA",
       "series": "SM",
       "officialClose": 318.15,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 318.15,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ganesh Green Bharat",
@@ -2654,10 +2785,11 @@
       "symbol": "GGBL",
       "series": "SM",
       "officialClose": 177.75,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 177.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Ambey Laboratories",
@@ -2673,10 +2805,11 @@
       "symbol": "NEPHROCARE",
       "series": "SM",
       "officialClose": 76.25,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 76.25,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Divine Power Energy",
@@ -2686,10 +2819,11 @@
       "symbol": "DPEL",
       "series": "SM",
       "officialClose": 680.9,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 680.9,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Petro Carbon",
@@ -2699,10 +2833,11 @@
       "symbol": "PCCL",
       "series": "ST",
       "officialClose": 404.0,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 404.0,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Maxwell Engineering",
@@ -2712,9 +2847,9 @@
       "symbol": "MAXENGS",
       "series": "ST",
       "officialClose": 315.2,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 315.2,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -2726,10 +2861,11 @@
       "symbol": "JOHNSONCAB",
       "series": "MT",
       "officialClose": 237.7,
-      "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "2026-11-09",
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 237.7,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "HGS India",
@@ -2739,9 +2875,9 @@
       "symbol": "HGSINDIALT",
       "series": "ST",
       "officialClose": 168.0,
-      "source": "Screener (saved)",
+      "source": "NSE/BSE official close",
       "ours": 168.0,
-      "savedOn": "2026-11-09",
+      "savedOn": "2026-11-06",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -2753,10 +2889,10 @@
       "symbol": "BLSPOLY",
       "series": "EQ",
       "officialClose": 235.79,
-      "source": "Yahoo close",
-      "ticker": "BLSPOLY.NS",
-      "ours": 235.79,
-      "diffPercent": 0.0,
+      "source": "NSE/BSE official close",
+      "ours": 235.65,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.06,
       "status": "match"
     },
     {
@@ -2767,10 +2903,11 @@
       "symbol": "JPL",
       "series": "EQ",
       "officialClose": 1406.4,
-      "source": "Yahoo close",
-      "ticker": "JPL.NS",
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1405.75,
+      "savedOn": "2026-11-06",
+      "diffPercent": -0.05,
+      "status": "match"
     },
     {
       "company": "Tonbo Imaging",
@@ -2780,10 +2917,11 @@
       "symbol": "TONBO",
       "series": "EQ",
       "officialClose": 1472.4,
-      "source": "Yahoo close",
-      "ticker": "TONBO.NS",
-      "ours": null,
-      "status": "no stored/fetched price for that day"
+      "source": "NSE/BSE official close",
+      "ours": 1478.5,
+      "savedOn": "2026-11-06",
+      "diffPercent": 0.41,
+      "status": "match"
     }
   ]
 }
