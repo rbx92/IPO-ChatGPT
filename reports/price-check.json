@@ -2,10 +2,9 @@
   "date": "2026-11-06",
   "summary": {
     "SME": {
-      "match": 118,
-      "not found in NSE/BSE bhavcopy": 27,
-      "MISMATCH": 2,
-      "no stored/fetched price for that day": 18
+      "match": 7,
+      "no stored/fetched price for that day": 131,
+      "not found in NSE/BSE bhavcopy": 27
     },
     "Mainboard": {
       "no stored/fetched price for that day": 7,
@@ -24,7 +23,7 @@
       "officialClose": 82.33,
       "source": "Screener (saved)",
       "ours": 82.33,
-      "savedOn": "2026-11-06",
+      "savedOn": "2026-11-09",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -38,7 +37,7 @@
       "officialClose": 477.95,
       "source": "Screener (saved)",
       "ours": 477.95,
-      "savedOn": "2026-11-06",
+      "savedOn": "2026-11-09",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -51,10 +50,9 @@
       "series": "M",
       "officialClose": 102.0,
       "source": "Screener (saved)",
-      "ours": 102,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Roopa Screen",
@@ -66,7 +64,7 @@
       "officialClose": 93.5,
       "source": "Screener (saved)",
       "ours": 93.5,
-      "savedOn": "2026-11-06",
+      "savedOn": "2026-11-09",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -80,7 +78,7 @@
       "officialClose": 165.25,
       "source": "Screener (saved)",
       "ours": 165.25,
-      "savedOn": "2026-11-06",
+      "savedOn": "2026-11-09",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -105,10 +103,9 @@
       "series": "M",
       "officialClose": 83.5,
       "source": "Screener (saved)",
-      "ours": 84,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.6,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Qualiance International",
@@ -120,7 +117,7 @@
       "officialClose": 136.45,
       "source": "Screener (saved)",
       "ours": 136.45,
-      "savedOn": "2026-11-06",
+      "savedOn": "2026-11-09",
       "diffPercent": 0.0,
       "status": "match"
     },
@@ -133,10 +130,9 @@
       "series": "SM",
       "officialClose": 122.65,
       "source": "Screener (saved)",
-      "ours": 123,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.29,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shanti Inorganics",
@@ -147,10 +143,9 @@
       "series": "SM",
       "officialClose": 182.6,
       "source": "Screener (saved)",
-      "ours": 183,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.22,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Kwick Forensic Solutions",
@@ -161,10 +156,9 @@
       "series": "M",
       "officialClose": 188.15,
       "source": "Screener (saved)",
-      "ours": 188,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.08,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Technocrats Plasma Systems",
@@ -175,10 +169,9 @@
       "series": "MT",
       "officialClose": 418.75,
       "source": "Screener (saved)",
-      "ours": 419,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.06,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Credent Connect N Care",
@@ -189,10 +182,9 @@
       "series": "SM",
       "officialClose": 389.8,
       "source": "Screener (saved)",
-      "ours": 390,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "LAPL Automotive",
@@ -203,10 +195,9 @@
       "series": "M",
       "officialClose": 111.65,
       "source": "Screener (saved)",
-      "ours": 112,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.31,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "G V Electricals",
@@ -217,10 +208,9 @@
       "series": "M",
       "officialClose": 104.0,
       "source": "Screener (saved)",
-      "ours": 104,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Aegeus Technologies",
@@ -231,10 +221,9 @@
       "series": "M",
       "officialClose": 108.15,
       "source": "Screener (saved)",
-      "ours": 108,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.14,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Anawil Wire Engineering",
@@ -251,10 +240,9 @@
       "series": "M",
       "officialClose": 949.65,
       "source": "Screener (saved)",
-      "ours": 950,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.04,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shree Balaji Mala Textiles",
@@ -265,10 +253,9 @@
       "series": "M",
       "officialClose": 48.75,
       "source": "Screener (saved)",
-      "ours": 49,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.51,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Millworks Technologies",
@@ -279,10 +266,9 @@
       "series": "M",
       "officialClose": 1021.2,
       "source": "Screener (saved)",
-      "ours": 1021,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Devson Catalyst",
@@ -293,10 +279,9 @@
       "series": "MT",
       "officialClose": 354.5,
       "source": "Screener (saved)",
-      "ours": 354,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.14,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "IC Electricals Company",
@@ -307,10 +292,9 @@
       "series": "SM",
       "officialClose": 116.9,
       "source": "Screener (saved)",
-      "ours": 117,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.09,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Kratikal Tech",
@@ -321,10 +305,9 @@
       "series": "M",
       "officialClose": 159.5,
       "source": "Screener (saved)",
-      "ours": 160,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.31,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Avience Biomedicals",
@@ -335,10 +318,9 @@
       "series": "SM",
       "officialClose": 250.0,
       "source": "Screener (saved)",
-      "ours": 250,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Horizon Reclaim",
@@ -349,10 +331,9 @@
       "series": "M",
       "officialClose": 118.8,
       "source": "Screener (saved)",
-      "ours": 119,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.17,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Susan Electricals",
@@ -363,10 +344,9 @@
       "series": "MT",
       "officialClose": 205.55,
       "source": "Screener (saved)",
-      "ours": 206,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.22,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Merritronix",
@@ -377,10 +357,9 @@
       "series": "M",
       "officialClose": 404.8,
       "source": "Screener (saved)",
-      "ours": 405,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Q-Line Biotech",
@@ -391,10 +370,9 @@
       "series": "SM",
       "officialClose": 511.7,
       "source": "Screener (saved)",
-      "ours": 512,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.06,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Vegorama Punjabi Angithi",
@@ -405,10 +383,9 @@
       "series": "MT",
       "officialClose": 264.0,
       "source": "Screener (saved)",
-      "ours": 264,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Goldline Pharmaceutical",
@@ -425,10 +402,9 @@
       "series": "EQ",
       "officialClose": 296.65,
       "source": "Screener (saved)",
-      "ours": 407,
-      "savedOn": "2026-11-06",
-      "diffPercent": 37.2,
-      "status": "MISMATCH"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Adisoft Technologies",
@@ -439,10 +415,9 @@
       "series": "ST",
       "officialClose": 278.55,
       "source": "Screener (saved)",
-      "ours": 279,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.16,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Apsis Aerocom",
@@ -453,10 +428,9 @@
       "series": "ST",
       "officialClose": 468.0,
       "source": "Screener (saved)",
-      "ours": 468,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Msafe Equipments",
@@ -467,10 +441,9 @@
       "series": "M",
       "officialClose": 268.65,
       "source": "Screener (saved)",
-      "ours": 269,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.13,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "KRM Ayurveda",
@@ -481,10 +454,9 @@
       "series": "SM",
       "officialClose": 228.0,
       "source": "Screener (saved)",
-      "ours": 228,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Avana Electrosystems",
@@ -495,10 +467,9 @@
       "series": "SM",
       "officialClose": 142.25,
       "source": "Screener (saved)",
-      "ours": 142,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.18,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Defrail Technologies",
@@ -977,10 +948,9 @@
       "series": "SM",
       "officialClose": 133.95,
       "source": "Screener (saved)",
-      "ours": 134,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.04,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shyam Dhani Industries",
@@ -991,10 +961,9 @@
       "series": "SM",
       "officialClose": 52.0,
       "source": "Screener (saved)",
-      "ours": 52,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Exim Routes",
@@ -1005,10 +974,9 @@
       "series": "SM",
       "officialClose": 71.7,
       "source": "Screener (saved)",
-      "ours": 72,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.42,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "HRS Aluglaze",
@@ -1026,7 +994,7 @@
       "officialClose": 210.15,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -1038,10 +1006,9 @@
       "series": "M",
       "officialClose": 69.0,
       "source": "Screener (saved)",
-      "ours": 69,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Ravelcare",
@@ -1052,10 +1019,9 @@
       "series": "M",
       "officialClose": 93.0,
       "source": "Screener (saved)",
-      "ours": 93,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Exato Technologies",
@@ -1066,10 +1032,9 @@
       "series": "M",
       "officialClose": 582.6,
       "source": "Screener (saved)",
-      "ours": 583,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.07,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Gallard Steel",
@@ -1080,10 +1045,9 @@
       "series": "M",
       "officialClose": 139.95,
       "source": "Screener (saved)",
-      "ours": 140,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.04,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Workmates Core2Cloud Solution",
@@ -1094,10 +1058,9 @@
       "series": "M",
       "officialClose": 433.95,
       "source": "Screener (saved)",
-      "ours": 434,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.01,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sheel Biotech",
@@ -1114,10 +1077,9 @@
       "series": "MT",
       "officialClose": 730.0,
       "source": "Screener (saved)",
-      "ours": 730,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Suba Hotels",
@@ -1128,10 +1090,9 @@
       "series": "SM",
       "officialClose": 86.8,
       "source": "Screener (saved)",
-      "ours": 87,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.23,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Chatterbox Technologies",
@@ -1142,10 +1103,9 @@
       "series": "M",
       "officialClose": 36.1,
       "source": "Screener (saved)",
-      "ours": 36,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.28,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "TechD Cybersecurity",
@@ -1156,10 +1116,9 @@
       "series": "SM",
       "officialClose": 552.5,
       "source": "Screener (saved)",
-      "ours": 552,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.09,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "L T Elevator",
@@ -1170,10 +1129,9 @@
       "series": "MT",
       "officialClose": 305.6,
       "source": "Screener (saved)",
-      "ours": 306,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.13,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Airfloa Rail Technology",
@@ -1184,10 +1142,9 @@
       "series": "M",
       "officialClose": 484.9,
       "source": "Screener (saved)",
-      "ours": 485,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Karbonsteel Engineering",
@@ -1198,10 +1155,9 @@
       "series": "M",
       "officialClose": 97.9,
       "source": "Screener (saved)",
-      "ours": 98,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.1,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Austere Systems",
@@ -1212,10 +1168,9 @@
       "series": "M",
       "officialClose": 41.8,
       "source": "Screener (saved)",
-      "ours": 42,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.48,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Optivalue Tek Consulting",
@@ -1226,10 +1181,9 @@
       "series": "ST",
       "officialClose": 204.5,
       "source": "Screener (saved)",
-      "ours": 204,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.24,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Goel Construction Company",
@@ -1240,10 +1194,9 @@
       "series": "M",
       "officialClose": 521.9,
       "source": "Screener (saved)",
-      "ours": 522,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sattva Engineering",
@@ -1255,7 +1208,7 @@
       "officialClose": 50.8,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -1267,10 +1220,9 @@
       "series": "SM",
       "officialClose": 101.0,
       "source": "Screener (saved)",
-      "ours": 101,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Anondita Medicare",
@@ -1281,10 +1233,9 @@
       "series": "SM",
       "officialClose": 971.9,
       "source": "Screener (saved)",
-      "ours": 972,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.01,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "BLT Logistics",
@@ -1295,10 +1246,9 @@
       "series": "M",
       "officialClose": 31.9,
       "source": "Screener (saved)",
-      "ours": 32,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.31,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Flysbs Aviation",
@@ -1309,10 +1259,9 @@
       "series": "SM",
       "officialClose": 555.55,
       "source": "Screener (saved)",
-      "ours": 556,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.08,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Cash Ur Drive Marketing",
@@ -1323,10 +1272,9 @@
       "series": "SM",
       "officialClose": 94.3,
       "source": "Screener (saved)",
-      "ours": 94,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.32,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shree Refrigerations",
@@ -1337,10 +1285,9 @@
       "series": "M",
       "officialClose": 296.85,
       "source": "Screener (saved)",
-      "ours": 297,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Patel Chem Specialities",
@@ -1351,10 +1298,9 @@
       "series": "M",
       "officialClose": 123.85,
       "source": "Screener (saved)",
-      "ours": 124,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.12,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Monarch Surveyors",
@@ -1366,7 +1312,7 @@
       "officialClose": 235.1,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -1378,10 +1324,9 @@
       "series": "SM",
       "officialClose": 104.0,
       "source": "Screener (saved)",
-      "ours": 104,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "GLEN Industries",
@@ -1392,10 +1337,9 @@
       "series": "MT",
       "officialClose": 108.72,
       "source": "Screener (saved)",
-      "ours": 109,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.26,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Meta Infotech",
@@ -1406,10 +1350,9 @@
       "series": "M",
       "officialClose": 54.54,
       "source": "Screener (saved)",
-      "ours": 55,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.84,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Cryogenic OGS",
@@ -1420,10 +1363,9 @@
       "series": "M",
       "officialClose": 374.45,
       "source": "Screener (saved)",
-      "ours": 374,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.12,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Adcounty Media",
@@ -1434,10 +1376,9 @@
       "series": "M",
       "officialClose": 74.48,
       "source": "Screener (saved)",
-      "ours": 75,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.7,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Neetu Yoshi",
@@ -1448,10 +1389,9 @@
       "series": "M",
       "officialClose": 203.85,
       "source": "Screener (saved)",
-      "ours": 204,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.07,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Ace Alpha Tech",
@@ -1462,10 +1402,9 @@
       "series": "M",
       "officialClose": 164.3,
       "source": "Screener (saved)",
-      "ours": 164,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.18,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Suntech Infra Solutions",
@@ -1476,10 +1415,9 @@
       "series": "SM",
       "officialClose": 37.9,
       "source": "Screener (saved)",
-      "ours": 38,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.26,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Mayasheel Ventures",
@@ -1490,10 +1428,9 @@
       "series": "SM",
       "officialClose": 26.5,
       "source": "Screener (saved)",
-      "ours": 27,
-      "savedOn": "2026-11-06",
-      "diffPercent": 1.89,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Influx Healthtech",
@@ -1504,10 +1441,9 @@
       "series": "SM",
       "officialClose": 251.0,
       "source": "Screener (saved)",
-      "ours": 251,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Eppeltone Engineers",
@@ -1518,10 +1454,9 @@
       "series": "ST",
       "officialClose": 125.2,
       "source": "Screener (saved)",
-      "ours": 125,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.16,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Patil Automation",
@@ -1532,10 +1467,9 @@
       "series": "ST",
       "officialClose": 328.2,
       "source": "Screener (saved)",
-      "ours": 328,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.06,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Monolithisch India",
@@ -1546,10 +1480,9 @@
       "series": "SM",
       "officialClose": 1336.25,
       "source": "Screener (saved)",
-      "ours": 1336,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sacheerome",
@@ -1560,10 +1493,9 @@
       "series": "SM",
       "officialClose": 390.0,
       "source": "Screener (saved)",
-      "ours": 390,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Virtual Galaxy Infotech",
@@ -1574,10 +1506,9 @@
       "series": "SM",
       "officialClose": 127.65,
       "source": "Screener (saved)",
-      "ours": 128,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.27,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Srigee DLM",
@@ -1588,10 +1519,9 @@
       "series": "M",
       "officialClose": 72.5,
       "source": "Screener (saved)",
-      "ours": 73,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.69,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Tankup Engineers",
@@ -1602,10 +1532,9 @@
       "series": "ST",
       "officialClose": 1795.25,
       "source": "Screener (saved)",
-      "ours": 1795,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.01,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shri Ahimsa Naturals",
@@ -1616,10 +1545,9 @@
       "series": "SM",
       "officialClose": 396.95,
       "source": "Screener (saved)",
-      "ours": 397,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.01,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Chamunda Electrical",
@@ -1630,10 +1558,9 @@
       "series": "SM",
       "officialClose": 41.4,
       "source": "Screener (saved)",
-      "ours": 41,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.97,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "EMA Partners India Ltd.",
@@ -1644,10 +1571,9 @@
       "series": "SM",
       "officialClose": 94.05,
       "source": "Screener (saved)",
-      "ours": 94,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Rikhav Securities Ltd.",
@@ -1659,7 +1585,7 @@
       "officialClose": 50.0,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -1671,10 +1597,9 @@
       "series": "SM",
       "officialClose": 136.0,
       "source": "Screener (saved)",
-      "ours": 136,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sat Kartar Shopping",
@@ -1691,10 +1616,9 @@
       "series": "SM",
       "officialClose": 37.0,
       "source": "Screener (saved)",
-      "ours": 37,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Fabtech Technologies Cleanrooms Ltd.",
@@ -1705,10 +1629,9 @@
       "series": "EQ",
       "officialClose": 131.98,
       "source": "Screener (saved)",
-      "ours": 364,
-      "savedOn": "2026-11-06",
-      "diffPercent": 175.8,
-      "status": "MISMATCH"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Parmeshwar Metal Ltd.",
@@ -1719,10 +1642,9 @@
       "series": "MT",
       "officialClose": 284.0,
       "source": "Screener (saved)",
-      "ours": 284,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Leo Dryfruits & Spices Trading Ltd.",
@@ -1734,7 +1656,7 @@
       "officialClose": 58.0,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2071,10 +1993,9 @@
       "series": "M",
       "officialClose": 1202.45,
       "source": "Screener (saved)",
-      "ours": 1202,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.04,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Purple United Sales Ltd.",
@@ -2086,7 +2007,7 @@
       "officialClose": 459.65,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2098,10 +2019,9 @@
       "series": "M",
       "officialClose": 47.67,
       "source": "Screener (saved)",
-      "ours": 48,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.69,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Toss The Coin Ltd.",
@@ -2112,10 +2032,9 @@
       "series": "M",
       "officialClose": 172.0,
       "source": "Screener (saved)",
-      "ours": 172,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Dhanlaxmi Crop Science Ltd.",
@@ -2132,10 +2051,9 @@
       "series": "SM",
       "officialClose": 66.6,
       "source": "Screener (saved)",
-      "ours": 67,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.6,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Nisus Finance Services Co Ltd.",
@@ -2147,7 +2065,7 @@
       "officialClose": 177.75,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2159,10 +2077,9 @@
       "series": "SM",
       "officialClose": 81.15,
       "source": "Screener (saved)",
-      "ours": 81,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.18,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Apex Ecotech Ltd.",
@@ -2173,10 +2090,9 @@
       "series": "SM",
       "officialClose": 263.45,
       "source": "Screener (saved)",
-      "ours": 263,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.17,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Rajputana Biodiesel Ltd.",
@@ -2187,10 +2103,9 @@
       "series": "SM",
       "officialClose": 201.7,
       "source": "Screener (saved)",
-      "ours": 202,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.15,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "C2C Advanced Systems Ltd.",
@@ -2202,7 +2117,7 @@
       "officialClose": 150.95,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2215,7 +2130,7 @@
       "officialClose": 826.8,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2227,10 +2142,9 @@
       "series": "SM",
       "officialClose": 942.8,
       "source": "Screener (saved)",
-      "ours": 943,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Freshara Agro Exports Ltd.",
@@ -2241,10 +2155,9 @@
       "series": "ST",
       "officialClose": 406.55,
       "source": "Screener (saved)",
-      "ours": 407,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.11,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Lakshya Powertech Ltd.",
@@ -2255,10 +2168,9 @@
       "series": "SM",
       "officialClose": 102.0,
       "source": "Screener (saved)",
-      "ours": 102,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Shiv Texchem Ltd.",
@@ -2299,10 +2211,9 @@
       "series": "SM",
       "officialClose": 139.85,
       "source": "Screener (saved)",
-      "ours": 140,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.11,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Rappid Valves (India) Ltd.",
@@ -2314,7 +2225,7 @@
       "officialClose": 368.1,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2333,7 +2244,7 @@
       "officialClose": 55.95,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2357,10 +2268,9 @@
       "series": "SM",
       "officialClose": 81.6,
       "source": "Screener (saved)",
-      "ours": 82,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.49,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Namo eWaste Management Ltd.",
@@ -2371,10 +2281,9 @@
       "series": "SM",
       "officialClose": 339.35,
       "source": "Screener (saved)",
-      "ours": 339,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.1,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Mach Conferences and Events Ltd.",
@@ -2392,7 +2301,7 @@
       "officialClose": 77.4,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2405,7 +2314,7 @@
       "officialClose": 79.9,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2417,10 +2326,9 @@
       "series": "SM",
       "officialClose": 78.0,
       "source": "Screener (saved)",
-      "ours": 78,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Brace Port Logistics",
@@ -2431,10 +2339,9 @@
       "series": "SM",
       "officialClose": 71.0,
       "source": "Screener (saved)",
-      "ours": 71,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Forcas Studio",
@@ -2445,10 +2352,9 @@
       "series": "SM",
       "officialClose": 188.15,
       "source": "Screener (saved)",
-      "ours": 188,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.08,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Positron Energy",
@@ -2459,10 +2365,9 @@
       "series": "SM",
       "officialClose": 243.15,
       "source": "Screener (saved)",
-      "ours": 243,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.06,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sunlite Recycling",
@@ -2473,10 +2378,9 @@
       "series": "SM",
       "officialClose": 598.75,
       "source": "Screener (saved)",
-      "ours": 599,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.04,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Aesthetik Engineers",
@@ -2493,10 +2397,9 @@
       "series": "SM",
       "officialClose": 2.85,
       "source": "Screener (saved)",
-      "ours": 3,
-      "savedOn": "2026-11-06",
-      "diffPercent": 5.26,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Afcom Holdings",
@@ -2507,10 +2410,9 @@
       "series": "M",
       "officialClose": 1295.7,
       "source": "Screener (saved)",
-      "ours": 1296,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.02,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Dhariwalcorp",
@@ -2521,10 +2423,9 @@
       "series": "SM",
       "officialClose": 23.1,
       "source": "Screener (saved)",
-      "ours": 23,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.43,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Ashapura Logistics",
@@ -2535,10 +2436,9 @@
       "series": "SM",
       "officialClose": 60.0,
       "source": "Screener (saved)",
-      "ours": 60,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Bulkcorp Intl",
@@ -2555,10 +2455,9 @@
       "series": "SM",
       "officialClose": 59.0,
       "source": "Screener (saved)",
-      "ours": 59,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sathlokhar Synergys",
@@ -2575,10 +2474,9 @@
       "series": "SM",
       "officialClose": 38.35,
       "source": "Screener (saved)",
-      "ours": 38,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.91,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Trom Industries",
@@ -2589,10 +2487,9 @@
       "series": "SM",
       "officialClose": 56.8,
       "source": "Screener (saved)",
-      "ours": 57,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.35,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Aprameya Engineering",
@@ -2603,10 +2500,9 @@
       "series": "SM",
       "officialClose": 130.0,
       "source": "Screener (saved)",
-      "ours": 130,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Manglam Infra",
@@ -2629,10 +2525,9 @@
       "series": "M",
       "officialClose": 158.0,
       "source": "Screener (saved)",
-      "ours": 158,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "V L Infraprojects",
@@ -2644,7 +2539,7 @@
       "officialClose": 23.4,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2656,10 +2551,9 @@
       "series": "SM",
       "officialClose": 311.3,
       "source": "Screener (saved)",
-      "ours": 311,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.1,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Kataria Industries",
@@ -2670,10 +2564,9 @@
       "series": "ST",
       "officialClose": 135.0,
       "source": "Screener (saved)",
-      "ours": 135,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Macobs Technologies",
@@ -2684,10 +2577,9 @@
       "series": "SM",
       "officialClose": 195.1,
       "source": "Screener (saved)",
-      "ours": 195,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Aelea Commodities",
@@ -2698,10 +2590,9 @@
       "series": "M",
       "officialClose": 109.1,
       "source": "Screener (saved)",
-      "ours": 109,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.09,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sati Poly Plast",
@@ -2712,10 +2603,9 @@
       "series": "SM",
       "officialClose": 36.0,
       "source": "Screener (saved)",
-      "ours": 36,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.0,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Prizor Viztech",
@@ -2726,10 +2616,9 @@
       "series": "SM",
       "officialClose": 1485.5,
       "source": "Screener (saved)",
-      "ours": 1486,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.03,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Sahaj Solar",
@@ -2740,10 +2629,9 @@
       "series": "SM",
       "officialClose": 82.35,
       "source": "Screener (saved)",
-      "ours": 82,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.43,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Effwa Infra & Research",
@@ -2754,10 +2642,9 @@
       "series": "SM",
       "officialClose": 318.15,
       "source": "Screener (saved)",
-      "ours": 318,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.05,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Ganesh Green Bharat",
@@ -2768,10 +2655,9 @@
       "series": "SM",
       "officialClose": 177.75,
       "source": "Screener (saved)",
-      "ours": 178,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.14,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Ambey Laboratories",
@@ -2788,10 +2674,9 @@
       "series": "SM",
       "officialClose": 76.25,
       "source": "Screener (saved)",
-      "ours": 76,
-      "savedOn": "2026-11-06",
-      "diffPercent": -0.33,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Divine Power Energy",
@@ -2802,10 +2687,9 @@
       "series": "SM",
       "officialClose": 680.9,
       "source": "Screener (saved)",
-      "ours": 681,
-      "savedOn": "2026-11-06",
-      "diffPercent": 0.01,
-      "status": "match"
+      "ours": null,
+      "savedOn": "2026-11-09",
+      "status": "no stored/fetched price for that day"
     },
     {
       "company": "Petro Carbon",
@@ -2817,7 +2701,7 @@
       "officialClose": 404.0,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2829,9 +2713,10 @@
       "series": "ST",
       "officialClose": 315.2,
       "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "",
-      "status": "no stored/fetched price for that day"
+      "ours": 315.2,
+      "savedOn": "2026-11-09",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "Johnsoncab Electricals",
@@ -2843,7 +2728,7 @@
       "officialClose": 237.7,
       "source": "Screener (saved)",
       "ours": null,
-      "savedOn": "",
+      "savedOn": "2026-11-09",
       "status": "no stored/fetched price for that day"
     },
     {
@@ -2855,9 +2740,10 @@
       "series": "ST",
       "officialClose": 168.0,
       "source": "Screener (saved)",
-      "ours": null,
-      "savedOn": "",
-      "status": "no stored/fetched price for that day"
+      "ours": 168.0,
+      "savedOn": "2026-11-09",
+      "diffPercent": 0.0,
+      "status": "match"
     },
     {
       "company": "BLS Polymers",
