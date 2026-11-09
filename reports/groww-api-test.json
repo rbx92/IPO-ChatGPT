@@ -1,8 +1,8 @@
 {
-  "ranAt": "2026-11-09T04:54:13+00:00",
+  "ranAt": "2026-11-09T05:06:23+00:00",
   "secretShape": {
     "token": {
-      "length": 976,
+      "length": 980,
       "hasDot": true,
       "hasSpace": false,
       "hasLower": true,
@@ -13,12 +13,469 @@
       "length": 32,
       "hasDot": false,
       "hasSpace": false,
-      "hasLower": true,
+      "hasLower": false,
       "startsOtpauth": false,
-      "nonBase32": true
+      "nonBase32": []
     }
   },
   "tokenRole": "auth-totp",
   "flow": "totp",
-  "login": "failed: ValueError: non-hexadecimal number found in fromhex() arg at position 1"
+  "secretFormat": "base32",
+  "login": "ok",
+  "instruments": {
+    "cashRows": 12985,
+    "byExchange": {
+      "BSE": 8610,
+      "NSE": 4375
+    },
+    "series": {
+      "F": 3169,
+      "EQ": 2750,
+      "B": 1906,
+      "X": 1229,
+      "A": 703,
+      "SM": 488,
+      "XT": 442,
+      "M": 433,
+      "BE": 207,
+      "T": 187,
+      "G": 159,
+      "N0": 146,
+      "MT": 131,
+      "Z": 101,
+      "ST": 95,
+      "P": 59,
+      "N1": 58,
+      "MF": 55,
+      "SG": 45,
+      "GB": 44,
+      "BZ": 42,
+      "E": 40,
+      "GS": 39,
+      "IF": 22,
+      "N2": 21
+    }
+  },
+  "dashboardIpos": {
+    "total": 219,
+    "matched": 138,
+    "missing": [
+      {
+        "name": "EverestIMS Technologies",
+        "type": "SME"
+      },
+      {
+        "name": "VANS Electroengineerings",
+        "type": "SME"
+      },
+      {
+        "name": "Acme Universal Safezone 9",
+        "type": "SME"
+      },
+      {
+        "name": "Robokidz Eduventures",
+        "type": "SME"
+      },
+      {
+        "name": "SpectraA Technology Solutions",
+        "type": "SME"
+      },
+      {
+        "name": "Maharaja Speedex",
+        "type": "SME"
+      },
+      {
+        "name": "Qualiance International",
+        "type": "SME"
+      },
+      {
+        "name": "Kwick Forensic Solutions",
+        "type": "SME"
+      },
+      {
+        "name": "Technocrats Plasma Systems",
+        "type": "SME"
+      },
+      {
+        "name": "Credent Connect N Care",
+        "type": "SME"
+      },
+      {
+        "name": "G V Electricals",
+        "type": "SME"
+      },
+      {
+        "name": "Anawil Wire Engineering",
+        "type": "SME"
+      },
+      {
+        "name": "Poojaa Precision Engg",
+        "type": "SME"
+      },
+      {
+        "name": "Shree Balaji Mala Textiles",
+        "type": "SME"
+      },
+      {
+        "name": "Millworks Technologies",
+        "type": "SME"
+      },
+      {
+        "name": "Horizon Reclaim",
+        "type": "SME"
+      },
+      {
+        "name": "Susan Electricals",
+        "type": "SME"
+      },
+      {
+        "name": "Vegorama Punjabi Angithi",
+        "type": "SME"
+      },
+      {
+        "name": "Goldline Pharmaceutical",
+        "type": "SME"
+      },
+      {
+        "name": "E to E Transportation",
+        "type": "SME"
+      },
+      {
+        "name": "Orient Cables",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Jindal Supreme",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Steamhouse",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Karamtara Engineering",
+        "type": "Mainboard"
+      },
+      {
+        "name": "ESDS Software Solution",
+        "type": "Mainboard"
+      },
+      {
+        "name": "HyTech Engineers",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Tempsens Instruments",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Gaja Alternative Asset",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Lalithaa Jewellery Mart",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Behari Lal Engineering",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Milky Mist Dairy Food",
+        "type": "Mainboard"
+      },
+      {
+        "name": "IndoMIM",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Caliber Mining and Logistics",
+        "type": "Mainboard"
+      },
+      {
+        "name": "CMR Green Technologies",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Shyam Dhani Industries",
+        "type": "SME"
+      },
+      {
+        "name": "K V Toys",
+        "type": "SME"
+      },
+      {
+        "name": "Workmates Core2Cloud Solution",
+        "type": "SME"
+      },
+      {
+        "name": "Chatterbox Technologies",
+        "type": "SME"
+      },
+      {
+        "name": "L T Elevator",
+        "type": "SME"
+      },
+      {
+        "name": "Airfloa Rail Technology",
+        "type": "SME"
+      },
+      {
+        "name": "Karbonsteel Engineering",
+        "type": "SME"
+      },
+      {
+        "name": "Optivalue Tek Consulting",
+        "type": "SME"
+      },
+      {
+        "name": "Sattva Engineering",
+        "type": "SME"
+      },
+      {
+        "name": "Current Infraprojects",
+        "type": "SME"
+      },
+      {
+        "name": "Cash Ur Drive Marketing",
+        "type": "SME"
+      },
+      {
+        "name": "Patel Chem Specialities",
+        "type": "SME"
+      },
+      {
+        "name": "Adcounty Media",
+        "type": "SME"
+      },
+      {
+        "name": "Suntech Infra Solutions",
+        "type": "SME"
+      },
+      {
+        "name": "Virtual Galaxy Infotech",
+        "type": "SME"
+      },
+      {
+        "name": "Sat Kartar Shopping",
+        "type": "SME"
+      },
+      {
+        "name": "Fabtech Technologies Cleanrooms Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Leo Dryfruits & Spices Trading Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Anya Polytech Fertilizers",
+        "type": "SME"
+      },
+      {
+        "name": "ICICI Prudential Asset",
+        "type": "Mainboard"
+      },
+      {
+        "name": "LG Electronics",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Highway Infrastructure",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Ellenbarrie Industrial Gases",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Stallion India Fluorochemicals Ltd.",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Standard Glass Lining",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Indo Farm Equipment",
+        "type": "Mainboard"
+      },
+      {
+        "name": "Identical Brains Studios Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Dhanlaxmi Crop Science Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Emerald Tyre Manufacturers Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Nisus Finance Services Co Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Rajesh Power Services Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Freshara Agro Exports Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Divyadhan Recycling Industries Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Sahasra Electronic Solutions Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Thinking Hats Entertainment Solutions Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Paramount Speciality Forgings Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Osel Devcies Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Shubhshree Biofuels Energy Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Namo eWaste Management Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Mach Conferences and Events Ltd.",
+        "type": "SME"
+      },
+      {
+        "name": "Bulkcorp Intl",
+        "type": "SME"
+      },
+      {
+        "name": "S A Tech Software",
+        "type": "SME"
+      },
+      {
+        "name": "Manglam Infra",
+        "type": "SME"
+      },
+      {
+        "name": "V L Infraprojects",
+        "type": "SME"
+      },
+      {
+        "name": "Ambey Laboratories",
+        "type": "SME"
+      },
+      {
+        "name": "Nephro Care",
+        "type": "SME"
+      },
+      {
+        "name": "Petro Carbon",
+        "type": "SME"
+      }
+    ]
+  },
+  "waitingForListing": {
+    "Antala Industries": null,
+    "Vedant Poly Fabs Solutions": null,
+    "Vectras Enprocon": {
+      "exchange": "BSE",
+      "symbol": "VECTRAS",
+      "series": "MT",
+      "isin": "INE1FD201014"
+    },
+    "Maxwell Engineering": null,
+    "Johnsoncab Electricals": null,
+    "HGS India": {
+      "exchange": "NSE",
+      "symbol": "HGSINDIALT",
+      "series": "ST",
+      "isin": "INE813R01012"
+    },
+    "Bombay Coated & Special Steels": null,
+    "M. K. Sons Fine Jewels": null,
+    "Carver Roboweld": {
+      "exchange": "BSE",
+      "symbol": "CRL",
+      "series": "MT",
+      "isin": "INE1FY301017"
+    },
+    "BLS Polymers": {
+      "exchange": "NSE",
+      "symbol": "BLSPOLY",
+      "series": "EQ",
+      "isin": "INE0ZCQ01019"
+    },
+    "SFC Environmental Technologies": null,
+    "Wiscon Industries": null,
+    "EAAA India Alternatives": null,
+    "Core4 Engineer": null,
+    "Jio Platforms": {
+      "exchange": "NSE",
+      "symbol": "JPL",
+      "series": "EQ",
+      "isin": "INE0BJO01010"
+    },
+    "Paras Healthcare": {
+      "exchange": "NSE",
+      "symbol": "PARASHLTH",
+      "series": "EQ",
+      "isin": "INE661T01029"
+    },
+    "Zetwerk": null,
+    "Sahajanand Medical Technologies": null,
+    "Tonbo Imaging": null,
+    "Bonfiglioli Transmissions": null,
+    "Shellz India": {
+      "exchange": "BSE",
+      "symbol": "SHELLZ",
+      "series": "M",
+      "isin": "INE0Z7301016"
+    },
+    "Vaibhav Vyapar": null
+  },
+  "ltp": {
+    "requested": 138,
+    "returned": 0,
+    "errors": [
+      "batch 0: GrowwAPIException: Access forbidden for this request.",
+      "batch 1: GrowwAPIException: Access forbidden for this request.",
+      "batch 2: GrowwAPIException: Access forbidden for this request."
+    ],
+    "sample": {}
+  },
+  "dailyCandles": {
+    "company": "Roopa Screen",
+    "count": 0,
+    "errors": [
+      "get_historical_candles: Access forbidden for this request.",
+      "get_historical_candle_data: Access forbidden for this request."
+    ],
+    "last": [],
+    "screenerLast": [
+      {
+        "date": "2026-11-04",
+        "close": 95.99
+      },
+      {
+        "date": "2026-11-05",
+        "close": 96.0
+      },
+      {
+        "date": "2026-11-06",
+        "close": 93.5
+      }
+    ]
+  }
 }
