@@ -12,99 +12,121 @@
     "listingGain": "48.20%",
     "currentGain": "0.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-10-08",
-        "close": 119.7
+        "close": 119.7,
+        "volume": 2942400
       },
       {
         "date": "2026-10-09",
-        "close": 113.72
+        "close": 113.72,
+        "volume": 94400
       },
       {
         "date": "2026-10-12",
-        "close": 112.28
+        "close": 112.28,
+        "volume": 708800
       },
       {
         "date": "2026-10-13",
-        "close": 106.67
+        "close": 106.67,
+        "volume": 344000
       },
       {
         "date": "2026-10-14",
-        "close": 105.6
+        "close": 105.6,
+        "volume": 272000
       },
       {
         "date": "2026-10-15",
-        "close": 110.88
+        "close": 110.88,
+        "volume": 249600
       },
       {
         "date": "2026-10-16",
-        "close": 116.42
+        "close": 116.42,
+        "volume": 238400
       },
       {
         "date": "2026-10-19",
-        "close": 110.6
+        "close": 110.6,
+        "volume": 81600
       },
       {
         "date": "2026-10-21",
-        "close": 105.07
+        "close": 105.07,
+        "volume": 40000
       },
       {
         "date": "2026-10-22",
-        "close": 100.71
+        "close": 100.71,
+        "volume": 156800
       },
       {
         "date": "2026-10-23",
-        "close": 96.25
+        "close": 96.25,
+        "volume": 76800
       },
       {
         "date": "2026-10-26",
-        "close": 98.98
+        "close": 98.98,
+        "volume": 49600
       },
       {
         "date": "2026-10-27",
-        "close": 97.25
+        "close": 97.25,
+        "volume": 16000
       },
       {
         "date": "2026-10-28",
-        "close": 94.16
+        "close": 94.16,
+        "volume": 25600
       },
       {
         "date": "2026-10-29",
-        "close": 91.75
+        "close": 91.75,
+        "volume": 24000
       },
       {
         "date": "2026-10-30",
-        "close": 87.25
+        "close": 87.25,
+        "volume": 64000
       },
       {
         "date": "2026-11-02",
-        "close": 87.5
+        "close": 87.5,
+        "volume": 36800
       },
       {
         "date": "2026-11-03",
-        "close": 82.64
+        "close": 82.64,
+        "volume": 68800
       },
       {
         "date": "2026-11-04",
-        "close": 84.3
+        "close": 84.3,
+        "volume": 52800
       },
       {
         "date": "2026-11-05",
-        "close": 84.74
+        "close": 84.74,
+        "volume": 57600
       },
       {
         "date": "2026-11-06",
-        "close": 82.33
+        "close": 82.33,
+        "volume": 112000
       },
       {
         "date": "2026-11-09",
-        "close": 85.44
+        "close": 85.44,
+        "volume": 33600
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "EIMS",
     "isin": "INE0YUW01020",
@@ -123,103 +145,126 @@
     "listingGain": "90.00%",
     "currentGain": "346.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-10-07",
-        "close": 235.4
+        "close": 235.4,
+        "volume": 1038000
       },
       {
         "date": "2026-10-08",
-        "close": 247.15
+        "close": 247.15,
+        "volume": 145200
       },
       {
         "date": "2026-10-09",
-        "close": 259.5
+        "close": 259.5,
+        "volume": 1404000
       },
       {
         "date": "2026-10-12",
-        "close": 272.45
+        "close": 272.45,
+        "volume": 16800
       },
       {
         "date": "2026-10-13",
-        "close": 286.05
+        "close": 286.05,
+        "volume": 9600
       },
       {
         "date": "2026-10-14",
-        "close": 300.35
+        "close": 300.35,
+        "volume": 6000
       },
       {
         "date": "2026-10-15",
-        "close": 315.35
+        "close": 315.35,
+        "volume": 13200
       },
       {
         "date": "2026-10-16",
-        "close": 331.1
+        "close": 331.1,
+        "volume": 136800
       },
       {
         "date": "2026-10-19",
-        "close": 347.65
+        "close": 347.65,
+        "volume": 15600
       },
       {
         "date": "2026-10-21",
-        "close": 365.0
+        "close": 365.0,
+        "volume": 25200
       },
       {
         "date": "2026-10-22",
-        "close": 401.5
+        "close": 401.5,
+        "volume": 588000
       },
       {
         "date": "2026-10-23",
-        "close": 436.8
+        "close": 436.8,
+        "volume": 748800
       },
       {
         "date": "2026-10-26",
-        "close": 456.15
+        "close": 456.15,
+        "volume": 200400
       },
       {
         "date": "2026-10-27",
-        "close": 433.35
+        "close": 433.35,
+        "volume": 54000
       },
       {
         "date": "2026-10-28",
-        "close": 420.05
+        "close": 420.05,
+        "volume": 42000
       },
       {
         "date": "2026-10-29",
-        "close": 425.0
+        "close": 425.0,
+        "volume": 20400
       },
       {
         "date": "2026-10-30",
-        "close": 414.0
+        "close": 414.0,
+        "volume": 25200
       },
       {
         "date": "2026-11-02",
-        "close": 393.3
+        "close": 393.3,
+        "volume": 54000
       },
       {
         "date": "2026-11-03",
-        "close": 412.95
+        "close": 412.95,
+        "volume": 74400
       },
       {
         "date": "2026-11-04",
-        "close": 433.55
+        "close": 433.55,
+        "volume": 28800
       },
       {
         "date": "2026-11-05",
-        "close": 455.2
+        "close": 455.2,
+        "volume": 51600
       },
       {
         "date": "2026-11-06",
-        "close": 477.95
+        "close": 477.95,
+        "volume": 115200
       },
       {
         "date": "2026-11-09",
-        "close": 526.75
+        "close": 526.75,
+        "volume": 86400
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "VANS",
     "isin": "INE2SO401011",
@@ -238,7 +283,7 @@
     "listingGain": "42.30%",
     "currentGain": "44.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "ACMEUNIV",
     "isin": "INE1KUL01020",
@@ -257,115 +302,141 @@
     "listingGain": "90.00%",
     "currentGain": "64.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-10-01",
-        "close": 115.52
+        "close": 115.52,
+        "volume": 1682000
       },
       {
         "date": "2026-10-05",
-        "close": 109.75
+        "close": 109.75,
+        "volume": 426000
       },
       {
         "date": "2026-10-06",
-        "close": 113.29
+        "close": 113.29,
+        "volume": 406000
       },
       {
         "date": "2026-10-07",
-        "close": 111.15
+        "close": 111.15,
+        "volume": 164000
       },
       {
         "date": "2026-10-08",
-        "close": 105.6
+        "close": 105.6,
+        "volume": 80000
       },
       {
         "date": "2026-10-09",
-        "close": 102.75
+        "close": 102.75,
+        "volume": 40000
       },
       {
         "date": "2026-10-12",
-        "close": 104.03
+        "close": 104.03,
+        "volume": 104000
       },
       {
         "date": "2026-10-13",
-        "close": 105.54
+        "close": 105.54,
+        "volume": 46000
       },
       {
         "date": "2026-10-14",
-        "close": 106.45
+        "close": 106.45,
+        "volume": 52000
       },
       {
         "date": "2026-10-15",
-        "close": 104.52
+        "close": 104.52,
+        "volume": 46000
       },
       {
         "date": "2026-10-16",
-        "close": 102.73
+        "close": 102.73,
+        "volume": 50000
       },
       {
         "date": "2026-10-19",
-        "close": 102.0
+        "close": 102.0,
+        "volume": 92000
       },
       {
         "date": "2026-10-21",
-        "close": 93.0
+        "close": 93.0,
+        "volume": 80000
       },
       {
         "date": "2026-10-22",
-        "close": 91.0
+        "close": 91.0,
+        "volume": 60000
       },
       {
         "date": "2026-10-23",
-        "close": 89.0
+        "close": 89.0,
+        "volume": 136000
       },
       {
         "date": "2026-10-26",
-        "close": 96.0
+        "close": 96.0,
+        "volume": 90000
       },
       {
         "date": "2026-10-27",
-        "close": 95.79
+        "close": 95.79,
+        "volume": 26000
       },
       {
         "date": "2026-10-28",
-        "close": 98.99
+        "close": 98.99,
+        "volume": 2000
       },
       {
         "date": "2026-10-29",
-        "close": 96.93
+        "close": 96.93,
+        "volume": 20000
       },
       {
         "date": "2026-10-30",
-        "close": 95.0
+        "close": 95.0,
+        "volume": 38000
       },
       {
         "date": "2026-11-02",
-        "close": 95.0
+        "close": 95.0,
+        "volume": 48000
       },
       {
         "date": "2026-11-03",
-        "close": 90.79
+        "close": 90.79,
+        "volume": 46000
       },
       {
         "date": "2026-11-04",
-        "close": 95.99
+        "close": 95.99,
+        "volume": 84000
       },
       {
         "date": "2026-11-05",
-        "close": 96.0
+        "close": 96.0,
+        "volume": 22000
       },
       {
         "date": "2026-11-06",
-        "close": 93.5
+        "close": 93.5,
+        "volume": 20000
       },
       {
         "date": "2026-11-09",
-        "close": 105.13
+        "close": 105.13,
+        "volume": 48000
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "ROOPA",
     "isin": "INE2BTZ01011",
@@ -384,127 +455,156 @@
     "listingGain": "90.00%",
     "currentGain": "55.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-28",
-        "close": 211.45
+        "close": 211.45,
+        "volume": 1089600
       },
       {
         "date": "2026-09-29",
-        "close": 222.0
+        "close": 222.0,
+        "volume": 1086000
       },
       {
         "date": "2026-09-30",
-        "close": 232.7
+        "close": 232.7,
+        "volume": 764400
       },
       {
         "date": "2026-10-01",
-        "close": 221.1
+        "close": 221.1,
+        "volume": 267600
       },
       {
         "date": "2026-10-05",
-        "close": 210.05
+        "close": 210.05,
+        "volume": 237600
       },
       {
         "date": "2026-10-06",
-        "close": 203.9
+        "close": 203.9,
+        "volume": 406800
       },
       {
         "date": "2026-10-07",
-        "close": 206.7
+        "close": 206.7,
+        "volume": 170400
       },
       {
         "date": "2026-10-08",
-        "close": 198.6
+        "close": 198.6,
+        "volume": 151200
       },
       {
         "date": "2026-10-09",
-        "close": 200.65
+        "close": 200.65,
+        "volume": 97200
       },
       {
         "date": "2026-10-12",
-        "close": 193.15
+        "close": 193.15,
+        "volume": 234000
       },
       {
         "date": "2026-10-13",
-        "close": 205.65
+        "close": 205.65,
+        "volume": 630000
       },
       {
         "date": "2026-10-14",
-        "close": 207.85
+        "close": 207.85,
+        "volume": 164400
       },
       {
         "date": "2026-10-15",
-        "close": 192.4
+        "close": 192.4,
+        "volume": 136800
       },
       {
         "date": "2026-10-16",
-        "close": 179.35
+        "close": 179.35,
+        "volume": 144000
       },
       {
         "date": "2026-10-19",
-        "close": 149.8
+        "close": 149.8,
+        "volume": 580800
       },
       {
         "date": "2026-10-21",
-        "close": 143.85
+        "close": 143.85,
+        "volume": 207600
       },
       {
         "date": "2026-10-22",
-        "close": 135.4
+        "close": 135.4,
+        "volume": 109200
       },
       {
         "date": "2026-10-23",
-        "close": 127.1
+        "close": 127.1,
+        "volume": 295200
       },
       {
         "date": "2026-10-26",
-        "close": 139.8
+        "close": 139.8,
+        "volume": 175200
       },
       {
         "date": "2026-10-27",
-        "close": 150.25
+        "close": 150.25,
+        "volume": 200400
       },
       {
         "date": "2026-10-28",
-        "close": 146.95
+        "close": 146.95,
+        "volume": 86400
       },
       {
         "date": "2026-10-29",
-        "close": 146.15
+        "close": 146.15,
+        "volume": 60000
       },
       {
         "date": "2026-10-30",
-        "close": 139.95
+        "close": 139.95,
+        "volume": 33600
       },
       {
         "date": "2026-11-02",
-        "close": 139.05
+        "close": 139.05,
+        "volume": 32400
       },
       {
         "date": "2026-11-03",
-        "close": 135.6
+        "close": 135.6,
+        "volume": 50400
       },
       {
         "date": "2026-11-04",
-        "close": 146.45
+        "close": 146.45,
+        "volume": 201600
       },
       {
         "date": "2026-11-05",
-        "close": 160.85
+        "close": 160.85,
+        "volume": 314400
       },
       {
         "date": "2026-11-06",
-        "close": 165.25
+        "close": 165.25,
+        "volume": 117600
       },
       {
         "date": "2026-11-09",
-        "close": 164.8
+        "close": 164.8,
+        "volume": 28800
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "ROBOKIDZ",
     "isin": "INE1W8R01018",
@@ -523,135 +623,166 @@
     "listingGain": "90.00%",
     "currentGain": "101.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-24",
-        "close": 235.4
+        "close": 235.4,
+        "volume": 1680000
       },
       {
         "date": "2026-09-25",
-        "close": 247.15
+        "close": 247.15,
+        "volume": 315600
       },
       {
         "date": "2026-09-28",
-        "close": 248.5
+        "close": 248.5,
+        "volume": 723600
       },
       {
         "date": "2026-09-29",
-        "close": 248.1
+        "close": 248.1,
+        "volume": 226800
       },
       {
         "date": "2026-09-30",
-        "close": 251.0
+        "close": 251.0,
+        "volume": 207600
       },
       {
         "date": "2026-10-01",
-        "close": 241.1
+        "close": 241.1,
+        "volume": 153600
       },
       {
         "date": "2026-10-05",
-        "close": 247.25
+        "close": 247.25,
+        "volume": 84000
       },
       {
         "date": "2026-10-06",
-        "close": 259.6
+        "close": 259.6,
+        "volume": 128400
       },
       {
         "date": "2026-10-07",
-        "close": 272.55
+        "close": 272.55,
+        "volume": 141600
       },
       {
         "date": "2026-10-08",
-        "close": 266.75
+        "close": 266.75,
+        "volume": 141600
       },
       {
         "date": "2026-10-09",
-        "close": 261.85
+        "close": 261.85,
+        "volume": 182400
       },
       {
         "date": "2026-10-12",
-        "close": 256.35
+        "close": 256.35,
+        "volume": 55200
       },
       {
         "date": "2026-10-13",
-        "close": 257.0
+        "close": 257.0,
+        "volume": 52800
       },
       {
         "date": "2026-10-14",
-        "close": 252.95
+        "close": 252.95,
+        "volume": 49200
       },
       {
         "date": "2026-10-15",
-        "close": 256.55
+        "close": 256.55,
+        "volume": 79200
       },
       {
         "date": "2026-10-16",
-        "close": 256.1
+        "close": 256.1,
+        "volume": 64800
       },
       {
         "date": "2026-10-19",
-        "close": 246.35
+        "close": 246.35,
+        "volume": 78000
       },
       {
         "date": "2026-10-21",
-        "close": 246.85
+        "close": 246.85,
+        "volume": 64800
       },
       {
         "date": "2026-10-22",
-        "close": 245.35
+        "close": 245.35,
+        "volume": 24000
       },
       {
         "date": "2026-10-23",
-        "close": 231.6
+        "close": 231.6,
+        "volume": 49200
       },
       {
         "date": "2026-10-26",
-        "close": 232.25
+        "close": 232.25,
+        "volume": 38400
       },
       {
         "date": "2026-10-27",
-        "close": 247.0
+        "close": 247.0,
+        "volume": 49200
       },
       {
         "date": "2026-10-28",
-        "close": 243.0
+        "close": 243.0,
+        "volume": 18000
       },
       {
         "date": "2026-10-29",
-        "close": 242.05
+        "close": 242.05,
+        "volume": 31200
       },
       {
         "date": "2026-10-30",
-        "close": 230.8
+        "close": 230.8,
+        "volume": 46800
       },
       {
         "date": "2026-11-02",
-        "close": 237.5
+        "close": 237.5,
+        "volume": 39600
       },
       {
         "date": "2026-11-03",
-        "close": 240.0
+        "close": 240.0,
+        "volume": 82800
       },
       {
         "date": "2026-11-04",
-        "close": 237.9
+        "close": 237.9,
+        "volume": 64800
       },
       {
         "date": "2026-11-05",
-        "close": 234.25
+        "close": 234.25,
+        "volume": 40800
       },
       {
         "date": "2026-11-06",
-        "close": 233.3
+        "close": 233.3,
+        "volume": 30000
       },
       {
         "date": "2026-11-09",
-        "close": 237.6
+        "close": 237.6,
+        "volume": 13200
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "isin": "INE0GAN01010",
     "priceDate": "2026-11-09"
@@ -670,7 +801,7 @@
     "currentGain": "45.8%",
     "stockType": "SME",
     "isin": "INE0SVD01012",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -687,7 +818,7 @@
     "listingGain": "33.30%",
     "currentGain": "13.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "AMTECH",
     "isin": "INE0RMA01019",
@@ -706,167 +837,206 @@
     "listingGain": "77.10%",
     "currentGain": "8.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-11",
-        "close": 236.1
+        "close": 236.1,
+        "volume": 2045000
       },
       {
         "date": "2026-09-15",
-        "close": 224.3
+        "close": 224.3,
+        "volume": 94000
       },
       {
         "date": "2026-09-16",
-        "close": 213.1
+        "close": 213.1,
+        "volume": 11000
       },
       {
         "date": "2026-09-17",
-        "close": 202.45
+        "close": 202.45,
+        "volume": 10000
       },
       {
         "date": "2026-09-18",
-        "close": 192.35
+        "close": 192.35,
+        "volume": 17000
       },
       {
         "date": "2026-09-21",
-        "close": 182.75
+        "close": 182.75,
+        "volume": 473000
       },
       {
         "date": "2026-09-22",
-        "close": 173.85
+        "close": 173.85,
+        "volume": 605000
       },
       {
         "date": "2026-09-23",
-        "close": 182.5
+        "close": 182.5,
+        "volume": 97000
       },
       {
         "date": "2026-09-24",
-        "close": 191.6
+        "close": 191.6,
+        "volume": 169000
       },
       {
         "date": "2026-09-25",
-        "close": 187.0
+        "close": 187.0,
+        "volume": 133000
       },
       {
         "date": "2026-09-28",
-        "close": 181.4
+        "close": 181.4,
+        "volume": 107000
       },
       {
         "date": "2026-09-29",
-        "close": 189.1
+        "close": 189.1,
+        "volume": 58000
       },
       {
         "date": "2026-09-30",
-        "close": 188.0
+        "close": 188.0,
+        "volume": 48000
       },
       {
         "date": "2026-10-01",
-        "close": 179.5
+        "close": 179.5,
+        "volume": 92000
       },
       {
         "date": "2026-10-05",
-        "close": 174.6
+        "close": 174.6,
+        "volume": 42000
       },
       {
         "date": "2026-10-06",
-        "close": 166.4
+        "close": 166.4,
+        "volume": 81000
       },
       {
         "date": "2026-10-07",
-        "close": 175.45
+        "close": 175.45,
+        "volume": 56000
       },
       {
         "date": "2026-10-08",
-        "close": 179.4
+        "close": 179.4,
+        "volume": 44000
       },
       {
         "date": "2026-10-09",
-        "close": 185.45
+        "close": 185.45,
+        "volume": 213000
       },
       {
         "date": "2026-10-12",
-        "close": 195.3
+        "close": 195.3,
+        "volume": 56000
       },
       {
         "date": "2026-10-13",
-        "close": 185.7
+        "close": 185.7,
+        "volume": 21000
       },
       {
         "date": "2026-10-14",
-        "close": 193.2
+        "close": 193.2,
+        "volume": 21000
       },
       {
         "date": "2026-10-15",
-        "close": 185.25
+        "close": 185.25,
+        "volume": 32000
       },
       {
         "date": "2026-10-16",
-        "close": 188.5
+        "close": 188.5,
+        "volume": 24000
       },
       {
         "date": "2026-10-19",
-        "close": 185.4
+        "close": 185.4,
+        "volume": 19000
       },
       {
         "date": "2026-10-21",
-        "close": 171.2
+        "close": 171.2,
+        "volume": 50000
       },
       {
         "date": "2026-10-22",
-        "close": 176.0
+        "close": 176.0,
+        "volume": 13000
       },
       {
         "date": "2026-10-23",
-        "close": 171.8
+        "close": 171.8,
+        "volume": 40000
       },
       {
         "date": "2026-10-26",
-        "close": 167.5
+        "close": 167.5,
+        "volume": 40000
       },
       {
         "date": "2026-10-27",
-        "close": 165.9
+        "close": 165.9,
+        "volume": 21000
       },
       {
         "date": "2026-10-28",
-        "close": 173.05
+        "close": 173.05,
+        "volume": 15000
       },
       {
         "date": "2026-10-29",
-        "close": 182.0
+        "close": 182.0,
+        "volume": 27000
       },
       {
         "date": "2026-10-30",
-        "close": 174.8
+        "close": 174.8,
+        "volume": 12000
       },
       {
         "date": "2026-11-02",
-        "close": 139.85
+        "close": 139.85,
+        "volume": 319000
       },
       {
         "date": "2026-11-03",
-        "close": 127.65
+        "close": 127.65,
+        "volume": 279000
       },
       {
         "date": "2026-11-04",
-        "close": 139.3
+        "close": 139.3,
+        "volume": 53000
       },
       {
         "date": "2026-11-05",
-        "close": 139.5
+        "close": 139.5,
+        "volume": 29000
       },
       {
         "date": "2026-11-06",
-        "close": 136.45
+        "close": 136.45,
+        "volume": 62000
       },
       {
         "date": "2026-11-09",
-        "close": 138.0
+        "close": 138.0,
+        "volume": 9000
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "QUALIANCE",
     "isin": "INE1XJ401012",
@@ -885,7 +1055,7 @@
     "listingGain": "52.20%",
     "currentGain": "39.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "ASHUTOSH",
     "isin": "INE19FR01012",
@@ -904,7 +1074,7 @@
     "listingGain": "90.00%",
     "currentGain": "121.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "SHANTIINOR",
     "isin": "INE1ZEE01019",
@@ -923,7 +1093,7 @@
     "listingGain": "66.70%",
     "currentGain": "108.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1SFA01019",
     "priceDate": "2026-11-09"
@@ -941,7 +1111,7 @@
     "listingGain": "74.20%",
     "currentGain": "222.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE19QK01022",
     "priceDate": "2026-11-09"
@@ -959,7 +1129,7 @@
     "listingGain": "90.00%",
     "currentGain": "121.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "CREDENT",
     "isin": "INE1KPX01025",
@@ -978,7 +1148,7 @@
     "listingGain": "43.60%",
     "currentGain": "19.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "LAPL",
     "isin": "INE0X9I01023",
@@ -997,7 +1167,7 @@
     "listingGain": "21.50%",
     "currentGain": "-20.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "GVELECTRIC",
     "isin": "INE1ZGR01024",
@@ -1016,7 +1186,7 @@
     "listingGain": "18.60%",
     "currentGain": "2.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "AEGEUS",
     "isin": "INE0WR901013",
@@ -1035,7 +1205,7 @@
     "listingGain": "22.10%",
     "currentGain": "48.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1J5V01013",
     "priceDate": "2026-11-09"
@@ -1053,7 +1223,7 @@
     "listingGain": "56.10%",
     "currentGain": "207.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE288301026",
     "priceDate": "2026-11-09"
@@ -1071,7 +1241,7 @@
     "listingGain": "90.00%",
     "currentGain": "-27.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1N3Y01016",
     "priceDate": "2026-11-09"
@@ -1089,7 +1259,7 @@
     "listingGain": "90.00%",
     "currentGain": "198.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1SRC01010",
     "priceDate": "2026-11-09"
@@ -1107,7 +1277,7 @@
     "listingGain": "66.20%",
     "currentGain": "205.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE2KRP01017",
     "priceDate": "2026-11-09"
@@ -1125,7 +1295,7 @@
     "listingGain": "67.70%",
     "currentGain": "21.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0XE501015",
     "priceDate": "2026-11-09"
@@ -1143,7 +1313,7 @@
     "listingGain": "42.20%",
     "currentGain": "22.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1L0M01019",
     "priceDate": "2026-11-09"
@@ -1161,7 +1331,7 @@
     "listingGain": "90.00%",
     "currentGain": "20.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V9I01017",
     "priceDate": "2026-11-09"
@@ -1179,7 +1349,7 @@
     "listingGain": "46.60%",
     "currentGain": "13.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1SEO01013",
     "priceDate": "2026-11-09"
@@ -1197,7 +1367,7 @@
     "listingGain": "46.50%",
     "currentGain": "56.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE2L0V01019",
     "priceDate": "2026-11-09"
@@ -1215,7 +1385,7 @@
     "listingGain": "90.00%",
     "currentGain": "174.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1RQS01010",
     "priceDate": "2026-11-09"
@@ -1233,7 +1403,7 @@
     "listingGain": "31.80%",
     "currentGain": "50.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1G2W01011",
     "priceDate": "2026-11-09"
@@ -1251,7 +1421,7 @@
     "listingGain": "53.40%",
     "currentGain": "250.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1L3801017",
     "priceDate": "2026-11-09"
@@ -1269,7 +1439,7 @@
     "listingGain": "39.00%",
     "currentGain": "-30.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1CLW01015",
     "priceDate": "2026-11-09"
@@ -1287,7 +1457,7 @@
     "listingGain": "34.90%",
     "currentGain": "165.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE2B6701015",
     "priceDate": "2026-11-09"
@@ -1305,7 +1475,7 @@
     "listingGain": "19.20%",
     "currentGain": "59.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE20PL01012",
     "priceDate": "2026-11-09"
@@ -1323,7 +1493,7 @@
     "listingGain": "39.10%",
     "currentGain": "325.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1OOJ01011",
     "priceDate": "2026-11-09"
@@ -1341,7 +1511,7 @@
     "listingGain": "17.10%",
     "currentGain": "119.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE2B5L01011",
     "priceDate": "2026-11-09"
@@ -1359,7 +1529,7 @@
     "listingGain": "27.50%",
     "currentGain": "72.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1MTV01019",
     "priceDate": "2026-11-09"
@@ -1377,7 +1547,7 @@
     "listingGain": "31.40%",
     "currentGain": "137.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1KU201016",
     "priceDate": "2026-11-09"
@@ -1395,7 +1565,7 @@
     "listingGain": "28.40%",
     "currentGain": "-5.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ZE201010",
     "priceDate": "2026-11-04"
@@ -1429,111 +1599,136 @@
     "listingGain": "65.40%",
     "currentGain": "26.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-10-05",
-        "close": 405.0
+        "close": 405.0,
+        "volume": 15640356
       },
       {
         "date": "2026-10-06",
-        "close": 396.4
+        "close": 396.4,
+        "volume": 25605127
       },
       {
         "date": "2026-10-07",
-        "close": 418.4
+        "close": 418.4,
+        "volume": 9391203
       },
       {
         "date": "2026-10-08",
-        "close": 386.85
+        "close": 386.85,
+        "volume": 4197147
       },
       {
         "date": "2026-10-09",
-        "close": 380.8
+        "close": 380.8,
+        "volume": 1880681
       },
       {
         "date": "2026-10-12",
-        "close": 410.6
+        "close": 410.6,
+        "volume": 4395723
       },
       {
         "date": "2026-10-13",
-        "close": 414.1
+        "close": 414.1,
+        "volume": 2137892
       },
       {
         "date": "2026-10-14",
-        "close": 418.6
+        "close": 418.6,
+        "volume": 2285743
       },
       {
         "date": "2026-10-15",
-        "close": 401.6
+        "close": 401.6,
+        "volume": 1374460
       },
       {
         "date": "2026-10-16",
-        "close": 393.65
+        "close": 393.65,
+        "volume": 880468
       },
       {
         "date": "2026-10-19",
-        "close": 384.7
+        "close": 384.7,
+        "volume": 724156
       },
       {
         "date": "2026-10-21",
-        "close": 374.55
+        "close": 374.55,
+        "volume": 962951
       },
       {
         "date": "2026-10-22",
-        "close": 361.8
+        "close": 361.8,
+        "volume": 654985
       },
       {
         "date": "2026-10-23",
-        "close": 341.3
+        "close": 341.3,
+        "volume": 832217
       },
       {
         "date": "2026-10-26",
-        "close": 345.45
+        "close": 345.45,
+        "volume": 526346
       },
       {
         "date": "2026-10-27",
-        "close": 354.45
+        "close": 354.45,
+        "volume": 371670
       },
       {
         "date": "2026-10-28",
-        "close": 355.4
+        "close": 355.4,
+        "volume": 279280
       },
       {
         "date": "2026-10-29",
-        "close": 359.55
+        "close": 359.55,
+        "volume": 325676
       },
       {
         "date": "2026-10-30",
-        "close": 344.35
+        "close": 344.35,
+        "volume": 483511
       },
       {
         "date": "2026-11-02",
-        "close": 341.1
+        "close": 341.1,
+        "volume": 338758
       },
       {
         "date": "2026-11-03",
-        "close": 337.45
+        "close": 337.45,
+        "volume": 696826
       },
       {
         "date": "2026-11-04",
-        "close": 351.15
+        "close": 351.15,
+        "volume": 437524
       },
       {
         "date": "2026-11-05",
-        "close": 344.8
+        "close": 344.8,
+        "volume": 235059
       },
       {
         "date": "2026-11-06",
-        "close": 338.05
+        "close": 338.05,
+        "volume": 214344
       },
       {
         "date": "2026-11-09",
-        "close": 343.35
+        "close": 343.35,
+        "volume": 187140
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "ORIENTCABL",
     "isin": "INE0J1N01028",
@@ -1552,115 +1747,141 @@
     "listingGain": "61.80%",
     "currentGain": "51.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-10-01",
-        "close": 53.88
+        "close": 53.88,
+        "volume": 730628697
       },
       {
         "date": "2026-10-05",
-        "close": 51.51
+        "close": 51.51,
+        "volume": 240983558
       },
       {
         "date": "2026-10-06",
-        "close": 50.5
+        "close": 50.5,
+        "volume": 166396454
       },
       {
         "date": "2026-10-07",
-        "close": 60.46
+        "close": 60.46,
+        "volume": 455871850
       },
       {
         "date": "2026-10-08",
-        "close": 57.89
+        "close": 57.89,
+        "volume": 408012896
       },
       {
         "date": "2026-10-09",
-        "close": 62.39
+        "close": 62.39,
+        "volume": 483122334
       },
       {
         "date": "2026-10-12",
-        "close": 62.12
+        "close": 62.12,
+        "volume": 319534082
       },
       {
         "date": "2026-10-13",
-        "close": 61.66
+        "close": 61.66,
+        "volume": 185761888
       },
       {
         "date": "2026-10-14",
-        "close": 62.45
+        "close": 62.45,
+        "volume": 145233423
       },
       {
         "date": "2026-10-15",
-        "close": 59.11
+        "close": 59.11,
+        "volume": 95617813
       },
       {
         "date": "2026-10-16",
-        "close": 59.6
+        "close": 59.6,
+        "volume": 105932242
       },
       {
         "date": "2026-10-19",
-        "close": 56.22
+        "close": 56.22,
+        "volume": 59218754
       },
       {
         "date": "2026-10-21",
-        "close": 54.53
+        "close": 54.53,
+        "volume": 68048770
       },
       {
         "date": "2026-10-22",
-        "close": 52.61
+        "close": 52.61,
+        "volume": 62404135
       },
       {
         "date": "2026-10-23",
-        "close": 51.87
+        "close": 51.87,
+        "volume": 49063785
       },
       {
         "date": "2026-10-26",
-        "close": 51.15
+        "close": 51.15,
+        "volume": 34439449
       },
       {
         "date": "2026-10-27",
-        "close": 49.86
+        "close": 49.86,
+        "volume": 45899002
       },
       {
         "date": "2026-10-28",
-        "close": 49.57
+        "close": 49.57,
+        "volume": 31102745
       },
       {
         "date": "2026-10-29",
-        "close": 52.64
+        "close": 52.64,
+        "volume": 246524229
       },
       {
         "date": "2026-10-30",
-        "close": 50.34
+        "close": 50.34,
+        "volume": 86436807
       },
       {
         "date": "2026-11-02",
-        "close": 51.54
+        "close": 51.54,
+        "volume": 77810857
       },
       {
         "date": "2026-11-03",
-        "close": 53.89
+        "close": 53.89,
+        "volume": 122886495
       },
       {
         "date": "2026-11-04",
-        "close": 55.08
+        "close": 55.08,
+        "volume": 87883664
       },
       {
         "date": "2026-11-05",
-        "close": 58.28
+        "close": 58.28,
+        "volume": 195238315
       },
       {
         "date": "2026-11-06",
-        "close": 54.95
+        "close": 54.95,
+        "volume": 88380161
       },
       {
         "date": "2026-11-09",
-        "close": 51.5
+        "close": 51.5,
+        "volume": 77903531
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "MONEYVIEW",
     "isin": "INE0PTN01011",
@@ -1679,119 +1900,146 @@
     "listingGain": "75.40%",
     "currentGain": "25.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-30",
-        "close": 248.39
+        "close": 248.39,
+        "volume": 4448096
       },
       {
         "date": "2026-10-01",
-        "close": 235.98
+        "close": 235.98,
+        "volume": 2946493
       },
       {
         "date": "2026-10-05",
-        "close": 224.19
+        "close": 224.19,
+        "volume": 68626
       },
       {
         "date": "2026-10-06",
-        "close": 212.99
+        "close": 212.99,
+        "volume": 143795
       },
       {
         "date": "2026-10-07",
-        "close": 223.63
+        "close": 223.63,
+        "volume": 2885154
       },
       {
         "date": "2026-10-08",
-        "close": 212.45
+        "close": 212.45,
+        "volume": 287323
       },
       {
         "date": "2026-10-09",
-        "close": 202.91
+        "close": 202.91,
+        "volume": 1113912
       },
       {
         "date": "2026-10-12",
-        "close": 193.27
+        "close": 193.27,
+        "volume": 1239776
       },
       {
         "date": "2026-10-13",
-        "close": 183.83
+        "close": 183.83,
+        "volume": 794110
       },
       {
         "date": "2026-10-14",
-        "close": 193.02
+        "close": 193.02,
+        "volume": 398553
       },
       {
         "date": "2026-10-15",
-        "close": 191.37
+        "close": 191.37,
+        "volume": 1274055
       },
       {
         "date": "2026-10-16",
-        "close": 178.07
+        "close": 178.07,
+        "volume": 1330206
       },
       {
         "date": "2026-10-19",
-        "close": 171.44
+        "close": 171.44,
+        "volume": 763190
       },
       {
         "date": "2026-10-21",
-        "close": 166.55
+        "close": 166.55,
+        "volume": 703715
       },
       {
         "date": "2026-10-22",
-        "close": 162.89
+        "close": 162.89,
+        "volume": 585192
       },
       {
         "date": "2026-10-23",
-        "close": 156.86
+        "close": 156.86,
+        "volume": 695246
       },
       {
         "date": "2026-10-26",
-        "close": 162.24
+        "close": 162.24,
+        "volume": 594181
       },
       {
         "date": "2026-10-27",
-        "close": 162.94
+        "close": 162.94,
+        "volume": 414111
       },
       {
         "date": "2026-10-28",
-        "close": 168.85
+        "close": 168.85,
+        "volume": 477821
       },
       {
         "date": "2026-10-29",
-        "close": 180.38
+        "close": 180.38,
+        "volume": 2010604
       },
       {
         "date": "2026-10-30",
-        "close": 168.05
+        "close": 168.05,
+        "volume": 649636
       },
       {
         "date": "2026-11-02",
-        "close": 163.6
+        "close": 163.6,
+        "volume": 503813
       },
       {
         "date": "2026-11-03",
-        "close": 171.52
+        "close": 171.52,
+        "volume": 569455
       },
       {
         "date": "2026-11-04",
-        "close": 176.32
+        "close": 176.32,
+        "volume": 469429
       },
       {
         "date": "2026-11-05",
-        "close": 171.11
+        "close": 171.11,
+        "volume": 349923
       },
       {
         "date": "2026-11-06",
-        "close": 164.93
+        "close": 164.93,
+        "volume": 298798
       },
       {
         "date": "2026-11-09",
-        "close": 168.76
+        "close": 168.76,
+        "volume": 199257
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "ADROITIND",
     "isin": "INE505M01015",
@@ -1810,139 +2058,171 @@
     "listingGain": "47.20%",
     "currentGain": "45.7%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-23",
-        "close": 748.8
+        "close": 748.8,
+        "volume": 53819166
       },
       {
         "date": "2026-09-24",
-        "close": 811.8
+        "close": 811.8,
+        "volume": 34616895
       },
       {
         "date": "2026-09-25",
-        "close": 728.2
+        "close": 728.2,
+        "volume": 39868612
       },
       {
         "date": "2026-09-28",
-        "close": 716.95
+        "close": 716.95,
+        "volume": 32329516
       },
       {
         "date": "2026-09-29",
-        "close": 746.85
+        "close": 746.85,
+        "volume": 19165676
       },
       {
         "date": "2026-09-30",
-        "close": 749.5
+        "close": 749.5,
+        "volume": 14878799
       },
       {
         "date": "2026-10-01",
-        "close": 714.35
+        "close": 714.35,
+        "volume": 9051439
       },
       {
         "date": "2026-10-05",
-        "close": 677.15
+        "close": 677.15,
+        "volume": 7086619
       },
       {
         "date": "2026-10-06",
-        "close": 712.75
+        "close": 712.75,
+        "volume": 16745828
       },
       {
         "date": "2026-10-07",
-        "close": 720.3
+        "close": 720.3,
+        "volume": 6998382
       },
       {
         "date": "2026-10-08",
-        "close": 681.45
+        "close": 681.45,
+        "volume": 2851174
       },
       {
         "date": "2026-10-09",
-        "close": 705.85
+        "close": 705.85,
+        "volume": 3911059
       },
       {
         "date": "2026-10-12",
-        "close": 692.2
+        "close": 692.2,
+        "volume": 1416671
       },
       {
         "date": "2026-10-13",
-        "close": 691.95
+        "close": 691.95,
+        "volume": 2016749
       },
       {
         "date": "2026-10-14",
-        "close": 767.25
+        "close": 767.25,
+        "volume": 21235467
       },
       {
         "date": "2026-10-15",
-        "close": 758.45
+        "close": 758.45,
+        "volume": 12767781
       },
       {
         "date": "2026-10-16",
-        "close": 713.8
+        "close": 713.8,
+        "volume": 4993079
       },
       {
         "date": "2026-10-19",
-        "close": 686.7
+        "close": 686.7,
+        "volume": 1776806
       },
       {
         "date": "2026-10-21",
-        "close": 695.95
+        "close": 695.95,
+        "volume": 11073650
       },
       {
         "date": "2026-10-22",
-        "close": 677.4
+        "close": 677.4,
+        "volume": 2349820
       },
       {
         "date": "2026-10-23",
-        "close": 649.7
+        "close": 649.7,
+        "volume": 1867860
       },
       {
         "date": "2026-10-26",
-        "close": 658.25
+        "close": 658.25,
+        "volume": 1564784
       },
       {
         "date": "2026-10-27",
-        "close": 653.9
+        "close": 653.9,
+        "volume": 781222
       },
       {
         "date": "2026-10-28",
-        "close": 638.45
+        "close": 638.45,
+        "volume": 642321
       },
       {
         "date": "2026-10-29",
-        "close": 642.55
+        "close": 642.55,
+        "volume": 934777
       },
       {
         "date": "2026-10-30",
-        "close": 635.5
+        "close": 635.5,
+        "volume": 1417566
       },
       {
         "date": "2026-11-02",
-        "close": 640.9
+        "close": 640.9,
+        "volume": 519403
       },
       {
         "date": "2026-11-03",
-        "close": 636.0
+        "close": 636.0,
+        "volume": 438810
       },
       {
         "date": "2026-11-04",
-        "close": 646.35
+        "close": 646.35,
+        "volume": 445157
       },
       {
         "date": "2026-11-05",
-        "close": 649.9
+        "close": 649.9,
+        "volume": 464539
       },
       {
         "date": "2026-11-06",
-        "close": 634.75
+        "close": 634.75,
+        "volume": 323948
       },
       {
         "date": "2026-11-09",
-        "close": 617.85
+        "close": 617.85,
+        "volume": 538555
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "SSRETAIL",
     "isin": "INE1EQW01028",
@@ -1961,139 +2241,171 @@
     "listingGain": "29.00%",
     "currentGain": "68.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-23",
-        "close": 126.0
+        "close": 126.0,
+        "volume": 5338037
       },
       {
         "date": "2026-09-24",
-        "close": 132.3
+        "close": 132.3,
+        "volume": 362324
       },
       {
         "date": "2026-09-25",
-        "close": 138.91
+        "close": 138.91,
+        "volume": 3739412
       },
       {
         "date": "2026-09-28",
-        "close": 145.85
+        "close": 145.85,
+        "volume": 1210379
       },
       {
         "date": "2026-09-29",
-        "close": 153.14
+        "close": 153.14,
+        "volume": 1205708
       },
       {
         "date": "2026-09-30",
-        "close": 160.79
+        "close": 160.79,
+        "volume": 1720476
       },
       {
         "date": "2026-10-01",
-        "close": 168.82
+        "close": 168.82,
+        "volume": 613473
       },
       {
         "date": "2026-10-05",
-        "close": 177.26
+        "close": 177.26,
+        "volume": 179876
       },
       {
         "date": "2026-10-06",
-        "close": 186.12
+        "close": 186.12,
+        "volume": 77731
       },
       {
         "date": "2026-10-07",
-        "close": 195.42
+        "close": 195.42,
+        "volume": 836515
       },
       {
         "date": "2026-10-08",
-        "close": 175.88
+        "close": 175.88,
+        "volume": 9404832
       },
       {
         "date": "2026-10-09",
-        "close": 167.84
+        "close": 167.84,
+        "volume": 5100799
       },
       {
         "date": "2026-10-12",
-        "close": 159.45
+        "close": 159.45,
+        "volume": 571606
       },
       {
         "date": "2026-10-13",
-        "close": 167.42
+        "close": 167.42,
+        "volume": 645603
       },
       {
         "date": "2026-10-14",
-        "close": 169.98
+        "close": 169.98,
+        "volume": 604717
       },
       {
         "date": "2026-10-15",
-        "close": 163.34
+        "close": 163.34,
+        "volume": 328678
       },
       {
         "date": "2026-10-16",
-        "close": 160.95
+        "close": 160.95,
+        "volume": 277539
       },
       {
         "date": "2026-10-19",
-        "close": 156.41
+        "close": 156.41,
+        "volume": 326811
       },
       {
         "date": "2026-10-21",
-        "close": 150.02
+        "close": 150.02,
+        "volume": 2534832
       },
       {
         "date": "2026-10-22",
-        "close": 143.82
+        "close": 143.82,
+        "volume": 268658
       },
       {
         "date": "2026-10-23",
-        "close": 138.4
+        "close": 138.4,
+        "volume": 189596
       },
       {
         "date": "2026-10-26",
-        "close": 134.82
+        "close": 134.82,
+        "volume": 196877
       },
       {
         "date": "2026-10-27",
-        "close": 141.56
+        "close": 141.56,
+        "volume": 61331
       },
       {
         "date": "2026-10-28",
-        "close": 148.63
+        "close": 148.63,
+        "volume": 51732
       },
       {
         "date": "2026-10-29",
-        "close": 156.06
+        "close": 156.06,
+        "volume": 61979
       },
       {
         "date": "2026-10-30",
-        "close": 163.86
+        "close": 163.86,
+        "volume": 659331
       },
       {
         "date": "2026-11-02",
-        "close": 160.73
+        "close": 160.73,
+        "volume": 346237
       },
       {
         "date": "2026-11-03",
-        "close": 159.01
+        "close": 159.01,
+        "volume": 265991
       },
       {
         "date": "2026-11-04",
-        "close": 165.37
+        "close": 165.37,
+        "volume": 334366
       },
       {
         "date": "2026-11-05",
-        "close": 162.71
+        "close": 162.71,
+        "volume": 278199
       },
       {
         "date": "2026-11-06",
-        "close": 159.04
+        "close": 159.04,
+        "volume": 139356
       },
       {
         "date": "2026-11-09",
-        "close": 157.01
+        "close": 157.01,
+        "volume": 157377
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "JSIPL",
     "isin": "INE1DLO01028",
@@ -2112,7 +2424,7 @@
     "listingGain": "19.40%",
     "currentGain": "46.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "RENTOMOJO",
     "isin": "INE08T701025",
@@ -2131,7 +2443,7 @@
     "listingGain": "16.70%",
     "currentGain": "67.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0FRO01022",
     "priceDate": "2026-11-09"
@@ -2149,155 +2461,191 @@
     "listingGain": "29.40%",
     "currentGain": "-9.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-17",
-        "close": 170.1
+        "close": 170.1,
+        "volume": 25235751
       },
       {
         "date": "2026-09-18",
-        "close": 155.78
+        "close": 155.78,
+        "volume": 13056118
       },
       {
         "date": "2026-09-21",
-        "close": 141.33
+        "close": 141.33,
+        "volume": 4998169
       },
       {
         "date": "2026-09-22",
-        "close": 147.56
+        "close": 147.56,
+        "volume": 6818027
       },
       {
         "date": "2026-09-23",
-        "close": 146.59
+        "close": 146.59,
+        "volume": 2580126
       },
       {
         "date": "2026-09-24",
-        "close": 144.22
+        "close": 144.22,
+        "volume": 1429714
       },
       {
         "date": "2026-09-25",
-        "close": 149.14
+        "close": 149.14,
+        "volume": 7457591
       },
       {
         "date": "2026-09-28",
-        "close": 149.35
+        "close": 149.35,
+        "volume": 1909428
       },
       {
         "date": "2026-09-29",
-        "close": 150.82
+        "close": 150.82,
+        "volume": 1220474
       },
       {
         "date": "2026-09-30",
-        "close": 154.36
+        "close": 154.36,
+        "volume": 2045515
       },
       {
         "date": "2026-10-01",
-        "close": 151.47
+        "close": 151.47,
+        "volume": 1108996
       },
       {
         "date": "2026-10-05",
-        "close": 148.44
+        "close": 148.44,
+        "volume": 787852
       },
       {
         "date": "2026-10-06",
-        "close": 144.08
+        "close": 144.08,
+        "volume": 1594559
       },
       {
         "date": "2026-10-07",
-        "close": 143.97
+        "close": 143.97,
+        "volume": 755220
       },
       {
         "date": "2026-10-08",
-        "close": 145.08
+        "close": 145.08,
+        "volume": 1016774
       },
       {
         "date": "2026-10-09",
-        "close": 143.86
+        "close": 143.86,
+        "volume": 417514
       },
       {
         "date": "2026-10-12",
-        "close": 140.14
+        "close": 140.14,
+        "volume": 525410
       },
       {
         "date": "2026-10-13",
-        "close": 137.86
+        "close": 137.86,
+        "volume": 330081
       },
       {
         "date": "2026-10-14",
-        "close": 137.49
+        "close": 137.49,
+        "volume": 148971
       },
       {
         "date": "2026-10-15",
-        "close": 134.87
+        "close": 134.87,
+        "volume": 4568859
       },
       {
         "date": "2026-10-16",
-        "close": 135.84
+        "close": 135.84,
+        "volume": 198013
       },
       {
         "date": "2026-10-19",
-        "close": 134.45
+        "close": 134.45,
+        "volume": 225983
       },
       {
         "date": "2026-10-21",
-        "close": 128.53
+        "close": 128.53,
+        "volume": 289688
       },
       {
         "date": "2026-10-22",
-        "close": 124.45
+        "close": 124.45,
+        "volume": 157815
       },
       {
         "date": "2026-10-23",
-        "close": 119.61
+        "close": 119.61,
+        "volume": 173965
       },
       {
         "date": "2026-10-26",
-        "close": 118.16
+        "close": 118.16,
+        "volume": 102266
       },
       {
         "date": "2026-10-27",
-        "close": 121.77
+        "close": 121.77,
+        "volume": 193099
       },
       {
         "date": "2026-10-28",
-        "close": 124.13
+        "close": 124.13,
+        "volume": 231285
       },
       {
         "date": "2026-10-29",
-        "close": 130.25
+        "close": 130.25,
+        "volume": 202462
       },
       {
         "date": "2026-10-30",
-        "close": 131.61
+        "close": 131.61,
+        "volume": 308805
       },
       {
         "date": "2026-11-02",
-        "close": 133.13
+        "close": 133.13,
+        "volume": 376535
       },
       {
         "date": "2026-11-03",
-        "close": 136.5
+        "close": 136.5,
+        "volume": 917548
       },
       {
         "date": "2026-11-04",
-        "close": 135.28
+        "close": 135.28,
+        "volume": 132741
       },
       {
         "date": "2026-11-05",
-        "close": 134.45
+        "close": 134.45,
+        "volume": 137293
       },
       {
         "date": "2026-11-06",
-        "close": 134.78
+        "close": 134.78,
+        "volume": 262222
       },
       {
         "date": "2026-11-09",
-        "close": 132.9
+        "close": 132.9,
+        "volume": 68421
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "LCCPROJECT",
     "isin": "INE1FPN01026",
@@ -2316,155 +2664,191 @@
     "listingGain": "26.00%",
     "currentGain": "51.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-17",
-        "close": 352.0
+        "close": 352.0,
+        "volume": 29381514
       },
       {
         "date": "2026-09-18",
-        "close": 355.55
+        "close": 355.55,
+        "volume": 31684104
       },
       {
         "date": "2026-09-21",
-        "close": 356.95
+        "close": 356.95,
+        "volume": 10590300
       },
       {
         "date": "2026-09-22",
-        "close": 365.1
+        "close": 365.1,
+        "volume": 6241845
       },
       {
         "date": "2026-09-23",
-        "close": 361.95
+        "close": 361.95,
+        "volume": 3232652
       },
       {
         "date": "2026-09-24",
-        "close": 369.05
+        "close": 369.05,
+        "volume": 7309090
       },
       {
         "date": "2026-09-25",
-        "close": 358.7
+        "close": 358.7,
+        "volume": 1960824
       },
       {
         "date": "2026-09-28",
-        "close": 357.8
+        "close": 357.8,
+        "volume": 1830808
       },
       {
         "date": "2026-09-29",
-        "close": 359.45
+        "close": 359.45,
+        "volume": 1355452
       },
       {
         "date": "2026-09-30",
-        "close": 395.35
+        "close": 395.35,
+        "volume": 6615361
       },
       {
         "date": "2026-10-01",
-        "close": 410.95
+        "close": 410.95,
+        "volume": 12953156
       },
       {
         "date": "2026-10-05",
-        "close": 416.3
+        "close": 416.3,
+        "volume": 2382922
       },
       {
         "date": "2026-10-06",
-        "close": 438.8
+        "close": 438.8,
+        "volume": 3266092
       },
       {
         "date": "2026-10-07",
-        "close": 416.65
+        "close": 416.65,
+        "volume": 4078604
       },
       {
         "date": "2026-10-08",
-        "close": 393.8
+        "close": 393.8,
+        "volume": 4220086
       },
       {
         "date": "2026-10-09",
-        "close": 405.9
+        "close": 405.9,
+        "volume": 3602188
       },
       {
         "date": "2026-10-12",
-        "close": 388.25
+        "close": 388.25,
+        "volume": 1408501
       },
       {
         "date": "2026-10-13",
-        "close": 371.65
+        "close": 371.65,
+        "volume": 1426421
       },
       {
         "date": "2026-10-14",
-        "close": 381.8
+        "close": 381.8,
+        "volume": 1106630
       },
       {
         "date": "2026-10-15",
-        "close": 392.7
+        "close": 392.7,
+        "volume": 3452962
       },
       {
         "date": "2026-10-16",
-        "close": 386.35
+        "close": 386.35,
+        "volume": 450944
       },
       {
         "date": "2026-10-19",
-        "close": 371.05
+        "close": 371.05,
+        "volume": 852234
       },
       {
         "date": "2026-10-21",
-        "close": 359.1
+        "close": 359.1,
+        "volume": 1149127
       },
       {
         "date": "2026-10-22",
-        "close": 363.5
+        "close": 363.5,
+        "volume": 780154
       },
       {
         "date": "2026-10-23",
-        "close": 350.2
+        "close": 350.2,
+        "volume": 1058047
       },
       {
         "date": "2026-10-26",
-        "close": 351.75
+        "close": 351.75,
+        "volume": 433999
       },
       {
         "date": "2026-10-27",
-        "close": 347.15
+        "close": 347.15,
+        "volume": 469827
       },
       {
         "date": "2026-10-28",
-        "close": 342.45
+        "close": 342.45,
+        "volume": 957812
       },
       {
         "date": "2026-10-29",
-        "close": 349.25
+        "close": 349.25,
+        "volume": 408636
       },
       {
         "date": "2026-10-30",
-        "close": 374.9
+        "close": 374.9,
+        "volume": 1234135
       },
       {
         "date": "2026-11-02",
-        "close": 374.6
+        "close": 374.6,
+        "volume": 1640251
       },
       {
         "date": "2026-11-03",
-        "close": 369.65
+        "close": 369.65,
+        "volume": 296025
       },
       {
         "date": "2026-11-04",
-        "close": 383.0
+        "close": 383.0,
+        "volume": 512929
       },
       {
         "date": "2026-11-05",
-        "close": 379.35
+        "close": 379.35,
+        "volume": 412290
       },
       {
         "date": "2026-11-06",
-        "close": 375.7
+        "close": 375.7,
+        "volume": 756253
       },
       {
         "date": "2026-11-09",
-        "close": 384.65
+        "close": 384.65,
+        "volume": 730945
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "KARAMTARA",
     "isin": "INE590T01012",
@@ -2483,163 +2867,201 @@
     "listingGain": "33.10%",
     "currentGain": "-32.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-09-15",
-        "close": 132.0
+        "close": 132.0,
+        "volume": 48334309
       },
       {
         "date": "2026-09-16",
-        "close": 106.81
+        "close": 106.81,
+        "volume": 22586385
       },
       {
         "date": "2026-09-17",
-        "close": 111.16
+        "close": 111.16,
+        "volume": 14636796
       },
       {
         "date": "2026-09-18",
-        "close": 107.55
+        "close": 107.55,
+        "volume": 5715754
       },
       {
         "date": "2026-09-21",
-        "close": 105.25
+        "close": 105.25,
+        "volume": 4595962
       },
       {
         "date": "2026-09-22",
-        "close": 102.87
+        "close": 102.87,
+        "volume": 3333352
       },
       {
         "date": "2026-09-23",
-        "close": 105.85
+        "close": 105.85,
+        "volume": 6681681
       },
       {
         "date": "2026-09-24",
-        "close": 100.19
+        "close": 100.19,
+        "volume": 3272290
       },
       {
         "date": "2026-09-25",
-        "close": 100.64
+        "close": 100.64,
+        "volume": 2849061
       },
       {
         "date": "2026-09-28",
-        "close": 101.39
+        "close": 101.39,
+        "volume": 4897194
       },
       {
         "date": "2026-09-29",
-        "close": 100.18
+        "close": 100.18,
+        "volume": 2089094
       },
       {
         "date": "2026-09-30",
-        "close": 100.1
+        "close": 100.1,
+        "volume": 2276604
       },
       {
         "date": "2026-10-01",
-        "close": 97.21
+        "close": 97.21,
+        "volume": 1444393
       },
       {
         "date": "2026-10-05",
-        "close": 93.21
+        "close": 93.21,
+        "volume": 2652681
       },
       {
         "date": "2026-10-06",
-        "close": 90.9
+        "close": 90.9,
+        "volume": 1599148
       },
       {
         "date": "2026-10-07",
-        "close": 94.22
+        "close": 94.22,
+        "volume": 3774861
       },
       {
         "date": "2026-10-08",
-        "close": 95.73
+        "close": 95.73,
+        "volume": 7269328
       },
       {
         "date": "2026-10-09",
-        "close": 98.4
+        "close": 98.4,
+        "volume": 6113645
       },
       {
         "date": "2026-10-12",
-        "close": 98.14
+        "close": 98.14,
+        "volume": 1422380
       },
       {
         "date": "2026-10-13",
-        "close": 98.76
+        "close": 98.76,
+        "volume": 4082331
       },
       {
         "date": "2026-10-14",
-        "close": 94.47
+        "close": 94.47,
+        "volume": 2712657
       },
       {
         "date": "2026-10-15",
-        "close": 92.88
+        "close": 92.88,
+        "volume": 1667587
       },
       {
         "date": "2026-10-16",
-        "close": 94.28
+        "close": 94.28,
+        "volume": 2401499
       },
       {
         "date": "2026-10-19",
-        "close": 94.72
+        "close": 94.72,
+        "volume": 1973834
       },
       {
         "date": "2026-10-21",
-        "close": 89.88
+        "close": 89.88,
+        "volume": 844036
       },
       {
         "date": "2026-10-22",
-        "close": 91.77
+        "close": 91.77,
+        "volume": 12214619
       },
       {
         "date": "2026-10-23",
-        "close": 86.33
+        "close": 86.33,
+        "volume": 1715744
       },
       {
         "date": "2026-10-26",
-        "close": 85.2
+        "close": 85.2,
+        "volume": 728086
       },
       {
         "date": "2026-10-27",
-        "close": 85.22
+        "close": 85.22,
+        "volume": 498643
       },
       {
         "date": "2026-10-28",
-        "close": 86.72
+        "close": 86.72,
+        "volume": 1532641
       },
       {
         "date": "2026-10-29",
-        "close": 93.01
+        "close": 93.01,
+        "volume": 4607523
       },
       {
         "date": "2026-10-30",
-        "close": 92.98
+        "close": 92.98,
+        "volume": 2145694
       },
       {
         "date": "2026-11-02",
-        "close": 89.97
+        "close": 89.97,
+        "volume": 1004269
       },
       {
         "date": "2026-11-03",
-        "close": 89.6
+        "close": 89.6,
+        "volume": 467041
       },
       {
         "date": "2026-11-04",
-        "close": 88.07
+        "close": 88.07,
+        "volume": 498644
       },
       {
         "date": "2026-11-05",
-        "close": 88.37
+        "close": 88.37,
+        "volume": 555084
       },
       {
         "date": "2026-11-06",
-        "close": 84.97
+        "close": 84.97,
+        "volume": 918524
       },
       {
         "date": "2026-11-09",
-        "close": 84.29
+        "close": 84.29,
+        "volume": 468611
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close",
     "symbol": "PRANAV",
     "isin": "INE0H4201019",
@@ -2658,7 +3080,7 @@
     "listingGain": "24.90%",
     "currentGain": "19.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "DEEPA",
     "isin": "INE1M2N01020",
@@ -2677,7 +3099,7 @@
     "listingGain": "15.00%",
     "currentGain": "31.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "PRIORITY",
     "isin": "INE15EH01014",
@@ -2696,7 +3118,7 @@
     "listingGain": "76.50%",
     "currentGain": "167.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "ESDS",
     "isin": "INE0DRI01029",
@@ -2715,7 +3137,7 @@
     "listingGain": "34.10%",
     "currentGain": "14.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "LUMINO",
     "isin": "INE185Q01025",
@@ -2748,7 +3170,7 @@
     "listingGain": "21.90%",
     "currentGain": "14.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "AUGMONT",
     "isin": "INE16W401027",
@@ -2767,7 +3189,7 @@
     "listingGain": "111.30%",
     "currentGain": "77.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "TEMPSENS",
     "isin": "INE1KZI01025",
@@ -2787,7 +3209,7 @@
     "currentGain": "-14.2%",
     "stockType": "Mainboard",
     "isin": "INE18UN01038",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -2804,7 +3226,7 @@
     "listingGain": "31.80%",
     "currentGain": "78.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "LALITHAA",
     "isin": "INE0K9O01026",
@@ -2823,7 +3245,7 @@
     "listingGain": "35.00%",
     "currentGain": "33.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "SHIPROCKET",
     "isin": "INE0FOO01011",
@@ -2842,7 +3264,7 @@
     "listingGain": "63.20%",
     "currentGain": "58.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "BLEL",
     "isin": "INE1EEM01017",
@@ -2861,7 +3283,7 @@
     "listingGain": "17.90%",
     "currentGain": "111.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "MILKYMIST",
     "isin": "INE00IT01020",
@@ -2880,7 +3302,7 @@
     "listingGain": "37.80%",
     "currentGain": "87.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "DHOOTTRANS",
     "isin": "INE01NH01023",
@@ -2899,7 +3321,7 @@
     "listingGain": "21.40%",
     "currentGain": "65.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "MOLBIO",
     "isin": "INE869T01028",
@@ -2918,7 +3340,7 @@
     "listingGain": "34.00%",
     "currentGain": "136.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "TECHNOCRAF",
     "isin": "INE1D0W01018",
@@ -2937,7 +3359,7 @@
     "listingGain": "35.90%",
     "currentGain": "-11.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "symbol": "ARDEE",
     "isin": "INE0XNF01022",
@@ -2956,7 +3378,7 @@
     "listingGain": "22.40%",
     "currentGain": "79.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0OWZ01020",
     "priceDate": "2026-11-09"
@@ -2974,7 +3396,7 @@
     "listingGain": "44.30%",
     "currentGain": "162.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE084101034",
     "priceDate": "2026-11-09"
@@ -2992,7 +3414,7 @@
     "listingGain": "18.00%",
     "currentGain": "23.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE11XY01018",
     "priceDate": "2026-11-09"
@@ -3010,7 +3432,7 @@
     "listingGain": "16.80%",
     "currentGain": "-2.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE17IR01028",
     "priceDate": "2026-11-09"
@@ -3028,7 +3450,7 @@
     "listingGain": "35.80%",
     "currentGain": "31.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ISX01025",
     "priceDate": "2026-11-09"
@@ -3046,7 +3468,7 @@
     "listingGain": "36.90%",
     "currentGain": "136.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1SJO01012",
     "priceDate": "2026-11-09"
@@ -3064,7 +3486,7 @@
     "listingGain": "39.60%",
     "currentGain": "11.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE00WV01027",
     "priceDate": "2026-11-09"
@@ -3082,7 +3504,7 @@
     "listingGain": "95.70%",
     "currentGain": "37.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE05XR01022",
     "priceDate": "2026-11-09"
@@ -3100,7 +3522,7 @@
     "listingGain": "19.10%",
     "currentGain": "6.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE2HJL01019",
     "priceDate": "2026-11-06"
@@ -3118,7 +3540,7 @@
     "listingGain": "90.00%",
     "currentGain": "-23.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1CRP01016",
     "priceDate": "2026-11-09"
@@ -3136,7 +3558,7 @@
     "listingGain": "25.00%",
     "currentGain": "-9.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE19I001020",
     "priceDate": "2026-11-09"
@@ -3154,7 +3576,7 @@
     "listingGain": "31.30%",
     "currentGain": "160.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1E1V01017",
     "priceDate": "2026-11-09"
@@ -3173,7 +3595,7 @@
     "currentGain": "-9.2%",
     "stockType": "SME",
     "isin": "INE1IE301018",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -3190,7 +3612,7 @@
     "listingGain": "90.00%",
     "currentGain": "-22.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1CJB01013",
     "priceDate": "2026-11-09"
@@ -3208,7 +3630,7 @@
     "listingGain": "54.60%",
     "currentGain": "-30.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0W4D01018",
     "priceDate": "2026-11-09"
@@ -3226,7 +3648,7 @@
     "listingGain": "90.00%",
     "currentGain": "321.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1E4401010",
     "priceDate": "2026-11-09"
@@ -3244,7 +3666,7 @@
     "listingGain": "48.70%",
     "currentGain": "-6.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0BUQ01012",
     "priceDate": "2026-11-09"
@@ -3262,7 +3684,7 @@
     "listingGain": "90.00%",
     "currentGain": "104.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1I1301016",
     "priceDate": "2026-11-09"
@@ -3280,7 +3702,7 @@
     "listingGain": "44.40%",
     "currentGain": "-3.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0YJV01017",
     "priceDate": "2026-11-09"
@@ -3298,7 +3720,7 @@
     "listingGain": "90.00%",
     "currentGain": "392.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE16XA01017",
     "priceDate": "2026-11-09"
@@ -3316,7 +3738,7 @@
     "listingGain": "38.90%",
     "currentGain": "-20.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RYR01018",
     "priceDate": "2026-11-09"
@@ -3334,7 +3756,7 @@
     "listingGain": "17.40%",
     "currentGain": "-68.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1B4801017",
     "priceDate": "2026-11-06"
@@ -3352,7 +3774,7 @@
     "listingGain": "90.00%",
     "currentGain": "174.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0Y5H01014",
     "priceDate": "2026-11-09"
@@ -3370,7 +3792,7 @@
     "listingGain": "74.50%",
     "currentGain": "332.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0TJ801010",
     "priceDate": "2026-11-09"
@@ -3388,7 +3810,7 @@
     "listingGain": "90.00%",
     "currentGain": "251.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0XBS01012",
     "priceDate": "2026-11-09"
@@ -3406,7 +3828,7 @@
     "listingGain": "16.40%",
     "currentGain": "-39.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V8A01016",
     "priceDate": "2026-11-09"
@@ -3424,7 +3846,7 @@
     "listingGain": "37.40%",
     "currentGain": "-27.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE104201012",
     "priceDate": "2026-11-09"
@@ -3442,7 +3864,7 @@
     "listingGain": "23.30%",
     "currentGain": "139.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE15B101011",
     "priceDate": "2026-11-09"
@@ -3460,7 +3882,7 @@
     "listingGain": "15.00%",
     "currentGain": "98.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ZOM01013",
     "priceDate": "2026-11-09"
@@ -3479,7 +3901,7 @@
     "currentGain": "-36.0%",
     "stockType": "SME",
     "isin": "INE14DW01018",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -3496,7 +3918,7 @@
     "listingGain": "90.00%",
     "currentGain": "26.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1CRQ01014",
     "priceDate": "2026-11-06"
@@ -3514,7 +3936,7 @@
     "listingGain": "90.00%",
     "currentGain": "591.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VTV01012",
     "priceDate": "2026-11-09"
@@ -3532,7 +3954,7 @@
     "listingGain": "21.30%",
     "currentGain": "-56.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0W4K01013",
     "priceDate": "2026-11-09"
@@ -3550,7 +3972,7 @@
     "listingGain": "90.00%",
     "currentGain": "148.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VCK01011",
     "priceDate": "2026-11-09"
@@ -3568,7 +3990,7 @@
     "listingGain": "19.20%",
     "currentGain": "-23.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0WL201014",
     "priceDate": "2026-11-09"
@@ -3586,7 +4008,7 @@
     "listingGain": "35.90%",
     "currentGain": "144.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0FMZ01045",
     "priceDate": "2026-11-09"
@@ -3604,7 +4026,7 @@
     "listingGain": "30.90%",
     "currentGain": "72.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE161701011",
     "priceDate": "2026-11-09"
@@ -3623,7 +4045,7 @@
     "currentGain": "-1.9%",
     "stockType": "SME",
     "isin": "INE0V0L01028",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -3640,7 +4062,7 @@
     "listingGain": "57.30%",
     "currentGain": "10.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE19QH01010",
     "priceDate": "2026-11-09"
@@ -3658,7 +4080,7 @@
     "listingGain": "61.90%",
     "currentGain": "12.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0UMC01019",
     "priceDate": "2026-11-09"
@@ -3676,7 +4098,7 @@
     "listingGain": "39.80%",
     "currentGain": "-65.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE162901016",
     "priceDate": "2026-11-09"
@@ -3694,7 +4116,7 @@
     "listingGain": "90.00%",
     "currentGain": "683.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0TL001013",
     "priceDate": "2026-11-09"
@@ -3712,7 +4134,7 @@
     "listingGain": "52.90%",
     "currentGain": "-15.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0W1601012",
     "priceDate": "2026-11-09"
@@ -3730,7 +4152,7 @@
     "listingGain": "40.00%",
     "currentGain": "180.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0UZO01024",
     "priceDate": "2026-11-09"
@@ -3748,7 +4170,7 @@
     "listingGain": "17.40%",
     "currentGain": "129.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0S9X01011",
     "priceDate": "2026-11-09"
@@ -3766,7 +4188,7 @@
     "listingGain": "26.90%",
     "currentGain": "-53.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SGZ01016",
     "priceDate": "2026-11-09"
@@ -3784,7 +4206,7 @@
     "listingGain": "23.40%",
     "currentGain": "-43.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ZTO01018",
     "priceDate": "2026-11-06"
@@ -3802,7 +4224,7 @@
     "listingGain": "38.00%",
     "currentGain": "163.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0MYZ01012",
     "priceDate": "2026-11-09"
@@ -3820,7 +4242,7 @@
     "listingGain": "90.00%",
     "currentGain": "-0.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE11HF01010",
     "priceDate": "2026-11-09"
@@ -3838,7 +4260,7 @@
     "listingGain": "29.20%",
     "currentGain": "168.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE17GV01016",
     "priceDate": "2026-11-09"
@@ -3856,7 +4278,7 @@
     "listingGain": "61.90%",
     "currentGain": "854.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1DV401010",
     "priceDate": "2026-11-09"
@@ -3874,7 +4296,7 @@
     "listingGain": "50.00%",
     "currentGain": "278.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE1ARD01016",
     "priceDate": "2026-11-09"
@@ -3892,7 +4314,7 @@
     "listingGain": "26.80%",
     "currentGain": "-9.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VRH01015",
     "priceDate": "2026-11-09"
@@ -3910,7 +4332,7 @@
     "listingGain": "90.00%",
     "currentGain": "-25.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RJ901010",
     "priceDate": "2026-11-09"
@@ -3928,7 +4350,7 @@
     "listingGain": "25.00%",
     "currentGain": "1164.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0Z7N01017",
     "priceDate": "2026-11-09"
@@ -3946,7 +4368,7 @@
     "listingGain": "17.60%",
     "currentGain": "226.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0DM401012",
     "priceDate": "2026-11-09"
@@ -3964,7 +4386,7 @@
     "listingGain": "40.00%",
     "currentGain": "-20.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE11HG01018",
     "priceDate": "2026-11-09"
@@ -3982,7 +4404,7 @@
     "listingGain": "26.20%",
     "currentGain": "-22.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ZOL01023",
     "priceDate": "2026-11-09"
@@ -4001,7 +4423,7 @@
     "currentGain": "-41.6%",
     "stockType": "SME",
     "isin": "INE0CFH01028",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4018,7 +4440,7 @@
     "listingGain": "90.00%",
     "currentGain": "24.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0XOW01017",
     "priceDate": "2026-11-09"
@@ -4036,7 +4458,7 @@
     "listingGain": "90.00%",
     "currentGain": "91.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0NB801022",
     "priceDate": "2026-11-09"
@@ -4054,7 +4476,7 @@
     "listingGain": "34.60%",
     "currentGain": "-70.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0XRN01019",
     "priceDate": "2026-11-09"
@@ -4072,7 +4494,7 @@
     "listingGain": "90.00%",
     "currentGain": "59.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0HF201011",
     "priceDate": "2026-11-09"
@@ -4090,7 +4512,7 @@
     "listingGain": "38.50%",
     "currentGain": "342.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0QQJ01021",
     "priceDate": "2026-11-09"
@@ -4109,7 +4531,7 @@
     "currentGain": "11.5%",
     "stockType": "SME",
     "isin": "INE0RH001011",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-06",
     "priceSource": "NSE/BSE official close"
   },
@@ -4126,7 +4548,7 @@
     "listingGain": "22.10%",
     "currentGain": "16.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SI601032",
     "priceDate": "2026-11-09"
@@ -4144,7 +4566,7 @@
     "listingGain": "20.10%",
     "currentGain": "37.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE346A01027",
     "priceDate": "2026-11-09"
@@ -4162,7 +4584,7 @@
     "listingGain": "38.40%",
     "currentGain": "139.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE02ZQ01018",
     "priceDate": "2026-11-09"
@@ -4180,7 +4602,7 @@
     "listingGain": "46.40%",
     "currentGain": "114.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VDM01015",
     "priceDate": "2026-11-09"
@@ -4198,7 +4620,7 @@
     "listingGain": "23.10%",
     "currentGain": "104.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0QPI01025",
     "priceDate": "2026-11-09"
@@ -4216,7 +4638,7 @@
     "listingGain": "27.20%",
     "currentGain": "6.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE19RI01016",
     "priceDate": "2026-11-09"
@@ -4234,7 +4656,7 @@
     "listingGain": "27.80%",
     "currentGain": "265.3%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE506V01022",
     "priceDate": "2026-11-09"
@@ -4252,7 +4674,7 @@
     "listingGain": "50.00%",
     "currentGain": "57.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE324D01010",
     "priceDate": "2026-11-09"
@@ -4270,7 +4692,7 @@
     "listingGain": "57.50%",
     "currentGain": "54.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0CAZ01013",
     "priceDate": "2026-11-09"
@@ -4288,7 +4710,7 @@
     "listingGain": "17.60%",
     "currentGain": "-3.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0R8B01010",
     "priceDate": "2026-11-09"
@@ -4306,7 +4728,7 @@
     "listingGain": "38.20%",
     "currentGain": "-13.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0MHO01029",
     "priceDate": "2026-11-09"
@@ -4324,7 +4746,7 @@
     "listingGain": "64.30%",
     "currentGain": "2.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE00RL01028",
     "priceDate": "2026-11-09"
@@ -4342,7 +4764,7 @@
     "listingGain": "18.70%",
     "currentGain": "49.4%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V9Q01010",
     "priceDate": "2026-11-09"
@@ -4360,7 +4782,7 @@
     "listingGain": "50.40%",
     "currentGain": "525.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE819V01029",
     "priceDate": "2026-11-09"
@@ -4378,7 +4800,7 @@
     "listingGain": "49.80%",
     "currentGain": "132.6%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE18JU01028",
     "priceDate": "2026-11-09"
@@ -4396,7 +4818,7 @@
     "listingGain": "26.90%",
     "currentGain": "68.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0CZ201020",
     "priceDate": "2026-11-09"
@@ -4414,7 +4836,7 @@
     "listingGain": "34.10%",
     "currentGain": "99.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE12NJ01018",
     "priceDate": "2026-11-09"
@@ -4432,7 +4854,7 @@
     "listingGain": "26.80%",
     "currentGain": "-46.0%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V3U01015",
     "priceDate": "2026-11-09"
@@ -4450,7 +4872,7 @@
     "listingGain": "21.50%",
     "currentGain": "-27.8%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE236E01022",
     "priceDate": "2026-11-09"
@@ -4468,7 +4890,7 @@
     "listingGain": "33.30%",
     "currentGain": "122.9%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RYC01010",
     "priceDate": "2026-11-09"
@@ -4486,7 +4908,7 @@
     "listingGain": "26.60%",
     "currentGain": "-52.2%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0WO601020",
     "priceDate": "2026-11-09"
@@ -4504,7 +4926,7 @@
     "listingGain": "27.60%",
     "currentGain": "48.1%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0LRY01011",
     "priceDate": "2026-11-09"
@@ -4538,7 +4960,7 @@
     "listingGain": "19.10%",
     "currentGain": "-42.5%",
     "stockType": "Mainboard",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE622H01018",
     "priceDate": "2026-11-09"
@@ -4556,7 +4978,7 @@
     "listingGain": "75.90%",
     "currentGain": "-70.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0TD101011",
     "priceDate": "2026-11-06"
@@ -4574,7 +4996,7 @@
     "listingGain": "90.00%",
     "currentGain": "737.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE00GK01023",
     "priceDate": "2026-11-09"
@@ -4593,7 +5015,7 @@
     "currentGain": "236.0%",
     "stockType": "SME",
     "isin": "INE0P5R01014",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4610,7 +5032,7 @@
     "listingGain": "90.00%",
     "currentGain": "-30.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0WCH01015",
     "priceDate": "2026-11-09"
@@ -4628,7 +5050,7 @@
     "listingGain": "90.00%",
     "currentGain": "-9.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0XAY01012",
     "priceDate": "2026-11-09"
@@ -4646,7 +5068,7 @@
     "listingGain": "90.00%",
     "currentGain": "-48.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V9V01010",
     "priceDate": "2026-11-05"
@@ -4664,7 +5086,7 @@
     "listingGain": "90.00%",
     "currentGain": "-27.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RHD01013",
     "priceDate": "2026-11-09"
@@ -4683,7 +5105,7 @@
     "currentGain": "1.1%",
     "stockType": "SME",
     "isin": "INE0DQN01013",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4700,7 +5122,7 @@
     "listingGain": "90.00%",
     "currentGain": "-2.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0TVT01024",
     "priceDate": "2026-11-09"
@@ -4718,7 +5140,7 @@
     "listingGain": "90.00%",
     "currentGain": "252.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0T4V01015",
     "priceDate": "2026-11-09"
@@ -4736,7 +5158,7 @@
     "listingGain": "90.00%",
     "currentGain": "55.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VHU01019",
     "priceDate": "2026-11-06"
@@ -4755,7 +5177,7 @@
     "currentGain": "-32.2%",
     "stockType": "SME",
     "isin": "INE0U7V01015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4773,7 +5195,7 @@
     "currentGain": "146.0%",
     "stockType": "SME",
     "isin": "INE0VN801010",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4790,7 +5212,7 @@
     "listingGain": "50.00%",
     "currentGain": "158.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0YU901016",
     "priceDate": "2026-11-09"
@@ -4808,7 +5230,7 @@
     "listingGain": "16.40%",
     "currentGain": "241.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SFW01015",
     "priceDate": "2026-11-09"
@@ -4826,7 +5248,7 @@
     "listingGain": "90.00%",
     "currentGain": "-43.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0VZS01015",
     "priceDate": "2026-11-06"
@@ -4845,7 +5267,7 @@
     "currentGain": "-34.9%",
     "stockType": "SME",
     "isin": "INE0YRO01015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4863,7 +5285,7 @@
     "currentGain": "-38.9%",
     "stockType": "SME",
     "isin": "INE0QYI01019",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-06",
     "priceSource": "NSE/BSE official close"
   },
@@ -4880,7 +5302,7 @@
     "listingGain": "90.00%",
     "currentGain": "42.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RBQ01018",
     "priceDate": "2026-11-09"
@@ -4899,7 +5321,7 @@
     "currentGain": "60.8%",
     "stockType": "SME",
     "isin": "INE0JQS01019",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4916,7 +5338,7 @@
     "listingGain": "36.40%",
     "currentGain": "-71.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SHE01019",
     "priceDate": "2026-11-09"
@@ -4934,7 +5356,7 @@
     "listingGain": "20.00%",
     "currentGain": "-8.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0OO201011",
     "priceDate": "2026-11-09"
@@ -4953,7 +5375,7 @@
     "currentGain": "68.8%",
     "stockType": "SME",
     "isin": "INE0MVO01012",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4971,7 +5393,7 @@
     "currentGain": "-52.5%",
     "stockType": "SME",
     "isin": "INE0Q6001012",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -4989,7 +5411,7 @@
     "currentGain": "2.2%",
     "stockType": "SME",
     "isin": "INE0SUH01015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5007,7 +5429,7 @@
     "currentGain": "136.7%",
     "stockType": "SME",
     "isin": "INE0RMF01018",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5025,7 +5447,7 @@
     "currentGain": "182.3%",
     "stockType": "SME",
     "isin": "INE0UL701015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5042,7 +5464,7 @@
     "listingGain": "18.20%",
     "currentGain": "-22.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RVQ01016",
     "priceDate": "2026-11-09"
@@ -5060,7 +5482,7 @@
     "listingGain": "90.00%",
     "currentGain": "294.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE08NZ01012",
     "priceDate": "2026-11-09"
@@ -5093,7 +5515,7 @@
     "currentGain": "-37.6%",
     "stockType": "SME",
     "isin": "INE0WL801011",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5111,7 +5533,7 @@
     "currentGain": "-45.9%",
     "stockType": "SME",
     "isin": "INE0SMY01017",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5128,7 +5550,7 @@
     "listingGain": "90.00%",
     "currentGain": "-20.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0DHF01018",
     "priceDate": "2026-11-09"
@@ -5146,7 +5568,7 @@
     "listingGain": "90.00%",
     "currentGain": "-1.5%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0R4Z01018",
     "priceDate": "2026-11-09"
@@ -5164,7 +5586,7 @@
     "listingGain": "90.00%",
     "currentGain": "149.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0U2501017",
     "priceDate": "2026-11-09"
@@ -5182,7 +5604,7 @@
     "listingGain": "90.00%",
     "currentGain": "9.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0S3H01017",
     "priceDate": "2026-11-09"
@@ -5200,7 +5622,7 @@
     "listingGain": "90.00%",
     "currentGain": "466.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0U2N01013",
     "priceDate": "2026-11-09"
@@ -5218,7 +5640,7 @@
     "listingGain": "90.00%",
     "currentGain": "20.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0TSF01011",
     "priceDate": "2026-11-09"
@@ -5236,7 +5658,7 @@
     "listingGain": "25.00%",
     "currentGain": "-88.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0YAL01017",
     "priceDate": "2026-11-09"
@@ -5254,7 +5676,7 @@
     "listingGain": "90.00%",
     "currentGain": "1147.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0OXY01013",
     "priceDate": "2026-11-09"
@@ -5273,7 +5695,7 @@
     "currentGain": "-78.5%",
     "stockType": "SME",
     "dataIssue": "Current price and gain removed: the saved current price did not match the saved current gain. Needs re-checking from a source.",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0YRN01025",
     "priceDate": "2026-11-09"
@@ -5291,7 +5713,7 @@
     "listingGain": "28.50%",
     "currentGain": "-58.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0LAA01017",
     "priceDate": "2026-11-09"
@@ -5309,7 +5731,7 @@
     "listingGain": "23.80%",
     "currentGain": "-28.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SZ301012",
     "priceDate": "2026-11-09"
@@ -5327,7 +5749,7 @@
     "listingGain": "90.00%",
     "currentGain": "65.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0PCU01012",
     "priceDate": "2026-11-09"
@@ -5345,7 +5767,7 @@
     "listingGain": "85.70%",
     "currentGain": "160.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RFP01011",
     "priceDate": "2026-11-09"
@@ -5363,7 +5785,7 @@
     "listingGain": "90.00%",
     "currentGain": "-33.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0BSN01013",
     "priceDate": "2026-11-09"
@@ -5381,7 +5803,7 @@
     "listingGain": "90.00%",
     "currentGain": "-50.9%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SYV01018",
     "priceDate": "2026-11-09"
@@ -5399,7 +5821,7 @@
     "listingGain": "24.10%",
     "currentGain": "127.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0LQG01010",
     "priceDate": "2026-11-09"
@@ -5417,7 +5839,7 @@
     "listingGain": "90.00%",
     "currentGain": "-78.6%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0R3101011",
     "priceDate": "2026-11-09"
@@ -5435,7 +5857,7 @@
     "listingGain": "16.40%",
     "currentGain": "-60.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0U1T01012",
     "priceDate": "2026-11-09"
@@ -5453,7 +5875,7 @@
     "listingGain": "90.00%",
     "currentGain": "67.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0MNP01016",
     "priceDate": "2026-11-09"
@@ -5472,7 +5894,7 @@
     "currentGain": "-44.3%",
     "stockType": "SME",
     "isin": "INE0QXL01015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-06",
     "priceSource": "NSE/BSE official close"
   },
@@ -5489,7 +5911,7 @@
     "listingGain": "90.00%",
     "currentGain": "191.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SA001017",
     "priceDate": "2026-11-09"
@@ -5507,7 +5929,7 @@
     "listingGain": "90.00%",
     "currentGain": "46.8%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SVY01018",
     "priceDate": "2026-11-09"
@@ -5525,7 +5947,7 @@
     "listingGain": "28.00%",
     "currentGain": "151.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0R0J01010",
     "priceDate": "2026-11-09"
@@ -5543,7 +5965,7 @@
     "listingGain": "73.70%",
     "currentGain": "16.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0T3401029",
     "priceDate": "2026-11-09"
@@ -5561,7 +5983,7 @@
     "listingGain": "90.00%",
     "currentGain": "-72.3%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0RPM01017",
     "priceDate": "2026-11-06"
@@ -5579,7 +6001,7 @@
     "listingGain": "90.00%",
     "currentGain": "1755.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0V9N01017",
     "priceDate": "2026-11-09"
@@ -5597,7 +6019,7 @@
     "listingGain": "90.00%",
     "currentGain": "-56.1%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0P4701011",
     "priceDate": "2026-11-09"
@@ -5615,7 +6037,7 @@
     "listingGain": "90.00%",
     "currentGain": "292.7%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0U9101019",
     "priceDate": "2026-11-09"
@@ -5633,7 +6055,7 @@
     "listingGain": "90.00%",
     "currentGain": "-10.0%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0R8C01018",
     "priceDate": "2026-11-09"
@@ -5665,7 +6087,7 @@
     "listingGain": "90.00%",
     "currentGain": "-11.2%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SUN01013",
     "priceDate": "2026-11-09"
@@ -5683,7 +6105,7 @@
     "listingGain": "287.50%",
     "currentGain": "1610.4%",
     "stockType": "SME",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0SCO01019",
     "priceDate": "2026-11-09"
@@ -5702,7 +6124,7 @@
     "currentGain": "136.3%",
     "stockType": "SME",
     "isin": "INE998U01015",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5731,20 +6153,22 @@
     "isin": "INE1W3F01014",
     "currentPrice": 314.45,
     "currentGain": "99.0%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-11-06",
-        "close": 315.2
+        "close": 315.2,
+        "volume": 2093600
       },
       {
         "date": "2026-11-09",
-        "close": 314.45
+        "close": 314.45,
+        "volume": 396000
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close"
   },
   {
@@ -5772,7 +6196,7 @@
     "isin": "INE1ZSR01011",
     "currentPrice": 220.0,
     "currentGain": "10.0%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close"
   },
@@ -5801,20 +6225,22 @@
     "isin": "INE813R01012",
     "currentPrice": 185.2,
     "currentGain": "54.3%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceDate": "2026-11-09",
     "priceSource": "NSE/BSE official close",
     "priceHistory": [
       {
         "date": "2026-11-06",
-        "close": 168.0
+        "close": 168.0,
+        "volume": 1434000
       },
       {
         "date": "2026-11-09",
-        "close": 185.2
+        "close": 185.2,
+        "volume": 38400
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close"
   },
   {
@@ -5841,33 +6267,38 @@
     "listingPriceBasis": "Groww official listing price",
     "currentPrice": 237.45,
     "currentGain": "58.3%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0ZCQ01019",
     "priceDate": "2026-11-09",
     "priceHistory": [
       {
         "date": "2026-11-03",
-        "close": 268.8
+        "close": 268.8,
+        "volume": 87074586
       },
       {
         "date": "2026-11-04",
-        "close": 255.94
+        "close": 255.94,
+        "volume": 49144138
       },
       {
         "date": "2026-11-05",
-        "close": 250.2
+        "close": 250.2,
+        "volume": 23773349
       },
       {
         "date": "2026-11-06",
-        "close": 235.79
+        "close": 235.79,
+        "volume": 9580692
       },
       {
         "date": "2026-11-09",
-        "close": 237.45
+        "close": 237.45,
+        "volume": 4715427
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close"
   },
   {
@@ -5894,7 +6325,7 @@
     "listingPriceBasis": "Groww official listing price",
     "currentPrice": 1412.7,
     "currentGain": "26.2%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0BJO01010",
     "priceDate": "2026-11-09"
@@ -5920,61 +6351,73 @@
     "listingPriceBasis": "Groww official listing price",
     "currentPrice": 1513.1,
     "currentGain": "116.2%",
-    "priceUpdatedAt": "2026-11-10T09:13+05:30",
+    "priceUpdatedAt": "2026-11-10T09:54+05:30",
     "priceSource": "NSE/BSE official close",
     "isin": "INE0LDG01026",
     "priceDate": "2026-11-09",
     "priceHistory": [
       {
         "date": "2026-10-23",
-        "close": 1133.8
+        "close": 1133.8,
+        "volume": 22602462
       },
       {
         "date": "2026-10-26",
-        "close": 1212.85
+        "close": 1212.85,
+        "volume": 10114539
       },
       {
         "date": "2026-10-27",
-        "close": 1284.2
+        "close": 1284.2,
+        "volume": 6555133
       },
       {
         "date": "2026-10-28",
-        "close": 1219.5
+        "close": 1219.5,
+        "volume": 4874151
       },
       {
         "date": "2026-10-29",
-        "close": 1209.15
+        "close": 1209.15,
+        "volume": 2229601
       },
       {
         "date": "2026-10-30",
-        "close": 1304.4
+        "close": 1304.4,
+        "volume": 10268585
       },
       {
         "date": "2026-11-02",
-        "close": 1267.0
+        "close": 1267.0,
+        "volume": 2029923
       },
       {
         "date": "2026-11-03",
-        "close": 1230.4
+        "close": 1230.4,
+        "volume": 702726
       },
       {
         "date": "2026-11-04",
-        "close": 1275.3
+        "close": 1275.3,
+        "volume": 1056575
       },
       {
         "date": "2026-11-05",
-        "close": 1530.3
+        "close": 1530.3,
+        "volume": 11733456
       },
       {
         "date": "2026-11-06",
-        "close": 1472.4
+        "close": 1472.4,
+        "volume": 15700212
       },
       {
         "date": "2026-11-09",
-        "close": 1513.1
+        "close": 1513.1,
+        "volume": 6557155
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-10T03:43:58+00:00",
+    "priceHistoryUpdatedAt": "2026-11-10T04:28:02+00:00",
     "priceHistorySource": "NSE/BSE official close"
   }
 ]
