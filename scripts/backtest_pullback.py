@@ -32,6 +32,7 @@ HORIZONS = (20, 60, 120, 250)
 
 
 def build_history(isins):
+    OUT.mkdir(parents=True, exist_ok=True)
     hist = json.loads(HIST.read_text()) if HIST.exists() else {"days": {}, "holidays": []}
     end = date.today() - timedelta(days=1)
     d, fetched = START, 0
