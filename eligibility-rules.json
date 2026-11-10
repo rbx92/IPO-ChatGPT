@@ -18,6 +18,14 @@
     "listing_gain_min_percent": 25,
     "max_days_since_listing": 60,
     "min_fall_percent": 15,
-    "max_fall_percent": 30
+    "max_fall_percent": 30,
+    "require_above_issue_price": true
+  },
+  "anchor_lock_in": {
+    "first_days": 30,
+    "first_share_percent": 50,
+    "second_days": 90,
+    "show_days_before": 10,
+    "show_days_after": 5
   }
 }

@@ -43,6 +43,12 @@ listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain 
 
 A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 60 days, and the fall from its highest close since listing to the latest close is 15-30%. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
 
+## Pullback extras (since 10 Nov 2026)
+
+- **Never below issue price:** no pullback signal if the latest close is under the IPO issue price (`require_above_issue_price`).
+- **Volume:** the pullback message adds whether the fall came on heavy selling (median volume since the peak at least 1.5x the median before it, ignoring the first 3 listing days), light volume (0.7x or less), or normal volume.
+- **Anchor lock-in:** listed cards show when the anchor lock-in ends (50% after 30 days, the rest after 90 days from allotment; allotment taken as 2 trading days before listing when not known), from 10 days before to 5 days after (`anchor_lock_in`).
+
 ## Price sources (since 9 Nov 2026)
 
 - **Main source, all stocks:** the official NSE and BSE closing-price files (bhavcopy), via `scripts/update_prices_official.py`. Stocks are identified by ISIN (`isin_map.json`, editable by hand). Closes for the last ~100 days are cached in `official_closes.json` and feed the pullback signal.

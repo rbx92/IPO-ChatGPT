@@ -31,7 +31,7 @@ from update_ipo_lifecycle import parse_date  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "ipos.json"
 ISIN_MAP = ROOT / "isin_map.json"
-CLOSES = ROOT / "official_closes.json"
+CLOSES = ROOT / "official_closes.json"  # {"YYYY-MM-DD": {isin: [close, volume]}}
 IST = ZoneInfo("Asia/Kolkata")
 KEEP_DAYS = ELIGIBILITY_CONFIG["pullback_signal"]["max_days_since_listing"] + 40
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -53,7 +53,8 @@ def fetch_day(day):
             text = z.read(z.namelist()[0]).decode("utf-8", "replace")
         for r in csv.DictReader(io.StringIO(text)):
             if r.get("ClsPric") and r.get("ISIN"):
-                rows.append((r["TckrSymb"], r["ISIN"], r.get("FinInstrmNm", ""), float(r["ClsPric"]), "NSE"))
+                rows.append((r["TckrSymb"], r["ISIN"], r.get("FinInstrmNm", ""), float(r["ClsPric"]), "NSE",
+                             int(float(r.get("TtlTradgVol") or 0))))
     time.sleep(1)
     bse = requests.get(f"https://www.bseindia.com/download/BhavCopy/Equity/"
                        f"BhavCopy_BSE_CM_0_0_0_{day:%Y%m%d}_F_0000.CSV",
@@ -61,18 +62,21 @@ def fetch_day(day):
     if bse.status_code == 200 and b"TckrSymb" in bse.content[:600]:
         for r in csv.DictReader(io.StringIO(bse.content.decode("utf-8", "replace"))):
             if r.get("ClsPric") and r.get("ISIN"):
-                rows.append((r["TckrSymb"], r["ISIN"], r.get("FinInstrmNm", ""), float(r["ClsPric"]), "BSE"))
+                rows.append((r["TckrSymb"], r["ISIN"], r.get("FinInstrmNm", ""), float(r["ClsPric"]), "BSE",
+                             int(float(r.get("TtlTradgVol") or 0))))
     time.sleep(1)
     return rows or None
 
 
 def by_isin(day_rows, keep=None):
-    """{isin: close}, preferring the NSE close when a stock trades on both exchanges."""
-    out = {}
-    for _, isin, _, close, ex in sorted(day_rows, key=lambda r: r[4] != "NSE"):
-        if (keep is None or isin in keep) and isin not in out:
-            out[isin] = close
-    return out
+    """{isin: [close, volume]}: NSE close preferred when on both exchanges; volume is NSE + BSE."""
+    out, vol = {}, {}
+    for _, isin, _, close, ex, volume in sorted(day_rows, key=lambda r: r[4] != "NSE"):
+        if keep is not None and isin not in keep:
+            continue
+        vol[isin] = vol.get(isin, 0) + volume
+        out.setdefault(isin, close)
+    return {i: [c, vol[i]] for i, c in out.items()}
 
 
 def plausible(close, row):
@@ -206,7 +210,7 @@ def main():
         traded = next((d for d in reversed(days) if isin in closes[d]), None)
         if not traded:
             continue
-        close = closes[traded][isin]
+        close = closes[traded][isin][0]
         issue = float(row.get("issuePrice") or 0)
         row["isin"] = isin
         row["currentPrice"] = round(close, 2)
@@ -216,7 +220,7 @@ def main():
         row["priceSource"] = "NSE/BSE official close"
         if is_candidate(row, now.date()):
             listed = parse_date(str(row.get("listingDate") or "").strip())
-            row["priceHistory"] = [{"date": d, "close": closes[d][isin]} for d in days
+            row["priceHistory"] = [{"date": d, "close": closes[d][isin][0], "volume": closes[d][isin][1]} for d in days
                                    if isin in closes[d] and (not listed or d >= listed.isoformat())]
             row["priceHistoryUpdatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
             row["priceHistorySource"] = "NSE/BSE official close"
