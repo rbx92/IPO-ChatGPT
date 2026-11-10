@@ -46,7 +46,7 @@ A listed card shows "Stock fell more than X% in the last N trading days" when QI
 ## Pullback extras (since 10 Nov 2026)
 
 - **Never below issue price:** no pullback signal if the latest close is under the IPO issue price (`require_above_issue_price`).
-- **Volume:** the pullback message adds whether the fall came on heavy selling (median volume since the peak at least 1.5x the median before it, ignoring the first 3 listing days), light volume (0.7x or less), or normal volume.
+- **Volume:** the pullback message adds the share of trading volume since the peak that happened on down days: 65% or more is heavy selling, 45% or less is light selling, otherwise mixed.
 - **Anchor lock-in:** listed cards show when the anchor lock-in ends (50% after 30 days, the rest after 90 days from allotment; allotment taken as 2 trading days before listing when not known), from 10 days before to 5 days after (`anchor_lock_in`).
 
 ## Price sources (since 9 Nov 2026)
