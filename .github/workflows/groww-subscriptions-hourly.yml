@@ -40,13 +40,17 @@ jobs:
         run: python pipeline/groww/subscriptions.py
       - name: Commit refreshed feed
         run: |
-          if git diff --quiet -- live-ipo-data.json; then
-            echo "Groww feed unchanged."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # If another job saved the feed meanwhile, start again from the latest
+          # version and redo the refresh instead of failing on a merge conflict.
+          for attempt in 1 2 3; do
+            if git diff --quiet -- live-ipo-data.json; then echo "Groww feed unchanged."; exit 0; fi
             git add live-ipo-data.json
-            git commit -m "Refresh Groww IPO feed"
-            git pull --rebase origin main
-            git push
-          fi
+            git commit -q -m "Refresh Groww IPO feed"
+            if git pull -q --rebase origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            git fetch -q origin main && git reset -q --hard origin/main
+            python pipeline/groww/subscriptions.py
+          done
+          exit 1
