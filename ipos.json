@@ -100,12 +100,16 @@
         "close": 82.33
       },
       {
+        "date": "2026-11-08",
+        "close": 84.77
+      },
+      {
         "date": "2026-11-09",
         "close": 85.44
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:26:24+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "symbol": "EIMS",
     "isin": "INE0YUW01020",
     "priceDate": "2026-11-09"
@@ -215,12 +219,16 @@
         "close": 477.95
       },
       {
+        "date": "2026-11-08",
+        "close": 501.8
+      },
+      {
         "date": "2026-11-09",
         "close": 526.75
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:27:25+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "symbol": "VANS",
     "isin": "INE2SO401011",
     "priceDate": "2026-11-09"
@@ -361,12 +369,16 @@
         "close": 93.5
       },
       {
+        "date": "2026-11-08",
+        "close": 100.02
+      },
+      {
         "date": "2026-11-09",
         "close": 105.13
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:28:26+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "symbol": "ROOPA",
     "isin": "INE2BTZ01011",
     "priceDate": "2026-11-09"
@@ -500,12 +512,16 @@
         "close": 165.25
       },
       {
+        "date": "2026-11-08",
+        "close": 165.0
+      },
+      {
         "date": "2026-11-09",
         "close": 164.8
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:29:27+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "symbol": "ROBOKIDZ",
     "isin": "INE1W8R01018",
     "priceDate": "2026-11-09"
@@ -647,12 +663,16 @@
         "close": 233.3
       },
       {
+        "date": "2026-11-08",
+        "close": 239.8
+      },
+      {
         "date": "2026-11-09",
         "close": 237.6
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:30:27+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "isin": "INE0GAN01010",
     "priceDate": "2026-11-09"
   },
@@ -862,12 +882,16 @@
         "close": 136.45
       },
       {
+        "date": "2026-11-08",
+        "close": 137.1
+      },
+      {
         "date": "2026-11-09",
         "close": 138.0
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close",
+    "priceHistoryUpdatedAt": "2026-11-10T03:31:28+00:00",
+    "priceHistorySource": "Screener.in daily close",
     "symbol": "QUALIANCE",
     "isin": "INE1XJ401012",
     "priceDate": "2026-11-09"
@@ -5810,12 +5834,16 @@
         "close": 168.0
       },
       {
+        "date": "2026-11-08",
+        "close": 176.4
+      },
+      {
         "date": "2026-11-09",
         "close": 185.2
       }
     ],
-    "priceHistoryUpdatedAt": "2026-11-09T23:32:48+00:00",
-    "priceHistorySource": "NSE/BSE official close"
+    "priceHistoryUpdatedAt": "2026-11-10T03:34:31+00:00",
+    "priceHistorySource": "Screener.in daily close"
   },
   {
     "companyName": "BLS Polymers",
