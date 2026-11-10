@@ -41,7 +41,7 @@ listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain 
 
 ## Post-listing pullback signal
 
-A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 60 days, and the fall from its highest close since listing to the latest close is 15-30%. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
+A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 100 days, and the fall from its highest close so far (the high moves up with every new high) to the latest close is 15-30%. A stock can signal again after each new high. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
 
 ## Pullback extras (since 10 Nov 2026)
 
