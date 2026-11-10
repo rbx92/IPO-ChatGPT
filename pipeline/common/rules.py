@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-CONFIG_PATH = Path(__file__).resolve().parents[1] / "eligibility-rules.json"
+CONFIG_PATH = Path(__file__).resolve().parents[2] / "eligibility-rules.json"
 with CONFIG_PATH.open(encoding="utf-8") as config_file:
     ELIGIBILITY_CONFIG = json.load(config_file)
 

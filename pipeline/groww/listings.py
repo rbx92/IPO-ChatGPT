@@ -18,15 +18,11 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import normalized_name, qualifies  # noqa: E402
-from update_ipo_lifecycle import (  # noqa: E402
-    CMP_KEYS, is_listed_record, lifecycle_stage, number, parse_date,
-)
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.helpers import CMP_KEYS, is_listed_record, lifecycle_stage, number, parse_date, save_ipos  # noqa: E402
+from common.paths import FEED, IPOS as DATA  # noqa: E402
+from common.rules import normalized_name, qualifies  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-FEED = ROOT / "live-ipo-data.json"
-DATA = ROOT / "ipos.json"
 IST = ZoneInfo("Asia/Kolkata")
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                          "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
@@ -59,10 +55,7 @@ def listed_on(item):
 def save(feed, rows):
     feed["updatedAt"] = datetime.now().astimezone().isoformat(timespec="seconds")
     FEED.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    DATA.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "data.js").write_text(
-        "window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n",
-        encoding="utf-8")
+    save_ipos(rows)
 
 
 def main():

@@ -1,7 +1,7 @@
 """Refresh the live Apply/Waiting IPO feed from Groww subscription tables.
 
 This script updates subscription and lifecycle feed data only. CMP updates are
-handled separately by scripts/update_prices.py using Screener.in.
+handled separately by the nightly price steps in pipeline/prices/.
 """
 
 import json
@@ -20,7 +20,7 @@ import requests
 
 IPO_URL = "https://groww.in/ipo"
 SUBSCRIPTION_URL = "https://groww.in/ipo/subscription"
-OUT = Path("live-ipo-data.json")
+OUT = Path(__file__).resolve().parents[2] / "live-ipo-data.json"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 

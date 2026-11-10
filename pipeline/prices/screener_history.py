@@ -18,16 +18,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import ELIGIBILITY_CONFIG, multiple_value, percent_value  # noqa: E402
-from update_ipo_lifecycle import (  # noqa: E402
-    BASE, chart_identity, get, is_screener_rate_limit, number, parse_date, resolve,
-)
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.helpers import number, parse_date, save_ipos  # noqa: E402
+from common.paths import IPOS as DATA, SCREENER_IDS as IDS, SCREENER_MAP as MAP  # noqa: E402
+from common.rules import ELIGIBILITY_CONFIG, multiple_value, percent_value  # noqa: E402
+from prices.screener_client import BASE, chart_identity, get, is_rate_limit as is_screener_rate_limit, resolve  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "ipos.json"
-MAP = ROOT / "screener_map.json"
-IDS = ROOT / "screener_chart_ids.json"
 RULE = ELIGIBILITY_CONFIG["pullback_signal"]
 HISTORY_KEYS = ("priceHistory", "priceHistoryUpdatedAt", "priceHistorySource")
 
@@ -64,10 +60,7 @@ def closes_since(company_id, listed):
 
 
 def save(rows, paths, ids):
-    DATA.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "data.js").write_text(
-        "window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n",
-        encoding="utf-8")
+    save_ipos(rows)
     MAP.write_text(json.dumps(paths, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     IDS.write_text(json.dumps(ids, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 

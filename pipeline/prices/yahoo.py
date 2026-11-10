@@ -17,13 +17,12 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import normalized_name, qualifies  # noqa: E402
-from update_pullbacks import is_candidate  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.helpers import save_ipos  # noqa: E402
+from common.paths import IPOS as DATA, YAHOO_SYMBOLS as CACHE  # noqa: E402
+from common.rules import normalized_name, qualifies  # noqa: E402
+from prices.screener_history import is_candidate  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "ipos.json"
-CACHE = ROOT / "yahoo_symbols.json"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                          "(KHTML, like Gecko) Chrome/124 Safari/537.36"}
 IST = ZoneInfo("Asia/Kolkata")
@@ -67,10 +66,7 @@ def chart(ticker):
 
 
 def save(rows, cache):
-    DATA.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "data.js").write_text(
-        "window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n",
-        encoding="utf-8")
+    save_ipos(rows)
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 

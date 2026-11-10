@@ -19,11 +19,9 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import normalized_name, qualifies  # noqa: E402
-
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "reports"
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.paths import IPOS, ISIN_MAP, REPORTS as OUT, YAHOO_SYMBOLS  # noqa: E402
+from common.rules import normalized_name, qualifies  # noqa: E402
 IST = ZoneInfo("Asia/Kolkata")
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                    "Chrome/124 Safari/537.36", "Accept": "*/*", "Referer": "https://www.nseindia.com/"}
@@ -91,14 +89,14 @@ def main():
 
     n_sym, n_name = index(nse_rows, "NSE")
     b_sym, b_name = index(bse_rows, "BSE")
-    yahoo = json.loads((ROOT / "yahoo_symbols.json").read_text()) if (ROOT / "yahoo_symbols.json").exists() else {}
+    yahoo = json.loads(YAHOO_SYMBOLS.read_text()) if YAHOO_SYMBOLS.exists() else {}
 
     isin_close = {}
     for rows_, ex in ((nse_rows, "NSE"), (bse_rows, "BSE")):
         for r in rows_ or []:
             if r.get("ISIN") and r.get("ClsPric") and r["ISIN"] not in isin_close:
                 isin_close[r["ISIN"]] = (ex, r.get("TckrSymb"), r.get("FinInstrmNm", ""), float(r["ClsPric"]), r.get("SctySrs"))
-    isin_map = json.loads((ROOT / "isin_map.json").read_text()) if (ROOT / "isin_map.json").exists() else {}
+    isin_map = json.loads(ISIN_MAP.read_text()) if ISIN_MAP.exists() else {}
 
     def official(row):
         isin = row.get("isin") or isin_map.get(row["companyName"])
@@ -116,7 +114,7 @@ def main():
                     return item
         return None
 
-    rows = [r for r in json.loads((ROOT / "ipos.json").read_text()) if qualifies(r)]
+    rows = [r for r in json.loads(IPOS.read_text()) if qualifies(r)]
     results = []
     for r in rows:
         off = official(r)

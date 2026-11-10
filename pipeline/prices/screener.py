@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""Screener.in CMP updater for eligible Mainboard and SME IPOs.
+"""Backup prices from Screener.in for stocks the official files and Yahoo missed.
 
-Uses exact company-name resolution, saves the Screener path map, processes small
-batches with delays, and preserves the complete historical IPO dataset.
+Exact company-name matching, saved page map (data/screener_map.json), small
+batches with a delay between requests, and a hard stop on HTTP 401/403/429.
 """
 from __future__ import annotations
 import argparse, json, re, sys, time
 
-try:
-    from .rules import (ELIGIBILITY_CONFIG, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
-except ImportError:  # Supports: python scripts/update_prices.py
-    from rules import (ELIGIBILITY_CONFIG, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name)
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -18,10 +14,10 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote_plus
 from urllib.request import Request, urlopen
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = ROOT / "ipos.json"
-DATA_JS_PATH = ROOT / "data.js"
-MAP_PATH = ROOT / "screener_map.json"
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.paths import DATA_JS as DATA_JS_PATH, IPOS as DATA_PATH, SCREENER_MAP as MAP_PATH  # noqa: E402
+from common.rules import ELIGIBILITY_CONFIG, LISTING_GAIN_MIN_PERCENT, QIB_MIN_MULTIPLE, qualifies, normalized_name  # noqa: E402
+
 BASE = "https://www.screener.in"
 USER_AGENT = "IPO-Lens-price-refresh/1.0"
 TIMEOUT = 20

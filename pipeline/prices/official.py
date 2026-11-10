@@ -24,14 +24,11 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import ELIGIBILITY_CONFIG, normalized_name, qualifies  # noqa: E402
-from update_ipo_lifecycle import parse_date  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.helpers import parse_date, save_ipos  # noqa: E402
+from common.paths import IPOS as DATA, ISIN_MAP, OFFICIAL_CLOSES as CLOSES, YAHOO_SYMBOLS  # noqa: E402
+from common.rules import ELIGIBILITY_CONFIG, normalized_name, qualifies  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "ipos.json"
-ISIN_MAP = ROOT / "isin_map.json"
-CLOSES = ROOT / "official_closes.json"  # {"YYYY-MM-DD": {isin: [close, volume]}}
 IST = ZoneInfo("Asia/Kolkata")
 KEEP_DAYS = ELIGIBILITY_CONFIG["pullback_signal"]["max_days_since_listing"] + 40
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -128,7 +125,7 @@ def main():
     rows = load(DATA, [])
     isin_map = load(ISIN_MAP, {})
     closes = load(CLOSES, {})          # {"YYYY-MM-DD": {isin: close}}
-    yahoo = load(ROOT / "yahoo_symbols.json", {})
+    yahoo = load(YAHOO_SYMBOLS, {})
     targets = [r for r in rows if qualifies(r)]
 
     # Trading days to have: weekdays in the window, up to today (today only after 18:30 IST).
@@ -200,7 +197,7 @@ def main():
     stamp = now.isoformat(timespec="minutes")
     days = sorted(k for k in closes if not k.startswith("_"))
     updated = 0
-    from update_pullbacks import is_candidate  # noqa: E402
+    from prices.screener_history import is_candidate  # noqa: E402
     for row in targets:
         isin = isin_map.get(row["companyName"])
         if not isin:
@@ -227,9 +224,7 @@ def main():
         updated += 1
 
     closes["_holidays"] = sorted(set(closes.get("_holidays", [])))[-30:]
-    DATA.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "data.js").write_text(
-        "window.IPO_DATA = " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+    save_ipos(rows)
     ISIN_MAP.write_text(json.dumps(isin_map, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     CLOSES.write_text(json.dumps(closes, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
     print(f"Official close date {day_key}: priced {updated} of {len(targets)} qualifying stocks. "

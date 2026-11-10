@@ -1,32 +1,63 @@
-# IPO Lens — Indian IPO Dashboard
+# IPO Lens: Indian IPO dashboard
 
-Static dashboard for GitHub Pages. The browser loads historical records from `data.js` and merges in the latest live IPO feed from `live-ipo-data.json`.
+Version 2.0.0 (see `CHANGELOG.md`). Live at https://rbx92.github.io/IPO-ChatGPT/
 
-## Dashboard behaviour
+A static dashboard on GitHub Pages. GitHub Actions update the data; the page
+refreshes itself every 15 minutes.
 
-- Separate sections for Open IPOs, Waiting for Listing, and Listed IPOs.
-- Open IPOs: show every IPO currently accepting applications, without a QIB or sector filter. Pre-Apply records are hidden.
-- Waiting for Listing: require QIB subscription of at least 10x, regardless of sector.
-- Listed IPOs: require QIB subscription of at least 10x and listing gain of at least 15%, regardless of sector. NACDAC Infrastructure Ltd. remains explicitly excluded.
-- Current gain is displayed and can be filtered/sorted, but it is not an eligibility rule.
-- Only qualifying IPOs are kept in the historical dataset (`ipos.json` / `data.js`). Records that fail the Listed rules, including SME IPOs with no QIB category, were deleted on 24 Oct 2026; earlier versions remain in Git history. Financial-sector, pharma and biotech companies are allowed; NACDAC Infrastructure Ltd. remains explicitly excluded.
-- Every card that passes its stage's eligibility rules gets the animated rainbow glow (a static glow when reduced motion is on).
-- The dashboard includes the subscription breakdown, listing/current gain, shortlist, and slider-based filters.
+## What it shows
 
-The authoritative numeric thresholds and normalized company exclusions are in `eligibility-rules.json`; `scripts/rules.py` reads that configuration. `IPO_FILTER_RULES.md` documents the lifecycle behavior and intent.
+- **Open IPOs:** every IPO accepting applications.
+- **Waiting for Listing:** closed IPOs with QIB subscription of at least 10x.
+- **Listed IPOs:** QIB of at least 10x and listing gain of at least 15%, with
+  listing price, current price (CMP) and gains.
+- **Pullback signal** on recently listed strong IPOs, with selling-volume
+  context, and **anchor lock-in** dates.
+- **Rainbow glow** on open IPOs with QIB of at least 10x and on stocks showing a
+  pullback.
 
-## Data sources and automated jobs
+All thresholds live in `eligibility-rules.json`. `IPO_FILTER_RULES.md`
+explains each rule.
 
-- **Historical IPO data:** `ipos.json`, mirrored into `data.js` for the static browser dashboard.
-- **Live IPO feed:** Groww subscription data is saved in `live-ipo-data.json`.
-- **Current market price (CMP):** The existing updater uses Screener.in for both SME and Mainboard IPOs, with exact company-name matching and saved paths in `screener_map.json`. Automated CMP updates run daily in batches of 9 with a 60-second delay. Screener.in written permission was not obtained; the owner has chosen to scrape. The updater stops on any HTTP 401, 403 or 429 and does not retry or bypass it.
-- `.github/workflows/refresh-groww-ipo.yml` refreshes the live feed hourly. Its expired-application checks use India Standard Time (IST). It also runs on pushes that change `scrape_groww_ipo.py` or that workflow file.
-- `.github/workflows/ipo-lifecycle.yml` runs on weekdays. Its lifecycle updater, with a 60-second delay between Screener requests, can advance records through Apply, Waiting for Listing, and Listed; date-based decisions use India Standard Time (IST).
-- `.github/workflows/daily-price-update.yml` runs on weekdays. It updates eligible IPO CMP in batches of 9 with a 60-second delay and writes price fields only.
-- The Groww feed refresh runs hourly. The two Screener-dependent jobs above run on weekdays. Stop them if Screener returns HTTP 401, 403 or 429.
+## Layout
 
-The Screener CMP updater uses exact company-name matching and saved Screener paths, writes current-price fields only and stops on throttling or parse errors while retaining completed batches. The lifecycle updater may use Screener's first available daily close as a clearly labelled listing-price proxy. It also stops further network lookups on throttling and does not demote records already marked Listed when a lookup fails.
+```
+index.html                 the dashboard
+data.js, ipos.json         listed IPOs that pass the rules (data.js is loaded by the page)
+live-ipo-data.json         open, waiting and recently listed IPOs from Groww
+eligibility-rules.json     every threshold
 
-## Local preview
+pipeline/
+  common/    paths.py (every file location), rules.py, helpers.py
+  groww/     subscriptions.py  hourly: Groww subscription figures
+             listings.py       nightly: Apply -> Waiting -> Listed from Groww
+  prices/    official.py       nightly: official NSE/BSE closes (main source)
+             yahoo.py          backup for mainboard
+             screener.py       backup for anything still unpriced
+             screener_history.py  backup daily closes for SME pullbacks
+             screener_client.py   shared Screener access
+  tools/     verify_prices.py  compare saved prices with official closes
+             backtest_pullback.py  test the pullback rule on past IPOs
+             commit_data.sh    save data changes from the jobs
 
-Open `index.html` in a browser. No build step is required.
+data/        isin_map.json (edit to fix a match), official_closes.json (cache),
+             screener_map.json, screener_chart_ids.json, yahoo_symbols.json
+reports/     price checks and backtest results
+```
+
+## Automated jobs (`.github/workflows/`)
+
+| Workflow | When | What |
+|---|---|---|
+| `groww-subscriptions-hourly.yml` | Hourly; every 15 then 5 minutes on IPO closing days | Groww subscription data |
+| `nightly-data-update.yml` | Weekdays 19:40 IST | Listings, official prices, then Yahoo and Screener backups |
+| `check-prices-manual.yml` | By hand | Saved prices vs official closes, into `reports/` |
+| `backtest-pullback-manual.yml` | By hand | Pullback rule backtest, into `reports/backtest/` |
+
+GitHub often starts scheduled jobs late. Screener.in is used without written
+permission; its steps stop immediately on HTTP 401, 403 or 429.
+
+## Run locally
+
+Open `index.html` in a browser. Scripts run from the repository root, for
+example `python pipeline/prices/official.py`.

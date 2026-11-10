@@ -19,13 +19,13 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rules import multiple_value, percent_value, qualifies  # noqa: E402
-from update_ipo_lifecycle import parse_date  # noqa: E402
-from update_prices_official import by_isin, fetch_day  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # pipeline/
+from common.helpers import parse_date  # noqa: E402
+from common.paths import IPOS, ISIN_MAP, REPORTS  # noqa: E402
+from common.rules import multiple_value, percent_value, qualifies  # noqa: E402
+from prices.official import by_isin, fetch_day  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "reports" / "backtest"
+OUT = REPORTS / "backtest"
 HIST = OUT / "history.json"
 START = date(2024, 7, 8)
 HORIZONS = (20, 60, 120, 250)
@@ -108,8 +108,8 @@ def stats(vals):
 
 
 def main():
-    rows = [r for r in json.loads((ROOT / "ipos.json").read_text()) if qualifies(r)]
-    isin_map = json.loads((ROOT / "isin_map.json").read_text())
+    rows = [r for r in json.loads(IPOS.read_text()) if qualifies(r)]
+    isin_map = json.loads(ISIN_MAP.read_text())
     isins = {isin_map[r["companyName"]] for r in rows if r["companyName"] in isin_map}
     hist = build_history(isins)
 

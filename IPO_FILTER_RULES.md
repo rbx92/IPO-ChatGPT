@@ -1,6 +1,6 @@
 # IPO Lens Dashboard Inclusion Rules
 
-This document explains the dashboard's lifecycle-stage behavior. The authoritative numeric thresholds, company-name exclusions, and suffix normalization list are maintained in `eligibility-rules.json` and loaded by `scripts/rules.py`; do not duplicate those values here or in application code. Apply the rules to existing and newly discovered IPOs at display/update time. `ipos.json` and `data.js` hold only IPOs that pass the Listed rules; non-qualifying records were deleted on 24 Oct 2026 (recoverable from Git history).
+This document explains the dashboard's lifecycle-stage behavior. The authoritative numeric thresholds, company-name exclusions, and suffix normalization list are maintained in `eligibility-rules.json` and loaded by `pipeline/common/rules.py`; do not duplicate those values here or in application code. Apply the rules to existing and newly discovered IPOs at display/update time. `ipos.json` and `data.js` hold only IPOs that pass the Listed rules; non-qualifying records were deleted on 24 Oct 2026 (recoverable from Git history).
 
 ## Inclusion criteria
 
@@ -41,7 +41,7 @@ listed_ipo = valid_qib AND (qib >= 10) AND valid_listing_gain AND (listing_gain 
 
 ## Post-listing pullback signal
 
-A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 100 days, and the fall from its highest close so far (the high moves up with every new high) to the latest close is 15-30%. A stock can signal again after each new high. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from Screener via `scripts/update_pullbacks.py` (weekdays 22:07 IST, 60s between requests) and are kept only while a stock can still show the signal.
+A listed card shows "Stock fell more than X% in the last N trading days" when QIB >= 50x, listing gain >= 25%, it listed within the last 100 days, and the fall from its highest close so far (the high moves up with every new high) to the latest close is 15-30%. A stock can signal again after each new high. N is trading days since that peak. Thresholds live under `pullback_signal` in `eligibility-rules.json`. Daily closes come from the official NSE/BSE files (`pipeline/prices/official.py`), with Screener as a backup for SME (`pipeline/prices/screener_history.py`), and are kept only while a stock can still show the signal.
 
 ## Pullback extras (since 10 Nov 2026)
 
@@ -51,10 +51,10 @@ A listed card shows "Stock fell more than X% in the last N trading days" when QI
 
 ## Price sources (since 9 Nov 2026)
 
-- **Main source, all stocks:** the official NSE and BSE closing-price files (bhavcopy), via `scripts/update_prices_official.py`. Stocks are identified by ISIN (`isin_map.json`, editable by hand). Closes for the last ~100 days are cached in `official_closes.json` and feed the pullback signal.
-- **Backups, only for stocks not priced from the official files that day:** Yahoo Finance for mainboard (`update_prices_yahoo.py`), then Screener.in for anything left (`update_prices.py --stock-type SME`, 60 s between requests) and for SME pullback history (`update_pullbacks.py --stock-type SME`).
-- All run in order in one nightly workflow, `daily-data-update.yml`, at 20:00 IST on weekdays.
-- `verify-prices.yml` (manual) compares saved prices with the official closes for any day.
+- **Main source, all stocks:** the official NSE and BSE closing-price files (bhavcopy), via `pipeline/prices/official.py`. Stocks are identified by ISIN (`data/isin_map.json`, editable by hand). Closes and volumes for the last ~140 days are cached in `data/official_closes.json` and feed the pullback signal.
+- **Backups, only for stocks not priced from the official files that day:** Yahoo Finance for mainboard (`pipeline/prices/yahoo.py`), then Screener.in for anything left (`pipeline/prices/screener.py --stock-type SME`, 60 s between requests) and for SME pullback history (`pipeline/prices/screener_history.py --stock-type SME`).
+- All run in order in one nightly workflow, `nightly-data-update.yml`, at 19:40 IST on weekdays.
+- `check-prices-manual.yml` (manual) compares saved prices with the official closes for any day.
 
 ## Current archive count (2026-10-24)
 

@@ -1,4 +1,4 @@
-name: Daily data update (listings, prices, pullbacks)
+name: Nightly data update (listings, prices, pullbacks)
 
 # One job, run in order, so no step can be cancelled while queued behind another:
 #   1. Listings from Groww (one request)
@@ -35,25 +35,25 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - name: 1. Listings from Groww
-        run: python scripts/update_lifecycle_groww.py
-      - run: "bash scripts/commit_data.sh 'chore: advance IPO listings from Groww'"
+        run: python pipeline/groww/listings.py
+      - run: "bash pipeline/tools/commit_data.sh 'chore: advance IPO listings from Groww'"
       - name: 2. Official NSE/BSE closing prices
         if: always()
-        run: python scripts/update_prices_official.py
+        run: python pipeline/prices/official.py
       - if: always()
-        run: "bash scripts/commit_data.sh 'chore: refresh prices from official NSE/BSE closes'"
+        run: "bash pipeline/tools/commit_data.sh 'chore: refresh prices from official NSE/BSE closes'"
       - name: 3. Backup - mainboard prices from Yahoo
         if: always()
-        run: python scripts/update_prices_yahoo.py
+        run: python pipeline/prices/yahoo.py
       - if: always()
-        run: "bash scripts/commit_data.sh 'chore: refresh mainboard CMP from Yahoo'"
+        run: "bash pipeline/tools/commit_data.sh 'chore: refresh mainboard CMP from Yahoo'"
       - name: 4. Backup - remaining prices from Screener
         if: always()
-        run: python scripts/update_prices.py --stock-type SME --batch-size 9 --delay 60
+        run: python pipeline/prices/screener.py --stock-type SME --batch-size 9 --delay 60
       - if: always()
-        run: "bash scripts/commit_data.sh 'chore: refresh SME CMP from Screener'"
+        run: "bash pipeline/tools/commit_data.sh 'chore: refresh SME CMP from Screener'"
       - name: 5. Backup - SME pullback closes from Screener
         if: always()
-        run: python scripts/update_pullbacks.py --stock-type SME --delay 60
+        run: python pipeline/prices/screener_history.py --stock-type SME --delay 60
       - if: always()
-        run: "bash scripts/commit_data.sh 'chore: refresh SME price history from Screener'"
+        run: "bash pipeline/tools/commit_data.sh 'chore: refresh SME price history from Screener'"

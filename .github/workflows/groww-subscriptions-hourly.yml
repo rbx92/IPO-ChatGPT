@@ -1,4 +1,4 @@
-name: Refresh Groww IPO feed
+name: Groww IPO feed (hourly)
 
 on:
   workflow_dispatch:
@@ -14,8 +14,8 @@ on:
     - cron: "0,5,10,15,20,25 11 * * 1-5"
   push:
     paths:
-      - "scrape_groww_ipo.py"
-      - ".github/workflows/refresh-groww-ipo.yml"
+      - "pipeline/groww/subscriptions.py"
+      - ".github/workflows/groww-subscriptions-hourly.yml"
 
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
       - name: Install scraper dependencies
         run: python -m pip install --upgrade requests pandas lxml
       - name: Scrape open and upcoming IPOs from Groww
-        run: python scrape_groww_ipo.py
+        run: python pipeline/groww/subscriptions.py
       - name: Commit refreshed feed
         run: |
           if git diff --quiet -- live-ipo-data.json; then
