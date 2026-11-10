@@ -11,7 +11,7 @@ name: Daily data update (listings, prices, pullbacks)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 14 * * 1-5" # 20:00 IST weekdays, after NSE/BSE publish the day's closes
+    - cron: "10 14 * * 1-5" # 19:40 IST weekdays, after NSE/BSE publish closes (off the busy :00/:30 slots)
 
 permissions:
   contents: write

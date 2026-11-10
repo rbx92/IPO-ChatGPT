@@ -139,7 +139,9 @@ def main():
     if args.stock_type:
         # Backup only: price stocks of this type, plus any Mainboard stock, that
         # the official close (or Yahoo) did not already price today.
-        today = datetime.now().astimezone().date().isoformat()
+        # Indian date: the official and Yahoo steps stamp prices in IST.
+        from zoneinfo import ZoneInfo
+        today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
         def wanted(r):
             if str(r.get("priceUpdatedAt", "")).startswith(today):
                 return False
