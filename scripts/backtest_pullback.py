@@ -64,7 +64,8 @@ def ret(a, b):
     return (b - a) / a * 100
 
 
-def simulate(s, issue, trigger, window, above_issue):
+def simulate(s, issue, trigger, window, above_floor):
+    """above_floor: only enter if the close is at or above the listing-day close."""
     peak = s[0][1]
     for t in range(1, len(s)):
         if window and t > window:
@@ -72,7 +73,7 @@ def simulate(s, issue, trigger, window, above_issue):
         close = s[t][1]
         peak = max(peak, close)
         fall = (peak - close) / peak * 100
-        if fall >= trigger and (not above_issue or not issue or close >= issue):
+        if fall >= trigger and (not above_floor or close >= s[0][1]):
             return t, fall
     return None
 
@@ -131,7 +132,7 @@ def main():
               f"{len(stocks)} IPOs with usable history. Returns are close to close, before costs and taxes.\n")
     md.append("Entry: close on the first day the stock is down X% from its highest close since listing, "
               "within W trading days of listing (40 is about 60 calendar days). "
-              "'Above issue' means only if the close is at or above the IPO price.\n")
+              "'Above listing close' means only if the close is at or above the first trading day's close.\n")
     md.append("Past results do not guarantee future returns.\n")
 
     for gname, gfilter in groups.items():
@@ -166,11 +167,11 @@ def main():
                                        "daysAfterListing": t, **{f"ret{h}": None if o[h] is None else round(o[h], 1) for h in HORIZONS},
                                        "worst60": None if o["worst60"] is None else round(o["worst60"], 1),
                                        "toLatest": round(o["latest"], 1)})
-            row(f"Fall {trig}%, within {window}d{', above issue' if above else ''}", outs, len(outs))
+            row(f"Fall {trig}%, within {window}d{', above listing close' if above else ''}", outs, len(outs))
 
         for typ in ("SME", "Mainboard"):
             sub = [x for x in universe if x["type"] == typ]
-            md.append(f"\n**{typ} only ({len(sub)} IPOs), within 40 days, above issue**\n")
+            md.append(f"\n**{typ} only ({len(sub)} IPOs), within 40 days, above listing close**\n")
             md.append("| Strategy | Trades |" + "".join(f" After {h} days |" for h in HORIZONS) + " Worst next 60d |")
             md.append("|---|---|" + "---|" * len(HORIZONS) + "---|")
             row("Buy at listing-day close", [outcomes(x["s"], 0) for x in sub], len(sub))

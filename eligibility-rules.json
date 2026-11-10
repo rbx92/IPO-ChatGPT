@@ -19,7 +19,7 @@
     "max_days_since_listing": 60,
     "min_fall_percent": 15,
     "max_fall_percent": 30,
-    "require_above_issue_price": true
+    "require_above_listing_day_close": true
   },
   "anchor_lock_in": {
     "first_days": 30,
