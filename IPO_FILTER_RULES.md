@@ -48,6 +48,7 @@ A listed card shows "Stock fell more than X% in the last N trading days" when QI
 - **Never below the first day's close:** no pullback signal if the latest close is under the stock's closing price on its first trading day (`require_above_listing_day_close`).
 - **Volume:** the pullback message adds the share of trading volume since the peak that happened on down days: 65% or more is heavy selling, 45% or less is light selling, otherwise mixed.
 - **Anchor lock-in:** listed cards show when the anchor lock-in ends (50% after 30 days, the rest after 90 days from allotment; allotment taken as 2 trading days before listing when not known), from 10 days before to 5 days after (`anchor_lock_in`).
+- **Top of the Listed section:** a listed card that triggers the intelligence rule (the post-listing pullback signal, or an anchor lock-in expiry note) is shown above the other listed cards. Within each group the chosen sort order still applies.
 
 ## Price sources (since 9 Nov 2026)
 

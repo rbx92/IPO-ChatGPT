@@ -2,6 +2,11 @@
 
 Versions follow MAJOR.MINOR.PATCH. The current version is in `VERSION`.
 
+## 2.1.0 (17 Nov 2026)
+
+**Dashboard**
+- Listed cards that trigger the intelligence rule (pullback signal or anchor lock-in expiry note) are pinned above the other listed cards.
+
 ## 2.0.0 (10 Nov 2026)
 
 Rebuilt data pipeline and cleaned-up repository.
