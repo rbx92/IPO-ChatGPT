@@ -58,11 +58,13 @@ jobs:
         run: python pipeline/prices/screener_history.py --stock-type SME --delay 60
       - if: always()
         run: "bash pipeline/tools/commit_data.sh 'chore: refresh SME price history from Screener'"
-      - name: 6. Telegram pullback alerts
+      - name: 6. Telegram pullback alerts (card picture)
         if: always()
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python pipeline/alerts/telegram.py
+        run: |
+          python -m pip install --quiet playwright && python -m playwright install --with-deps chromium >/dev/null || echo "Browser install failed; text alerts instead."
+          python pipeline/alerts/telegram.py
       - if: always()
         run: "bash pipeline/tools/commit_data.sh 'chore: record sent Telegram alerts'"

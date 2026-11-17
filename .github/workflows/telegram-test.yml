@@ -1,6 +1,12 @@
 name: Telegram - send a test message (manual)
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      preview:
+        description: "Also send the card picture of every stock now in the buy zone"
+        type: boolean
+        default: true
 
 jobs:
   test:
@@ -16,3 +22,17 @@ jobs:
             --data-urlencode "chat_id=${CHAT}" \
             --data-urlencode "text=IPO Lens is connected. You'll get a message here when a stock enters your pullback buy zone (15-30% below its high)." \
             | python3 -c "import json,sys; d=json.load(sys.stdin); print('Sent' if d.get('ok') else 'Failed: '+str(d.get('description'))); sys.exit(0 if d.get('ok') else 1)"
+      - uses: actions/checkout@v7
+        if: inputs.preview
+      - uses: actions/setup-python@v7
+        if: inputs.preview
+        with:
+          python-version: "3.12"
+      - name: Send card previews (not recorded as alerts)
+        if: inputs.preview
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -m pip install --quiet requests playwright && python -m playwright install --with-deps chromium >/dev/null
+          python pipeline/alerts/telegram.py --preview
