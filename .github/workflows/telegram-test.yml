@@ -1,0 +1,18 @@
+name: Telegram - send a test message (manual)
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Send test message
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          [ -n "$TOKEN" ] && [ -n "$CHAT" ] || { echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID secret."; exit 1; }
+          curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" \
+            --data-urlencode "text=IPO Lens is connected. You'll get a message here when a stock enters your pullback buy zone (15-30% below its high)." \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('Sent' if d.get('ok') else 'Failed: '+str(d.get('description'))); sys.exit(0 if d.get('ok') else 1)"
