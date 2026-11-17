@@ -12,6 +12,9 @@ jobs:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
           [ -n "$TOKEN" ] || { echo "Add the TELEGRAM_BOT_TOKEN secret first."; exit 1; }
+          curl -sS "https://api.telegram.org/bot${TOKEN}/getMe" | python3 -c "
+          import json,sys; d=json.load(sys.stdin); r=d.get('result') or {}
+          print('Token belongs to bot: @' + str(r.get('username')) if d.get('ok') else 'Token not accepted: ' + str(d.get('description')))"
           curl -sS "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c "
           import json,sys
           d=json.load(sys.stdin)
