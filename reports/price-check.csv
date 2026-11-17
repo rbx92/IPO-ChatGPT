@@ -1,226 +1,226 @@
 company,type,exchange,symbol,officialClose,ours,diffPercent,status,source,date
-EverestIMS Technologies,SME,BSE,EIMS,85.44,85.44,0.0,match,NSE/BSE official close,2026-11-09
-VANS Electroengineerings,SME,BSE,VANS,526.75,526.75,0.0,match,NSE/BSE official close,2026-11-09
-Acme Universal Safezone 9,SME,BSE,ACMEUNIV,102.25,102.25,0.0,match,NSE/BSE official close,2026-11-09
-Roopa Screen,SME,BSE,ROOPA,105.13,105.13,0.0,match,NSE/BSE official close,2026-11-09
-Robokidz Eduventures,SME,BSE,ROBOKIDZ,164.8,164.8,0.0,match,NSE/BSE official close,2026-11-09
-SpectraA Technology Solutions,SME,NSE,SPECTRAA,237.6,237.6,0.0,match,NSE/BSE official close,2026-11-09
-Maharaja Speedex,SME,BSE,SPEEDEX,271.1,271.1,0.0,match,NSE/BSE official close,2026-11-09
-Amtech Esters,SME,BSE,AMTECH,84.85,84.85,0.0,match,NSE/BSE official close,2026-11-09
-Qualiance International,SME,NSE,QUALIANCE,138.0,138.0,0.0,match,NSE/BSE official close,2026-11-09
-Ashutosh Fibre,SME,NSE,ASHUTOSH,128.0,128.0,0.0,match,NSE/BSE official close,2026-11-09
-Shanti Inorganics,SME,NSE,SHANTIINOR,184.15,184.15,0.0,match,NSE/BSE official close,2026-11-09
-Kwick Forensic Solutions,SME,BSE,KWICK,187.3,187.3,0.0,match,NSE/BSE official close,2026-11-09
-Technocrats Plasma Systems,SME,BSE,TECHNOCRAT,425.0,425.0,0.0,match,NSE/BSE official close,2026-11-09
-Credent Connect N Care,SME,NSE,CREDENT,418.95,418.95,0.0,match,NSE/BSE official close,2026-11-09
-LAPL Automotive,SME,BSE,LAPL,112.5,112.5,0.0,match,NSE/BSE official close,2026-11-09
-G V Electricals,SME,,,,104.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Aegeus Technologies,SME,BSE,AEGEUS,108.05,108.05,0.0,match,NSE/BSE official close,2026-11-09
-Anawil Wire Engineering,SME,NSE,ANAWIL,400.55,400.55,0.0,match,NSE/BSE official close,2026-11-09
-Poojaa Precision Engg,SME,BSE,PPEL,924.9,924.9,0.0,match,NSE/BSE official close,2026-11-09
-Shree Balaji Mala Textiles,SME,BSE,MALA,50.5,50.5,0.0,match,NSE/BSE official close,2026-11-09
-Millworks Technologies,SME,BSE,MILLWORKS,987.9,987.9,0.0,match,NSE/BSE official close,2026-11-09
-Devson Catalyst,SME,BSE,DEVSON,360.25,360.25,0.0,match,NSE/BSE official close,2026-11-09
-IC Electricals Company,SME,NSE,ICELCO,120.2,120.2,0.0,match,NSE/BSE official close,2026-11-09
-Kratikal Tech,SME,BSE,KRATIKAL,164.9,164.9,0.0,match,NSE/BSE official close,2026-11-09
-Avience Biomedicals,SME,NSE,AVIENCE,249.95,249.95,0.0,match,NSE/BSE official close,2026-11-09
-Horizon Reclaim,SME,BSE,HORIZON,116.4,116.4,0.0,match,NSE/BSE official close,2026-11-09
-Susan Electricals,SME,BSE,SUSAN,198.2,198.2,0.0,match,NSE/BSE official close,2026-11-09
-Merritronix,SME,BSE,MRTX,408.4,408.4,0.0,match,NSE/BSE official close,2026-11-09
-Q-Line Biotech,SME,NSE,QLINE,516.55,516.55,0.0,match,NSE/BSE official close,2026-11-09
-Vegorama Punjabi Angithi,SME,BSE,VPAL,270.1,270.1,0.0,match,NSE/BSE official close,2026-11-09
-Goldline Pharmaceutical,SME,BSE,GLPL,29.74,29.74,0.0,match,NSE/BSE official close,2026-11-09
-Recode Studios,SME,BSE,RECODE,419.0,419.0,0.0,match,NSE/BSE official close,2026-11-09
-Adisoft Technologies,SME,NSE,ADISOFT,274.65,274.65,0.0,match,NSE/BSE official close,2026-11-09
-Apsis Aerocom,SME,NSE,APSISAERO,467.8,467.8,0.0,match,NSE/BSE official close,2026-11-09
-Msafe Equipments,SME,BSE,MSAFE,270.45,270.45,0.0,match,NSE/BSE official close,2026-11-09
-KRM Ayurveda,SME,NSE,KRMAYURVED,232.6,232.6,0.0,match,NSE/BSE official close,2026-11-09
-Avana Electrosystems,SME,NSE,AVANA,140.0,140.0,0.0,match,NSE/BSE official close,2026-11-09
-Defrail Technologies,SME,,,,69.99,,did not trade that day,NSE/BSE official close,2026-11-09
-E to E Transportation,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-09
-Orient Cables,Mainboard,NSE,ORIENTCABL,343.35,343.35,0.0,match,NSE/BSE official close,2026-11-09
-Moneyview,Mainboard,NSE,MONEYVIEW,51.5,51.5,0.0,match,NSE/BSE official close,2026-11-09
-Adroit Industries,Mainboard,NSE,ADROITIND,168.76,168.76,0.0,match,NSE/BSE official close,2026-11-09
-SS Retail,Mainboard,NSE,SSRETAIL,617.85,617.85,0.0,match,NSE/BSE official close,2026-11-09
-Jindal Supreme,Mainboard,NSE,JSIPL,157.01,157.01,0.0,match,NSE/BSE official close,2026-11-09
-Rentomojo,Mainboard,NSE,RENTOMOJO,591.45,591.45,0.0,match,NSE/BSE official close,2026-11-09
-Steamhouse,Mainboard,NSE,STEAMHOUSE,135.46,135.46,0.0,match,NSE/BSE official close,2026-11-09
-Lcc Projects,Mainboard,NSE,LCCPROJECT,132.9,132.9,0.0,match,NSE/BSE official close,2026-11-09
-Karamtara Engineering,Mainboard,NSE,KARAMTARA,384.65,384.65,0.0,match,NSE/BSE official close,2026-11-09
-Pranav Constructions,Mainboard,NSE,PRANAV,84.29,84.29,0.0,match,NSE/BSE official close,2026-11-09
-Deepa Jewellers,Mainboard,NSE,DEEPA,210.73,210.73,0.0,match,NSE/BSE official close,2026-11-09
-Priority Jewels,Mainboard,NSE,PRIORITY,262.5,262.5,0.0,match,NSE/BSE official close,2026-11-09
-ESDS Software Solution,Mainboard,NSE,ESDS,1147.7,1147.7,0.0,match,NSE/BSE official close,2026-11-09
-Lumino Industries,Mainboard,NSE,LUMINO,94.16,94.16,0.0,match,NSE/BSE official close,2026-11-09
-HyTech Engineers,Mainboard,,,,,,not found in NSE/BSE bhavcopy,,2026-11-09
-Augmont Enterprises,Mainboard,NSE,AUGMONT,901.15,901.15,0.0,match,NSE/BSE official close,2026-11-09
-Tempsens Instruments,Mainboard,NSE,TEMPSENS,531.3,531.3,0.0,match,NSE/BSE official close,2026-11-09
-Gaja Alternative Asset,Mainboard,NSE,GAJA,137.23,137.23,0.0,match,NSE/BSE official close,2026-11-09
-Lalithaa Jewellery Mart,Mainboard,NSE,LALITHAA,358.75,358.75,0.0,match,NSE/BSE official close,2026-11-09
-Shiprocket,Mainboard,NSE,SHIPROCKET,129.5,129.5,0.0,match,NSE/BSE official close,2026-11-09
-Behari Lal Engineering,Mainboard,NSE,BLEL,451.05,451.05,0.0,match,NSE/BSE official close,2026-11-09
-Milky Mist Dairy Food,Mainboard,NSE,MILKYMIST,296.7,296.7,0.0,match,NSE/BSE official close,2026-11-09
-Dhoot Transmission,Mainboard,NSE,DHOOTTRANS,1631.0,1631.0,0.0,match,NSE/BSE official close,2026-11-09
-Molbio Diagnostics,Mainboard,NSE,MOLBIO,1336.0,1336.0,0.0,match,NSE/BSE official close,2026-11-09
-Technocraft Ventures,Mainboard,NSE,TECHNOCRAF,500.55,500.55,0.0,match,NSE/BSE official close,2026-11-09
-Ardee Industries,Mainboard,NSE,ARDEE,46.9,46.9,0.0,match,NSE/BSE official close,2026-11-09
-MV Electrosystems,Mainboard,NSE,MVELECTRO,762.9,762.9,0.0,match,NSE/BSE official close,2026-11-09
-IndoMIM,Mainboard,NSE,INDOMIM,1274.4,1274.4,0.0,match,NSE/BSE official close,2026-11-09
-Caliber Mining and Logistics,Mainboard,NSE,CMLL,521.5,521.5,0.0,match,NSE/BSE official close,2026-11-09
-Laser Power and Infra,Mainboard,NSE,LASERPOWER,208.83,208.83,0.0,match,NSE/BSE official close,2026-11-09
-Kusumgar,Mainboard,NSE,KUSUMGAR,550.5,550.5,0.0,match,NSE/BSE official close,2026-11-09
-Advit Jewels,Mainboard,NSE,RAMBHAJO,325.65,325.65,0.0,match,NSE/BSE official close,2026-11-09
-CMR Green Technologies,Mainboard,NSE,CMRGREEN,214.74,214.74,0.0,match,NSE/BSE official close,2026-11-09
-Bharat Coking Coal,Mainboard,NSE,BHARATCOAL,31.52,31.52,0.0,match,NSE/BSE official close,2026-11-09
-Dhara Rail Projects,SME,,,,133.95,,did not trade that day,NSE/BSE official close,2026-11-09
-Shyam Dhani Industries,SME,NSE,SHYAMDHANI,53.75,53.75,0.0,match,NSE/BSE official close,2026-11-09
-Exim Routes,SME,NSE,EXIMROUTES,80.0,80.0,0.0,match,NSE/BSE official close,2026-11-09
-HRS Aluglaze,SME,BSE,HRS,250.0,250.0,0.0,match,NSE/BSE official close,2026-11-09
-K V Toys,SME,BSE,KVTOYS,217.1,217.1,0.0,match,NSE/BSE official close,2026-11-09
-Luxury Time,SME,BSE,LUXURY,63.5,63.5,0.0,match,NSE/BSE official close,2026-11-09
-Ravelcare,SME,BSE,RAVEL,90.0,90.0,0.0,match,NSE/BSE official close,2026-11-09
-Exato Technologies,SME,BSE,EXATO,590.5,590.5,0.0,match,NSE/BSE official close,2026-11-09
-Gallard Steel,SME,BSE,GALLARD,141.0,141.0,0.0,match,NSE/BSE official close,2026-11-09
-Workmates Core2Cloud Solution,SME,BSE,WORKMATES,416.8,416.8,0.0,match,NSE/BSE official close,2026-11-09
-Sheel Biotech,SME,NSE,SHEEL,61.0,61.0,0.0,match,NSE/BSE official close,2026-11-09
-Infinity Infoway,SME,BSE,INFINITY,763.95,763.95,0.0,match,NSE/BSE official close,2026-11-09
-Suba Hotels,SME,NSE,SUBAHOTELS,88.6,88.6,0.0,match,NSE/BSE official close,2026-11-09
-Chatterbox Technologies,SME,,,,36.1,,did not trade that day,NSE/BSE official close,2026-11-09
-TechD Cybersecurity,SME,NSE,TECHD,529.55,529.55,0.0,match,NSE/BSE official close,2026-11-09
-L T Elevator,SME,BSE,LTELEVATOR,337.45,337.45,0.0,match,NSE/BSE official close,2026-11-09
-Airfloa Rail Technology,SME,BSE,AIRFLOA,492.0,492.0,0.0,match,NSE/BSE official close,2026-11-09
-Karbonsteel Engineering,SME,BSE,KARBON,97.0,97.0,0.0,match,NSE/BSE official close,2026-11-09
-Austere Systems,SME,BSE,AUSTERE,40.0,40.0,0.0,match,NSE/BSE official close,2026-11-09
-Optivalue Tek Consulting,SME,NSE,OPTIVALUE,201.0,201.0,0.0,match,NSE/BSE official close,2026-11-09
-Goel Construction Company,SME,BSE,GOELCONS,522.9,522.9,0.0,match,NSE/BSE official close,2026-11-09
-Sattva Engineering,SME,NSE,SATTVAENGG,48.0,48.0,0.0,match,NSE/BSE official close,2026-11-09
-Current Infraprojects,SME,,,,101.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Anondita Medicare,SME,NSE,ANONDITA,1002.65,1002.65,0.0,match,NSE/BSE official close,2026-11-09
-BLT Logistics,SME,BSE,BLT,33.0,33.0,0.0,match,NSE/BSE official close,2026-11-09
-Flysbs Aviation,SME,NSE,FLYSBS,560.0,560.0,0.0,match,NSE/BSE official close,2026-11-09
-Cash Ur Drive Marketing,SME,NSE,CUDML,99.9,99.9,0.0,match,NSE/BSE official close,2026-11-09
-Shree Refrigerations,SME,BSE,SHREEREF,305.05,305.05,0.0,match,NSE/BSE official close,2026-11-09
-Patel Chem Specialities,SME,BSE,PATELCHEM,144.85,144.85,0.0,match,NSE/BSE official close,2026-11-09
-Monarch Surveyors,SME,BSE,MSECL,245.3,245.3,0.0,match,NSE/BSE official close,2026-11-09
-Spunweb Nonwoven,SME,NSE,SPUNWEB,106.5,106.5,0.0,match,NSE/BSE official close,2026-11-09
-GLEN Industries,SME,BSE,GLEN,109.2,109.2,0.0,match,NSE/BSE official close,2026-11-09
-Meta Infotech,SME,BSE,METAINFO,55.2,55.2,0.0,match,NSE/BSE official close,2026-11-09
-Cryogenic OGS,SME,BSE,CRYOGENIC,368.2,368.2,0.0,match,NSE/BSE official close,2026-11-09
-Adcounty Media,SME,BSE,ADCOUNTY,72.0,72.0,0.0,match,NSE/BSE official close,2026-11-09
-Neetu Yoshi,SME,BSE,NEETUYOSHI,210.05,210.05,0.0,match,NSE/BSE official close,2026-11-09
-Ace Alpha Tech,SME,BSE,ACEALPHA,158.0,158.0,0.0,match,NSE/BSE official close,2026-11-09
-Suntech Infra Solutions,SME,NSE,SUNTECH,40.15,40.15,0.0,match,NSE/BSE official close,2026-11-09
-Mayasheel Ventures,SME,,,,26.5,,did not trade that day,NSE/BSE official close,2026-11-09
-Influx Healthtech,SME,NSE,INFLUX,253.0,253.0,0.0,match,NSE/BSE official close,2026-11-09
-Eppeltone Engineers,SME,NSE,EEPL,127.85,127.85,0.0,match,NSE/BSE official close,2026-11-09
-Patil Automation,SME,NSE,PATILAUTOM,321.65,321.65,0.0,match,NSE/BSE official close,2026-11-09
-Monolithisch India,SME,NSE,MONOLITH,1365.2,1365.2,0.0,match,NSE/BSE official close,2026-11-09
-Sacheerome,SME,NSE,SACHEEROME,385.9,385.9,0.0,match,NSE/BSE official close,2026-11-09
-Virtual Galaxy Infotech,SME,NSE,VGINFOTECH,129.0,129.0,0.0,match,NSE/BSE official close,2026-11-09
-Srigee DLM,SME,BSE,SRIGEE,73.9,73.9,0.0,match,NSE/BSE official close,2026-11-09
-Tankup Engineers,SME,NSE,TANKUP,1770.0,1770.0,0.0,match,NSE/BSE official close,2026-11-09
-Shri Ahimsa Naturals,SME,NSE,SHRIAHIMSA,389.0,389.0,0.0,match,NSE/BSE official close,2026-11-09
-Chamunda Electrical,SME,NSE,CHAMUNDA,40.0,40.0,0.0,match,NSE/BSE official close,2026-11-09
-EMA Partners India Ltd.,SME,NSE,EMAPARTNER,96.0,96.0,0.0,match,NSE/BSE official close,2026-11-09
-Rikhav Securities Ltd.,SME,BSE,RIKHAV,50.25,50.25,0.0,match,NSE/BSE official close,2026-11-09
-Kabra Jewels,SME,NSE,KKJEWELS,159.9,159.9,0.0,match,NSE/BSE official close,2026-11-09
-Sat Kartar Shopping,SME,NSE,SATKARTAR,155.05,155.05,0.0,match,NSE/BSE official close,2026-11-09
-Delta Autocorp,SME,NSE,DELTIC,39.0,39.0,0.0,match,NSE/BSE official close,2026-11-09
-Fabtech Technologies Cleanrooms Ltd.,SME,NSE,FABTECH,135.67,135.67,0.0,match,NSE/BSE official close,2026-11-09
-Parmeshwar Metal Ltd.,SME,BSE,PARMESHWAR,269.8,269.8,0.0,match,NSE/BSE official close,2026-11-09
-Leo Dryfruits & Spices Trading Ltd.,SME,,,,58.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Anya Polytech Fertilizers,SME,NSE,ANYA,16.25,16.25,0.0,match,NSE/BSE official close,2026-11-09
-ICICI Prudential Asset,Mainboard,NSE,ICICIAMC,2970.8,2970.8,0.0,match,NSE/BSE official close,2026-11-09
-Corona Remedies,Mainboard,NSE,CORONA,2539.4,2539.4,0.0,match,NSE/BSE official close,2026-11-09
-Meesho,Mainboard,NSE,MEESHO,238.48,238.48,0.0,match,NSE/BSE official close,2026-11-09
-Sudeep Pharma,Mainboard,NSE,SUDEEPPHRM,1210.3,1210.3,0.0,match,NSE/BSE official close,2026-11-09
-Tenneco Clean Air,Mainboard,NSE,TENNIND,424.55,424.55,0.0,match,NSE/BSE official close,2026-11-09
-Rubicon Research,Mainboard,NSE,RUBICON,1771.7,1771.7,0.0,match,NSE/BSE official close,2026-11-09
-LG Electronics,Mainboard,NSE,LGEINDIA,1793.8,1793.8,0.0,match,NSE/BSE official close,2026-11-09
-Urban Company,Mainboard,NSE,URBANCO,159.11,159.11,0.0,match,NSE/BSE official close,2026-11-09
-Patel Retail,Mainboard,NSE,PATELRMART,246.43,246.43,0.0,match,NSE/BSE official close,2026-11-09
-Regaal Resources,Mainboard,NSE,REGAAL,88.64,88.64,0.0,match,NSE/BSE official close,2026-11-09
-Highway Infrastructure,Mainboard,NSE,HILINFRA,71.52,71.52,0.0,match,NSE/BSE official close,2026-11-09
-Sri Lotus Developers,Mainboard,NSE,LOTUSDEV,224.14,224.14,0.0,match,NSE/BSE official close,2026-11-09
-Aditya Infotech,Mainboard,NSE,CPPLUS,4224.9,4224.9,0.0,match,NSE/BSE official close,2026-11-09
-GNG Electronics,Mainboard,NSE,EBGNG,551.2,551.2,0.0,match,NSE/BSE official close,2026-11-09
-Anthem Biosciences,Mainboard,NSE,ANTHEM,958.15,958.15,0.0,match,NSE/BSE official close,2026-11-09
-Sambhv Steel Tubes,Mainboard,NSE,SAMBHV,163.87,163.87,0.0,match,NSE/BSE official close,2026-11-09
-Globe Civil Projects,Mainboard,NSE,GLOBECIVIL,38.32,38.32,0.0,match,NSE/BSE official close,2026-11-09
-Ellenbarrie Industrial Gases,Mainboard,NSE,ELLEN,288.65,288.65,0.0,match,NSE/BSE official close,2026-11-09
-Stallion India Fluorochemicals Ltd.,Mainboard,NSE,STALLION,200.59,200.59,0.0,match,NSE/BSE official close,2026-11-09
-Laxmi Dental,Mainboard,NSE,LAXMIDENTL,204.51,204.51,0.0,match,NSE/BSE official close,2026-11-09
-Quadrant Future Tek,Mainboard,NSE,QUADFUTURE,429.35,429.35,0.0,match,NSE/BSE official close,2026-11-09
-Standard Glass Lining,Mainboard,,,,,,not found in NSE/BSE bhavcopy,,2026-11-09
-Indo Farm Equipment,Mainboard,NSE,INDOFARM,123.68,123.68,0.0,match,NSE/BSE official close,2026-11-09
-Identical Brains Studios Ltd.,SME,,,,16.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Yash Highvoltage Ltd.,SME,BSE,YASHHV,1223.0,1223.0,0.0,match,NSE/BSE official close,2026-11-09
-Purple United Sales Ltd.,SME,NSE,PURPLEUTED,423.4,423.4,0.0,match,NSE/BSE official close,2026-11-09
-Jungle Camps India Ltd.,SME,BSE,JUNGLECAMP,50.0,50.0,0.0,match,NSE/BSE official close,2026-11-09
-Toss The Coin Ltd.,SME,BSE,TTC,165.0,165.0,0.0,match,NSE/BSE official close,2026-11-09
-Dhanlaxmi Crop Science Ltd.,SME,,,,28.5,,did not trade that day,NSE/BSE official close,2026-11-09
-Emerald Tyre Manufacturers Ltd.,SME,NSE,ETML,69.25,69.25,0.0,match,NSE/BSE official close,2026-11-09
-Nisus Finance Services Co Ltd.,SME,BSE,NISUS,181.9,181.9,0.0,match,NSE/BSE official close,2026-11-09
-Ganesh Infraworld Ltd.,SME,NSE,GANESHIN,80.85,80.85,0.0,match,NSE/BSE official close,2026-11-09
-Apex Ecotech Ltd.,SME,NSE,APEXECO,257.25,257.25,0.0,match,NSE/BSE official close,2026-11-09
-Rajputana Biodiesel Ltd.,SME,,,,201.7,,did not trade that day,NSE/BSE official close,2026-11-09
-C2C Advanced Systems Ltd.,SME,NSE,C2C,153.15,153.15,0.0,match,NSE/BSE official close,2026-11-09
-Rajesh Power Services Ltd.,SME,BSE,RAJESH,823.95,823.95,0.0,match,NSE/BSE official close,2026-11-09
-Danish Power Ltd.,SME,NSE,DANISH,982.1,982.1,0.0,match,NSE/BSE official close,2026-11-09
-Freshara Agro Exports Ltd.,SME,NSE,FRESHARA,395.55,395.55,0.0,match,NSE/BSE official close,2026-11-09
-Lakshya Powertech Ltd.,SME,,,,102.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Shiv Texchem Ltd.,SME,BSE,SHIVTEXCHEM,108.0,108.0,0.0,match,NSE/BSE official close,2026-11-09
-Divyadhan Recycling Industries Ltd.,SME,,,,39.1,,did not trade that day,NSE/BSE official close,2026-11-09
-Sahasra Electronic Solutions Ltd.,SME,NSE,SAHASRA,403.85,403.85,0.0,match,NSE/BSE official close,2026-11-09
-Techera Engineering India Ltd.,SME,NSE,TECHERA,131.85,131.85,0.0,match,NSE/BSE official close,2026-11-09
-Thinking Hats Entertainment Solutions Ltd.,SME,NSE,THESL,12.55,12.55,0.0,match,NSE/BSE official close,2026-11-09
-WOL 3D India Ltd.,SME,NSE,WOL3D,137.1,137.1,0.0,match,NSE/BSE official close,2026-11-09
-Rappid Valves (India) Ltd.,SME,NSE,RAPPID,374.7,374.7,0.0,match,NSE/BSE official close,2026-11-09
-Paramount Speciality Forgings Ltd.,SME,NSE,PSFL,28.0,28.0,0.0,match,NSE/BSE official close,2026-11-09
-Envirotech Systems Ltd.,SME,NSE,ENVIRO,57.25,57.25,0.0,match,NSE/BSE official close,2026-11-09
-Osel Devcies Ltd.,SME,NSE,OSELDEVICE,378.7,378.7,0.0,match,NSE/BSE official close,2026-11-09
-Shubhshree Biofuels Energy Ltd.,SME,NSE,SHUBHSHREE,335.95,335.95,0.0,match,NSE/BSE official close,2026-11-09
-My Mudra Fincorp,SME,NSE,MYMUDRA,85.8,85.8,0.0,match,NSE/BSE official close,2026-11-09
-Namo eWaste Management Ltd.,SME,NSE,NAMOEWASTE,335.5,335.5,0.0,match,NSE/BSE official close,2026-11-09
-Mach Conferences and Events Ltd.,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-09
-Aeron Composite,SME,NSE,AERON,78.0,78.0,0.0,match,NSE/BSE official close,2026-11-09
-Jay Bee Laminations Ltd.,SME,NSE,JAYBEE,79.05,79.05,0.0,match,NSE/BSE official close,2026-11-09
-Indian Phosphate Ltd.,SME,NSE,IPHL,78.8,78.8,0.0,match,NSE/BSE official close,2026-11-09
-Brace Port Logistics,SME,NSE,BRACEPORT,78.8,78.8,0.0,match,NSE/BSE official close,2026-11-09
-Forcas Studio,SME,NSE,FORCAS,199.9,199.9,0.0,match,NSE/BSE official close,2026-11-09
-Positron Energy,SME,NSE,POSITRON,273.25,273.25,0.0,match,NSE/BSE official close,2026-11-09
-Sunlite Recycling,SME,NSE,SUNLITE,594.5,594.5,0.0,match,NSE/BSE official close,2026-11-09
-Aesthetik Engineers,SME,NSE,AESTHETIK,70.0,70.0,0.0,match,NSE/BSE official close,2026-11-09
-Picturepost Studios,SME,NSE,PPSL,2.85,2.85,0.0,match,NSE/BSE official close,2026-11-09
-Afcom Holdings,SME,BSE,AFCOM,1347.6,1347.6,0.0,match,NSE/BSE official close,2026-11-09
-Dhariwalcorp,SME,NSE,DHARIWAL,22.75,22.75,0.0,match,NSE/BSE official close,2026-11-09
-Ashapura Logistics,SME,NSE,ASHALOG,60.0,60.0,0.0,match,NSE/BSE official close,2026-11-09
-Bulkcorp Intl,SME,NSE,BULKCORP,75.45,75.45,0.0,match,NSE/BSE official close,2026-11-09
-Rajputana Industries,SME,NSE,RAJINDLTD,63.0,63.0,0.0,match,NSE/BSE official close,2026-11-09
-Sathlokhar Synergys,SME,NSE,SSEGL,364.15,364.15,0.0,match,NSE/BSE official close,2026-11-09
-S A Tech Software,SME,NSE,SATECH,39.5,39.5,0.0,match,NSE/BSE official close,2026-11-09
-Trom Industries,SME,NSE,TROM,56.5,56.5,0.0,match,NSE/BSE official close,2026-11-09
-Aprameya Engineering,SME,NSE,APRAMEYA,131.9,131.9,0.0,match,NSE/BSE official close,2026-11-09
-Manglam Infra,SME,NSE,MIEL,12.0,12.0,0.0,match,NSE/BSE official close,2026-11-09
-Chetana Education,SME,NSE,CHETANA,34.0,34.0,0.0,match,NSE/BSE official close,2026-11-09
-VVIP Infratech,SME,BSE,VVIPIL,156.0,156.0,0.0,match,NSE/BSE official close,2026-11-09
-V L Infraprojects,SME,,,,23.4,,did not trade that day,NSE/BSE official close,2026-11-09
-RNFI Services,SME,NSE,RNFI,306.0,306.0,0.0,match,NSE/BSE official close,2026-11-09
-Kataria Industries,SME,NSE,KATARIA,140.95,140.95,0.0,match,NSE/BSE official close,2026-11-09
-Macobs Technologies,SME,NSE,MACOBSTECH,188.75,188.75,0.0,match,NSE/BSE official close,2026-11-09
-Aelea Commodities,SME,BSE,ACLD,110.3,110.3,0.0,match,NSE/BSE official close,2026-11-09
-Sati Poly Plast,SME,,,,36.0,,did not trade that day,NSE/BSE official close,2026-11-09
-Prizor Viztech,SME,NSE,PRIZOR,1614.05,1614.05,0.0,match,NSE/BSE official close,2026-11-09
-Sahaj Solar,SME,NSE,SAHAJSOLAR,79.0,79.0,0.0,match,NSE/BSE official close,2026-11-09
-Effwa Infra & Research,SME,NSE,EFFWA,322.0,322.0,0.0,match,NSE/BSE official close,2026-11-09
-Ganesh Green Bharat,SME,NSE,GGBL,171.0,171.0,0.0,match,NSE/BSE official close,2026-11-09
-Ambey Laboratories,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-09
-Nephro Care,SME,NSE,NEPHROCARE,79.95,79.95,0.0,match,NSE/BSE official close,2026-11-09
-Divine Power Energy,SME,NSE,DPEL,684.15,684.15,0.0,match,NSE/BSE official close,2026-11-09
-Petro Carbon,SME,NSE,PCCL,404.0,404.0,0.0,match,NSE/BSE official close,2026-11-09
-Maxwell Engineering,SME,NSE,MAXENGS,314.45,314.45,0.0,match,NSE/BSE official close,2026-11-09
-Johnsoncab Electricals,SME,BSE,JOHNSONCAB,220.0,220.0,0.0,match,NSE/BSE official close,2026-11-09
-HGS India,SME,NSE,HGSINDIALT,185.2,185.2,0.0,match,NSE/BSE official close,2026-11-09
-BLS Polymers,Mainboard,NSE,BLSPOLY,237.45,237.45,0.0,match,NSE/BSE official close,2026-11-09
-Jio Platforms,Mainboard,NSE,JPL,1412.7,1412.7,0.0,match,NSE/BSE official close,2026-11-09
-Tonbo Imaging,Mainboard,NSE,TONBO,1513.1,1513.1,0.0,match,NSE/BSE official close,2026-11-09
+EverestIMS Technologies,SME,BSE,EIMS,76.97,76.97,0.0,match,NSE/BSE official close,2026-11-16
+VANS Electroengineerings,SME,BSE,VANS,505.75,505.75,0.0,match,NSE/BSE official close,2026-11-16
+Acme Universal Safezone 9,SME,BSE,ACMEUNIV,100.2,100.2,0.0,match,NSE/BSE official close,2026-11-16
+Roopa Screen,SME,BSE,ROOPA,99.95,99.95,0.0,match,NSE/BSE official close,2026-11-16
+Robokidz Eduventures,SME,BSE,ROBOKIDZ,173.75,173.75,0.0,match,NSE/BSE official close,2026-11-16
+SpectraA Technology Solutions,SME,NSE,SPECTRAA,262.1,262.1,0.0,match,NSE/BSE official close,2026-11-16
+Maharaja Speedex,SME,BSE,SPEEDEX,269.1,269.1,0.0,match,NSE/BSE official close,2026-11-16
+Amtech Esters,SME,BSE,AMTECH,75.1,75.1,0.0,match,NSE/BSE official close,2026-11-16
+Qualiance International,SME,NSE,QUALIANCE,119.35,119.35,0.0,match,NSE/BSE official close,2026-11-16
+Ashutosh Fibre,SME,NSE,ASHUTOSH,124.0,124.0,0.0,match,NSE/BSE official close,2026-11-16
+Shanti Inorganics,SME,NSE,SHANTIINOR,192.4,192.4,0.0,match,NSE/BSE official close,2026-11-16
+Kwick Forensic Solutions,SME,BSE,KWICK,162.75,162.75,0.0,match,NSE/BSE official close,2026-11-16
+Technocrats Plasma Systems,SME,BSE,TECHNOCRAT,397.75,397.75,0.0,match,NSE/BSE official close,2026-11-16
+Credent Connect N Care,SME,NSE,CREDENT,417.8,417.8,0.0,match,NSE/BSE official close,2026-11-16
+LAPL Automotive,SME,BSE,LAPL,98.45,98.45,0.0,match,NSE/BSE official close,2026-11-16
+G V Electricals,SME,BSE,GVELECTRIC,103.75,103.75,0.0,match,NSE/BSE official close,2026-11-16
+Aegeus Technologies,SME,BSE,AEGEUS,98.5,98.5,0.0,match,NSE/BSE official close,2026-11-16
+Anawil Wire Engineering,SME,NSE,ANAWIL,380.85,380.85,0.0,match,NSE/BSE official close,2026-11-16
+Poojaa Precision Engg,SME,BSE,PPEL,934.5,934.5,0.0,match,NSE/BSE official close,2026-11-16
+Shree Balaji Mala Textiles,SME,BSE,MALA,48.5,48.5,0.0,match,NSE/BSE official close,2026-11-16
+Millworks Technologies,SME,BSE,MILLWORKS,745.05,745.05,0.0,match,NSE/BSE official close,2026-11-16
+Devson Catalyst,SME,BSE,DEVSON,334.1,334.1,0.0,match,NSE/BSE official close,2026-11-16
+IC Electricals Company,SME,NSE,ICELCO,128.35,128.35,0.0,match,NSE/BSE official close,2026-11-16
+Kratikal Tech,SME,BSE,KRATIKAL,165.9,165.9,0.0,match,NSE/BSE official close,2026-11-16
+Avience Biomedicals,SME,NSE,AVIENCE,239.8,239.8,0.0,match,NSE/BSE official close,2026-11-16
+Horizon Reclaim,SME,BSE,HORIZON,118.0,118.0,0.0,match,NSE/BSE official close,2026-11-16
+Susan Electricals,SME,BSE,SUSAN,190.5,190.5,0.0,match,NSE/BSE official close,2026-11-16
+Merritronix,SME,BSE,MRTX,438.05,438.05,0.0,match,NSE/BSE official close,2026-11-16
+Q-Line Biotech,SME,NSE,QLINE,439.65,439.65,0.0,match,NSE/BSE official close,2026-11-16
+Vegorama Punjabi Angithi,SME,BSE,VPAL,288.05,288.05,0.0,match,NSE/BSE official close,2026-11-16
+Goldline Pharmaceutical,SME,BSE,GLPL,29.6,29.6,0.0,match,NSE/BSE official close,2026-11-16
+Recode Studios,SME,BSE,RECODE,408.35,408.35,0.0,match,NSE/BSE official close,2026-11-16
+Adisoft Technologies,SME,NSE,ADISOFT,283.75,283.75,0.0,match,NSE/BSE official close,2026-11-16
+Apsis Aerocom,SME,NSE,APSISAERO,506.25,506.25,0.0,match,NSE/BSE official close,2026-11-16
+Msafe Equipments,SME,BSE,MSAFE,255.05,255.05,0.0,match,NSE/BSE official close,2026-11-16
+KRM Ayurveda,SME,NSE,KRMAYURVED,223.95,223.95,0.0,match,NSE/BSE official close,2026-11-16
+Avana Electrosystems,SME,NSE,AVANA,136.05,136.05,0.0,match,NSE/BSE official close,2026-11-16
+Defrail Technologies,SME,BSE,DEFRAIL,81.0,81.0,0.0,match,NSE/BSE official close,2026-11-16
+E to E Transportation,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-16
+Orient Cables,Mainboard,NSE,ORIENTCABL,404.1,404.1,0.0,match,NSE/BSE official close,2026-11-16
+Moneyview,Mainboard,NSE,MONEYVIEW,59.11,59.11,0.0,match,NSE/BSE official close,2026-11-16
+Adroit Industries,Mainboard,NSE,ADROITIND,195.09,195.09,0.0,match,NSE/BSE official close,2026-11-16
+SS Retail,Mainboard,NSE,SSRETAIL,693.8,693.8,0.0,match,NSE/BSE official close,2026-11-16
+Jindal Supreme,Mainboard,NSE,JSIPL,172.36,172.36,0.0,match,NSE/BSE official close,2026-11-16
+Rentomojo,Mainboard,NSE,RENTOMOJO,599.3,599.3,0.0,match,NSE/BSE official close,2026-11-16
+Steamhouse,Mainboard,NSE,STEAMHOUSE,149.18,149.18,0.0,match,NSE/BSE official close,2026-11-16
+Lcc Projects,Mainboard,NSE,LCCPROJECT,127.94,127.94,0.0,match,NSE/BSE official close,2026-11-16
+Karamtara Engineering,Mainboard,NSE,KARAMTARA,369.95,369.95,0.0,match,NSE/BSE official close,2026-11-16
+Pranav Constructions,Mainboard,NSE,PRANAV,83.52,83.52,0.0,match,NSE/BSE official close,2026-11-16
+Deepa Jewellers,Mainboard,NSE,DEEPA,211.86,211.86,0.0,match,NSE/BSE official close,2026-11-16
+Priority Jewels,Mainboard,NSE,PRIORITY,252.2,252.2,0.0,match,NSE/BSE official close,2026-11-16
+ESDS Software Solution,Mainboard,NSE,ESDS,1197.5,1197.5,0.0,match,NSE/BSE official close,2026-11-16
+Lumino Industries,Mainboard,NSE,LUMINO,97.96,97.96,0.0,match,NSE/BSE official close,2026-11-16
+HyTech Engineers,Mainboard,NSE,HTEL,75.23,75.23,0.0,match,NSE/BSE official close,2026-11-16
+Augmont Enterprises,Mainboard,NSE,AUGMONT,927.4,927.4,0.0,match,NSE/BSE official close,2026-11-16
+Tempsens Instruments,Mainboard,NSE,TEMPSENS,536.2,536.2,0.0,match,NSE/BSE official close,2026-11-16
+Gaja Alternative Asset,Mainboard,NSE,GAJA,131.76,131.76,0.0,match,NSE/BSE official close,2026-11-16
+Lalithaa Jewellery Mart,Mainboard,NSE,LALITHAA,331.95,331.95,0.0,match,NSE/BSE official close,2026-11-16
+Shiprocket,Mainboard,NSE,SHIPROCKET,126.55,126.55,0.0,match,NSE/BSE official close,2026-11-16
+Behari Lal Engineering,Mainboard,NSE,BLEL,427.65,427.65,0.0,match,NSE/BSE official close,2026-11-16
+Milky Mist Dairy Food,Mainboard,NSE,MILKYMIST,307.8,307.8,0.0,match,NSE/BSE official close,2026-11-16
+Dhoot Transmission,Mainboard,NSE,DHOOTTRANS,1603.8,1603.8,0.0,match,NSE/BSE official close,2026-11-16
+Molbio Diagnostics,Mainboard,NSE,MOLBIO,1486.4,1486.4,0.0,match,NSE/BSE official close,2026-11-16
+Technocraft Ventures,Mainboard,NSE,TECHNOCRAF,488.7,488.7,0.0,match,NSE/BSE official close,2026-11-16
+Ardee Industries,Mainboard,NSE,ARDEE,42.77,42.77,0.0,match,NSE/BSE official close,2026-11-16
+MV Electrosystems,Mainboard,NSE,MVELECTRO,835.35,835.35,0.0,match,NSE/BSE official close,2026-11-16
+IndoMIM,Mainboard,NSE,INDOMIM,1243.2,1243.2,0.0,match,NSE/BSE official close,2026-11-16
+Caliber Mining and Logistics,Mainboard,NSE,CMLL,532.45,532.45,0.0,match,NSE/BSE official close,2026-11-16
+Laser Power and Infra,Mainboard,NSE,LASERPOWER,205.17,205.17,0.0,match,NSE/BSE official close,2026-11-16
+Kusumgar,Mainboard,NSE,KUSUMGAR,539.9,539.9,0.0,match,NSE/BSE official close,2026-11-16
+Advit Jewels,Mainboard,NSE,RAMBHAJO,296.85,296.85,0.0,match,NSE/BSE official close,2026-11-16
+CMR Green Technologies,Mainboard,NSE,CMRGREEN,209.86,209.86,0.0,match,NSE/BSE official close,2026-11-16
+Bharat Coking Coal,Mainboard,NSE,BHARATCOAL,31.14,31.14,0.0,match,NSE/BSE official close,2026-11-16
+Dhara Rail Projects,SME,NSE,DHARARAIL,120.0,120.0,0.0,match,NSE/BSE official close,2026-11-16
+Shyam Dhani Industries,SME,NSE,SHYAMDHANI,52.25,52.25,0.0,match,NSE/BSE official close,2026-11-16
+Exim Routes,SME,NSE,EXIMROUTES,80.0,80.0,0.0,match,NSE/BSE official close,2026-11-16
+HRS Aluglaze,SME,BSE,HRS,246.0,246.0,0.0,match,NSE/BSE official close,2026-11-16
+K V Toys,SME,BSE,KVTOYS,205.1,205.1,0.0,match,NSE/BSE official close,2026-11-16
+Luxury Time,SME,BSE,LUXURY,60.2,60.2,0.0,match,NSE/BSE official close,2026-11-16
+Ravelcare,SME,BSE,RAVEL,90.0,90.0,0.0,match,NSE/BSE official close,2026-11-16
+Exato Technologies,SME,BSE,EXATO,579.0,579.0,0.0,match,NSE/BSE official close,2026-11-16
+Gallard Steel,SME,BSE,GALLARD,142.05,142.05,0.0,match,NSE/BSE official close,2026-11-16
+Workmates Core2Cloud Solution,SME,BSE,WORKMATES,408.95,408.95,0.0,match,NSE/BSE official close,2026-11-16
+Sheel Biotech,SME,,,,61.0,,did not trade that day,NSE/BSE official close,2026-11-16
+Infinity Infoway,SME,BSE,INFINITY,736.0,736.0,0.0,match,NSE/BSE official close,2026-11-16
+Suba Hotels,SME,NSE,SUBAHOTELS,81.45,81.45,0.0,match,NSE/BSE official close,2026-11-16
+Chatterbox Technologies,SME,BSE,CHTR,45.9,45.9,0.0,match,NSE/BSE official close,2026-11-16
+TechD Cybersecurity,SME,NSE,TECHD,500.1,500.1,0.0,match,NSE/BSE official close,2026-11-16
+L T Elevator,SME,BSE,LTELEVATOR,334.25,334.25,0.0,match,NSE/BSE official close,2026-11-16
+Airfloa Rail Technology,SME,BSE,AIRFLOA,485.15,485.15,0.0,match,NSE/BSE official close,2026-11-16
+Karbonsteel Engineering,SME,BSE,KARBON,94.88,94.88,0.0,match,NSE/BSE official close,2026-11-16
+Austere Systems,SME,BSE,AUSTERE,40.0,40.0,0.0,match,NSE/BSE official close,2026-11-16
+Optivalue Tek Consulting,SME,NSE,OPTIVALUE,207.5,207.5,0.0,match,NSE/BSE official close,2026-11-16
+Goel Construction Company,SME,BSE,GOELCONS,541.0,541.0,0.0,match,NSE/BSE official close,2026-11-16
+Sattva Engineering,SME,NSE,SATTVAENGG,51.0,51.0,0.0,match,NSE/BSE official close,2026-11-16
+Current Infraprojects,SME,NSE,CURRENT,100.0,100.0,0.0,match,NSE/BSE official close,2026-11-16
+Anondita Medicare,SME,NSE,ANONDITA,1034.8,1034.8,0.0,match,NSE/BSE official close,2026-11-16
+BLT Logistics,SME,,,,38.9,,did not trade that day,NSE/BSE official close,2026-11-16
+Flysbs Aviation,SME,NSE,FLYSBS,613.55,613.55,0.0,match,NSE/BSE official close,2026-11-16
+Cash Ur Drive Marketing,SME,NSE,CUDML,95.6,95.6,0.0,match,NSE/BSE official close,2026-11-16
+Shree Refrigerations,SME,BSE,SHREEREF,286.0,286.0,0.0,match,NSE/BSE official close,2026-11-16
+Patel Chem Specialities,SME,BSE,PATELCHEM,137.95,137.95,0.0,match,NSE/BSE official close,2026-11-16
+Monarch Surveyors,SME,BSE,MSECL,249.25,249.25,0.0,match,NSE/BSE official close,2026-11-16
+Spunweb Nonwoven,SME,NSE,SPUNWEB,107.75,107.75,0.0,match,NSE/BSE official close,2026-11-16
+GLEN Industries,SME,BSE,GLEN,107.8,107.8,0.0,match,NSE/BSE official close,2026-11-16
+Meta Infotech,SME,BSE,METAINFO,53.4,53.4,0.0,match,NSE/BSE official close,2026-11-16
+Cryogenic OGS,SME,BSE,CRYOGENIC,364.3,364.3,0.0,match,NSE/BSE official close,2026-11-16
+Adcounty Media,SME,BSE,ADCOUNTY,67.0,67.0,0.0,match,NSE/BSE official close,2026-11-16
+Neetu Yoshi,SME,BSE,NEETUYOSHI,178.55,178.55,0.0,match,NSE/BSE official close,2026-11-16
+Ace Alpha Tech,SME,BSE,ACEALPHA,154.8,154.8,0.0,match,NSE/BSE official close,2026-11-16
+Suntech Infra Solutions,SME,,,,38.9,,did not trade that day,NSE/BSE official close,2026-11-16
+Mayasheel Ventures,SME,NSE,MAYASHEEL,26.05,26.05,0.0,match,NSE/BSE official close,2026-11-16
+Influx Healthtech,SME,NSE,INFLUX,275.5,275.5,0.0,match,NSE/BSE official close,2026-11-16
+Eppeltone Engineers,SME,NSE,EEPL,120.7,120.7,0.0,match,NSE/BSE official close,2026-11-16
+Patil Automation,SME,NSE,PATILAUTOM,315.5,315.5,0.0,match,NSE/BSE official close,2026-11-16
+Monolithisch India,SME,NSE,MONOLITH,1386.75,1386.75,0.0,match,NSE/BSE official close,2026-11-16
+Sacheerome,SME,NSE,SACHEEROME,366.0,366.0,0.0,match,NSE/BSE official close,2026-11-16
+Virtual Galaxy Infotech,SME,NSE,VGINFOTECH,129.05,129.05,0.0,match,NSE/BSE official close,2026-11-16
+Srigee DLM,SME,BSE,SRIGEE,69.93,69.93,0.0,match,NSE/BSE official close,2026-11-16
+Tankup Engineers,SME,NSE,TANKUP,1615.0,1615.0,0.0,match,NSE/BSE official close,2026-11-16
+Shri Ahimsa Naturals,SME,NSE,SHRIAHIMSA,380.85,380.85,0.0,match,NSE/BSE official close,2026-11-16
+Chamunda Electrical,SME,NSE,CHAMUNDA,39.95,39.95,0.0,match,NSE/BSE official close,2026-11-16
+EMA Partners India Ltd.,SME,NSE,EMAPARTNER,96.05,96.05,0.0,match,NSE/BSE official close,2026-11-16
+Rikhav Securities Ltd.,SME,BSE,RIKHAV,50.0,50.0,0.0,match,NSE/BSE official close,2026-11-16
+Kabra Jewels,SME,NSE,KKJEWELS,195.45,195.45,0.0,match,NSE/BSE official close,2026-11-16
+Sat Kartar Shopping,SME,NSE,SATKARTAR,163.75,163.75,0.0,match,NSE/BSE official close,2026-11-16
+Delta Autocorp,SME,NSE,DELTIC,37.5,37.5,0.0,match,NSE/BSE official close,2026-11-16
+Fabtech Technologies Cleanrooms Ltd.,SME,NSE,FABTECH,137.06,137.06,0.0,match,NSE/BSE official close,2026-11-16
+Parmeshwar Metal Ltd.,SME,BSE,PARMESHWAR,265.95,265.95,0.0,match,NSE/BSE official close,2026-11-16
+Leo Dryfruits & Spices Trading Ltd.,SME,BSE,VANDU,58.0,58.0,0.0,match,NSE/BSE official close,2026-11-16
+Anya Polytech Fertilizers,SME,NSE,ANYA,17.35,17.35,0.0,match,NSE/BSE official close,2026-11-16
+ICICI Prudential Asset,Mainboard,NSE,ICICIAMC,3025.0,3025.0,0.0,match,NSE/BSE official close,2026-11-16
+Corona Remedies,Mainboard,NSE,CORONA,2288.8,2288.8,0.0,match,NSE/BSE official close,2026-11-16
+Meesho,Mainboard,NSE,MEESHO,251.19,251.19,0.0,match,NSE/BSE official close,2026-11-16
+Sudeep Pharma,Mainboard,NSE,SUDEEPPHRM,1169.7,1169.7,0.0,match,NSE/BSE official close,2026-11-16
+Tenneco Clean Air,Mainboard,NSE,TENNIND,432.55,432.55,0.0,match,NSE/BSE official close,2026-11-16
+Rubicon Research,Mainboard,NSE,RUBICON,1672.6,1672.6,0.0,match,NSE/BSE official close,2026-11-16
+LG Electronics,Mainboard,NSE,LGEINDIA,1722.9,1722.9,0.0,match,NSE/BSE official close,2026-11-16
+Urban Company,Mainboard,NSE,URBANCO,171.7,171.7,0.0,match,NSE/BSE official close,2026-11-16
+Patel Retail,Mainboard,NSE,PATELRMART,225.48,225.48,0.0,match,NSE/BSE official close,2026-11-16
+Regaal Resources,Mainboard,NSE,REGAAL,94.38,94.38,0.0,match,NSE/BSE official close,2026-11-16
+Highway Infrastructure,Mainboard,NSE,HILINFRA,76.9,76.9,0.0,match,NSE/BSE official close,2026-11-16
+Sri Lotus Developers,Mainboard,NSE,LOTUSDEV,231.77,231.77,0.0,match,NSE/BSE official close,2026-11-16
+Aditya Infotech,Mainboard,NSE,CPPLUS,3963.4,3963.4,0.0,match,NSE/BSE official close,2026-11-16
+GNG Electronics,Mainboard,NSE,EBGNG,553.9,553.9,0.0,match,NSE/BSE official close,2026-11-16
+Anthem Biosciences,Mainboard,NSE,ANTHEM,931.45,931.45,0.0,match,NSE/BSE official close,2026-11-16
+Sambhv Steel Tubes,Mainboard,NSE,SAMBHV,161.69,161.69,0.0,match,NSE/BSE official close,2026-11-16
+Globe Civil Projects,Mainboard,NSE,GLOBECIVIL,37.91,37.91,0.0,match,NSE/BSE official close,2026-11-16
+Ellenbarrie Industrial Gases,Mainboard,NSE,ELLEN,287.3,287.3,0.0,match,NSE/BSE official close,2026-11-16
+Stallion India Fluorochemicals Ltd.,Mainboard,NSE,STALLION,177.77,177.77,0.0,match,NSE/BSE official close,2026-11-16
+Laxmi Dental,Mainboard,NSE,LAXMIDENTL,199.78,199.78,0.0,match,NSE/BSE official close,2026-11-16
+Quadrant Future Tek,Mainboard,NSE,QUADFUTURE,420.85,420.85,0.0,match,NSE/BSE official close,2026-11-16
+Standard Glass Lining,Mainboard,,,,,,not found in NSE/BSE bhavcopy,,2026-11-16
+Indo Farm Equipment,Mainboard,NSE,INDOFARM,121.21,121.21,0.0,match,NSE/BSE official close,2026-11-16
+Identical Brains Studios Ltd.,SME,NSE,IDENTICAL,15.0,15.0,0.0,match,NSE/BSE official close,2026-11-16
+Yash Highvoltage Ltd.,SME,BSE,YASHHV,1279.6,1279.6,0.0,match,NSE/BSE official close,2026-11-16
+Purple United Sales Ltd.,SME,NSE,PURPLEUTED,403.5,403.5,0.0,match,NSE/BSE official close,2026-11-16
+Jungle Camps India Ltd.,SME,BSE,JUNGLECAMP,41.86,41.86,0.0,match,NSE/BSE official close,2026-11-16
+Toss The Coin Ltd.,SME,BSE,TTC,160.0,160.0,0.0,match,NSE/BSE official close,2026-11-16
+Dhanlaxmi Crop Science Ltd.,SME,NSE,DHANLAXMI,29.0,29.0,0.0,match,NSE/BSE official close,2026-11-16
+Emerald Tyre Manufacturers Ltd.,SME,NSE,ETML,63.95,63.95,0.0,match,NSE/BSE official close,2026-11-16
+Nisus Finance Services Co Ltd.,SME,BSE,NISUS,184.2,184.2,0.0,match,NSE/BSE official close,2026-11-16
+Ganesh Infraworld Ltd.,SME,NSE,GANESHIN,76.55,76.55,0.0,match,NSE/BSE official close,2026-11-16
+Apex Ecotech Ltd.,SME,NSE,APEXECO,222.75,222.75,0.0,match,NSE/BSE official close,2026-11-16
+Rajputana Biodiesel Ltd.,SME,NSE,RAJPUTANA,209.0,209.0,0.0,match,NSE/BSE official close,2026-11-16
+C2C Advanced Systems Ltd.,SME,NSE,C2C,133.4,133.4,0.0,match,NSE/BSE official close,2026-11-16
+Rajesh Power Services Ltd.,SME,BSE,RAJESH,800.45,800.45,0.0,match,NSE/BSE official close,2026-11-16
+Danish Power Ltd.,SME,NSE,DANISH,966.85,966.85,0.0,match,NSE/BSE official close,2026-11-16
+Freshara Agro Exports Ltd.,SME,NSE,FRESHARA,385.8,385.8,0.0,match,NSE/BSE official close,2026-11-16
+Lakshya Powertech Ltd.,SME,NSE,LAKSHYA,89.5,89.5,0.0,match,NSE/BSE official close,2026-11-16
+Shiv Texchem Ltd.,SME,BSE,SHIVTEXCHEM,115.5,115.5,0.0,match,NSE/BSE official close,2026-11-16
+Divyadhan Recycling Industries Ltd.,SME,NSE,DIVYADHAN,41.0,41.0,0.0,match,NSE/BSE official close,2026-11-16
+Sahasra Electronic Solutions Ltd.,SME,NSE,SAHASRA,390.45,390.45,0.0,match,NSE/BSE official close,2026-11-16
+Techera Engineering India Ltd.,SME,NSE,TECHERA,118.1,118.1,0.0,match,NSE/BSE official close,2026-11-16
+Thinking Hats Entertainment Solutions Ltd.,SME,NSE,THESL,10.85,10.85,0.0,match,NSE/BSE official close,2026-11-16
+WOL 3D India Ltd.,SME,NSE,WOL3D,161.3,161.3,0.0,match,NSE/BSE official close,2026-11-16
+Rappid Valves (India) Ltd.,SME,NSE,RAPPID,346.0,346.0,0.0,match,NSE/BSE official close,2026-11-16
+Paramount Speciality Forgings Ltd.,SME,NSE,PSFL,26.25,26.25,0.0,match,NSE/BSE official close,2026-11-16
+Envirotech Systems Ltd.,SME,NSE,ENVIRO,54.45,54.45,0.0,match,NSE/BSE official close,2026-11-16
+Osel Devcies Ltd.,SME,NSE,OSELDEVICE,368.85,368.85,0.0,match,NSE/BSE official close,2026-11-16
+Shubhshree Biofuels Energy Ltd.,SME,NSE,SHUBHSHREE,303.0,303.0,0.0,match,NSE/BSE official close,2026-11-16
+My Mudra Fincorp,SME,NSE,MYMUDRA,80.0,80.0,0.0,match,NSE/BSE official close,2026-11-16
+Namo eWaste Management Ltd.,SME,NSE,NAMOEWASTE,305.8,305.8,0.0,match,NSE/BSE official close,2026-11-16
+Mach Conferences and Events Ltd.,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-16
+Aeron Composite,SME,NSE,AERON,76.0,76.0,0.0,match,NSE/BSE official close,2026-11-16
+Jay Bee Laminations Ltd.,SME,NSE,JAYBEE,74.25,74.25,0.0,match,NSE/BSE official close,2026-11-16
+Indian Phosphate Ltd.,SME,NSE,IPHL,78.2,78.2,0.0,match,NSE/BSE official close,2026-11-16
+Brace Port Logistics,SME,NSE,BRACEPORT,83.25,83.25,0.0,match,NSE/BSE official close,2026-11-16
+Forcas Studio,SME,NSE,FORCAS,198.3,198.3,0.0,match,NSE/BSE official close,2026-11-16
+Positron Energy,SME,NSE,POSITRON,263.1,263.1,0.0,match,NSE/BSE official close,2026-11-16
+Sunlite Recycling,SME,NSE,SUNLITE,556.7,556.7,0.0,match,NSE/BSE official close,2026-11-16
+Aesthetik Engineers,SME,NSE,AESTHETIK,71.0,71.0,0.0,match,NSE/BSE official close,2026-11-16
+Picturepost Studios,SME,NSE,PPSL,2.65,2.65,0.0,match,NSE/BSE official close,2026-11-16
+Afcom Holdings,SME,BSE,AFCOM,1520.35,1520.35,0.0,match,NSE/BSE official close,2026-11-16
+Dhariwalcorp,SME,NSE,DHARIWAL,22.9,22.9,0.0,match,NSE/BSE official close,2026-11-16
+Ashapura Logistics,SME,NSE,ASHALOG,61.0,61.0,0.0,match,NSE/BSE official close,2026-11-16
+Bulkcorp Intl,SME,NSE,BULKCORP,75.9,75.9,0.0,match,NSE/BSE official close,2026-11-16
+Rajputana Industries,SME,NSE,RAJINDLTD,58.0,58.0,0.0,match,NSE/BSE official close,2026-11-16
+Sathlokhar Synergys,SME,NSE,SSEGL,353.1,353.1,0.0,match,NSE/BSE official close,2026-11-16
+S A Tech Software,SME,NSE,SATECH,36.5,36.5,0.0,match,NSE/BSE official close,2026-11-16
+Trom Industries,SME,NSE,TROM,59.0,59.0,0.0,match,NSE/BSE official close,2026-11-16
+Aprameya Engineering,SME,NSE,APRAMEYA,127.6,127.6,0.0,match,NSE/BSE official close,2026-11-16
+Manglam Infra,SME,NSE,MIEL,11.7,11.7,0.0,match,NSE/BSE official close,2026-11-16
+Chetana Education,SME,NSE,CHETANA,34.75,34.75,0.0,match,NSE/BSE official close,2026-11-16
+VVIP Infratech,SME,BSE,VVIPIL,155.0,155.0,0.0,match,NSE/BSE official close,2026-11-16
+V L Infraprojects,SME,NSE,VLINFRA,23.05,23.05,0.0,match,NSE/BSE official close,2026-11-16
+RNFI Services,SME,NSE,RNFI,304.5,304.5,0.0,match,NSE/BSE official close,2026-11-16
+Kataria Industries,SME,NSE,KATARIA,133.5,133.5,0.0,match,NSE/BSE official close,2026-11-16
+Macobs Technologies,SME,,,,195.95,,did not trade that day,NSE/BSE official close,2026-11-16
+Aelea Commodities,SME,BSE,ACLD,104.0,104.0,0.0,match,NSE/BSE official close,2026-11-16
+Sati Poly Plast,SME,NSE,SATIPOLY,37.0,37.0,0.0,match,NSE/BSE official close,2026-11-16
+Prizor Viztech,SME,NSE,PRIZOR,1549.4,1549.4,0.0,match,NSE/BSE official close,2026-11-16
+Sahaj Solar,SME,NSE,SAHAJSOLAR,78.05,78.05,0.0,match,NSE/BSE official close,2026-11-16
+Effwa Infra & Research,SME,NSE,EFFWA,310.0,310.0,0.0,match,NSE/BSE official close,2026-11-16
+Ganesh Green Bharat,SME,NSE,GGBL,163.95,163.95,0.0,match,NSE/BSE official close,2026-11-16
+Ambey Laboratories,SME,,,,,,not found in NSE/BSE bhavcopy,,2026-11-16
+Nephro Care,SME,NSE,NEPHROCARE,92.3,92.3,0.0,match,NSE/BSE official close,2026-11-16
+Divine Power Energy,SME,NSE,DPEL,670.95,670.95,0.0,match,NSE/BSE official close,2026-11-16
+Petro Carbon,SME,NSE,PCCL,404.0,404.0,0.0,match,NSE/BSE official close,2026-11-16
+Maxwell Engineering,SME,NSE,MAXENGS,282.2,282.2,0.0,match,NSE/BSE official close,2026-11-16
+Johnsoncab Electricals,SME,BSE,JOHNSONCAB,265.55,265.55,0.0,match,NSE/BSE official close,2026-11-16
+HGS India,SME,NSE,HGSINDIALT,225.05,225.05,0.0,match,NSE/BSE official close,2026-11-16
+BLS Polymers,Mainboard,NSE,BLSPOLY,271.07,271.07,0.0,match,NSE/BSE official close,2026-11-16
+Jio Platforms,Mainboard,NSE,JPL,1402.0,1402.0,0.0,match,NSE/BSE official close,2026-11-16
+Tonbo Imaging,Mainboard,NSE,TONBO,1598.9,1598.9,0.0,match,NSE/BSE official close,2026-11-16
