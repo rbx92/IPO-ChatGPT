@@ -6,6 +6,7 @@ name: Nightly data update (listings, prices, pullbacks)
 #   3. Backup: Yahoo for mainboard stocks the official files missed
 #   4. Backup: Screener for anything still unpriced (60 s between requests)
 #   5. Backup: Screener closes for SME pullback candidates without official history
+#   6. Telegram alert for stocks that entered the pullback buy zone
 # Each stage commits on its own, so a later failure never loses earlier work.
 
 on:
@@ -57,3 +58,11 @@ jobs:
         run: python pipeline/prices/screener_history.py --stock-type SME --delay 60
       - if: always()
         run: "bash pipeline/tools/commit_data.sh 'chore: refresh SME price history from Screener'"
+      - name: 6. Telegram pullback alerts
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python pipeline/alerts/telegram.py
+      - if: always()
+        run: "bash pipeline/tools/commit_data.sh 'chore: record sent Telegram alerts'"

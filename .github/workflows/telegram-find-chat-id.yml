@@ -1,0 +1,20 @@
+name: Telegram - find my chat ID (manual, one-off)
+
+# Send any message to your bot in Telegram first, then run this.
+on: workflow_dispatch
+
+jobs:
+  find:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: List chats that messaged the bot
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          [ -n "$TOKEN" ] || { echo "Add the TELEGRAM_BOT_TOKEN secret first."; exit 1; }
+          curl -sS "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          chats={(m.get('chat') or {}).get('id'):(m.get('chat') or {}).get('first_name') for u in d.get('result',[]) for m in [u.get('message') or {}]}
+          chats.pop(None,None)
+          print('Chats found:', chats or 'none - send your bot a message in Telegram, then run again')"

@@ -36,6 +36,7 @@ pipeline/
              screener.py       backup for anything still unpriced
              screener_history.py  backup daily closes for SME pullbacks
              screener_client.py   shared Screener access
+  alerts/    telegram.py       nightly: message when a stock enters the pullback zone
   tools/     verify_prices.py  compare saved prices with official closes
              backtest_pullback.py  test the pullback rule on past IPOs
              commit_data.sh    save data changes from the jobs
@@ -51,6 +52,7 @@ reports/     price checks and backtest results
 |---|---|---|
 | `groww-subscriptions-hourly.yml` | Hourly; every 15 then 5 minutes on IPO closing days | Groww subscription data |
 | `nightly-data-update.yml` | Weekdays 19:40 IST | Listings, official prices, then Yahoo and Screener backups |
+| `telegram-find-chat-id.yml` | By hand, once | Finds your Telegram chat ID for alerts |
 | `check-prices-manual.yml` | By hand | Saved prices vs official closes, into `reports/` |
 | `backtest-pullback-manual.yml` | By hand | Pullback rule backtest, into `reports/backtest/` |
 
