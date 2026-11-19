@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-19T11:55:57+00:00",
+  "updatedAt": "2026-11-19T12:44:27+00:00",
   "ipos": [
     {
       "companyName": "Crystal Crop Protection",
@@ -11,9 +11,9 @@
       "issuePrice": null,
       "priceBand": "₹259 - ₹272",
       "qib": "2.18x",
-      "hni": "3.20x",
-      "retail": "3.03x",
-      "total": "2.84x",
+      "hni": "3.43x",
+      "retail": "3.11x",
+      "total": "2.93x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/crystal-crop-protection-ipo",
-      "subscriptionUpdatedAt": "2026-11-19T17:16:20",
+      "subscriptionUpdatedAt": "2026-11-19T18:05:50",
       "allotmentDate": "2026-11-23",
       "expectedListingDate": "2026-11-26"
     },
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
-      "subscriptionUpdatedAt": "2026-11-19T17:16:19",
+      "subscriptionUpdatedAt": "2026-11-19T18:05:49",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27"
     },
@@ -55,9 +55,9 @@
       "issuePrice": null,
       "priceBand": "₹232 - ₹245",
       "qib": "0.00x",
-      "hni": "3.30x",
-      "retail": "4.47x",
-      "total": "2.96x",
+      "hni": "4.14x",
+      "retail": "4.99x",
+      "total": "3.43x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -65,7 +65,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
-      "subscriptionUpdatedAt": "2026-11-19T17:16:21",
+      "subscriptionUpdatedAt": "2026-11-19T17:56:13",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27"
     },
