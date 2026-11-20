@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-20T11:56:57+00:00",
+  "updatedAt": "2026-11-20T12:56:45+00:00",
   "ipos": [
     {
       "companyName": "Mahanadi Coalfields",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
-      "subscriptionUpdatedAt": "2026-11-20T17:15:42",
+      "subscriptionUpdatedAt": "2026-11-20T18:16:15",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27"
     },
@@ -33,9 +33,9 @@
       "issuePrice": null,
       "priceBand": "₹232 - ₹245",
       "qib": "0.00x",
-      "hni": "14.60x",
-      "retail": "14.96x",
-      "total": "10.88x",
+      "hni": "14.94x",
+      "retail": "15.23x",
+      "total": "11.10x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
-      "subscriptionUpdatedAt": "2026-11-20T17:15:43",
+      "subscriptionUpdatedAt": "2026-11-20T18:16:16",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27"
     },
