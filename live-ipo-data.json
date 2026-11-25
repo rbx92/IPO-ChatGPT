@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-25T20:25:55+00:00",
+  "updatedAt": "2026-11-25T23:04:10+00:00",
   "ipos": [
     {
       "companyName": "Shree Siddhivinayak Greentech",
@@ -23,7 +23,8 @@
       "sourceUrl": "https://groww.in/ipo/shree-siddhivinayak-greentech-industries-ipo",
       "subscriptionUpdatedAt": "2026-11-25T18:56:10",
       "allotmentDate": "2026-11-30",
-      "expectedListingDate": "2026-12-02"
+      "expectedListingDate": "2026-12-02",
+      "symbol": "SHREESIDHI"
     },
     {
       "companyName": "Mahanadi Coalfields",
