@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-26T08:23:39+00:00",
+  "updatedAt": "2026-11-26T12:55:36+00:00",
   "ipos": [
     {
       "companyName": "Foodlink F&B Holdings",
@@ -10,10 +10,10 @@
       "applicationEnd": "30 Nov 2026",
       "issuePrice": null,
       "priceBand": "₹181 - ₹191",
-      "qib": "0.00x",
-      "hni": "0.23x",
-      "retail": "1.69x",
-      "total": "0.38x",
+      "qib": "1.01x",
+      "hni": "0.40x",
+      "retail": "2.33x",
+      "total": "1.08x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "Mainboard",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/foodlink-fb-holdings-ipo",
-      "subscriptionUpdatedAt": "2026-11-26T13:46:09",
+      "subscriptionUpdatedAt": "2026-11-26T18:16:38",
       "allotmentDate": "2026-12-01",
       "expectedListingDate": "2026-12-03"
     },
@@ -33,9 +33,9 @@
       "issuePrice": null,
       "priceBand": "₹130 - ₹142",
       "qib": "4.27x",
-      "hni": "0.71x",
-      "retail": "1.02x",
-      "total": "0.89x",
+      "hni": "0.85x",
+      "retail": "1.62x",
+      "total": "1.24x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/shree-siddhivinayak-greentech-industries-ipo",
-      "subscriptionUpdatedAt": "2026-11-26T13:46:10",
+      "subscriptionUpdatedAt": "2026-11-26T18:16:39",
       "allotmentDate": "2026-11-30",
       "expectedListingDate": "2026-12-02"
     },
@@ -65,7 +65,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
-      "subscriptionUpdatedAt": "2026-11-26T08:23:39+00:00",
+      "subscriptionUpdatedAt": "2026-11-26T12:55:36+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "MAHACOAL"
@@ -88,7 +88,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
-      "subscriptionUpdatedAt": "2026-11-26T08:23:39+00:00",
+      "subscriptionUpdatedAt": "2026-11-26T12:55:36+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "WATRANA"
@@ -111,7 +111,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/crystal-crop-protection-ipo",
-      "subscriptionUpdatedAt": "2026-11-26T08:23:39+00:00",
+      "subscriptionUpdatedAt": "2026-11-26T12:55:36+00:00",
       "allotmentDate": "2026-11-23",
       "expectedListingDate": "2026-11-26",
       "symbol": "CRYSTALCP"
