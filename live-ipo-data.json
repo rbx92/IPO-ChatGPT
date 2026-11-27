@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-27T12:50:10+00:00",
+  "updatedAt": "2026-11-27T13:40:03+00:00",
   "ipos": [
     {
       "companyName": "Foodlink F&B Holdings",
@@ -21,7 +21,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/foodlink-fb-holdings-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T18:16:04",
+      "subscriptionUpdatedAt": "2026-11-27T18:55:57",
       "allotmentDate": "2026-12-01",
       "expectedListingDate": "2026-12-03"
     },
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/airpro-technology-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T18:16:05",
+      "subscriptionUpdatedAt": "2026-11-27T18:45:43",
       "allotmentDate": "2026-12-02",
       "expectedListingDate": "2026-12-04"
     },
@@ -87,7 +87,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T12:50:10+00:00",
+      "subscriptionUpdatedAt": "2026-11-27T13:40:03+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "MAHACOAL"
@@ -110,7 +110,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T12:50:10+00:00",
+      "subscriptionUpdatedAt": "2026-11-27T13:40:03+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "WATRANA"
