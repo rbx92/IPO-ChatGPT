@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-27T19:59:23+00:00",
+  "updatedAt": "2026-11-27T22:40:29+00:00",
   "ipos": [
     {
       "companyName": "Foodlink F&B Holdings",
@@ -23,7 +23,8 @@
       "sourceUrl": "https://groww.in/ipo/foodlink-fb-holdings-ipo",
       "subscriptionUpdatedAt": "2026-11-27T18:55:57",
       "allotmentDate": "2026-12-01",
-      "expectedListingDate": "2026-12-03"
+      "expectedListingDate": "2026-12-03",
+      "symbol": "FOODLINK"
     },
     {
       "companyName": "Airpro Technology",
@@ -45,7 +46,8 @@
       "sourceUrl": "https://groww.in/ipo/airpro-technology-ipo",
       "subscriptionUpdatedAt": "2026-11-27T18:55:58",
       "allotmentDate": "2026-12-02",
-      "expectedListingDate": "2026-12-04"
+      "expectedListingDate": "2026-12-04",
+      "symbol": "AIRPRO"
     },
     {
       "companyName": "Shree Siddhivinayak Greentech",
@@ -67,53 +69,58 @@
       "sourceUrl": "https://groww.in/ipo/shree-siddhivinayak-greentech-industries-ipo",
       "subscriptionUpdatedAt": "2026-11-27T19:59:23+00:00",
       "allotmentDate": "2026-11-30",
-      "expectedListingDate": "2026-12-02"
+      "expectedListingDate": "2026-12-02",
+      "symbol": "SHREESIDHI"
     },
     {
       "companyName": "Mahanadi Coalfields",
       "currentPrice": null,
-      "listingDate": "23 Nov 2026",
+      "listingDate": "2026-11-27",
       "applicationEnd": "23 Nov 2026",
-      "issuePrice": null,
+      "issuePrice": 136.0,
       "priceBand": "₹129 - ₹136",
       "qib": "4.95x",
       "hni": "0.66x",
       "retail": "0.45x",
       "total": "1.51x",
-      "listingGain": null,
+      "listingGain": "-1.5%",
       "currentGain": null,
       "stockType": "Mainboard",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
+      "status": "Listed",
+      "stage": "Listed",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
       "subscriptionUpdatedAt": "2026-11-27T19:59:23+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
-      "symbol": "MAHACOAL"
+      "symbol": "MAHACOAL",
+      "listingPrice": 134.0,
+      "listingPriceBasis": "Groww official listing price"
     },
     {
       "companyName": "Watrana Rentals",
       "currentPrice": null,
-      "listingDate": "23 Nov 2026",
+      "listingDate": "2026-11-27",
       "applicationEnd": "23 Nov 2026",
-      "issuePrice": null,
+      "issuePrice": 245.0,
       "priceBand": "₹232 - ₹245",
       "qib": "161.11x",
       "hni": "171.60x",
       "retail": "106.28x",
       "total": "138.53x",
-      "listingGain": null,
+      "listingGain": "-0.8%",
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Waiting for Listing",
-      "stage": "Waiting for Listing",
+      "status": "Listed",
+      "stage": "Listed",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
       "subscriptionUpdatedAt": "2026-11-27T19:59:23+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
-      "symbol": "WATRANA"
+      "symbol": "WATRANA",
+      "listingPrice": 243.0,
+      "listingPriceBasis": "Groww official listing price"
     },
     {
       "companyName": "Crystal Crop Protection",
