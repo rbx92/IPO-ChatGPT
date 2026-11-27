@@ -1,7 +1,7 @@
 {
   "source": "https://groww.in/ipo",
   "subscriptionSource": "https://groww.in/ipo/subscription",
-  "updatedAt": "2026-11-27T13:40:03+00:00",
+  "updatedAt": "2026-11-27T19:13:47+00:00",
   "ipos": [
     {
       "companyName": "Foodlink F&B Holdings",
@@ -43,7 +43,7 @@
       "status": "Open",
       "stage": "Apply",
       "sourceUrl": "https://groww.in/ipo/airpro-technology-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T18:45:43",
+      "subscriptionUpdatedAt": "2026-11-27T18:55:58",
       "allotmentDate": "2026-12-02",
       "expectedListingDate": "2026-12-04"
     },
@@ -56,16 +56,16 @@
       "priceBand": "₹130 - ₹142",
       "qib": "4.27x",
       "hni": "0.97x",
-      "retail": "2.34x",
-      "total": "1.64x",
+      "retail": "2.35x",
+      "total": "1.65x",
       "listingGain": null,
       "currentGain": null,
       "stockType": "SME",
       "source": "Groww",
-      "status": "Open",
-      "stage": "Apply",
+      "status": "Waiting for Listing",
+      "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/shree-siddhivinayak-greentech-industries-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T16:16:06",
+      "subscriptionUpdatedAt": "2026-11-27T19:13:47+00:00",
       "allotmentDate": "2026-11-30",
       "expectedListingDate": "2026-12-02"
     },
@@ -87,7 +87,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/mahanadi-coalfields-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T13:40:03+00:00",
+      "subscriptionUpdatedAt": "2026-11-27T19:13:47+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "MAHACOAL"
@@ -110,7 +110,7 @@
       "status": "Waiting for Listing",
       "stage": "Waiting for Listing",
       "sourceUrl": "https://groww.in/ipo/watrana-rentals-ipo",
-      "subscriptionUpdatedAt": "2026-11-27T13:40:03+00:00",
+      "subscriptionUpdatedAt": "2026-11-27T19:13:47+00:00",
       "allotmentDate": "2026-11-25",
       "expectedListingDate": "2026-11-27",
       "symbol": "WATRANA"
